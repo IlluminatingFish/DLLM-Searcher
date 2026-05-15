@@ -1,0 +1,98 @@
+# =============================================================================
+# SDAR DPO Training Configuration
+# =============================================================================
+
+# Model arguments
+model_name_or_path: /path/to/your/sdar_model
+dtype: bfloat16  # ModelConfig uses 'dtype' not 'torch_dtype'
+trust_remote_code: true
+attn_implementation: flash_attention_2
+
+# PEFT configuration (set use_peft: false to use full model + ref_model)
+use_peft: false
+lora_r: 128
+lora_alpha: 64
+lora_dropout: 0.05
+lora_task_type: CAUSAL_LM  # ModelConfig uses 'lora_task_type' not 'peft_task_type'
+lora_target_modules: ["q_proj", "k_proj", "v_proj", "o_proj", "up_proj", "down_proj", "gate_proj"]
+
+# =============================================================================
+# Dataset Configuration
+# =============================================================================
+dataset_name: sdar_dpo
+dataset_path: /path/to/your/data.jsonl
+dataset_train_split: train
+# dataset_eval_split: eval  # uncomment to enable evaluation
+max_samples: null  # set to limit training samples
+
+# =============================================================================
+# SDAR Specific Configuration
+# =============================================================================
+block_length: 128
+num_mc: 2
+mask_token_id: null  # auto-detect from tokenizer
+
+# Tool response markers (for trainable mask generation)
+tool_resp_left: "<|im_start|>user\n<tool_response>"
+tool_resp_right: "</tool_response><|im_end|>\n<|im_start|>assistant\n"
+
+# =============================================================================
+# DPO Training Configuration
+# =============================================================================
+beta: 0.1
+loss_type: sigmoid
+label_smoothing: 0.0
+
+# Sequence lengths
+max_prompt_length: 1024
+max_completion_length: 4096
+max_length: 8192
+
+# =============================================================================
+# Training Configuration
+# =============================================================================
+bf16: true
+do_eval: false
+num_train_epochs: 5
+per_device_train_batch_size: 1
+per_device_eval_batch_size: 1
+gradient_accumulation_steps: 16
+gradient_checkpointing: true
+gradient_checkpointing_kwargs:
+  use_reentrant: false
+
+# Optimizer
+learning_rate: 5.0e-7
+adam_beta1: 0.9
+adam_beta2: 0.99
+weight_decay: 0.01
+max_grad_norm: 0.5
+warmup_ratio: 0.1
+lr_scheduler_type: cosine
+
+# =============================================================================
+# Logging & Saving
+# =============================================================================
+output_dir: ./output/sdar_dpo
+# overwrite_output_dir removed - not in TRL dataclass (overridden by run_dpo.sh --output_dir)
+logging_steps: 10
+logging_first_step: true
+log_level: info
+save_strategy: steps
+save_steps: 100
+save_total_limit: 5
+eval_strategy: "no"  # or "steps" if using eval_dataset
+# eval_steps: 100
+
+# Wandb
+report_to:
+  - wandb
+wandb_project: sdar_dpo
+run_name: null  # will be set by command line
+
+# =============================================================================
+# Other
+# =============================================================================
+seed: 42
+dataloader_num_workers: 0
+remove_unused_columns: false

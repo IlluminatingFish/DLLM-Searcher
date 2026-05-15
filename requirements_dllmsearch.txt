@@ -1,0 +1,15 @@
+# DLLM-Searcher 环境依赖 (dllmsearch)
+# 推荐使用 setup_dllmsearch.sh 一键安装
+# 或: conda create -n dllmsearch python=3.10 -y && conda activate dllmsearch
+#     pip install torch (见 README 按 CUDA 版本选择) && pip install -r requirements_dllmsearch.txt
+
+transformers>=4.50
+accelerate
+datasets
+requests
+tqdm
+rich
+openai
+tiktoken
+sglang[all]
+qwen-agent[gui,rag,code_interpreter,mcp]

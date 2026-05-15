@@ -1,0 +1,27 @@
+# 本地配置，含 API Key，勿提交
+config.json
+
+# Model checkpoints and optimizer states
+*.safetensors
+*.pt
+*.bin
+*.ckpt
+
+# Training outputs and eval results
+dLLM_trainer/VRPO/output/
+dLLM_trainer/SFT/dLLM-RL/sft_sdar/
+dLLM_trainer/VRPO/wandb/
+dLLM_trainer/SFT/dLLM-RL/wandb/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store

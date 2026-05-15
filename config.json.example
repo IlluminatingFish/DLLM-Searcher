@@ -1,0 +1,7 @@
+{
+  "google_search_key": "请填入你的 Serper.dev API Key（在 https://serper.dev 注册获取）",
+  "search_api_url": "可选，留空即可",
+  "openai_api_base": "模型推理 API 地址，如 SGLang: http://localhost:30000/v1",
+  "openai_api_key": "API Key，SGLang 本地可填 arbitrary",
+  "judge_model": "LLM Judge 所用模型（cal_acc.py），如 gpt-4o"
+}

@@ -1,0 +1,8 @@
+torch==2.8.0
+transformers==4.52.4
+flashinfer-python==0.4.1
+triton==3.4.0
+tqdm
+flash_attn
+liger-kernel
+xxhash

@@ -1,0 +1,55 @@
+wandb:
+  entity: 'mz751-rutgers-university'  # 团队 entity（个人 entity 被禁用时需用团队）
+  resume: 'auto'
+  run_id: '64_128'
+
+experiment:
+    project: "sft_sdar" # need to be same of this file name 
+    num_node: 1 # the number of machines you have
+    resume_from_checkpoint: null  # 设为路径如 "sft_sdar/ckpt_1/optimized" 可从 checkpoint 继续训练
+
+model:
+    pretrained_model: "DiffuOpen/SDAR-1.7B-Chat" # absolute path of your model
+    optimized_name: "optimized" # the output name for your optimized model, will be saved under sft_sdar/ckpt
+
+# sft dataset
+dataset:
+    optimization_data: "data" # 官方数据 data.json；自定义数据则新建 ../data/<name>.json
+
+training:
+    resume_epoch: null  # when resuming, set to next epoch (e.g. 2 for ckpt_1)
+    gradient_checkpointing_enable: True # if the sequence is very larger, set as True
+    gradient_accumulation_steps: 64  # 1×2×64=128 有效 batch，可后续调
+    batch_size_lm: 1
+    mixed_precision: "bf16"
+    enable_tf32: True
+    seed: 10086
+    num_train_epochs: 10
+    max_grad_norm: 1
+    method: "semi-ar" # "semi-ar""trace"
+    lower_p: 0.1
+    upper_p: 0.9
+    block_size: 128 # the block size of your model
+    shrink: 1
+    post_num: 0 # number of pad token need to be trained for each data point
+    max_gen_length: 8192
+    max_prompt_len: 4096
+
+
+optimizer:
+    name: adamw
+    params: # default adamw params
+        learning_rate: 1e-5
+        scale_lr: False # scale learning rate by total batch size
+        beta1: 0.9
+        beta2: 0.999
+        weight_decay: 0.0
+        epsilon: 1e-8
+
+lr_scheduler:
+    scheduler: "cosine"
+    params:
+        learning_rate: ${optimizer.params.learning_rate}
+        warmup_steps: 0
+        min_lr_scale: 1.0
+
