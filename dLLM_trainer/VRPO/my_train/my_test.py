@@ -303,18 +303,59 @@ User: """
     def build_tool_response_segment(self, tool_result: str) -> str:
         return f"<|im_start|>user\n<tool_response>\n{tool_result}\n</tool_response><|im_end|>\n<|im_start|>assistant\n"
     
-    def parse_tool_call(self, content: str) -> Optional[Tuple[str, Dict]]:
-        if self.TOOL_CALL_START not in content or self.TOOL_CALL_END not in content:
-            return None
-        
+    def _try_parse_json_tool(self, s: str) -> Optional[Tuple[str, Dict]]:
+        """Try to parse a JSON string as a tool call."""
         try:
-            tool_call_str = content.split(self.TOOL_CALL_START)[1].split(self.TOOL_CALL_END)[0]
-            tool_call = json.loads(tool_call_str.strip())
-            tool_name = tool_call.get('name', '')
-            tool_args = tool_call.get('arguments', {})
-            return tool_name, tool_args
-        except:
-            return None
+            obj = json.loads(s.strip())
+            name = obj.get('name', '')
+            args = obj.get('arguments', {})
+            if name and isinstance(args, dict):
+                return name, args
+        except Exception:
+            pass
+        return None
+
+    def parse_tool_call(self, content: str) -> Optional[Tuple[str, Dict]]:
+        # Primary: proper <tool_call>...</tool_call> wrapper
+        if self.TOOL_CALL_START in content and self.TOOL_CALL_END in content:
+            try:
+                s = content.split(self.TOOL_CALL_START)[1].split(self.TOOL_CALL_END)[0]
+                result = self._try_parse_json_tool(s)
+                if result:
+                    return result
+            except Exception:
+                pass
+
+        # Fallback: raw JSON block (model omits <tool_call> wrapper).
+        # Find first '{' and try progressively longer substrings.
+        brace_pos = content.find('{"name"')
+        if brace_pos == -1:
+            brace_pos = content.find('{ "name"')
+        if brace_pos != -1:
+            # Try to extract complete JSON by matching braces
+            depth = 0
+            for i, ch in enumerate(content[brace_pos:], brace_pos):
+                if ch == '{':
+                    depth += 1
+                elif ch == '}':
+                    depth -= 1
+                    if depth == 0:
+                        result = self._try_parse_json_tool(content[brace_pos:i + 1])
+                        if result:
+                            return result
+                        break
+
+        # Fallback: <|box_start|>JSON</tool_call> (model confuses box with tool_call)
+        BOX_START = self.ANSWER_START
+        if BOX_START in content:
+            after = content.split(BOX_START, 1)[1]
+            end = after.find(self.TOOL_CALL_END)
+            if end != -1:
+                result = self._try_parse_json_tool(after[:end])
+                if result:
+                    return result
+
+        return None
     
     def has_answer(self, content: str) -> bool:
         return self.ANSWER_START in content and self.ANSWER_END in content
@@ -514,16 +555,20 @@ User: """
                     continue
 
                 if self.has_answer(new_text):
-                    completed_results[sample.idx] = self._create_result(
-                        sample, self.extract_answer(new_text), "answer"
-                    )
-                    continue
+                    answer = self.extract_answer(new_text)
+                    if answer is not None:
+                        completed_results[sample.idx] = self._create_result(
+                            sample, answer, "answer"
+                        )
+                        continue
+                    # extract_answer returned None (e.g., box contained JSON tool call)
+                    # Fall through to tool call detection below
 
                 # After instruction injection: handle partial/malformed answer boxes.
                 if sample.instruction_injected:
                     raw = None
                     _garbage = ('<think>', '<tool_call>', '</tool_call>', '<tool_response>',
-                                '</tool_response>', '<|im_end|>', '<|im_start|>')
+                                '</tool_response>', '<|im_end|>', '<|im_start|>', '<|box_start|>')
 
                     if self.ANSWER_START in new_text:
                         # Case A: <|box_start|> present (may or may not have <|box_end|>)
@@ -559,16 +604,21 @@ User: """
                             )
                             continue
                 
-                if self.TOOL_CALL_START in new_text and self.TOOL_CALL_END in new_text:
+                # Detect tool call: proper tags OR raw JSON (model sometimes omits <tool_call> wrapper)
+                _has_tool_signal = (
+                    (self.TOOL_CALL_START in new_text and self.TOOL_CALL_END in new_text) or
+                    ('"name"' in new_text and '"arguments"' in new_text) or
+                    (self.ANSWER_START in new_text and self.TOOL_CALL_END in new_text)
+                )
+                if _has_tool_signal:
                     tool_info = self.parse_tool_call(new_text)
                     if tool_info is not None:
                         tool_name, tool_args = tool_info
-                        # SFT 数据用 wikisearch，推理用 search，兼容两者
                         if tool_name == "wikisearch":
                             tool_name = "search"
                         tool_calls_to_execute.append((sample, tool_name, tool_args))
                     else:
-                        error_msg = 'Error: Tool call is not a valid JSON. Tool call must contain a valid "name" and "arguments" field.'
+                        error_msg = 'Error: Tool call is not a valid JSON.'
                         resp_text = self.build_tool_response_segment(error_msg)
                         sample.messages.append({"role": "user", "content": f"<tool_response>\n{error_msg}\n</tool_response>"})
                         sample.context += resp_text
