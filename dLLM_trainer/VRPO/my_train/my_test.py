@@ -65,6 +65,12 @@ DENOISING_STEPS = 128
 REMASKING_STRATEGY = "low_confidence_static"
 DYNAMIC_THRESHOLD = 0.9
 
+# Answer strategy for turn >= 3:
+#   "prefix_forcing"      — append <|box_start|> to context prefix; model fills the box directly
+#   "instruction_injection" — inject a user instruction asking for the answer; model generates naturally
+#   "answer_rl"           — original strategy (forced tokens at positions 63/126)
+ANSWER_STRATEGY = "instruction_injection"
+
 MAX_NUM_SEQS = 1
 MAX_MODEL_LEN = 8192
 GPU_MEMORY_UTILIZATION = 0.8
@@ -88,9 +94,11 @@ class ActiveSample:
     idx: int
     question: str
     answer: str  # ground truth
-    messages: List[Dict]  
+    messages: List[Dict]
     num_turns: int
-    context: str = ""  
+    context: str = ""
+    answer_forcing: bool = False  # True when <|box_start|> was prepended to context prefix
+    instruction_injected: bool = False  # True when answer instruction was already injected
 
 # ============================================================================
 # ============================================================================
@@ -192,6 +200,23 @@ class SimpleReActRollout:
     TOOL_CALL_END = "</tool_call>"
     TOOL_RESP_START = "<tool_response>"
     TOOL_RESP_END = "</tool_response>"
+
+    # Prefix-forcing: <|box_start|> is the last token in the context; model just fills the answer.
+    ANSWER_FORCING_SUFFIX = (
+        "<|im_start|>user\n"
+        "Based on your research above, give your final answer.\n"
+        "<|im_end|>\n"
+        "<|im_start|>assistant\n"
+        "<|box_start|>"
+    )
+    # Instruction injection: ask naturally; model generates <|box_start|>answer<|box_end|> on its own.
+    ANSWER_INSTRUCTION_SUFFIX = (
+        "<|im_start|>user\n"
+        "Based on your research above, provide your final answer in the format "
+        "<|box_start|>answer<|box_end|>.\n"
+        "<|im_end|>\n"
+        "<|im_start|>assistant\n"
+    )
     
     def __init__(self, tokenizer, tool_executor):
         self.tokenizer = tokenizer
@@ -293,24 +318,22 @@ User: """
     
     def has_answer(self, content: str) -> bool:
         return self.ANSWER_START in content and self.ANSWER_END in content
-    
+
     def extract_answer(self, content: str) -> Optional[str]:
         if not self.has_answer(content):
             return None
         try:
             # Scan all <|box_start|>...<|box_end|> pairs and return the first clean one.
-            # This handles the double-<|box_start|> artifact from the answer_rl strategy:
-            # the forced token at position 63 produces a garbage first pair, but a later
-            # pair may contain a clean answer.
             pos = 0
             while True:
                 start = content.find(self.ANSWER_START, pos)
                 if start == -1:
                     break
-                end = content.find(self.ANSWER_END, start + len(self.ANSWER_START))
+                after_start = start + len(self.ANSWER_START)
+                end = content.find(self.ANSWER_END, after_start)
                 if end == -1:
                     break
-                raw = content[start + len(self.ANSWER_START):end]
+                raw = content[after_start:end]
                 # Strip role tokens
                 raw = re.sub(r'<\|im_start\|>(assistant|user)\n', '', raw)
                 raw = re.sub(r'^(assistant|user)\n', '', raw.strip())
@@ -322,8 +345,14 @@ User: """
                 # Strip closed think blocks
                 raw = re.sub(r'<think>.*?</think>', '', raw, flags=re.DOTALL).strip()
                 # Accept only if no garbage markers remain
-                garbage = ('<think>', '<tool_call>', '<|im_end|>', '<|im_start|>')
+                garbage = ('<think>', '<tool_call>', '</tool_call>', '<tool_response>',
+                           '</tool_response>', '<|im_end|>', '<|im_start|>', '<|box_start|>')
                 if raw and not any(g in raw for g in garbage):
+                    # Also reject if it looks like raw JSON (tool call content)
+                    stripped = raw.lstrip()
+                    if stripped.startswith('{') and ('"name"' in stripped or '"arguments"' in stripped):
+                        pos = start + 1
+                        continue
                     return raw
                 pos = start + 1
             return None
@@ -406,15 +435,30 @@ User: """
             
             if rank == 0 and pbar is not None:
                 pbar.set_postfix({"turn": turn + 1, "active": len(active_samples)})
-            
+
+            # On the final answer turn, inject context to guide the model toward a clean answer.
+            # Only inject once per sample (tracked by instruction_injected flag).
+            if turn >= 3:
+                for s in active_samples:
+                    if not s.instruction_injected:
+                        if ANSWER_STRATEGY == "prefix_forcing":
+                            s.context += self.ANSWER_FORCING_SUFFIX
+                            s.answer_forcing = True
+                            s.messages.append({"role": "user", "content": "Based on your research above, give your final answer."})
+                        elif ANSWER_STRATEGY == "instruction_injection":
+                            s.context += self.ANSWER_INSTRUCTION_SUFFIX
+                            s.messages.append({"role": "user", "content": "Based on your research above, provide your final answer in the format <|box_start|>answer<|box_end|>."})
+                        s.instruction_injected = True
+
             prompts_for_generation = [self.format_prompt(s.context) for s in active_samples]
-            
+
             try:
-                # turn 0,1,2: toolcall 格式；turn >= 3: 切到 answer_rl 输出 <|box_start|>答案<|box_end|>
                 if turn >= 3:
-                    sampling_params.remasking_strategy = "answer_rl"
+                    sampling_params.remasking_strategy = "low_confidence_static"
+                    sampling_params.stop_words = [151645, 151658, 151649]  # <|im_end|> + </tool_call> + <|box_end|>
                 else:
-                    sampling_params.remasking_strategy = "toolcall_pre_rl"
+                    sampling_params.remasking_strategy = "low_confidence_static"
+                    sampling_params.stop_words = [151645, 151658]  # <|im_end|> + </tool_call>
 
                 outputs = llm.generate_streaming(
                     prompts_for_generation,
@@ -438,9 +482,12 @@ User: """
                 sample.num_turns = turn + 1
                 
                 new_text = output['text']
-                import rich
                 if rank == 0:
-                    rich.print(f"[Rank {rank}][Turn {turn}] {new_text}")
+                    try:
+                        import rich
+                        rich.print(f"[Rank {rank}][Turn {turn}] {new_text}")
+                    except ImportError:
+                        print(f"[Rank {rank}][Turn {turn}] {new_text}")
                 
                 if self.TOOL_RESP_START in new_text:
                     pos = new_text.find(self.TOOL_RESP_START)
@@ -457,11 +504,60 @@ User: """
                     )
                     continue
                 
+                # Prefix-forcing: <|box_start|> is in the context prefix, not new_text.
+                # Extract whatever the model generated before <|box_end|> (or the full text).
+                if sample.answer_forcing:
+                    raw = new_text.split(self.ANSWER_END)[0].strip() if self.ANSWER_END in new_text else new_text.strip()
+                    completed_results[sample.idx] = self._create_result(
+                        sample, raw if raw else None, "answer"
+                    )
+                    continue
+
                 if self.has_answer(new_text):
                     completed_results[sample.idx] = self._create_result(
                         sample, self.extract_answer(new_text), "answer"
                     )
                     continue
+
+                # After instruction injection: handle partial/malformed answer boxes.
+                if sample.instruction_injected:
+                    raw = None
+                    _garbage = ('<think>', '<tool_call>', '</tool_call>', '<tool_response>',
+                                '</tool_response>', '<|im_end|>', '<|im_start|>')
+
+                    if self.ANSWER_START in new_text:
+                        # Case A: <|box_start|> present (may or may not have <|box_end|>)
+                        box_pos = new_text.find(self.ANSWER_START)
+                        after_box = new_text[box_pos + len(self.ANSWER_START):]
+                        if self.ANSWER_END in after_box:
+                            raw = after_box[:after_box.find(self.ANSWER_END)].strip()
+                        elif '<|im_end|>' in after_box:
+                            raw = after_box[:after_box.find('<|im_end|>')].strip()
+                        else:
+                            # Truncated at max_tokens — take whatever was generated
+                            raw = after_box.strip()
+                    elif self.ANSWER_END in new_text:
+                        # Case B: <|box_end|> present but <|box_start|> missing;
+                        # model wrote the answer inside an unclosed <think> block.
+                        raw = new_text[:new_text.find(self.ANSWER_END)].strip()
+                        # Strip complete <think>...</think> blocks first
+                        raw = re.sub(r'<think>.*?</think>', '', raw, flags=re.DOTALL).strip()
+                        # Strip unclosed leading <think> tag
+                        if raw.startswith('<think>'):
+                            raw = raw[len('<think>'):].strip()
+                        # Strip any remaining </think>
+                        if '</think>' in raw:
+                            raw = raw.rsplit('</think>', 1)[1].strip()
+
+                    if raw:
+                        stripped = raw.lstrip()
+                        is_json = (stripped.startswith('{') and
+                                   ('"name"' in stripped or '"arguments"' in stripped))
+                        if not any(g in raw for g in _garbage) and not is_json:
+                            completed_results[sample.idx] = self._create_result(
+                                sample, raw, "answer"
+                            )
+                            continue
                 
                 if self.TOOL_CALL_START in new_text and self.TOOL_CALL_END in new_text:
                     tool_info = self.parse_tool_call(new_text)
