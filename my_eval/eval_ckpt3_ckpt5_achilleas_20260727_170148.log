@@ -1,0 +1,20 @@
+==========================================
+双模型并行 eval（各2张卡，共4张）
+A: sft_llada_continued/ckpt_3  → GPU 0,1
+B: sft_llada/ckpt_5            → GPU 2,3
+==========================================
+[A] GPU 0: 题 0 ~ 299
+[A] GPU 1: 题 300 ~ 599
+[B] GPU 2: 题 0 ~ 299
+[B] GPU 3: 题 300 ~ 599
+
+全部进程已启动，等待完成...
+[A] GPU 0 完成: 300 题
+[A] GPU 1 完成: 300 题
+[B] GPU 2 完成: 300 题
+[B] GPU 3 完成: 300 题
+
+合并 A → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/output/llada_eval/continued_ckpt3_600.jsonl
+合并 B → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/output/llada_eval/sft_llada_ckpt5_600.jsonl
+A: 600 题，B: 600 题
+完成！

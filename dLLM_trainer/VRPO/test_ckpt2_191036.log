@@ -1,0 +1,99 @@
+The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+加载模型: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_llada/ckpt_2/optimized
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.07s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.05s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.05s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.40it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.19it/s]
+模型加载完成，mask_token_id=126336
+
+======================================================================
+问题: What is the birthplace of the director of the movie Inception?
+======================================================================
+
+[Turn 1] 生成中...
+[输出]: <think>
+I need to find the birthplace of the director of the movie Inception, who is Christopher Nolan. 
+</think>
+<tool_call>
+{"name": "search", "arguments": {"query": ["<|mdm_mask|> Nolan<|mdm_mask|><|mdm_mask|><|mdm_mask|> In birthplace"]}}
+</tool_call>
+[搜索]: ['<|mdm_mask|> Nolan<|mdm_mask|><|mdm_mask|><|mdm_mask|> In birthplace']
+[搜索结果前300字]: Results for '<|mdm_mask|> Nolan<|mdm_mask|><|mdm_mask|><|mdm_mask|> In birthplace':
+1. [Nolan North | Dreamworks Animation Wiki - Fandom] Born. Nolan Ramsey North October 31, 1970 (age 55) New Haven, Connecticut, United States ; Nationality. Flag of the United States American ; Occupation. Actor
+2. ...
+
+[Turn 2] 生成中...
+[输出]: <think>
+The birthplace of the director of the movie Inception, Christopher Nolan, is<|mdm_mask|>, England.<|mdm_mask|>
+</think><|im<|mdm_mask|>|>
+<|box_start|>
+The director of the movie Inception, Christopher Nolan, was born in<|mdm_mask|>, England.
+<|box_end|>
+
+最终答案: The director of the movie Inception, Christopher Nolan, was born in<|mdm_mask|>, England.
+
+======================================================================
+问题: Which country won the most gold medals at the 2020 Tokyo Olympics?
+======================================================================
+
+[Turn 1] 生成中...
+[输出]: <think>
+I need to find the medal<|mdm_mask|><|mdm_mask|> the 2020 Tokyo Olympics.
+</think>
+<tool_call>
+{"name": "search", "arguments": {"query": ["medal<|mdm_mask|><|mdm_mask|> 2020 Tokyo Olympics"]}}
+</tool_call>
+[搜索]: ['medal<|mdm_mask|><|mdm_mask|> 2020 Tokyo Olympics']
+[搜索结果前300字]: Results for 'medal<|mdm_mask|><|mdm_mask|> 2020 Tokyo Olympics':
+1. [Tokyo 2020 Olympic Medal Table - Gold, Silver & Bronze] Official medal table of the Summer Olympic Games in Tokyo. Find an alphabetical list of medals and celebrate the achievements of 2020's finest athletes.
+2. [Olympic Games Toky...
+
+[Turn 2] 生成中...
+[输出]: <think>
+I need to<|mdm_mask|> the gold medal<|mdm_mask|><|mdm_mask|> the 2020 Tokyo Olympics.
+</think>
+<tool_call>
+{"name": "search", "arguments": {"query": ["gold medal count<|mdm_mask|> 2020 Tokyo Olympics"]}}
+</tool_call>
+[搜索]: ['gold medal count<|mdm_mask|> 2020 Tokyo Olympics']
+[搜索结果前300字]: Results for 'gold medal count<|mdm_mask|> 2020 Tokyo Olympics':
+1. [Tokyo 2020 Olympic Medal Table - Gold, Silver & Bronze] Official medal table of the Summer Olympic Games in Tokyo. Find an alphabetical list of medals and celebrate the achievements of 2020's finest athletes.
+2. [Tokyo 2020 Medal St...
+
+[Turn 3] 生成中...
+[输出]: <think>
+The United States won the most gold medals at the 2020 Tokyo Olympics with 39 gold medals.
+</think>
+<|box_start|>
+The United States<|mdm_mask|> the most gold<|mdm_mask|> at the 2020<|mdm_mask|> Olympics.
+<|box_end|>
+
+最终答案: The United States<|mdm_mask|> the most gold<|mdm_mask|> at the 2020<|mdm_mask|> Olympics.
+
+======================================================================
+问题: What river flows through the city that hosted the 2016 Summer Olympics?
+======================================================================
+
+[Turn 1] 生成中...
+[输出]: <think>
+I need to find<|mdm_mask|><|mdm_mask|><|mdm_mask|><|mdm_mask|> the 2016 Summer Olympics first. 
+</think>
+<tool_call>
+{"name": "search", "arguments": {"query": ["city hosted 2016 Summer Olympics"]}}
+</tool_call>
+[搜索]: ['city hosted 2016 Summer Olympics']
+[搜索结果前300字]: Results for 'city hosted 2016 Summer Olympics':
+1. [2016 Summer Olympics - Wikipedia] Rio de Janeiro was announced as the host city at the 121st IOC Session in Copenhagen, Denmark, on 2 October 2009. Games of the XXXI Olympiad. Emblem of the 2016 ...
+2. [Rio 2016 Summer Olympics - Athletes, Medals &...
+
+[Turn 2] 生成中...
+[输出]: <think>
+<|mdm_mask|>, I need to find out<|mdm_mask|> river flows through the city that hosted the 2016 Summer Olympics.
+</think>
+<tool_call>
+{"name": "search", "arguments": {"query": ["river<|mdm_mask|> through Rio de Janeiro"]}}
+</tool_call<|mdm_mask|>|im_end|>|>
+<|box_start|>
+The river that flows through the city which hosted the 2016 Summer Olympics, Rio de Janeiro, is the Rio River. It is also known as the Rio de Janeiro River or<|mdm_mask|><|mdm_mask|><|mdm_mask|> in<|mdm_mask|>.
+<|box_end|...
+
+最终答案: The river that flows through the city which hosted the 2016 Summer Olympics, Rio de Janeiro, is the Rio River. It is also known as the Rio de Janeiro River or<|mdm_mask|><|mdm_mask|><|mdm_mask|> in<|mdm_mask|>.
+

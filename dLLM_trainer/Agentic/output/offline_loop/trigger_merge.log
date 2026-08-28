@@ -1,0 +1,9 @@
+[02:44:43] 等待 rank6 完成...
+[02:44:43] 进度: 8168 / 8192
+[02:44:43] 所有 rank 完成！触发 merge...
+[02:44:45] merged.jsonl: 8168 行
+[02:44:45] 计算 reward...
+[02:44:51] train_reward_a.jsonl: 6344 行
+[02:44:53] 复制到 all_train_reward_a.jsonl
+[02:44:53] run_offline_train.sh 已在 screen:offline_train 启动！
+[02:44:53] 触发完成！

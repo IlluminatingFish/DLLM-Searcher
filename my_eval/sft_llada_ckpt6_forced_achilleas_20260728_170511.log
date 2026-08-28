@@ -1,0 +1,16 @@
+==========================================
+sft_llada ckpt_6 [强制答案版] - 600题 - 4 GPU
+模型: /common/users/mz751/Projects/dLLM_trainer/checkpoints/SFT/dLLM-RL/sft_llada/ckpt_6/optimized
+==========================================
+GPU 0: 题 0 ~ 149
+GPU 1: 题 150 ~ 299
+GPU 2: 题 300 ~ 449
+GPU 3: 题 450 ~ 599
+4 个进程已启动: 362910 362911 362912 362913
+等待完成...
+GPU 0 完成: 150 题
+GPU 1 完成: 150 题
+GPU 2 完成: 150 题
+GPU 3 完成: 150 题
+合并 → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/output/llada_eval/sft_llada_ckpt6_forced_600.jsonl
+完成: 600 题

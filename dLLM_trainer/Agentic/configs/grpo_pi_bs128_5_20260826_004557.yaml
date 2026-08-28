@@ -1,0 +1,73 @@
+# =============================================================================
+# Phase 4 Reward A [bs128]
+# 与 grpo_phase4_reward_a.yaml 完全相同，唯一区别：
+#   1. block_length: 128（匹配 bs128 SFT 训练设置）
+#   2. model/dataset/output_dir 由脚本 sed 替换
+# =============================================================================
+
+# Model — 由脚本 sed 替换为 bs128/ckpt_4 或上一轮产出
+model_name_or_path: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi4/model
+dtype: bfloat16
+trust_remote_code: true
+attn_implementation: eager
+use_peft: false
+
+# Dataset — 由脚本 sed 替换
+dataset_path: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi5/train_reward_a.jsonl
+max_samples: null
+
+# GRPO / ELBO-PG — block_length=128 匹配 SFT 训练
+block_length: 128
+num_mc: 1
+mask_token_id: 126336
+advantage_clip: 5.0
+normalize_elbo: true
+tool_resp_left: "<|im_start|>user\n<tool_response>"
+tool_resp_right: "</tool_response><|im_end|>\n<|im_start|>assistant\n"
+
+# DPOConfig compat
+beta: 0.0
+loss_type: sigmoid
+
+# Sequence lengths
+max_prompt_length: 640
+max_completion_length: 640
+max_length: 4096
+
+# Training — 每批 offline 数据只训 1 epoch
+bf16: true
+do_eval: false
+num_train_epochs: 1
+per_device_train_batch_size: 1
+per_device_eval_batch_size: 1
+gradient_accumulation_steps: 8
+gradient_checkpointing: false
+
+# Optimizer
+learning_rate: 1.0e-6
+adam_beta1: 0.9
+adam_beta2: 0.99
+weight_decay: 0.01
+max_grad_norm: 0.5
+warmup_ratio: 0.05
+lr_scheduler_type: cosine
+
+# Logging & Saving — 由脚本 sed 替换 output_dir
+output_dir: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi5/model
+logging_steps: 5
+logging_first_step: true
+log_level: info
+save_strategy: "epoch"
+save_total_limit: 1
+eval_strategy: "no"
+
+# Wandb
+report_to:
+  - wandb
+wandb_project: dllm_agentic_rl_bs128
+run_name: onpolicy_bs128_pi5_20260826_004557
+
+# Other
+seed: 42
+dataloader_num_workers: 0
+remove_unused_columns: false

@@ -1,0 +1,2681 @@
+[23:39:44] ========================================================
+[23:39:44] On-Policy Loop [bs128] 启动：Round 0 → 5
+[23:39:44]   π₀ = sft_llada_x0pred_bs128/ckpt_4 (49.2% CEM-1)
+[23:39:44]   block_size=128  num_steps=128
+[23:39:44]   输出: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128
+[23:39:44] ========================================================
+[23:39:44] 
+[23:39:44] ========================================================
+[23:39:44] Round 0:  π_0 → D_0 → π_1
+[23:39:44]   Base model : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_llada_x0pred_bs128/ckpt_4/optimized
+[23:39:44]   Output     : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi1/model
+[23:39:44] ========================================================
+[23:39:44]   [OK] 基础模型验证通过
+[23:39:44] Step 1/4: Pool  [0, 256)...
+[23:39:44] Step 2/4: Rollout  π_0 × 256题 × 8rolls (block_size=128)...
+[23:39:44]   rank0 已启动 (GPU=0)
+[23:40:04]   rank1 已启动 (GPU=1)
+[23:40:24]   rank2 已启动 (GPU=2)
+[23:40:44]   rank3 已启动 (GPU=3)
+[23:41:04]   rank4 已启动 (GPU=4)
+[23:41:24]   rank5 已启动 (GPU=5)
+[23:41:44]   rank6 已启动 (GPU=6)
+[23:42:04]   rank7 已启动 (GPU=7)
+[23:42:04]   等待 rollout 完成（每 2 分钟汇报一次）...
+[23:42:04]   rollout 7/8 rank 已完成
+[23:44:04]   rollout 8/8 rank 已完成
+[23:44:04]   Rollout 完成！
+[23:44:04]   合并 rollout 文件...
+[23:44:04]   merged.jsonl: 0 条
+[23:44:04] Step 3/4: Reward 计算...
+[23:44:05]   训练数据:  条
+[23:44:05] Step 3/4: ELBO-PG 训练  π_0 → π_1 (block_length=128)...
+[23:44:35] [ERROR] Round 0 训练失败 (exit=1)，退出
+[23:46:10] ========================================================
+[23:46:10] On-Policy Loop [bs128] 启动：Round 0 → 5
+[23:46:10]   π₀ = sft_llada_x0pred_bs128/ckpt_4 (49.2% CEM-1)
+[23:46:10]   block_size=128  num_steps=128
+[23:46:10]   输出: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128
+[23:46:10] ========================================================
+[23:46:10] 
+[23:46:10] ========================================================
+[23:46:10] Round 0:  π_0 → D_0 → π_1
+[23:46:10]   Base model : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_llada_x0pred_bs128/ckpt_4/optimized
+[23:46:10]   Output     : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi1/model
+[23:46:10] ========================================================
+[23:46:10]   [OK] 基础模型验证通过
+[23:46:10] Step 1/4: Pool  [0, 256)...
+[23:46:10]   Pool 已存在 (256 题)，跳过
+[23:46:10] Step 2/4: Rollout  π_0 × 256题 × 8rolls (block_size=128)...
+[23:46:10]   rank0 已启动 (GPU=0)
+[23:46:30]   rank1 已启动 (GPU=1)
+[23:46:50]   rank2 已启动 (GPU=2)
+[23:47:10]   rank3 已启动 (GPU=3)
+[23:47:30]   rank4 已启动 (GPU=4)
+[23:47:50]   rank5 已启动 (GPU=5)
+[23:48:10]   rank6 已启动 (GPU=6)
+[23:48:30]   rank7 已启动 (GPU=7)
+[23:48:30]   等待 rollout 完成（每 2 分钟汇报一次）...
+[23:48:30]   rollout 0/8 rank 已完成
+[23:50:30]   rollout 0/8 rank 已完成
+[23:52:30]   rollout 0/8 rank 已完成
+[23:54:30]   rollout 0/8 rank 已完成
+[23:56:30]   rollout 0/8 rank 已完成
+[23:58:30]   rollout 0/8 rank 已完成
+[00:00:30]   rollout 0/8 rank 已完成
+[00:02:30]   rollout 0/8 rank 已完成
+[00:04:30]   rollout 0/8 rank 已完成
+[00:06:30]   rollout 0/8 rank 已完成
+[00:08:30]   rollout 0/8 rank 已完成
+[00:10:30]   rollout 0/8 rank 已完成
+[00:12:31]   rollout 0/8 rank 已完成
+[00:14:31]   rollout 0/8 rank 已完成
+[00:16:31]   rollout 0/8 rank 已完成
+[00:18:31]   rollout 0/8 rank 已完成
+[00:20:31]   rollout 0/8 rank 已完成
+[00:22:31]   rollout 0/8 rank 已完成
+[00:24:31]   rollout 0/8 rank 已完成
+[00:26:31]   rollout 0/8 rank 已完成
+[00:28:31]   rollout 0/8 rank 已完成
+[00:30:31]   rollout 0/8 rank 已完成
+[00:32:31]   rollout 0/8 rank 已完成
+[00:34:31]   rollout 0/8 rank 已完成
+[00:36:31]   rollout 0/8 rank 已完成
+[00:38:31]   rollout 0/8 rank 已完成
+[00:40:31]   rollout 0/8 rank 已完成
+[00:42:31]   rollout 0/8 rank 已完成
+[00:44:31]   rollout 0/8 rank 已完成
+[00:46:31]   rollout 0/8 rank 已完成
+[00:48:31]   rollout 0/8 rank 已完成
+[00:50:31]   rollout 0/8 rank 已完成
+[00:52:31]   rollout 0/8 rank 已完成
+[00:54:31]   rollout 0/8 rank 已完成
+[00:56:31]   rollout 0/8 rank 已完成
+[00:58:31]   rollout 0/8 rank 已完成
+[01:00:31]   rollout 0/8 rank 已完成
+[01:02:31]   rollout 0/8 rank 已完成
+[01:04:31]   rollout 0/8 rank 已完成
+[01:06:31]   rollout 0/8 rank 已完成
+[01:08:31]   rollout 0/8 rank 已完成
+[01:10:32]   rollout 0/8 rank 已完成
+[01:12:32]   rollout 0/8 rank 已完成
+[01:14:32]   rollout 0/8 rank 已完成
+[01:16:32]   rollout 0/8 rank 已完成
+[01:18:32]   rollout 0/8 rank 已完成
+[01:20:32]   rollout 0/8 rank 已完成
+[01:22:32]   rollout 0/8 rank 已完成
+[01:24:32]   rollout 0/8 rank 已完成
+[01:26:32]   rollout 0/8 rank 已完成
+[01:28:32]   rollout 0/8 rank 已完成
+[01:30:32]   rollout 0/8 rank 已完成
+[01:32:32]   rollout 0/8 rank 已完成
+[01:34:32]   rollout 0/8 rank 已完成
+[01:36:32]   rollout 0/8 rank 已完成
+[01:38:32]   rollout 0/8 rank 已完成
+[01:40:32]   rollout 0/8 rank 已完成
+[01:42:32]   rollout 0/8 rank 已完成
+[01:44:32]   rollout 0/8 rank 已完成
+[01:46:32]   rollout 0/8 rank 已完成
+[01:48:32]   rollout 0/8 rank 已完成
+[01:50:32]   rollout 0/8 rank 已完成
+[01:52:32]   rollout 0/8 rank 已完成
+[01:54:32]   rollout 0/8 rank 已完成
+[01:56:32]   rollout 0/8 rank 已完成
+[01:58:32]   rollout 0/8 rank 已完成
+[02:00:32]   rollout 0/8 rank 已完成
+[02:02:32]   rollout 0/8 rank 已完成
+[02:04:32]   rollout 0/8 rank 已完成
+[02:06:32]   rollout 0/8 rank 已完成
+[02:08:32]   rollout 0/8 rank 已完成
+[02:10:33]   rollout 0/8 rank 已完成
+[02:12:33]   rollout 0/8 rank 已完成
+[02:14:33]   rollout 0/8 rank 已完成
+[02:16:33]   rollout 0/8 rank 已完成
+[02:18:33]   rollout 0/8 rank 已完成
+[02:20:33]   rollout 0/8 rank 已完成
+[02:22:33]   rollout 0/8 rank 已完成
+[02:24:33]   rollout 0/8 rank 已完成
+[02:26:33]   rollout 0/8 rank 已完成
+[02:28:33]   rollout 0/8 rank 已完成
+[02:30:33]   rollout 0/8 rank 已完成
+[02:32:33]   rollout 0/8 rank 已完成
+[02:34:33]   rollout 0/8 rank 已完成
+[02:36:33]   rollout 0/8 rank 已完成
+[02:38:33]   rollout 0/8 rank 已完成
+[02:40:33]   rollout 0/8 rank 已完成
+[02:42:33]   rollout 0/8 rank 已完成
+[02:44:33]   rollout 0/8 rank 已完成
+[02:46:33]   rollout 0/8 rank 已完成
+[02:48:33]   rollout 0/8 rank 已完成
+[02:50:33]   rollout 0/8 rank 已完成
+[02:52:33]   rollout 1/8 rank 已完成
+[02:54:33]   rollout 1/8 rank 已完成
+[02:56:33]   rollout 1/8 rank 已完成
+[02:58:33]   rollout 2/8 rank 已完成
+[03:00:33]   rollout 3/8 rank 已完成
+[03:02:33]   rollout 4/8 rank 已完成
+[03:04:33]   rollout 4/8 rank 已完成
+[03:06:33]   rollout 4/8 rank 已完成
+[03:08:33]   rollout 7/8 rank 已完成
+[03:10:34]   rollout 7/8 rank 已完成
+[03:12:34]   rollout 7/8 rank 已完成
+[03:14:34]   rollout 7/8 rank 已完成
+[03:16:34]   rollout 7/8 rank 已完成
+[03:18:34]   rollout 7/8 rank 已完成
+[03:20:34]   rollout 7/8 rank 已完成
+[03:22:34]   rollout 7/8 rank 已完成
+[03:24:34]   rollout 7/8 rank 已完成
+[03:26:34]   rollout 7/8 rank 已完成
+[03:28:34]   rollout 8/8 rank 已完成
+[03:28:34]   Rollout 完成！
+[03:28:34]   合并 rollout 文件...
+[03:28:35]   merged.jsonl: 2048 条
+[03:28:35] Step 3/4: Reward 计算...
+[03:28:37]   训练数据: 1744 条
+[03:28:37] Step 3/4: ELBO-PG 训练  π_0 → π_1 (block_length=128)...
+[03:52:25]   [ZeRO-3 fix] 从 checkpoint 复制完整权重 (16031197344 bytes)...
+[03:53:07]   [OK] 完整模型权重已复制到 /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi1/model/model.safetensors
+[03:53:07]   [存储] 删除 checkpoint 子目录...
+[03:53:23]   [存储] 已清理
+[03:53:23]   训练完成！π_1 → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi1/model
+[03:53:23] Step 4/4: eval_600  π_1 (block_size=128)...
+[03:53:23]   eval GPU0 已启动 (offset=0)
+[03:53:53]   eval GPU1 已启动 (offset=75)
+[03:54:23]   eval GPU2 已启动 (offset=150)
+[03:54:53]   eval GPU3 已启动 (offset=225)
+[03:55:23]   eval GPU4 已启动 (offset=300)
+[03:55:53]   eval GPU5 已启动 (offset=375)
+[03:56:23]   eval GPU6 已启动 (offset=450)
+[03:56:53]   eval GPU7 已启动 (offset=525)
+[03:56:53]   等待 eval 完成（每 1 分钟汇报）...
+[03:56:54]   eval 0/8 shard 完成
+[03:57:54]   eval 0/8 shard 完成
+[03:58:54]   eval 0/8 shard 完成
+[03:59:54]   eval 0/8 shard 完成
+[04:00:54]   eval 0/8 shard 完成
+[04:01:54]   eval 0/8 shard 完成
+[04:02:54]   eval 0/8 shard 完成
+[04:03:54]   eval 0/8 shard 完成
+[04:04:54]   eval 0/8 shard 完成
+[04:05:54]   eval 0/8 shard 完成
+[04:06:54]   eval 0/8 shard 完成
+[04:07:54]   eval 0/8 shard 完成
+[04:08:54]   eval 0/8 shard 完成
+[04:09:54]   eval 0/8 shard 完成
+[04:10:54]   eval 0/8 shard 完成
+[04:11:54]   eval 0/8 shard 完成
+[04:12:54]   eval 0/8 shard 完成
+[04:13:54]   eval 0/8 shard 完成
+[04:14:54]   eval 0/8 shard 完成
+[04:15:54]   eval 0/8 shard 完成
+[04:16:54]   eval 0/8 shard 完成
+[04:17:54]   eval 0/8 shard 完成
+[04:18:54]   eval 0/8 shard 完成
+[04:19:54]   eval 0/8 shard 完成
+[04:20:54]   eval 0/8 shard 完成
+[04:21:54]   eval 0/8 shard 完成
+[04:22:54]   eval 0/8 shard 完成
+[04:23:54]   eval 0/8 shard 完成
+[04:24:54]   eval 0/8 shard 完成
+[04:25:54]   eval 0/8 shard 完成
+[04:26:55]   eval 0/8 shard 完成
+[04:27:55]   eval 0/8 shard 完成
+[04:28:55]   eval 0/8 shard 完成
+[04:29:55]   eval 0/8 shard 完成
+[04:30:55]   eval 0/8 shard 完成
+[04:31:55]   eval 0/8 shard 完成
+[04:32:55]   eval 0/8 shard 完成
+[04:33:55]   eval 0/8 shard 完成
+[04:34:55]   eval 0/8 shard 完成
+[04:35:55]   eval 0/8 shard 完成
+[04:36:55]   eval 0/8 shard 完成
+[04:37:55]   eval 0/8 shard 完成
+[04:38:55]   eval 0/8 shard 完成
+[04:39:55]   eval 0/8 shard 完成
+[04:40:55]   eval 0/8 shard 完成
+[04:41:55]   eval 0/8 shard 完成
+[04:42:55]   eval 0/8 shard 完成
+[04:43:55]   eval 1/8 shard 完成
+[04:44:55]   eval 2/8 shard 完成
+[04:45:55]   eval 2/8 shard 完成
+[04:46:55]   eval 4/8 shard 完成
+[04:47:55]   eval 5/8 shard 完成
+[04:48:55]   eval 6/8 shard 完成
+[04:49:55]   eval 6/8 shard 完成
+[04:50:55]   eval 7/8 shard 完成
+[04:51:55]   eval 7/8 shard 完成
+[04:52:55]   eval 7/8 shard 完成
+[04:53:55]   eval 7/8 shard 完成
+[04:54:55]   eval 8/8 shard 完成
+[04:55:07]   eval 完成！
+[04:55:07] 
+[04:55:07] ========== Learning Curve [bs128] (截至 π_1) ==========
+Policy   CEM-1     
+π₀ SFT 49.2%     
+π_1     100.0%    
+[04:55:07] ==================================================
+[04:55:07] 
+[04:55:07] 
+[04:55:07] ========================================================
+[04:55:07] Round 1:  π_1 → D_1 → π_2
+[04:55:07]   Base model : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi1/model
+[04:55:07]   Output     : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi2/model
+[04:55:07] ========================================================
+[04:55:07]   [OK] 基础模型验证通过
+[04:55:07] Step 1/4: Pool  [256, 512)...
+[04:55:07] Step 2/4: Rollout  π_1 × 256题 × 8rolls (block_size=128)...
+[04:55:07]   rank0 已启动 (GPU=0)
+[04:55:27]   rank1 已启动 (GPU=1)
+[04:55:47]   rank2 已启动 (GPU=2)
+[04:56:07]   rank3 已启动 (GPU=3)
+[04:56:27]   rank4 已启动 (GPU=4)
+[04:56:47]   rank5 已启动 (GPU=5)
+[04:57:07]   rank6 已启动 (GPU=6)
+[04:57:27]   rank7 已启动 (GPU=7)
+[04:57:27]   等待 rollout 完成（每 2 分钟汇报一次）...
+[04:57:27]   rollout 0/8 rank 已完成
+[04:59:27]   rollout 0/8 rank 已完成
+[05:01:27]   rollout 0/8 rank 已完成
+[05:03:27]   rollout 0/8 rank 已完成
+[05:05:27]   rollout 0/8 rank 已完成
+[05:07:27]   rollout 0/8 rank 已完成
+[05:09:27]   rollout 0/8 rank 已完成
+[05:11:27]   rollout 0/8 rank 已完成
+[05:13:27]   rollout 0/8 rank 已完成
+[05:15:27]   rollout 0/8 rank 已完成
+[05:17:27]   rollout 0/8 rank 已完成
+[05:19:27]   rollout 0/8 rank 已完成
+[05:21:28]   rollout 0/8 rank 已完成
+[05:23:28]   rollout 0/8 rank 已完成
+[05:25:28]   rollout 0/8 rank 已完成
+[05:27:28]   rollout 0/8 rank 已完成
+[05:29:28]   rollout 0/8 rank 已完成
+[05:31:28]   rollout 0/8 rank 已完成
+[05:33:28]   rollout 0/8 rank 已完成
+[05:35:28]   rollout 0/8 rank 已完成
+[05:37:28]   rollout 0/8 rank 已完成
+[05:39:28]   rollout 0/8 rank 已完成
+[05:41:28]   rollout 0/8 rank 已完成
+[05:43:28]   rollout 0/8 rank 已完成
+[05:45:28]   rollout 0/8 rank 已完成
+[05:47:28]   rollout 0/8 rank 已完成
+[05:49:28]   rollout 0/8 rank 已完成
+[05:51:28]   rollout 0/8 rank 已完成
+[05:53:28]   rollout 0/8 rank 已完成
+[05:55:28]   rollout 0/8 rank 已完成
+[05:57:28]   rollout 0/8 rank 已完成
+[05:59:28]   rollout 0/8 rank 已完成
+[06:01:28]   rollout 0/8 rank 已完成
+[06:03:28]   rollout 0/8 rank 已完成
+[06:05:28]   rollout 0/8 rank 已完成
+[06:07:28]   rollout 0/8 rank 已完成
+[06:09:28]   rollout 0/8 rank 已完成
+[06:11:28]   rollout 0/8 rank 已完成
+[06:13:28]   rollout 0/8 rank 已完成
+[06:15:28]   rollout 0/8 rank 已完成
+[06:17:28]   rollout 0/8 rank 已完成
+[06:19:28]   rollout 0/8 rank 已完成
+[06:21:29]   rollout 0/8 rank 已完成
+[06:23:29]   rollout 0/8 rank 已完成
+[06:25:29]   rollout 0/8 rank 已完成
+[06:27:29]   rollout 0/8 rank 已完成
+[06:29:29]   rollout 0/8 rank 已完成
+[06:31:29]   rollout 0/8 rank 已完成
+[06:33:29]   rollout 0/8 rank 已完成
+[06:35:29]   rollout 0/8 rank 已完成
+[06:37:29]   rollout 0/8 rank 已完成
+[06:39:29]   rollout 0/8 rank 已完成
+[06:41:29]   rollout 0/8 rank 已完成
+[06:43:29]   rollout 0/8 rank 已完成
+[06:45:29]   rollout 0/8 rank 已完成
+[06:47:29]   rollout 0/8 rank 已完成
+[06:49:29]   rollout 0/8 rank 已完成
+[06:51:29]   rollout 0/8 rank 已完成
+[06:53:29]   rollout 0/8 rank 已完成
+[06:55:29]   rollout 0/8 rank 已完成
+[06:57:29]   rollout 0/8 rank 已完成
+[06:59:29]   rollout 0/8 rank 已完成
+[07:01:29]   rollout 0/8 rank 已完成
+[07:03:29]   rollout 0/8 rank 已完成
+[07:05:29]   rollout 0/8 rank 已完成
+[07:07:29]   rollout 0/8 rank 已完成
+[07:09:29]   rollout 0/8 rank 已完成
+[07:11:29]   rollout 0/8 rank 已完成
+[07:13:29]   rollout 0/8 rank 已完成
+[07:15:29]   rollout 0/8 rank 已完成
+[07:17:29]   rollout 0/8 rank 已完成
+[07:19:30]   rollout 0/8 rank 已完成
+[07:21:30]   rollout 0/8 rank 已完成
+[07:23:30]   rollout 0/8 rank 已完成
+[07:25:30]   rollout 0/8 rank 已完成
+[07:27:30]   rollout 0/8 rank 已完成
+[07:29:30]   rollout 0/8 rank 已完成
+[07:31:30]   rollout 0/8 rank 已完成
+[07:33:30]   rollout 0/8 rank 已完成
+[07:35:30]   rollout 0/8 rank 已完成
+[07:37:30]   rollout 0/8 rank 已完成
+[07:39:30]   rollout 0/8 rank 已完成
+[07:41:30]   rollout 0/8 rank 已完成
+[07:43:30]   rollout 0/8 rank 已完成
+[07:45:30]   rollout 0/8 rank 已完成
+[07:47:30]   rollout 0/8 rank 已完成
+[07:49:30]   rollout 0/8 rank 已完成
+[07:51:30]   rollout 0/8 rank 已完成
+[07:53:30]   rollout 1/8 rank 已完成
+[07:55:30]   rollout 1/8 rank 已完成
+[07:57:30]   rollout 1/8 rank 已完成
+[07:59:30]   rollout 1/8 rank 已完成
+[08:01:30]   rollout 2/8 rank 已完成
+[08:03:30]   rollout 3/8 rank 已完成
+[08:05:30]   rollout 4/8 rank 已完成
+[08:07:30]   rollout 4/8 rank 已完成
+[08:09:30]   rollout 4/8 rank 已完成
+[08:11:30]   rollout 4/8 rank 已完成
+[08:13:30]   rollout 5/8 rank 已完成
+[08:15:30]   rollout 6/8 rank 已完成
+[08:17:30]   rollout 6/8 rank 已完成
+[08:19:31]   rollout 7/8 rank 已完成
+[08:21:31]   rollout 7/8 rank 已完成
+[08:23:31]   rollout 7/8 rank 已完成
+[08:25:31]   rollout 8/8 rank 已完成
+[08:25:31]   Rollout 完成！
+[08:25:31]   合并 rollout 文件...
+[08:25:31]   merged.jsonl: 2048 条
+[08:25:31] Step 3/4: Reward 计算...
+[08:25:32]   训练数据: 1808 条
+[08:25:32] Step 3/4: ELBO-PG 训练  π_1 → π_2 (block_length=128)...
+[08:47:01]   [ZeRO-3 fix] 从 checkpoint 复制完整权重 (16031197344 bytes)...
+[08:51:22]   [OK] 完整模型权重已复制到 /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi2/model/model.safetensors
+[08:51:22]   [存储] 删除 checkpoint 子目录...
+[08:51:39]   [存储] 已清理
+[08:51:39]   训练完成！π_2 → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi2/model
+[08:51:39] Step 4/4: eval_600  π_2 (block_size=128)...
+[08:51:39]   eval GPU0 已启动 (offset=0)
+[08:52:09]   eval GPU1 已启动 (offset=75)
+[08:52:39]   eval GPU2 已启动 (offset=150)
+[08:53:09]   eval GPU3 已启动 (offset=225)
+[08:53:39]   eval GPU4 已启动 (offset=300)
+[08:54:09]   eval GPU5 已启动 (offset=375)
+[08:54:39]   eval GPU6 已启动 (offset=450)
+[08:55:09]   eval GPU7 已启动 (offset=525)
+[08:55:09]   等待 eval 完成（每 1 分钟汇报）...
+[08:55:09]   eval 0/8 shard 完成
+[08:56:09]   eval 0/8 shard 完成
+[08:57:09]   eval 0/8 shard 完成
+[08:58:09]   eval 0/8 shard 完成
+[08:59:09]   eval 0/8 shard 完成
+[09:00:09]   eval 0/8 shard 完成
+[09:01:09]   eval 0/8 shard 完成
+[09:02:09]   eval 0/8 shard 完成
+[09:03:09]   eval 0/8 shard 完成
+[09:04:09]   eval 0/8 shard 完成
+[09:05:09]   eval 0/8 shard 完成
+[09:06:10]   eval 0/8 shard 完成
+[09:07:10]   eval 0/8 shard 完成
+[09:08:10]   eval 0/8 shard 完成
+[09:09:10]   eval 0/8 shard 完成
+[09:10:10]   eval 0/8 shard 完成
+[09:11:10]   eval 0/8 shard 完成
+[09:12:10]   eval 0/8 shard 完成
+[09:13:10]   eval 0/8 shard 完成
+[09:14:10]   eval 0/8 shard 完成
+[09:15:10]   eval 0/8 shard 完成
+[09:16:10]   eval 0/8 shard 完成
+[09:17:10]   eval 0/8 shard 完成
+[09:18:10]   eval 0/8 shard 完成
+[09:19:10]   eval 0/8 shard 完成
+[09:20:10]   eval 0/8 shard 完成
+[09:21:10]   eval 0/8 shard 完成
+[09:22:11]   eval 0/8 shard 完成
+[09:23:11]   eval 0/8 shard 完成
+[09:24:11]   eval 0/8 shard 完成
+[09:25:11]   eval 0/8 shard 完成
+[09:26:11]   eval 0/8 shard 完成
+[09:27:11]   eval 0/8 shard 完成
+[09:28:11]   eval 0/8 shard 完成
+[09:29:11]   eval 0/8 shard 完成
+[09:30:11]   eval 0/8 shard 完成
+[09:31:11]   eval 0/8 shard 完成
+[09:32:11]   eval 0/8 shard 完成
+[09:33:11]   eval 0/8 shard 完成
+[09:34:11]   eval 0/8 shard 完成
+[09:35:11]   eval 0/8 shard 完成
+[09:36:11]   eval 0/8 shard 完成
+[09:37:11]   eval 0/8 shard 完成
+[09:38:11]   eval 1/8 shard 完成
+[09:39:11]   eval 1/8 shard 完成
+[09:40:11]   eval 1/8 shard 完成
+[09:41:12]   eval 2/8 shard 完成
+[09:42:12]   eval 2/8 shard 完成
+[09:43:12]   eval 2/8 shard 完成
+[09:44:12]   eval 3/8 shard 完成
+[09:45:12]   eval 3/8 shard 完成
+[09:46:12]   eval 3/8 shard 完成
+[09:47:12]   eval 4/8 shard 完成
+[09:48:12]   eval 4/8 shard 完成
+[09:49:12]   eval 5/8 shard 完成
+[09:50:12]   eval 6/8 shard 完成
+[09:51:12]   eval 6/8 shard 完成
+[09:52:12]   eval 7/8 shard 完成
+[09:53:12]   eval 8/8 shard 完成
+[09:53:23]   eval 完成！
+[09:53:23] 
+[09:53:23] ========== Learning Curve [bs128] (截至 π_2) ==========
+Policy   CEM-1     
+π₀ SFT 49.2%     
+π_1     100.0%    
+π_2     99.8%     
+[09:53:23] ==================================================
+[09:53:23] 
+[09:53:23] 
+[09:53:23] ========================================================
+[09:53:23] Round 2:  π_2 → D_2 → π_3
+[09:53:23]   Base model : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi2/model
+[09:53:23]   Output     : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi3/model
+[09:53:23] ========================================================
+[09:53:23]   [OK] 基础模型验证通过
+[09:53:23] Step 1/4: Pool  [512, 768)...
+[09:53:23] Step 2/4: Rollout  π_2 × 256题 × 8rolls (block_size=128)...
+[09:53:23]   rank0 已启动 (GPU=0)
+[09:53:43]   rank1 已启动 (GPU=1)
+[09:54:03]   rank2 已启动 (GPU=2)
+[09:54:23]   rank3 已启动 (GPU=3)
+[09:54:43]   rank4 已启动 (GPU=4)
+[09:55:03]   rank5 已启动 (GPU=5)
+[09:55:23]   rank6 已启动 (GPU=6)
+[09:55:43]   rank7 已启动 (GPU=7)
+[09:55:43]   等待 rollout 完成（每 2 分钟汇报一次）...
+[09:55:43]   rollout 0/8 rank 已完成
+[09:57:43]   rollout 0/8 rank 已完成
+[09:59:43]   rollout 0/8 rank 已完成
+[10:01:43]   rollout 0/8 rank 已完成
+[10:03:43]   rollout 0/8 rank 已完成
+[10:05:43]   rollout 0/8 rank 已完成
+[10:07:43]   rollout 0/8 rank 已完成
+[10:09:43]   rollout 0/8 rank 已完成
+[10:11:43]   rollout 0/8 rank 已完成
+[10:13:43]   rollout 0/8 rank 已完成
+[10:15:43]   rollout 0/8 rank 已完成
+[10:17:44]   rollout 0/8 rank 已完成
+[10:19:44]   rollout 0/8 rank 已完成
+[10:21:44]   rollout 0/8 rank 已完成
+[10:23:44]   rollout 0/8 rank 已完成
+[10:25:44]   rollout 0/8 rank 已完成
+[10:27:44]   rollout 0/8 rank 已完成
+[10:29:44]   rollout 0/8 rank 已完成
+[10:31:44]   rollout 0/8 rank 已完成
+[10:33:44]   rollout 0/8 rank 已完成
+[10:35:44]   rollout 0/8 rank 已完成
+[10:37:44]   rollout 0/8 rank 已完成
+[10:39:44]   rollout 0/8 rank 已完成
+[10:41:44]   rollout 0/8 rank 已完成
+[10:43:44]   rollout 0/8 rank 已完成
+[10:45:44]   rollout 0/8 rank 已完成
+[10:47:44]   rollout 0/8 rank 已完成
+[10:49:44]   rollout 0/8 rank 已完成
+[10:51:44]   rollout 0/8 rank 已完成
+[10:53:44]   rollout 0/8 rank 已完成
+[10:55:44]   rollout 0/8 rank 已完成
+[10:57:44]   rollout 0/8 rank 已完成
+[10:59:44]   rollout 0/8 rank 已完成
+[11:01:44]   rollout 0/8 rank 已完成
+[11:03:44]   rollout 0/8 rank 已完成
+[11:05:44]   rollout 0/8 rank 已完成
+[11:07:44]   rollout 0/8 rank 已完成
+[11:09:44]   rollout 0/8 rank 已完成
+[11:11:44]   rollout 0/8 rank 已完成
+[11:13:44]   rollout 0/8 rank 已完成
+[11:15:44]   rollout 0/8 rank 已完成
+[11:17:45]   rollout 0/8 rank 已完成
+[11:19:45]   rollout 0/8 rank 已完成
+[11:21:45]   rollout 0/8 rank 已完成
+[11:23:45]   rollout 0/8 rank 已完成
+[11:25:45]   rollout 0/8 rank 已完成
+[11:27:45]   rollout 0/8 rank 已完成
+[11:29:45]   rollout 0/8 rank 已完成
+[11:31:45]   rollout 0/8 rank 已完成
+[11:33:45]   rollout 0/8 rank 已完成
+[11:35:45]   rollout 0/8 rank 已完成
+[11:37:45]   rollout 0/8 rank 已完成
+[11:39:45]   rollout 0/8 rank 已完成
+[11:41:45]   rollout 0/8 rank 已完成
+[11:43:45]   rollout 0/8 rank 已完成
+[11:45:45]   rollout 0/8 rank 已完成
+[11:47:45]   rollout 0/8 rank 已完成
+[11:49:45]   rollout 0/8 rank 已完成
+[11:51:45]   rollout 0/8 rank 已完成
+[11:53:45]   rollout 0/8 rank 已完成
+[11:55:45]   rollout 0/8 rank 已完成
+[11:57:45]   rollout 0/8 rank 已完成
+[11:59:45]   rollout 0/8 rank 已完成
+[12:01:45]   rollout 0/8 rank 已完成
+[12:03:45]   rollout 0/8 rank 已完成
+[12:05:45]   rollout 0/8 rank 已完成
+[12:07:45]   rollout 0/8 rank 已完成
+[12:09:45]   rollout 0/8 rank 已完成
+[12:11:46]   rollout 0/8 rank 已完成
+[12:13:46]   rollout 0/8 rank 已完成
+[12:15:46]   rollout 0/8 rank 已完成
+[12:17:46]   rollout 0/8 rank 已完成
+[12:19:46]   rollout 0/8 rank 已完成
+[12:21:46]   rollout 0/8 rank 已完成
+[12:23:46]   rollout 0/8 rank 已完成
+[12:25:46]   rollout 0/8 rank 已完成
+[12:27:46]   rollout 0/8 rank 已完成
+[12:29:46]   rollout 0/8 rank 已完成
+[12:31:46]   rollout 0/8 rank 已完成
+[12:33:46]   rollout 0/8 rank 已完成
+[12:35:46]   rollout 0/8 rank 已完成
+[12:37:46]   rollout 0/8 rank 已完成
+[12:39:46]   rollout 0/8 rank 已完成
+[12:41:47]   rollout 0/8 rank 已完成
+[12:43:47]   rollout 0/8 rank 已完成
+[12:45:47]   rollout 0/8 rank 已完成
+[12:47:47]   rollout 1/8 rank 已完成
+[12:49:47]   rollout 1/8 rank 已完成
+[12:51:47]   rollout 1/8 rank 已完成
+[12:53:47]   rollout 2/8 rank 已完成
+[12:55:47]   rollout 2/8 rank 已完成
+[12:57:47]   rollout 2/8 rank 已完成
+[12:59:47]   rollout 3/8 rank 已完成
+[13:01:47]   rollout 3/8 rank 已完成
+[13:03:47]   rollout 3/8 rank 已完成
+[13:05:47]   rollout 3/8 rank 已完成
+[13:07:47]   rollout 4/8 rank 已完成
+[13:09:47]   rollout 4/8 rank 已完成
+[13:11:48]   rollout 4/8 rank 已完成
+[13:13:48]   rollout 5/8 rank 已完成
+[13:15:48]   rollout 6/8 rank 已完成
+[13:17:48]   rollout 6/8 rank 已完成
+[13:19:48]   rollout 6/8 rank 已完成
+[13:21:48]   rollout 6/8 rank 已完成
+[13:23:48]   rollout 7/8 rank 已完成
+[13:25:48]   rollout 7/8 rank 已完成
+[13:27:48]   rollout 7/8 rank 已完成
+[13:29:48]   rollout 8/8 rank 已完成
+[13:29:48]   Rollout 完成！
+[13:29:48]   合并 rollout 文件...
+[13:29:49]   merged.jsonl: 2048 条
+[13:29:49] Step 3/4: Reward 计算...
+[13:29:50]   训练数据: 1728 条
+[13:29:50] Step 3/4: ELBO-PG 训练  π_2 → π_3 (block_length=128)...
+[13:54:10]   [ZeRO-3 fix] 从 checkpoint 复制完整权重 (16031197344 bytes)...
+[13:54:49]   [OK] 完整模型权重已复制到 /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi3/model/model.safetensors
+[13:54:49]   [存储] 删除 checkpoint 子目录...
+[13:55:05]   [存储] 已清理
+[13:55:05]   训练完成！π_3 → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi3/model
+[13:55:05] Step 4/4: eval_600  π_3 (block_size=128)...
+[13:55:05]   eval GPU0 已启动 (offset=0)
+[13:55:35]   eval GPU1 已启动 (offset=75)
+[13:56:05]   eval GPU2 已启动 (offset=150)
+[13:56:35]   eval GPU3 已启动 (offset=225)
+[13:57:05]   eval GPU4 已启动 (offset=300)
+[13:57:35]   eval GPU5 已启动 (offset=375)
+[13:58:05]   eval GPU6 已启动 (offset=450)
+[13:58:35]   eval GPU7 已启动 (offset=525)
+[13:58:35]   等待 eval 完成（每 1 分钟汇报）...
+[13:58:35]   eval 0/8 shard 完成
+[13:59:35]   eval 0/8 shard 完成
+[14:00:35]   eval 0/8 shard 完成
+[14:01:35]   eval 0/8 shard 完成
+[14:02:36]   eval 0/8 shard 完成
+[14:03:36]   eval 0/8 shard 完成
+[14:04:36]   eval 0/8 shard 完成
+[14:05:36]   eval 0/8 shard 完成
+[14:06:36]   eval 0/8 shard 完成
+[14:07:36]   eval 0/8 shard 完成
+[14:08:36]   eval 0/8 shard 完成
+[14:09:36]   eval 0/8 shard 完成
+[14:10:36]   eval 0/8 shard 完成
+[14:11:36]   eval 0/8 shard 完成
+[14:12:36]   eval 0/8 shard 完成
+[14:13:36]   eval 0/8 shard 完成
+[14:14:36]   eval 0/8 shard 完成
+[14:15:36]   eval 0/8 shard 完成
+[14:16:36]   eval 0/8 shard 完成
+[14:17:36]   eval 0/8 shard 完成
+[14:18:36]   eval 0/8 shard 完成
+[14:19:36]   eval 0/8 shard 完成
+[14:20:36]   eval 0/8 shard 完成
+[14:21:36]   eval 0/8 shard 完成
+[14:22:36]   eval 0/8 shard 完成
+[14:23:36]   eval 0/8 shard 完成
+[14:24:36]   eval 0/8 shard 完成
+[14:25:36]   eval 0/8 shard 完成
+[14:26:36]   eval 0/8 shard 完成
+[14:27:36]   eval 0/8 shard 完成
+[14:28:36]   eval 0/8 shard 完成
+[14:29:36]   eval 0/8 shard 完成
+[14:30:36]   eval 0/8 shard 完成
+[14:31:37]   eval 0/8 shard 完成
+[14:32:37]   eval 0/8 shard 完成
+[14:33:37]   eval 0/8 shard 完成
+[14:34:37]   eval 0/8 shard 完成
+[14:35:37]   eval 0/8 shard 完成
+[14:36:37]   eval 0/8 shard 完成
+[14:37:37]   eval 0/8 shard 完成
+[14:38:37]   eval 0/8 shard 完成
+[14:39:37]   eval 0/8 shard 完成
+[14:40:37]   eval 0/8 shard 完成
+[14:41:37]   eval 0/8 shard 完成
+[14:42:37]   eval 0/8 shard 完成
+[14:43:37]   eval 0/8 shard 完成
+[14:44:37]   eval 0/8 shard 完成
+[14:45:37]   eval 2/8 shard 完成
+[14:46:37]   eval 2/8 shard 完成
+[14:47:37]   eval 3/8 shard 完成
+[14:48:37]   eval 4/8 shard 完成
+[14:49:37]   eval 5/8 shard 完成
+[14:50:37]   eval 6/8 shard 完成
+[14:51:37]   eval 6/8 shard 完成
+[14:52:37]   eval 6/8 shard 完成
+[14:53:37]   eval 7/8 shard 完成
+[14:54:37]   eval 7/8 shard 完成
+[14:55:37]   eval 7/8 shard 完成
+[14:56:37]   eval 7/8 shard 完成
+[14:57:37]   eval 7/8 shard 完成
+[14:58:37]   eval 7/8 shard 完成
+[14:59:37]   eval 7/8 shard 完成
+[15:00:37]   eval 7/8 shard 完成
+[15:01:38]   eval 7/8 shard 完成
+[15:02:38]   eval 7/8 shard 完成
+[15:03:38]   eval 7/8 shard 完成
+[15:04:38]   eval 7/8 shard 完成
+[15:05:38]   eval 7/8 shard 完成
+[15:06:38]   eval 7/8 shard 完成
+[15:07:38]   eval 7/8 shard 完成
+[15:08:38]   eval 7/8 shard 完成
+[15:09:38]   eval 8/8 shard 完成
+[15:09:45]   eval 完成！
+[15:09:45] 
+[15:09:45] ========== Learning Curve [bs128] (截至 π_3) ==========
+Policy   CEM-1     
+π₀ SFT 49.2%     
+π_1     100.0%    
+π_2     99.8%     
+π_3     100.0%    
+[15:09:45] ==================================================
+[15:09:45] 
+[15:09:45] 
+[15:09:45] ========================================================
+[15:09:45] Round 3:  π_3 → D_3 → π_4
+[15:09:45]   Base model : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi3/model
+[15:09:45]   Output     : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi4/model
+[15:09:45] ========================================================
+[15:09:45]   [OK] 基础模型验证通过
+[15:09:45] Step 1/4: Pool  [768, 1024)...
+[15:09:46] Step 2/4: Rollout  π_3 × 256题 × 8rolls (block_size=128)...
+[15:09:46]   rank0 已启动 (GPU=0)
+[15:10:06]   rank1 已启动 (GPU=1)
+[15:10:26]   rank2 已启动 (GPU=2)
+[15:10:46]   rank3 已启动 (GPU=3)
+[15:11:06]   rank4 已启动 (GPU=4)
+[15:11:26]   rank5 已启动 (GPU=5)
+[15:11:46]   rank6 已启动 (GPU=6)
+[15:12:06]   rank7 已启动 (GPU=7)
+[15:12:06]   等待 rollout 完成（每 2 分钟汇报一次）...
+[15:12:06]   rollout 0/8 rank 已完成
+[15:14:06]   rollout 0/8 rank 已完成
+[15:16:06]   rollout 0/8 rank 已完成
+[15:18:06]   rollout 0/8 rank 已完成
+[15:20:06]   rollout 0/8 rank 已完成
+[15:22:06]   rollout 0/8 rank 已完成
+[15:24:06]   rollout 0/8 rank 已完成
+[15:26:06]   rollout 1/8 rank 已完成
+[15:28:06]   rollout 1/8 rank 已完成
+[15:30:06]   rollout 1/8 rank 已完成
+[15:32:06]   rollout 1/8 rank 已完成
+[15:34:06]   rollout 1/8 rank 已完成
+[15:36:06]   rollout 1/8 rank 已完成
+[15:38:06]   rollout 1/8 rank 已完成
+[15:40:06]   rollout 1/8 rank 已完成
+[15:42:06]   rollout 1/8 rank 已完成
+[15:44:06]   rollout 1/8 rank 已完成
+[15:46:06]   rollout 1/8 rank 已完成
+[15:48:06]   rollout 1/8 rank 已完成
+[15:50:06]   rollout 1/8 rank 已完成
+[15:52:06]   rollout 1/8 rank 已完成
+[15:54:06]   rollout 1/8 rank 已完成
+[15:56:06]   rollout 1/8 rank 已完成
+[15:58:06]   rollout 1/8 rank 已完成
+[16:00:07]   rollout 1/8 rank 已完成
+[16:02:07]   rollout 1/8 rank 已完成
+[16:04:07]   rollout 1/8 rank 已完成
+[16:06:07]   rollout 1/8 rank 已完成
+[16:08:07]   rollout 1/8 rank 已完成
+[16:10:07]   rollout 1/8 rank 已完成
+[16:12:07]   rollout 1/8 rank 已完成
+[16:14:07]   rollout 1/8 rank 已完成
+[16:16:07]   rollout 1/8 rank 已完成
+[16:18:07]   rollout 1/8 rank 已完成
+[16:20:07]   rollout 1/8 rank 已完成
+[16:22:07]   rollout 1/8 rank 已完成
+[16:24:07]   rollout 1/8 rank 已完成
+[16:26:07]   rollout 1/8 rank 已完成
+[16:28:07]   rollout 1/8 rank 已完成
+[16:30:07]   rollout 1/8 rank 已完成
+[16:32:07]   rollout 1/8 rank 已完成
+[16:34:07]   rollout 1/8 rank 已完成
+[16:36:07]   rollout 1/8 rank 已完成
+[16:38:07]   rollout 1/8 rank 已完成
+[16:40:07]   rollout 1/8 rank 已完成
+[16:42:07]   rollout 1/8 rank 已完成
+[16:44:07]   rollout 1/8 rank 已完成
+[16:46:07]   rollout 1/8 rank 已完成
+[16:48:07]   rollout 1/8 rank 已完成
+[16:50:07]   rollout 1/8 rank 已完成
+[16:52:07]   rollout 1/8 rank 已完成
+[16:54:07]   rollout 1/8 rank 已完成
+[16:56:07]   rollout 1/8 rank 已完成
+[16:58:08]   rollout 1/8 rank 已完成
+[17:00:08]   rollout 1/8 rank 已完成
+[17:02:08]   rollout 1/8 rank 已完成
+[17:04:08]   rollout 1/8 rank 已完成
+[17:06:08]   rollout 1/8 rank 已完成
+[17:08:08]   rollout 1/8 rank 已完成
+[17:10:08]   rollout 1/8 rank 已完成
+[17:12:08]   rollout 1/8 rank 已完成
+[17:14:08]   rollout 1/8 rank 已完成
+[17:16:08]   rollout 1/8 rank 已完成
+[17:18:08]   rollout 1/8 rank 已完成
+[17:20:08]   rollout 1/8 rank 已完成
+[17:22:08]   rollout 1/8 rank 已完成
+[17:24:08]   rollout 1/8 rank 已完成
+[17:26:08]   rollout 1/8 rank 已完成
+[17:28:08]   rollout 1/8 rank 已完成
+[17:30:08]   rollout 1/8 rank 已完成
+[17:32:08]   rollout 1/8 rank 已完成
+[17:34:08]   rollout 1/8 rank 已完成
+[17:36:08]   rollout 1/8 rank 已完成
+[17:38:08]   rollout 1/8 rank 已完成
+[17:40:08]   rollout 1/8 rank 已完成
+[17:42:08]   rollout 1/8 rank 已完成
+[17:44:08]   rollout 1/8 rank 已完成
+[17:46:08]   rollout 1/8 rank 已完成
+[17:48:08]   rollout 1/8 rank 已完成
+[17:50:08]   rollout 1/8 rank 已完成
+[17:52:08]   rollout 1/8 rank 已完成
+[17:54:09]   rollout 1/8 rank 已完成
+[17:56:09]   rollout 1/8 rank 已完成
+[17:58:09]   rollout 1/8 rank 已完成
+[18:00:09]   rollout 1/8 rank 已完成
+[18:02:09]   rollout 1/8 rank 已完成
+[18:04:09]   rollout 1/8 rank 已完成
+[18:06:09]   rollout 1/8 rank 已完成
+[18:08:09]   rollout 1/8 rank 已完成
+[18:10:09]   rollout 1/8 rank 已完成
+[18:12:09]   rollout 3/8 rank 已完成
+[18:14:09]   rollout 4/8 rank 已完成
+[18:16:09]   rollout 4/8 rank 已完成
+[18:18:09]   rollout 5/8 rank 已完成
+[18:20:09]   rollout 6/8 rank 已完成
+[18:22:09]   rollout 6/8 rank 已完成
+[18:24:09]   rollout 6/8 rank 已完成
+[18:26:09]   rollout 6/8 rank 已完成
+[18:28:09]   rollout 7/8 rank 已完成
+[18:30:09]   rollout 7/8 rank 已完成
+[18:32:09]   rollout 7/8 rank 已完成
+[18:34:09]   rollout 7/8 rank 已完成
+[18:36:09]   rollout 8/8 rank 已完成
+[18:36:09]   Rollout 完成！
+[18:36:09]   合并 rollout 文件...
+[18:36:10]   merged.jsonl: 1796 条
+[18:36:10] Step 3/4: Reward 计算...
+[18:36:10]   训练数据: 1552 条
+[18:36:10] Step 3/4: ELBO-PG 训练  π_3 → π_4 (block_length=128)...
+[18:37:07] [ERROR] Round 3 训练失败 (exit=1)，退出
+[21:14:00] ========================================================
+[21:14:00] On-Policy Loop [bs128] 启动：Round 3 → 5
+[21:14:00]   π₀ = sft_llada_x0pred_bs128/ckpt_4 (49.2% CEM-1)
+[21:14:00]   block_size=128  num_steps=128
+[21:14:00]   输出: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128
+[21:14:00] ========================================================
+[21:14:00] 
+[21:14:00] ========================================================
+[21:14:01] Round 3:  π_3 → D_3 → π_4
+[21:14:01]   Base model : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi3/model
+[21:14:01]   Output     : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi4/model
+[21:14:01] ========================================================
+[21:14:01]   [OK] 基础模型验证通过
+[21:14:01] Step 1/4: Pool  [768, 1024)...
+[21:14:01]   Pool 已存在 (256 题)，跳过
+[21:14:01] Step 2/4: Rollout  π_3 × 256题 × 8rolls (block_size=128)...
+[21:14:01]   rank0 已启动 (GPU=0)
+[21:14:21]   rank1 已启动 (GPU=1)
+[21:14:41]   rank2 已启动 (GPU=2)
+[21:15:01]   rank3 已启动 (GPU=3)
+[21:15:21]   rank4 已启动 (GPU=4)
+[21:15:41]   rank5 已启动 (GPU=5)
+[21:16:01]   rank6 已启动 (GPU=6)
+[21:16:21]   rank7 已启动 (GPU=7)
+[21:16:21]   等待 rollout 完成（每 2 分钟汇报一次）...
+[21:16:21]   rollout 3/8 rank 已完成
+[21:18:21]   rollout 7/8 rank 已完成
+[21:20:21]   rollout 7/8 rank 已完成
+[21:22:21]   rollout 7/8 rank 已完成
+[21:24:21]   rollout 7/8 rank 已完成
+[21:26:21]   rollout 7/8 rank 已完成
+[21:28:21]   rollout 7/8 rank 已完成
+[21:30:21]   rollout 7/8 rank 已完成
+[21:32:21]   rollout 7/8 rank 已完成
+[21:34:21]   rollout 7/8 rank 已完成
+[21:36:21]   rollout 7/8 rank 已完成
+[21:38:21]   rollout 7/8 rank 已完成
+[21:40:21]   rollout 7/8 rank 已完成
+[21:42:21]   rollout 7/8 rank 已完成
+[21:44:21]   rollout 7/8 rank 已完成
+[21:46:21]   rollout 7/8 rank 已完成
+[21:48:21]   rollout 7/8 rank 已完成
+[21:50:21]   rollout 7/8 rank 已完成
+[21:52:21]   rollout 7/8 rank 已完成
+[21:54:21]   rollout 7/8 rank 已完成
+[21:56:21]   rollout 7/8 rank 已完成
+[21:58:21]   rollout 7/8 rank 已完成
+[22:00:21]   rollout 7/8 rank 已完成
+[22:02:22]   rollout 7/8 rank 已完成
+[22:04:22]   rollout 7/8 rank 已完成
+[22:06:22]   rollout 7/8 rank 已完成
+[22:08:22]   rollout 7/8 rank 已完成
+[22:10:22]   rollout 7/8 rank 已完成
+[22:12:22]   rollout 7/8 rank 已完成
+[22:14:22]   rollout 7/8 rank 已完成
+[22:16:22]   rollout 7/8 rank 已完成
+[22:18:22]   rollout 7/8 rank 已完成
+[22:20:22]   rollout 7/8 rank 已完成
+[22:22:22]   rollout 7/8 rank 已完成
+[22:24:22]   rollout 7/8 rank 已完成
+[22:26:22]   rollout 7/8 rank 已完成
+[22:28:22]   rollout 7/8 rank 已完成
+[22:30:22]   rollout 7/8 rank 已完成
+[22:32:22]   rollout 7/8 rank 已完成
+[22:34:22]   rollout 7/8 rank 已完成
+[22:36:22]   rollout 7/8 rank 已完成
+[22:38:22]   rollout 7/8 rank 已完成
+[22:40:22]   rollout 7/8 rank 已完成
+[22:42:22]   rollout 7/8 rank 已完成
+[22:44:22]   rollout 7/8 rank 已完成
+[22:46:22]   rollout 7/8 rank 已完成
+[22:48:22]   rollout 7/8 rank 已完成
+[22:50:22]   rollout 7/8 rank 已完成
+[00:06:57] ========================================================
+[00:06:57] On-Policy Loop [bs128] 启动：Round 0 → 5
+[00:06:57]   π₀ = sft_llada_x0pred_bs128/ckpt_4 (49.2% CEM-1)
+[00:06:57]   block_size=128  num_steps=128
+[00:06:57]   输出: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128
+[00:06:57] ========================================================
+[00:06:57] 
+[00:06:57] ========================================================
+[00:06:57] Round 0:  π_0 → D_0 → π_1
+[00:06:57]   Base model : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_llada_x0pred_bs128/ckpt_4/optimized
+[00:06:57]   Output     : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi1/model
+[00:06:57] ========================================================
+[00:06:57]   [OK] 基础模型验证通过
+[00:06:57] Step 1/4: Pool  [0, 256)...
+[00:06:57]   Pool 已存在 (256 题)，跳过
+[00:06:57] Step 2/4: Rollout  π_0 × 256题 × 8rolls (block_size=128)...
+[00:06:57]   Rollout 已完成，跳过
+[00:06:57]   merged.jsonl 已存在 (2048 条)
+[00:06:57] Step 3/4: Reward 计算...
+[00:06:57]   train_reward_a.jsonl 已存在 (1744 条)
+[00:06:57]   训练数据: 1744 条
+[00:06:57] Step 3/4: ELBO-PG 训练  π_0 → π_1 (block_length=128)...
+[00:06:57]   模型已存在 (15G)，跳过训练
+[00:06:57] Step 4/4: eval_600  π_1 (block_size=128)...
+[00:06:57]   eval 已存在，跳过
+[00:06:57] 
+[00:06:57] ========== Learning Curve [bs128] (截至 π_1) ==========
+Policy   CEM-1     
+π₀ SFT 49.2%     
+π_1     100.0%    
+[00:06:57] ==================================================
+[00:06:57] 
+[00:06:57] 
+[00:06:57] ========================================================
+[00:06:57] Round 1:  π_1 → D_1 → π_2
+[00:06:57]   Base model : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi1/model
+[00:06:57]   Output     : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi2/model
+[00:06:57] ========================================================
+[00:06:57]   [OK] 基础模型验证通过
+[00:06:57] Step 1/4: Pool  [256, 512)...
+[00:06:57]   Pool 已存在 (256 题)，跳过
+[00:06:57] Step 2/4: Rollout  π_1 × 256题 × 8rolls (block_size=128)...
+[00:06:57]   Rollout 已完成，跳过
+[00:06:57]   merged.jsonl 已存在 (2048 条)
+[00:06:57] Step 3/4: Reward 计算...
+[00:06:57]   train_reward_a.jsonl 已存在 (1808 条)
+[00:06:57]   训练数据: 1808 条
+[00:06:57] Step 3/4: ELBO-PG 训练  π_1 → π_2 (block_length=128)...
+[00:06:57]   模型已存在 (15G)，跳过训练
+[00:06:58] Step 4/4: eval_600  π_2 (block_size=128)...
+[00:06:58]   eval 已存在，跳过
+[00:06:58] 
+[00:06:58] ========== Learning Curve [bs128] (截至 π_2) ==========
+Policy   CEM-1     
+π₀ SFT 49.2%     
+π_1     100.0%    
+π_2     99.8%     
+[00:06:58] ==================================================
+[00:06:58] 
+[00:06:58] 
+[00:06:58] ========================================================
+[00:06:58] Round 2:  π_2 → D_2 → π_3
+[00:06:58]   Base model : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi2/model
+[00:06:58]   Output     : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi3/model
+[00:06:58] ========================================================
+[00:06:58]   [OK] 基础模型验证通过
+[00:06:58] Step 1/4: Pool  [512, 768)...
+[00:06:58]   Pool 已存在 (256 题)，跳过
+[00:06:58] Step 2/4: Rollout  π_2 × 256题 × 8rolls (block_size=128)...
+[00:06:58]   Rollout 已完成，跳过
+[00:06:58]   merged.jsonl 已存在 (2048 条)
+[00:06:58] Step 3/4: Reward 计算...
+[00:06:58]   train_reward_a.jsonl 已存在 (1728 条)
+[00:06:58]   训练数据: 1728 条
+[00:06:58] Step 3/4: ELBO-PG 训练  π_2 → π_3 (block_length=128)...
+[00:06:58]   模型已存在 (15G)，跳过训练
+[00:06:58] Step 4/4: eval_600  π_3 (block_size=128)...
+[00:06:58]   eval 已存在，跳过
+[00:06:58] 
+[00:06:58] ========== Learning Curve [bs128] (截至 π_3) ==========
+Policy   CEM-1     
+π₀ SFT 49.2%     
+π_1     100.0%    
+π_2     99.8%     
+π_3     100.0%    
+[00:06:58] ==================================================
+[00:06:58] 
+[00:06:58] 
+[00:06:58] ========================================================
+[00:06:58] Round 3:  π_3 → D_3 → π_4
+[00:06:58]   Base model : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi3/model
+[00:06:58]   Output     : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi4/model
+[00:06:58] ========================================================
+[00:06:58]   [OK] 基础模型验证通过
+[00:06:58] Step 1/4: Pool  [768, 1024)...
+[00:06:58]   Pool 已存在 (256 题)，跳过
+[00:06:58] Step 2/4: Rollout  π_3 × 256题 × 8rolls (block_size=128)...
+[00:06:58]   Rollout 已完成，跳过
+[00:06:58]   merged.jsonl 已存在 (1796 条)
+[00:06:58] Step 3/4: Reward 计算...
+[00:06:58]   train_reward_a.jsonl 已存在 (1552 条)
+[00:06:58]   训练数据: 1552 条
+[00:06:58] Step 3/4: ELBO-PG 训练  π_3 → π_4 (block_length=128)...
+[00:27:37] ========================================================
+[00:27:37] On-Policy Loop [bs128] 启动：Round 0 → 5
+[00:27:37]   π₀ = sft_llada_x0pred_bs128/ckpt_4 (49.2% CEM-1)
+[00:27:37]   block_size=128  num_steps=128
+[00:27:37]   输出: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128
+[00:27:37] ========================================================
+[00:27:37] 
+[00:27:37] ========================================================
+[00:27:37] Round 0:  π_0 → D_0 → π_1
+[00:27:37]   Base model : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_llada_x0pred_bs128/ckpt_4/optimized
+[00:27:37]   Output     : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi1/model
+[00:27:37] ========================================================
+[00:27:37]   [OK] 基础模型验证通过
+[00:27:37] Step 1/4: Pool  [0, 256)...
+[00:27:37]   Pool 已存在 (256 题)，跳过
+[00:27:37] Step 2/4: Rollout  π_0 × 256题 × 8rolls (block_size=128)...
+[00:27:37]   Rollout 已完成，跳过
+[00:27:37]   merged.jsonl 已存在 (2048 条)
+[00:27:37] Step 3/4: Reward 计算...
+[00:27:37]   train_reward_a.jsonl 已存在 (1744 条)
+[00:27:37]   训练数据: 1744 条
+[00:27:37] Step 3/4: ELBO-PG 训练  π_0 → π_1 (block_length=128)...
+[00:27:37]   模型已存在 (15G)，跳过训练
+[00:27:37] Step 4/4: eval_600  π_1 (block_size=128)...
+[00:27:37]   eval 已存在，跳过
+[00:27:37] 
+[00:27:37] ========== Learning Curve [bs128] (截至 π_1) ==========
+Policy   CEM-1     
+π₀ SFT 49.2%     
+π_1     100.0%    
+[00:27:37] ==================================================
+[00:27:37] 
+[00:27:37] 
+[00:27:37] ========================================================
+[00:27:37] Round 1:  π_1 → D_1 → π_2
+[00:27:37]   Base model : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi1/model
+[00:27:37]   Output     : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi2/model
+[00:27:37] ========================================================
+[00:27:37]   [OK] 基础模型验证通过
+[00:27:37] Step 1/4: Pool  [256, 512)...
+[00:27:37]   Pool 已存在 (256 题)，跳过
+[00:27:37] Step 2/4: Rollout  π_1 × 256题 × 8rolls (block_size=128)...
+[00:27:37]   Rollout 已完成，跳过
+[00:27:37]   merged.jsonl 已存在 (2048 条)
+[00:27:37] Step 3/4: Reward 计算...
+[00:27:37]   train_reward_a.jsonl 已存在 (1808 条)
+[00:27:37]   训练数据: 1808 条
+[00:27:37] Step 3/4: ELBO-PG 训练  π_1 → π_2 (block_length=128)...
+[00:27:37]   模型已存在 (15G)，跳过训练
+[00:27:37] Step 4/4: eval_600  π_2 (block_size=128)...
+[00:27:37]   eval 已存在，跳过
+[00:27:37] 
+[00:27:37] ========== Learning Curve [bs128] (截至 π_2) ==========
+Policy   CEM-1     
+π₀ SFT 49.2%     
+π_1     100.0%    
+π_2     99.8%     
+[00:27:37] ==================================================
+[00:27:37] 
+[00:27:37] 
+[00:27:37] ========================================================
+[00:27:37] Round 2:  π_2 → D_2 → π_3
+[00:27:37]   Base model : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi2/model
+[00:27:37]   Output     : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi3/model
+[00:27:37] ========================================================
+[00:27:37]   [OK] 基础模型验证通过
+[00:27:37] Step 1/4: Pool  [512, 768)...
+[00:27:37]   Pool 已存在 (256 题)，跳过
+[00:27:37] Step 2/4: Rollout  π_2 × 256题 × 8rolls (block_size=128)...
+[00:27:37]   Rollout 已完成，跳过
+[00:27:37]   merged.jsonl 已存在 (2048 条)
+[00:27:37] Step 3/4: Reward 计算...
+[00:27:37]   train_reward_a.jsonl 已存在 (1728 条)
+[00:27:37]   训练数据: 1728 条
+[00:27:37] Step 3/4: ELBO-PG 训练  π_2 → π_3 (block_length=128)...
+[00:27:37]   模型已存在 (15G)，跳过训练
+[00:27:37] Step 4/4: eval_600  π_3 (block_size=128)...
+[00:27:37]   eval 已存在，跳过
+[00:27:37] 
+[00:27:37] ========== Learning Curve [bs128] (截至 π_3) ==========
+Policy   CEM-1     
+π₀ SFT 49.2%     
+π_1     100.0%    
+π_2     99.8%     
+π_3     100.0%    
+[00:27:38] ==================================================
+[00:27:38] 
+[00:27:38] 
+[00:27:38] ========================================================
+[00:27:38] Round 3:  π_3 → D_3 → π_4
+[00:27:38]   Base model : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi3/model
+[00:27:38]   Output     : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi4/model
+[00:27:38] ========================================================
+[00:27:38]   [OK] 基础模型验证通过
+[00:27:38] Step 1/4: Pool  [768, 1024)...
+[00:27:38]   Pool 已存在 (256 题)，跳过
+[00:27:38] Step 2/4: Rollout  π_3 × 256题 × 8rolls (block_size=128)...
+[00:27:38]   Rollout 已完成，跳过
+[00:27:38]   merged.jsonl 已存在 (1796 条)
+[00:27:38] Step 3/4: Reward 计算...
+[00:27:38]   train_reward_a.jsonl 已存在 (1552 条)
+[00:27:38]   训练数据: 1552 条
+[00:27:38] Step 3/4: ELBO-PG 训练  π_3 → π_4 (block_length=128)...
+[00:27:50]   [ZeRO-3 fix] 从 checkpoint 复制完整权重 (16031197344 bytes)...
+[00:28:14] [ERROR] Round 3 训练失败 (exit=1)，退出
+[00:28:29]   [OK] 完整模型权重已复制到 /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi4/model/model.safetensors
+[00:28:29]   [存储] 删除 checkpoint 子目录...
+[00:28:44]   [存储] 已清理
+[00:28:44]   训练完成！π_4 → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi4/model
+[00:28:44] Step 4/4: eval_600  π_4 (block_size=128)...
+[00:28:44]   eval GPU0 已启动 (offset=0)
+[00:29:14]   eval GPU1 已启动 (offset=75)
+[00:29:44]   eval GPU2 已启动 (offset=150)
+[00:30:10] ========================================================
+[00:30:10] On-Policy Loop [bs128] 启动：Round 0 → 5
+[00:30:10]   π₀ = sft_llada_x0pred_bs128/ckpt_4 (49.2% CEM-1)
+[00:30:10]   block_size=128  num_steps=128
+[00:30:10]   输出: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128
+[00:30:10] ========================================================
+[00:30:10] 
+[00:30:10] ========================================================
+[00:30:10] Round 0:  π_0 → D_0 → π_1
+[00:30:10]   Base model : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_llada_x0pred_bs128/ckpt_4/optimized
+[00:30:10]   Output     : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi1/model
+[00:30:10] ========================================================
+[00:30:10]   [OK] 基础模型验证通过
+[00:30:10] Step 1/4: Pool  [0, 256)...
+[00:30:10]   Pool 已存在 (256 题)，跳过
+[00:30:10] Step 2/4: Rollout  π_0 × 256题 × 8rolls (block_size=128)...
+[00:30:10]   rank0 已启动 (GPU=0)
+[00:30:14]   eval GPU3 已启动 (offset=225)
+[00:30:30]   rank1 已启动 (GPU=1)
+[00:30:44]   eval GPU4 已启动 (offset=300)
+[00:30:50]   rank2 已启动 (GPU=2)
+[00:30:50]   等待 rollout 完成（每 2 分钟汇报一次）...
+[00:30:50]   rollout 0/3 rank 已完成
+[00:31:14]   eval GPU5 已启动 (offset=375)
+[00:31:44]   eval GPU6 已启动 (offset=450)
+[00:32:14]   eval GPU7 已启动 (offset=525)
+[00:32:14]   等待 eval 完成（每 1 分钟汇报）...
+[00:32:14]   eval 0/8 shard 完成
+[00:32:50]   rollout 0/3 rank 已完成
+[00:33:14]   eval 0/8 shard 完成
+[00:34:14]   eval 0/8 shard 完成
+[00:34:50]   rollout 0/3 rank 已完成
+[00:35:14]   eval 0/8 shard 完成
+[00:36:14]   eval 0/8 shard 完成
+[00:37:14]   eval 0/8 shard 完成
+[00:38:14]   eval 0/8 shard 完成
+[00:39:14]   eval 0/8 shard 完成
+[00:40:14]   eval 0/8 shard 完成
+[00:41:14]   eval 0/8 shard 完成
+[00:45:57] ========================================================
+[00:45:57] On-Policy Loop [bs128] 启动：Round 4 → 5
+[00:45:57]   π₀ = sft_llada_x0pred_bs128/ckpt_4 (49.2% CEM-1)
+[00:45:57]   block_size=128  num_steps=128
+[00:45:57]   输出: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128
+[00:45:57] ========================================================
+[00:45:57] 
+[00:45:57] ========================================================
+[00:45:57] Round 4:  π_4 → D_4 → π_5
+[00:45:57]   Base model : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi4/model
+[00:45:57]   Output     : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi5/model
+[00:45:57] ========================================================
+[00:45:57]   [OK] 基础模型验证通过
+[00:45:57] Step 1/4: Pool  [1024, 1280)...
+[00:45:57] Step 2/4: Rollout  π_4 × 256题 × 8rolls (block_size=128)...
+[00:45:57]   rank0 已启动 (GPU=0)
+[00:46:17]   rank1 已启动 (GPU=1)
+[00:46:37]   rank2 已启动 (GPU=2)
+[00:46:37]   等待 rollout 完成（每 2 分钟汇报一次）...
+[00:46:37]   rollout 0/3 rank 已完成
+[00:48:37]   rollout 0/3 rank 已完成
+[00:50:37]   rollout 0/3 rank 已完成
+[00:52:37]   rollout 0/3 rank 已完成
+[00:54:37]   rollout 0/3 rank 已完成
+[00:56:37]   rollout 0/3 rank 已完成
+[00:58:38]   rollout 0/3 rank 已完成
+[01:00:38]   rollout 0/3 rank 已完成
+[01:02:38]   rollout 0/3 rank 已完成
+[01:04:38]   rollout 0/3 rank 已完成
+[01:06:38]   rollout 0/3 rank 已完成
+[01:08:38]   rollout 0/3 rank 已完成
+[01:10:38]   rollout 0/3 rank 已完成
+[01:12:38]   rollout 0/3 rank 已完成
+[01:14:38]   rollout 0/3 rank 已完成
+[01:16:38]   rollout 0/3 rank 已完成
+[01:18:38]   rollout 0/3 rank 已完成
+[01:20:38]   rollout 0/3 rank 已完成
+[01:22:38]   rollout 0/3 rank 已完成
+[01:24:39]   rollout 0/3 rank 已完成
+[01:26:39]   rollout 0/3 rank 已完成
+[01:28:39]   rollout 0/3 rank 已完成
+[01:30:39]   rollout 0/3 rank 已完成
+[01:32:39]   rollout 0/3 rank 已完成
+[01:34:39]   rollout 0/3 rank 已完成
+[01:36:39]   rollout 0/3 rank 已完成
+[01:38:39]   rollout 0/3 rank 已完成
+[01:40:39]   rollout 0/3 rank 已完成
+[01:42:39]   rollout 0/3 rank 已完成
+[01:44:39]   rollout 0/3 rank 已完成
+[01:46:39]   rollout 0/3 rank 已完成
+[01:48:39]   rollout 0/3 rank 已完成
+[01:50:40]   rollout 0/3 rank 已完成
+[01:52:40]   rollout 0/3 rank 已完成
+[01:54:40]   rollout 0/3 rank 已完成
+[01:56:40]   rollout 0/3 rank 已完成
+[01:58:40]   rollout 0/3 rank 已完成
+[02:00:40]   rollout 0/3 rank 已完成
+[02:02:40]   rollout 0/3 rank 已完成
+[02:04:40]   rollout 0/3 rank 已完成
+[02:06:40]   rollout 0/3 rank 已完成
+[02:08:40]   rollout 0/3 rank 已完成
+[02:10:40]   rollout 0/3 rank 已完成
+[02:12:40]   rollout 0/3 rank 已完成
+[02:14:40]   rollout 0/3 rank 已完成
+[02:16:41]   rollout 0/3 rank 已完成
+[02:18:41]   rollout 0/3 rank 已完成
+[02:20:41]   rollout 0/3 rank 已完成
+[02:22:41]   rollout 0/3 rank 已完成
+[02:24:41]   rollout 0/3 rank 已完成
+[02:26:41]   rollout 0/3 rank 已完成
+[02:28:41]   rollout 0/3 rank 已完成
+[02:30:41]   rollout 0/3 rank 已完成
+[02:32:41]   rollout 0/3 rank 已完成
+[02:34:41]   rollout 0/3 rank 已完成
+[02:36:41]   rollout 0/3 rank 已完成
+[02:38:41]   rollout 0/3 rank 已完成
+[02:40:41]   rollout 0/3 rank 已完成
+[02:42:41]   rollout 0/3 rank 已完成
+[02:44:42]   rollout 0/3 rank 已完成
+[02:46:42]   rollout 0/3 rank 已完成
+[02:48:42]   rollout 0/3 rank 已完成
+[02:50:42]   rollout 0/3 rank 已完成
+[02:52:42]   rollout 0/3 rank 已完成
+[02:54:42]   rollout 0/3 rank 已完成
+[02:56:42]   rollout 0/3 rank 已完成
+[02:58:42]   rollout 0/3 rank 已完成
+[03:00:42]   rollout 0/3 rank 已完成
+[03:02:42]   rollout 0/3 rank 已完成
+[03:04:42]   rollout 0/3 rank 已完成
+[03:06:42]   rollout 0/3 rank 已完成
+[03:08:42]   rollout 0/3 rank 已完成
+[03:10:43]   rollout 0/3 rank 已完成
+[03:12:43]   rollout 0/3 rank 已完成
+[03:14:43]   rollout 0/3 rank 已完成
+[03:16:43]   rollout 0/3 rank 已完成
+[03:18:43]   rollout 0/3 rank 已完成
+[03:20:43]   rollout 0/3 rank 已完成
+[03:22:43]   rollout 0/3 rank 已完成
+[03:24:43]   rollout 0/3 rank 已完成
+[03:26:43]   rollout 0/3 rank 已完成
+[03:28:43]   rollout 0/3 rank 已完成
+[03:30:43]   rollout 0/3 rank 已完成
+[03:32:43]   rollout 0/3 rank 已完成
+[03:34:43]   rollout 0/3 rank 已完成
+[03:36:44]   rollout 0/3 rank 已完成
+[03:38:44]   rollout 0/3 rank 已完成
+[03:40:44]   rollout 0/3 rank 已完成
+[03:42:44]   rollout 0/3 rank 已完成
+[03:44:44]   rollout 0/3 rank 已完成
+[03:46:44]   rollout 0/3 rank 已完成
+[03:48:44]   rollout 0/3 rank 已完成
+[03:50:44]   rollout 0/3 rank 已完成
+[03:52:44]   rollout 0/3 rank 已完成
+[03:54:44]   rollout 0/3 rank 已完成
+[03:56:44]   rollout 0/3 rank 已完成
+[03:58:44]   rollout 0/3 rank 已完成
+[04:00:44]   rollout 0/3 rank 已完成
+[04:02:44]   rollout 0/3 rank 已完成
+[04:04:45]   rollout 0/3 rank 已完成
+[04:06:45]   rollout 0/3 rank 已完成
+[04:08:45]   rollout 0/3 rank 已完成
+[04:10:45]   rollout 0/3 rank 已完成
+[04:12:45]   rollout 0/3 rank 已完成
+[04:14:45]   rollout 0/3 rank 已完成
+[04:16:45]   rollout 0/3 rank 已完成
+[04:18:45]   rollout 0/3 rank 已完成
+[04:20:45]   rollout 0/3 rank 已完成
+[04:22:45]   rollout 0/3 rank 已完成
+[04:24:45]   rollout 0/3 rank 已完成
+[04:26:45]   rollout 0/3 rank 已完成
+[04:28:45]   rollout 0/3 rank 已完成
+[04:30:46]   rollout 0/3 rank 已完成
+[04:32:46]   rollout 0/3 rank 已完成
+[04:34:46]   rollout 0/3 rank 已完成
+[04:36:46]   rollout 0/3 rank 已完成
+[04:38:46]   rollout 0/3 rank 已完成
+[04:40:46]   rollout 0/3 rank 已完成
+[04:42:46]   rollout 0/3 rank 已完成
+[04:44:46]   rollout 0/3 rank 已完成
+[04:46:46]   rollout 0/3 rank 已完成
+[04:48:46]   rollout 0/3 rank 已完成
+[04:50:46]   rollout 0/3 rank 已完成
+[04:52:46]   rollout 0/3 rank 已完成
+[04:54:46]   rollout 0/3 rank 已完成
+[04:56:47]   rollout 0/3 rank 已完成
+[04:58:47]   rollout 0/3 rank 已完成
+[05:00:47]   rollout 0/3 rank 已完成
+[05:02:47]   rollout 0/3 rank 已完成
+[05:04:47]   rollout 0/3 rank 已完成
+[05:06:47]   rollout 0/3 rank 已完成
+[05:08:47]   rollout 0/3 rank 已完成
+[05:10:47]   rollout 0/3 rank 已完成
+[05:12:47]   rollout 0/3 rank 已完成
+[05:14:47]   rollout 0/3 rank 已完成
+[05:16:47]   rollout 0/3 rank 已完成
+[05:18:47]   rollout 0/3 rank 已完成
+[05:20:47]   rollout 0/3 rank 已完成
+[05:22:47]   rollout 0/3 rank 已完成
+[05:24:48]   rollout 0/3 rank 已完成
+[05:26:48]   rollout 0/3 rank 已完成
+[05:28:48]   rollout 0/3 rank 已完成
+[05:30:48]   rollout 0/3 rank 已完成
+[05:32:48]   rollout 0/3 rank 已完成
+[05:34:48]   rollout 0/3 rank 已完成
+[05:36:48]   rollout 0/3 rank 已完成
+[05:38:48]   rollout 0/3 rank 已完成
+[05:40:48]   rollout 0/3 rank 已完成
+[05:42:48]   rollout 0/3 rank 已完成
+[05:44:48]   rollout 0/3 rank 已完成
+[05:46:48]   rollout 0/3 rank 已完成
+[05:48:48]   rollout 0/3 rank 已完成
+[05:50:49]   rollout 0/3 rank 已完成
+[05:52:49]   rollout 0/3 rank 已完成
+[05:54:49]   rollout 0/3 rank 已完成
+[05:56:49]   rollout 0/3 rank 已完成
+[05:58:49]   rollout 0/3 rank 已完成
+[06:00:49]   rollout 0/3 rank 已完成
+[06:02:49]   rollout 0/3 rank 已完成
+[06:04:49]   rollout 0/3 rank 已完成
+[06:06:49]   rollout 0/3 rank 已完成
+[06:08:49]   rollout 0/3 rank 已完成
+[06:10:49]   rollout 0/3 rank 已完成
+[06:12:49]   rollout 0/3 rank 已完成
+[06:14:49]   rollout 0/3 rank 已完成
+[06:16:50]   rollout 0/3 rank 已完成
+[06:18:50]   rollout 0/3 rank 已完成
+[06:20:50]   rollout 0/3 rank 已完成
+[06:22:50]   rollout 0/3 rank 已完成
+[06:24:50]   rollout 0/3 rank 已完成
+[06:26:50]   rollout 0/3 rank 已完成
+[06:28:50]   rollout 0/3 rank 已完成
+[06:30:50]   rollout 0/3 rank 已完成
+[06:32:50]   rollout 0/3 rank 已完成
+[06:34:50]   rollout 0/3 rank 已完成
+[06:36:50]   rollout 0/3 rank 已完成
+[06:38:50]   rollout 0/3 rank 已完成
+[06:40:50]   rollout 0/3 rank 已完成
+[06:42:50]   rollout 0/3 rank 已完成
+[06:44:51]   rollout 0/3 rank 已完成
+[06:46:51]   rollout 0/3 rank 已完成
+[06:48:51]   rollout 0/3 rank 已完成
+[06:50:51]   rollout 0/3 rank 已完成
+[06:52:51]   rollout 0/3 rank 已完成
+[06:54:51]   rollout 0/3 rank 已完成
+[06:56:51]   rollout 0/3 rank 已完成
+[06:58:51]   rollout 0/3 rank 已完成
+[07:00:51]   rollout 0/3 rank 已完成
+[07:02:51]   rollout 0/3 rank 已完成
+[07:04:51]   rollout 0/3 rank 已完成
+[07:06:51]   rollout 0/3 rank 已完成
+[07:08:51]   rollout 0/3 rank 已完成
+[07:10:52]   rollout 0/3 rank 已完成
+[07:12:52]   rollout 0/3 rank 已完成
+[07:14:52]   rollout 0/3 rank 已完成
+[07:16:52]   rollout 0/3 rank 已完成
+[07:18:52]   rollout 0/3 rank 已完成
+[07:20:52]   rollout 0/3 rank 已完成
+[07:22:52]   rollout 0/3 rank 已完成
+[07:24:52]   rollout 0/3 rank 已完成
+[07:26:52]   rollout 0/3 rank 已完成
+[07:28:52]   rollout 0/3 rank 已完成
+[07:30:52]   rollout 0/3 rank 已完成
+[07:32:52]   rollout 0/3 rank 已完成
+[07:34:52]   rollout 0/3 rank 已完成
+[07:36:53]   rollout 0/3 rank 已完成
+[07:38:53]   rollout 0/3 rank 已完成
+[07:40:53]   rollout 0/3 rank 已完成
+[07:42:53]   rollout 0/3 rank 已完成
+[07:44:53]   rollout 0/3 rank 已完成
+[07:46:53]   rollout 0/3 rank 已完成
+[07:48:53]   rollout 0/3 rank 已完成
+[07:50:53]   rollout 0/3 rank 已完成
+[07:52:53]   rollout 0/3 rank 已完成
+[07:54:53]   rollout 0/3 rank 已完成
+[07:56:53]   rollout 0/3 rank 已完成
+[07:58:53]   rollout 0/3 rank 已完成
+[08:00:53]   rollout 0/3 rank 已完成
+[08:02:54]   rollout 0/3 rank 已完成
+[08:04:54]   rollout 0/3 rank 已完成
+[08:06:54]   rollout 0/3 rank 已完成
+[08:08:54]   rollout 0/3 rank 已完成
+[08:10:54]   rollout 0/3 rank 已完成
+[08:12:54]   rollout 0/3 rank 已完成
+[08:14:54]   rollout 0/3 rank 已完成
+[08:16:54]   rollout 0/3 rank 已完成
+[08:18:54]   rollout 0/3 rank 已完成
+[08:20:54]   rollout 0/3 rank 已完成
+[08:22:54]   rollout 0/3 rank 已完成
+[08:24:54]   rollout 0/3 rank 已完成
+[08:26:54]   rollout 0/3 rank 已完成
+[08:28:55]   rollout 0/3 rank 已完成
+[08:30:55]   rollout 0/3 rank 已完成
+[08:32:55]   rollout 1/3 rank 已完成
+[08:34:55]   rollout 1/3 rank 已完成
+[08:36:55]   rollout 1/3 rank 已完成
+[08:38:55]   rollout 1/3 rank 已完成
+[08:40:55]   rollout 1/3 rank 已完成
+[08:42:55]   rollout 1/3 rank 已完成
+[08:44:55]   rollout 1/3 rank 已完成
+[08:46:55]   rollout 1/3 rank 已完成
+[08:48:55]   rollout 1/3 rank 已完成
+[08:50:55]   rollout 1/3 rank 已完成
+[08:52:55]   rollout 1/3 rank 已完成
+[08:54:55]   rollout 1/3 rank 已完成
+[08:56:56]   rollout 1/3 rank 已完成
+[08:58:56]   rollout 1/3 rank 已完成
+[09:00:56]   rollout 1/3 rank 已完成
+[09:02:56]   rollout 1/3 rank 已完成
+[09:04:56]   rollout 1/3 rank 已完成
+[09:06:56]   rollout 1/3 rank 已完成
+[09:08:56]   rollout 1/3 rank 已完成
+[09:10:56]   rollout 1/3 rank 已完成
+[09:12:56]   rollout 1/3 rank 已完成
+[09:14:18] ========================================================
+[09:14:18] ========================================================
+[09:14:18] On-Policy Loop [bs128] 启动：Round 4 → 5
+[09:14:18] On-Policy Loop [bs128] 启动：Round 4 → 5
+[09:14:18]   π₀ = sft_llada_x0pred_bs128/ckpt_4 (49.2% CEM-1)
+[09:14:18]   π₀ = sft_llada_x0pred_bs128/ckpt_4 (49.2% CEM-1)
+[09:14:18]   block_size=128  num_steps=128
+[09:14:18]   block_size=128  num_steps=128
+[09:14:18]   输出: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128
+[09:14:18]   输出: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128
+[09:14:18] ========================================================
+[09:14:18] ========================================================
+[09:14:18] 
+[09:14:18] 
+[09:14:18] ========================================================
+[09:14:18] ========================================================
+[09:14:18] Round 4:  π_4 → D_4 → π_5
+[09:14:18] Round 4:  π_4 → D_4 → π_5
+[09:14:18]   Base model : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi4/model
+[09:14:18]   Base model : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi4/model
+[09:14:18]   Output     : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi5/model
+[09:14:18]   Output     : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi5/model
+[09:14:18] ========================================================
+[09:14:18] ========================================================
+[09:14:18]   [OK] 基础模型验证通过
+[09:14:18]   [OK] 基础模型验证通过
+[09:14:18] Step 1/4: Pool  [1024, 1280)...
+[09:14:18] Step 1/4: Pool  [1024, 1280)...
+[09:14:18]   Pool 已存在 (256 题)，跳过
+[09:14:18]   Pool 已存在 (256 题)，跳过
+[09:14:18] Step 2/4: Rollout  π_4 × 256题 × 8rolls (block_size=128)...
+[09:14:18] Step 2/4: Rollout  π_4 × 256题 × 8rolls (block_size=128)...
+[09:14:18]   rank0 已启动 (GPU=0)
+[09:14:18]   rank0 已启动 (GPU=0)
+[09:14:38]   rank1 已启动 (GPU=1)
+[09:14:38]   rank1 已启动 (GPU=1)
+[09:14:56]   rollout 1/3 rank 已完成
+[09:14:58]   rank2 已启动 (GPU=2)
+[09:14:58]   rank2 已启动 (GPU=2)
+[09:14:58]   等待 rollout 完成（每 2 分钟汇报一次）...
+[09:14:58]   等待 rollout 完成（每 2 分钟汇报一次）...
+[09:14:58]   rollout 0/3 rank 已完成
+[09:14:58]   rollout 0/3 rank 已完成
+                                        [09:16:58]   rollout 1/3 rank 已完成
+[09:16:58]   rollout 1/3 rank 已完成
+                                        [09:18:58]   rollout 1/3 rank 已完成
+[09:18:58]   rollout 1/3 rank 已完成
+                                        [09:20:58]   rollout 1/3 rank 已完成
+[09:20:58]   rollout 1/3 rank 已完成
+                                        [09:22:58]   rollout 1/3 rank 已完成
+[09:22:58]   rollout 1/3 rank 已完成
+                                        [09:24:58]   rollout 1/3 rank 已完成
+[09:24:58]   rollout 1/3 rank 已完成
+                                        [09:26:58]   rollout 1/3 rank 已完成
+[09:26:58]   rollout 1/3 rank 已完成
+                                        [09:28:58]   rollout 2/3 rank 已完成
+[09:28:58]   rollout 2/3 rank 已完成
+                                        [09:30:58]   rollout 2/3 rank 已完成
+[09:30:58]   rollout 2/3 rank 已完成
+                                        [09:32:58]   rollout 2/3 rank 已完成
+[09:32:58]   rollout 2/3 rank 已完成
+                                        [09:34:58]   rollout 2/3 rank 已完成
+[09:34:58]   rollout 2/3 rank 已完成
+                                        [09:36:58]   rollout 2/3 rank 已完成
+[09:36:58]   rollout 2/3 rank 已完成
+                                        [09:38:58]   rollout 2/3 rank 已完成
+[09:38:58]   rollout 2/3 rank 已完成
+                                        [09:40:58]   rollout 2/3 rank 已完成
+[09:40:58]   rollout 2/3 rank 已完成
+                                        [09:42:58]   rollout 2/3 rank 已完成
+[09:42:58]   rollout 2/3 rank 已完成
+                                        [09:44:58]   rollout 2/3 rank 已完成
+[09:44:58]   rollout 2/3 rank 已完成
+                                        [09:46:58]   rollout 2/3 rank 已完成
+[09:46:58]   rollout 2/3 rank 已完成
+                                        [09:48:58]   rollout 2/3 rank 已完成
+[09:48:58]   rollout 2/3 rank 已完成
+                                        [09:50:58]   rollout 2/3 rank 已完成
+[09:50:58]   rollout 2/3 rank 已完成
+                                        [09:52:58]   rollout 2/3 rank 已完成
+[09:52:58]   rollout 2/3 rank 已完成
+                                        [09:54:58]   rollout 2/3 rank 已完成
+[09:54:58]   rollout 2/3 rank 已完成
+                                        [09:56:58]   rollout 2/3 rank 已完成
+[09:56:58]   rollout 2/3 rank 已完成
+                                        [09:58:58]   rollout 2/3 rank 已完成
+[09:58:58]   rollout 2/3 rank 已完成
+                                        [10:00:58]   rollout 2/3 rank 已完成
+[10:00:58]   rollout 2/3 rank 已完成
+                                        [10:02:58]   rollout 2/3 rank 已完成
+[10:02:58]   rollout 2/3 rank 已完成
+                                        [10:04:58]   rollout 2/3 rank 已完成
+[10:04:58]   rollout 2/3 rank 已完成
+                                        [10:06:58]   rollout 2/3 rank 已完成
+[10:06:58]   rollout 2/3 rank 已完成
+                                        [10:08:58]   rollout 2/3 rank 已完成
+[10:08:58]   rollout 2/3 rank 已完成
+[10:10:58]   rollout 2/3 rank 已完成
+[10:10:58]   rollout 2/3 rank 已完成
+                                        [10:12:58]   rollout 3/3 rank 已完成
+[10:12:58]   rollout 3/3 rank 已完成
+[10:12:58]   Rollout 完成！
+[10:12:58]   Rollout 完成！
+[10:12:58]   合并 rollout 文件...
+[10:12:58]   合并 rollout 文件...
+Traceback (most recent call last):
+  File "<stdin>", line 5, in <module>
+  File "<stdin>", line 5, in <listcomp>
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 5409 (char 5408)
+run_onpolicy_loop_bs128.sh: line 196: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi5/merged.jsonl: No such file or directory
+[10:12:58]   merged.jsonl:  条
+[10:12:58]   merged.jsonl:  条
+[10:12:58] Step 3/4: Reward 计算...
+[10:12:58] Step 3/4: Reward 计算...
+Traceback (most recent call last):
+  File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/compute_rewards.py", line 499, in <module>
+    main()
+  File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/compute_rewards.py", line 360, in main
+    with open(fpath) as f:
+         ^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi5/merged.jsonl'
+run_onpolicy_loop_bs128.sh: line 213: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi5/train_reward_a.jsonl: No such file or directory
+[10:12:59]   训练数据:  条
+[10:12:59]   训练数据:  条
+[10:12:59] Step 3/4: ELBO-PG 训练  π_4 → π_5 (block_length=128)...
+[10:12:59] Step 3/4: ELBO-PG 训练  π_4 → π_5 (block_length=128)...
+W0826 10:13:07.511000 1664039 site-packages/torch/distributed/run.py:792] 
+W0826 10:13:07.511000 1664039 site-packages/torch/distributed/run.py:792] *****************************************
+W0826 10:13:07.511000 1664039 site-packages/torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0826 10:13:07.511000 1664039 site-packages/torch/distributed/run.py:792] *****************************************
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+2026-08-26 10:13:16 - INFO - __main__ - Script args: GRPOScriptArgs(dataset_path='/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi5/train_reward_a.jsonl', max_samples=None, block_length=128, num_mc=1, mask_token_id=126336, advantage_clip=5.0, normalize_elbo=True, tool_resp_left='<|im_start|>user\n<tool_response>', tool_resp_right='</tool_response><|im_end|>\n<|im_start|>assistant\n')
+2026-08-26 10:13:16 - INFO - __main__ - Training args: GRPOConfig(
+accelerator_config={'split_batches': False, 'dispatch_batches': None, 'even_batches': True, 'use_seedable_sampler': True, 'non_blocking': False, 'gradient_accumulation_kwargs': None, 'use_configured_state': False},
+adam_beta1=0.9,
+adam_beta2=0.99,
+adam_epsilon=1e-08,
+auto_find_batch_size=False,
+average_tokens_across_devices=True,
+base_model_attribute_name=model,
+batch_eval_metrics=False,
+beta=0.0,
+bf16=True,
+bf16_full_eval=False,
+data_seed=None,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_persistent_workers=False,
+dataloader_pin_memory=True,
+dataloader_prefetch_factor=None,
+dataset_num_proc=None,
+ddp_backend=None,
+ddp_broadcast_buffers=None,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_timeout=1800,
+debug=[],
+deepspeed=None,
+disable_dropout=True,
+disable_tqdm=False,
+discopop_tau=0.05,
+do_eval=False,
+do_predict=False,
+do_train=False,
+enable_jit_checkpoint=False,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_do_concat_batches=True,
+eval_on_start=False,
+eval_steps=None,
+eval_strategy=IntervalStrategy.NO,
+eval_use_gather_object=False,
+f_alpha_divergence_coef=1.0,
+f_divergence_type=reverse_kl,
+force_use_ref_model=None,
+fp16=False,
+fp16_full_eval=False,
+fsdp=[],
+fsdp_config={'min_num_params': 0, 'xla': False, 'xla_fsdp_v2': False, 'xla_fsdp_grad_ckpt': False},
+full_determinism=False,
+generate_during_eval=False,
+gradient_accumulation_steps=8,
+gradient_checkpointing=False,
+gradient_checkpointing_kwargs=None,
+greater_is_better=None,
+hub_always_push=False,
+hub_model_id=None,
+hub_private_repo=None,
+hub_revision=None,
+hub_strategy=HubStrategy.EVERY_SAVE,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+include_for_metrics=[],
+include_num_input_tokens_seen=no,
+label_names=None,
+label_pad_token_id=-100,
+label_smoothing=0.0,
+label_smoothing_factor=0.0,
+ld_alpha=None,
+learning_rate=1e-06,
+length_column_name=length,
+liger_kernel_config=None,
+load_best_model_at_end=False,
+local_rank=-1,
+log_level=info,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=None,
+logging_first_step=True,
+logging_nan_inf_filter=True,
+logging_steps=5,
+logging_strategy=IntervalStrategy.STEPS,
+loss_type=sigmoid,
+loss_weights=None,
+lr_scheduler_kwargs=None,
+lr_scheduler_type=SchedulerType.COSINE,
+max_completion_length=640,
+max_grad_norm=0.5,
+max_length=4096,
+max_prompt_length=640,
+max_steps=-1,
+metric_for_best_model=None,
+model_adapter_name=None,
+model_init_kwargs=None,
+neftune_noise_alpha=None,
+num_train_epochs=1,
+optim=OptimizerNames.ADAMW_TORCH,
+optim_args=None,
+optim_target_modules=None,
+output_dir=/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi5/model,
+pad_token=<PAD_TOKEN>,
+padding_free=False,
+parallelism_config=None,
+per_device_eval_batch_size=1,
+per_device_train_batch_size=1,
+precompute_ref_batch_size=None,
+precompute_ref_log_probs=False,
+prediction_loss_only=False,
+project=huggingface,
+push_to_hub=False,
+ref_adapter_name=None,
+ref_model_init_kwargs=None,
+ref_model_mixup_alpha=0.6,
+ref_model_sync_steps=512,
+reference_free=False,
+remove_unused_columns=False,
+report_to=['wandb'],
+restore_callback_states_from_checkpoint=False,
+resume_from_checkpoint=None,
+rpo_alpha=None,
+run_name=onpolicy_bs128_pi5_20260826_091418,
+save_on_each_node=False,
+save_only_model=False,
+save_steps=500,
+save_strategy=SaveStrategy.EPOCH,
+save_total_limit=1,
+seed=42,
+skip_memory_metrics=True,
+sync_ref_model=False,
+tf32=None,
+tools=None,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torch_empty_cache_steps=None,
+trackio_space_id=trackio,
+train_sampling_strategy=random,
+truncation_mode=keep_end,
+use_cache=False,
+use_cpu=False,
+use_liger_kernel=False,
+use_logits_to_keep=False,
+use_weighting=False,
+wandb_project=dllm_agentic_rl_bs128,
+warmup_ratio=0.05,
+warmup_steps=0.05,
+weight_decay=0.01,
+)
+2026-08-26 10:13:16 - INFO - __main__ - *** Loading GRPO dataset ***
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/llada_grpo_train.py", line 293, in <module>
+[rank0]:     main(script_args, training_args, model_args)
+[rank0]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/llada_grpo_train.py", line 167, in main
+[rank0]:     train_dataset = load_grpo_dataset(script_args.dataset_path, script_args.max_samples)
+[rank0]:                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/llada_grpo_train.py", line 128, in load_grpo_dataset
+[rank0]:     dataset = datasets.load_dataset("json", data_files=path, split="train")
+[rank0]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/datasets/load.py", line 1488, in load_dataset
+[rank0]:     builder_instance = load_dataset_builder(
+[rank0]:                        ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/datasets/load.py", line 1133, in load_dataset_builder
+[rank0]:     dataset_module = dataset_module_factory(
+[rank0]:                      ^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/datasets/load.py", line 915, in dataset_module_factory
+[rank0]:     ).get_module()
+[rank0]:       ^^^^^^^^^^^^
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/datasets/load.py", line 528, in get_module
+[rank0]:     data_files = DataFilesDict.from_patterns(
+[rank0]:                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/datasets/data_files.py", line 708, in from_patterns
+[rank0]:     else DataFilesList.from_patterns(
+[rank0]:          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/datasets/data_files.py", line 601, in from_patterns
+[rank0]:     resolve_pattern(
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/datasets/data_files.py", line 390, in resolve_pattern
+[rank0]:     raise FileNotFoundError(error_msg)
+[rank0]: FileNotFoundError: Unable to find '/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi5/train_reward_a.jsonl'
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/llada_grpo_train.py", line 293, in <module>
+[rank1]:     main(script_args, training_args, model_args)
+[rank1]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/llada_grpo_train.py", line 167, in main
+[rank1]:     train_dataset = load_grpo_dataset(script_args.dataset_path, script_args.max_samples)
+[rank1]:                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/llada_grpo_train.py", line 128, in load_grpo_dataset
+[rank1]:     dataset = datasets.load_dataset("json", data_files=path, split="train")
+[rank1]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/datasets/load.py", line 1488, in load_dataset
+[rank1]:     builder_instance = load_dataset_builder(
+[rank1]:                        ^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/datasets/load.py", line 1133, in load_dataset_builder
+[rank1]:     dataset_module = dataset_module_factory(
+[rank1]:                      ^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/datasets/load.py", line 915, in dataset_module_factory
+[rank1]:     ).get_module()
+[rank1]:       ^^^^^^^^^^^^
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/datasets/load.py", line 528, in get_module
+[rank1]:     data_files = DataFilesDict.from_patterns(
+[rank1]:                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/datasets/data_files.py", line 708, in from_patterns
+[rank1]:     else DataFilesList.from_patterns(
+[rank1]:          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/datasets/data_files.py", line 601, in from_patterns
+[rank1]:     resolve_pattern(
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/datasets/data_files.py", line 390, in resolve_pattern
+[rank1]:     raise FileNotFoundError(error_msg)
+[rank1]: FileNotFoundError: Unable to find '/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi5/train_reward_a.jsonl'
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/llada_grpo_train.py", line 293, in <module>
+[rank2]:     main(script_args, training_args, model_args)
+[rank2]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/llada_grpo_train.py", line 167, in main
+[rank2]:     train_dataset = load_grpo_dataset(script_args.dataset_path, script_args.max_samples)
+[rank2]:                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/llada_grpo_train.py", line 128, in load_grpo_dataset
+[rank2]:     dataset = datasets.load_dataset("json", data_files=path, split="train")
+[rank2]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/datasets/load.py", line 1488, in load_dataset
+[rank2]:     builder_instance = load_dataset_builder(
+[rank2]:                        ^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/datasets/load.py", line 1133, in load_dataset_builder
+[rank2]:     dataset_module = dataset_module_factory(
+[rank2]:                      ^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/datasets/load.py", line 915, in dataset_module_factory
+[rank2]:     ).get_module()
+[rank2]:       ^^^^^^^^^^^^
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/datasets/load.py", line 528, in get_module
+[rank2]:     data_files = DataFilesDict.from_patterns(
+[rank2]:                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/datasets/data_files.py", line 708, in from_patterns
+[rank2]:     else DataFilesList.from_patterns(
+[rank2]:          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/datasets/data_files.py", line 601, in from_patterns
+[rank2]:     resolve_pattern(
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/datasets/data_files.py", line 390, in resolve_pattern
+[rank2]:     raise FileNotFoundError(error_msg)
+[rank2]: FileNotFoundError: Unable to find '/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi5/train_reward_a.jsonl'
+[rank0]:[W826 10:13:17.877606055 ProcessGroupNCCL.cpp:1496] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+W0826 10:13:18.334000 1664039 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 1664410 closing signal SIGTERM
+W0826 10:13:18.334000 1664039 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 1664411 closing signal SIGTERM
+E0826 10:13:18.750000 1664039 site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 0 (pid: 1664409) of binary: /research/cbim/vast/mz751/miniforge3/envs/espo/bin/python3.11
+Traceback (most recent call last):
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/bin/accelerate", line 6, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/accelerate/commands/accelerate_cli.py", line 50, in main
+    args.func(args)
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/accelerate/commands/launch.py", line 1266, in launch_command
+    deepspeed_launcher(args)
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/accelerate/commands/launch.py", line 952, in deepspeed_launcher
+    distrib_run.run(args)
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+my_train/llada_grpo_train.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-08-26_10:13:18
+  host      : hermes.cs.rutgers.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 1664409)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+[10:13:20] [ERROR] Round 4 训练失败 (exit=1)，退出
+[10:13:20] [ERROR] Round 4 训练失败 (exit=1)，退出
+[10:14:59]   rollout 2/3 rank 已完成
+[10:16:23] ========================================================
+[10:16:23] ========================================================
+[10:16:23] On-Policy Loop [bs128] 启动：Round 4 → 5
+[10:16:23] On-Policy Loop [bs128] 启动：Round 4 → 5
+[10:16:23]   π₀ = sft_llada_x0pred_bs128/ckpt_4 (49.2% CEM-1)
+[10:16:23]   π₀ = sft_llada_x0pred_bs128/ckpt_4 (49.2% CEM-1)
+[10:16:23]   block_size=128  num_steps=128
+[10:16:23]   block_size=128  num_steps=128
+[10:16:23]   输出: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128
+[10:16:23]   输出: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128
+[10:16:23] ========================================================
+[10:16:23] ========================================================
+[10:16:23] 
+[10:16:23] 
+[10:16:23] ========================================================
+[10:16:23] ========================================================
+[10:16:23] Round 4:  π_4 → D_4 → π_5
+[10:16:23] Round 4:  π_4 → D_4 → π_5
+[10:16:23]   Base model : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi4/model
+[10:16:23]   Base model : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi4/model
+[10:16:23]   Output     : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi5/model
+[10:16:23]   Output     : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi5/model
+[10:16:23] ========================================================
+[10:16:23] ========================================================
+[10:16:24]   [OK] 基础模型验证通过
+[10:16:24]   [OK] 基础模型验证通过
+[10:16:24] Step 1/4: Pool  [1024, 1280)...
+[10:16:24] Step 1/4: Pool  [1024, 1280)...
+[10:16:24]   Pool 已存在 (256 题)，跳过
+[10:16:24]   Pool 已存在 (256 题)，跳过
+[10:16:24] Step 2/4: Rollout  π_4 × 256题 × 8rolls (block_size=128)...
+[10:16:24] Step 2/4: Rollout  π_4 × 256题 × 8rolls (block_size=128)...
+[10:16:24]   Rollout 已完成，跳过
+[10:16:24]   Rollout 已完成，跳过
+[10:16:24]   merged.jsonl 已存在 (2067 条)
+[10:16:24]   merged.jsonl 已存在 (2067 条)
+[10:16:24] Step 3/4: Reward 计算...
+[10:16:24] Step 3/4: Reward 计算...
+[10:16:24]   train_reward_a.jsonl 已存在 (1731 条)
+[10:16:24]   train_reward_a.jsonl 已存在 (1731 条)
+[10:16:24]   训练数据: 1731 条
+[10:16:24]   训练数据: 1731 条
+[10:16:24] Step 3/4: ELBO-PG 训练  π_4 → π_5 (block_length=128)...
+[10:16:24] Step 3/4: ELBO-PG 训练  π_4 → π_5 (block_length=128)...
+W0826 10:16:33.117000 1667586 site-packages/torch/distributed/run.py:792] 
+W0826 10:16:33.117000 1667586 site-packages/torch/distributed/run.py:792] *****************************************
+W0826 10:16:33.117000 1667586 site-packages/torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0826 10:16:33.117000 1667586 site-packages/torch/distributed/run.py:792] *****************************************
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+2026-08-26 10:16:42 - INFO - __main__ - Script args: GRPOScriptArgs(dataset_path='/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi5/train_reward_a.jsonl', max_samples=None, block_length=128, num_mc=1, mask_token_id=126336, advantage_clip=5.0, normalize_elbo=True, tool_resp_left='<|im_start|>user\n<tool_response>', tool_resp_right='</tool_response><|im_end|>\n<|im_start|>assistant\n')
+2026-08-26 10:16:42 - INFO - __main__ - Training args: GRPOConfig(
+accelerator_config={'split_batches': False, 'dispatch_batches': None, 'even_batches': True, 'use_seedable_sampler': True, 'non_blocking': False, 'gradient_accumulation_kwargs': None, 'use_configured_state': False},
+adam_beta1=0.9,
+adam_beta2=0.99,
+adam_epsilon=1e-08,
+auto_find_batch_size=False,
+average_tokens_across_devices=True,
+base_model_attribute_name=model,
+batch_eval_metrics=False,
+beta=0.0,
+bf16=True,
+bf16_full_eval=False,
+data_seed=None,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_persistent_workers=False,
+dataloader_pin_memory=True,
+dataloader_prefetch_factor=None,
+dataset_num_proc=None,
+ddp_backend=None,
+ddp_broadcast_buffers=None,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_timeout=1800,
+debug=[],
+deepspeed=None,
+disable_dropout=True,
+disable_tqdm=False,
+discopop_tau=0.05,
+do_eval=False,
+do_predict=False,
+do_train=False,
+enable_jit_checkpoint=False,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_do_concat_batches=True,
+eval_on_start=False,
+eval_steps=None,
+eval_strategy=IntervalStrategy.NO,
+eval_use_gather_object=False,
+f_alpha_divergence_coef=1.0,
+f_divergence_type=reverse_kl,
+force_use_ref_model=None,
+fp16=False,
+fp16_full_eval=False,
+fsdp=[],
+fsdp_config={'min_num_params': 0, 'xla': False, 'xla_fsdp_v2': False, 'xla_fsdp_grad_ckpt': False},
+full_determinism=False,
+generate_during_eval=False,
+gradient_accumulation_steps=8,
+gradient_checkpointing=False,
+gradient_checkpointing_kwargs=None,
+greater_is_better=None,
+hub_always_push=False,
+hub_model_id=None,
+hub_private_repo=None,
+hub_revision=None,
+hub_strategy=HubStrategy.EVERY_SAVE,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+include_for_metrics=[],
+include_num_input_tokens_seen=no,
+label_names=None,
+label_pad_token_id=-100,
+label_smoothing=0.0,
+label_smoothing_factor=0.0,
+ld_alpha=None,
+learning_rate=1e-06,
+length_column_name=length,
+liger_kernel_config=None,
+load_best_model_at_end=False,
+local_rank=-1,
+log_level=info,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=None,
+logging_first_step=True,
+logging_nan_inf_filter=True,
+logging_steps=5,
+logging_strategy=IntervalStrategy.STEPS,
+loss_type=sigmoid,
+loss_weights=None,
+lr_scheduler_kwargs=None,
+lr_scheduler_type=SchedulerType.COSINE,
+max_completion_length=640,
+max_grad_norm=0.5,
+max_length=4096,
+max_prompt_length=640,
+max_steps=-1,
+metric_for_best_model=None,
+model_adapter_name=None,
+model_init_kwargs=None,
+neftune_noise_alpha=None,
+num_train_epochs=1,
+optim=OptimizerNames.ADAMW_TORCH,
+optim_args=None,
+optim_target_modules=None,
+output_dir=/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi5/model,
+pad_token=<PAD_TOKEN>,
+padding_free=False,
+parallelism_config=None,
+per_device_eval_batch_size=1,
+per_device_train_batch_size=1,
+precompute_ref_batch_size=None,
+precompute_ref_log_probs=False,
+prediction_loss_only=False,
+project=huggingface,
+push_to_hub=False,
+ref_adapter_name=None,
+ref_model_init_kwargs=None,
+ref_model_mixup_alpha=0.6,
+ref_model_sync_steps=512,
+reference_free=False,
+remove_unused_columns=False,
+report_to=['wandb'],
+restore_callback_states_from_checkpoint=False,
+resume_from_checkpoint=None,
+rpo_alpha=None,
+run_name=onpolicy_bs128_pi5_20260826_101623,
+save_on_each_node=False,
+save_only_model=False,
+save_steps=500,
+save_strategy=SaveStrategy.EPOCH,
+save_total_limit=1,
+seed=42,
+skip_memory_metrics=True,
+sync_ref_model=False,
+tf32=None,
+tools=None,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torch_empty_cache_steps=None,
+trackio_space_id=trackio,
+train_sampling_strategy=random,
+truncation_mode=keep_end,
+use_cache=False,
+use_cpu=False,
+use_liger_kernel=False,
+use_logits_to_keep=False,
+use_weighting=False,
+wandb_project=dllm_agentic_rl_bs128,
+warmup_ratio=0.05,
+warmup_steps=0.05,
+weight_decay=0.01,
+)
+2026-08-26 10:16:42 - INFO - __main__ - *** Loading GRPO dataset ***
+Using custom data configuration default-a25b906fafe56fb6
+2026-08-26 10:16:42 - INFO - datasets.builder - Using custom data configuration default-a25b906fafe56fb6
+Generating dataset json (/research/cbim/vast/mz751/.cache/huggingface/datasets/json/default-a25b906fafe56fb6/0.0.0/ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18)
+2026-08-26 10:16:42 - INFO - datasets.builder - Generating dataset json (/research/cbim/vast/mz751/.cache/huggingface/datasets/json/default-a25b906fafe56fb6/0.0.0/ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18)
+Downloading and preparing dataset json/default to /research/cbim/vast/mz751/.cache/huggingface/datasets/json/default-a25b906fafe56fb6/0.0.0/ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18...
+2026-08-26 10:16:42 - INFO - datasets.builder - Downloading and preparing dataset json/default to /research/cbim/vast/mz751/.cache/huggingface/datasets/json/default-a25b906fafe56fb6/0.0.0/ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18...
+Downloading took 0.0 min
+2026-08-26 10:16:42 - INFO - datasets.download.download_manager - Downloading took 0.0 min
+Checksum Computation took 0.0 min
+2026-08-26 10:16:42 - INFO - datasets.download.download_manager - Checksum Computation took 0.0 min
+Generating train split
+2026-08-26 10:16:42 - INFO - datasets.builder - Generating train split
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 1731 examples [00:00, 18959.03 examples/s]
+Unable to verify splits sizes.
+2026-08-26 10:16:42 - INFO - datasets.utils.info_utils - Unable to verify splits sizes.
+Dataset json downloaded and prepared to /research/cbim/vast/mz751/.cache/huggingface/datasets/json/default-a25b906fafe56fb6/0.0.0/ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18. Subsequent calls will reuse this data.
+2026-08-26 10:16:42 - INFO - datasets.builder - Dataset json downloaded and prepared to /research/cbim/vast/mz751/.cache/huggingface/datasets/json/default-a25b906fafe56fb6/0.0.0/ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18. Subsequent calls will reuse this data.
+2026-08-26 10:16:42 - INFO - __main__ - Train samples: 1731
+2026-08-26 10:16:42 - INFO - __main__ - *** Loading tokenizer ***
+loading configuration file /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi4/model/config.json
+loading configuration file /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi4/model/config.json
+Model config LLaDAConfig {
+  "activation_type": "silu",
+  "alibi": false,
+  "alibi_bias_max": 8.0,
+  "architectures": [
+    "LLaDAModelLM"
+  ],
+  "attention_dropout": 0.0,
+  "attention_layer_norm": false,
+  "attention_layer_norm_with_affine": true,
+  "auto_map": {
+    "AutoConfig": "configuration_llada.LLaDAConfig",
+    "AutoModel": "modeling_llada.LLaDAModelLM",
+    "AutoModelForCausalLM": "modeling_llada.LLaDAModelLM"
+  },
+  "bias_for_layer_norm": false,
+  "block_group_size": 1,
+  "block_type": "llama",
+  "bos_token_id": 126080,
+  "d_model": 4096,
+  "dtype": "bfloat16",
+  "embedding_dropout": 0.0,
+  "embedding_size": 126464,
+  "eos_token_id": 126081,
+  "flash_attention": false,
+  "include_bias": false,
+  "include_qkv_bias": false,
+  "init_cutoff_factor": null,
+  "init_device": "meta",
+  "init_fn": "mitchell",
+  "init_std": 0.02,
+  "input_emb_norm": false,
+  "layer_norm_type": "rms",
+  "layer_norm_with_affine": true,
+  "mask_token_id": 126336,
+  "max_sequence_length": 4096,
+  "mlp_hidden_size": 12288,
+  "mlp_ratio": 4,
+  "model_type": "llada",
+  "multi_query_attention": null,
+  "n_heads": 32,
+  "n_kv_heads": 32,
+  "n_layers": 32,
+  "pad_token_id": 126081,
+  "precision": "amp_bf16",
+  "residual_dropout": 0.0,
+  "rms_norm_eps": 1e-05,
+  "rope": true,
+  "rope_full_precision": true,
+  "rope_theta": 500000.0,
+  "scale_logits": false,
+  "transformers_version": "5.2.0",
+  "vocab_size": 126464,
+  "weight_tying": false
+}
+
+2026-08-26 10:16:43 - INFO - __main__ - *** Loading model ***
+2026-08-26 10:16:43 - INFO - __main__ - ZeRO stage: 2 (is_zero3=False)
+loading configuration file /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi4/model/config.json
+loading configuration file /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi4/model/config.json
+`torch_dtype` is deprecated! Use `dtype` instead!
+Model config LLaDAConfig {
+  "activation_type": "silu",
+  "alibi": false,
+  "alibi_bias_max": 8.0,
+  "architectures": [
+    "LLaDAModelLM"
+  ],
+  "attention_dropout": 0.0,
+  "attention_layer_norm": false,
+  "attention_layer_norm_with_affine": true,
+  "auto_map": {
+    "AutoConfig": "configuration_llada.LLaDAConfig",
+    "AutoModel": "modeling_llada.LLaDAModelLM",
+    "AutoModelForCausalLM": "modeling_llada.LLaDAModelLM"
+  },
+  "bias_for_layer_norm": false,
+  "block_group_size": 1,
+  "block_type": "llama",
+  "bos_token_id": 126080,
+  "d_model": 4096,
+  "dtype": "bfloat16",
+  "embedding_dropout": 0.0,
+  "embedding_size": 126464,
+  "eos_token_id": 126081,
+  "flash_attention": false,
+  "include_bias": false,
+  "include_qkv_bias": false,
+  "init_cutoff_factor": null,
+  "init_device": "meta",
+  "init_fn": "mitchell",
+  "init_std": 0.02,
+  "input_emb_norm": false,
+  "layer_norm_type": "rms",
+  "layer_norm_with_affine": true,
+  "mask_token_id": 126336,
+  "max_sequence_length": 4096,
+  "mlp_hidden_size": 12288,
+  "mlp_ratio": 4,
+  "model_type": "llada",
+  "multi_query_attention": null,
+  "n_heads": 32,
+  "n_kv_heads": 32,
+  "n_layers": 32,
+  "pad_token_id": 126081,
+  "precision": "amp_bf16",
+  "residual_dropout": 0.0,
+  "rms_norm_eps": 1e-05,
+  "rope": true,
+  "rope_full_precision": true,
+  "rope_theta": 500000.0,
+  "scale_logits": false,
+  "transformers_version": "5.2.0",
+  "vocab_size": 126464,
+  "weight_tying": false
+}
+
+loading weights file /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi4/model/model.safetensors
+Detected DeepSpeed ZeRO-3: activating zero.init() for this model
+Generate config GenerationConfig {
+  "bos_token_id": 126080,
+  "eos_token_id": 126081,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 126081
+}
+
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+NCCL version 2.21.5+cuda12.4
+loading configuration file /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi4/model/generation_config.json
+Generate config GenerationConfig {
+  "bos_token_id": 126080,
+  "eos_token_id": [
+    126081
+  ],
+  "pad_token_id": 126081
+}
+
+Could not locate the custom_generate/generate.py inside /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi4/model.
+2026-08-26 10:16:56 - INFO - __main__ - Model loaded to cuda:0 (ZeRO-2)
+2026-08-26 10:16:56 - INFO - __main__ - LLaDA activation checkpointing enabled: whole_layer
+2026-08-26 10:16:56 - INFO - __main__ - *** Initializing GRPO Trainer ***
+Tokenizing GRPO train dataset:   0%|          | 0/1731 [00:00<?, ? examples/s]Caching processed dataset at /research/cbim/vast/mz751/.cache/huggingface/datasets/json/default-a25b906fafe56fb6/0.0.0/ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18/cache-66d152a8d3a632b3.arrow
+2026-08-26 10:16:56 - INFO - datasets.arrow_dataset - Caching processed dataset at /research/cbim/vast/mz751/.cache/huggingface/datasets/json/default-a25b906fafe56fb6/0.0.0/ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18/cache-66d152a8d3a632b3.arrow
+Tokenizing GRPO train dataset:   1%|          | 19/1731 [00:00<00:10, 162.47 examples/s]Tokenizing GRPO train dataset:   2%|▏         | 40/1731 [00:00<00:09, 182.77 examples/s]Tokenizing GRPO train dataset:   4%|▎         | 61/1731 [00:00<00:08, 188.08 examples/s]Tokenizing GRPO train dataset:   5%|▌         | 87/1731 [00:00<00:09, 175.60 examples/s]Tokenizing GRPO train dataset:   6%|▌         | 106/1731 [00:00<00:09, 173.99 examples/s]Tokenizing GRPO train dataset:   7%|▋         | 125/1731 [00:00<00:09, 177.15 examples/s]Tokenizing GRPO train dataset:   8%|▊         | 145/1731 [00:00<00:08, 180.60 examples/s]Tokenizing GRPO train dataset:  10%|▉         | 165/1731 [00:00<00:08, 181.30 examples/s]Tokenizing GRPO train dataset:  11%|█         | 186/1731 [00:01<00:08, 184.83 examples/s]Tokenizing GRPO train dataset:  12%|█▏        | 214/1731 [00:01<00:08, 182.37 examples/s]Tokenizing GRPO train dataset:  14%|█▎        | 235/1731 [00:01<00:07, 188.38 examples/s]Tokenizing GRPO train dataset:  15%|█▍        | 255/1731 [00:01<00:07, 188.72 examples/s]Tokenizing GRPO train dataset:  16%|█▋        | 282/1731 [00:01<00:07, 183.45 examples/s]Tokenizing GRPO train dataset:  17%|█▋        | 302/1731 [00:01<00:07, 185.08 examples/s]Tokenizing GRPO train dataset:  19%|█▉        | 332/1731 [00:01<00:07, 182.37 examples/s]Tokenizing GRPO train dataset:  20%|██        | 351/1731 [00:01<00:07, 179.85 examples/s]Tokenizing GRPO train dataset:  21%|██▏       | 372/1731 [00:02<00:07, 185.26 examples/s]Tokenizing GRPO train dataset:  23%|██▎       | 396/1731 [00:02<00:06, 195.16 examples/s]Tokenizing GRPO train dataset:  24%|██▍       | 418/1731 [00:02<00:06, 197.94 examples/s]Tokenizing GRPO train dataset:  26%|██▌       | 448/1731 [00:02<00:06, 192.63 examples/s]Tokenizing GRPO train dataset:  27%|██▋       | 476/1731 [00:02<00:06, 188.22 examples/s]Tokenizing GRPO train dataset:  29%|██▉       | 501/1731 [00:02<00:06, 176.05 examples/s]Tokenizing GRPO train dataset:  31%|███       | 528/1731 [00:02<00:06, 195.20 examples/s]Tokenizing GRPO train dataset:  32%|███▏      | 550/1731 [00:02<00:05, 199.87 examples/s]Tokenizing GRPO train dataset:  33%|███▎      | 572/1731 [00:03<00:06, 178.18 examples/s]Tokenizing GRPO train dataset:  35%|███▍      | 598/1731 [00:03<00:06, 171.69 examples/s]Tokenizing GRPO train dataset:  36%|███▌      | 620/1731 [00:03<00:06, 181.17 examples/s]Tokenizing GRPO train dataset:  37%|███▋      | 647/1731 [00:03<00:06, 180.09 examples/s]Tokenizing GRPO train dataset:  39%|███▉      | 674/1731 [00:03<00:05, 177.36 examples/s]Tokenizing GRPO train dataset:  40%|████      | 699/1731 [00:03<00:05, 191.33 examples/s]Tokenizing GRPO train dataset:  42%|████▏     | 721/1731 [00:03<00:05, 193.01 examples/s]Tokenizing GRPO train dataset:  43%|████▎     | 743/1731 [00:04<00:05, 194.75 examples/s]Tokenizing GRPO train dataset:  44%|████▍     | 770/1731 [00:04<00:05, 185.59 examples/s]Tokenizing GRPO train dataset:  46%|████▌     | 789/1731 [00:04<00:05, 180.13 examples/s]Tokenizing GRPO train dataset:  47%|████▋     | 810/1731 [00:04<00:04, 186.91 examples/s]Tokenizing GRPO train dataset:  48%|████▊     | 833/1731 [00:04<00:04, 194.76 examples/s]Tokenizing GRPO train dataset:  50%|████▉     | 860/1731 [00:04<00:04, 209.02 examples/s]Tokenizing GRPO train dataset:  51%|█████     | 884/1731 [00:04<00:03, 214.11 examples/s]Tokenizing GRPO train dataset:  52%|█████▏    | 906/1731 [00:04<00:03, 214.63 examples/s]Tokenizing GRPO train dataset:  54%|█████▍    | 937/1731 [00:04<00:03, 205.56 examples/s]Tokenizing GRPO train dataset:  55%|█████▌    | 959/1731 [00:05<00:03, 202.49 examples/s]Tokenizing GRPO train dataset:  57%|█████▋    | 990/1731 [00:05<00:03, 200.39 examples/s]Tokenizing GRPO train dataset:  59%|█████▊    | 1013/1731 [00:05<00:03, 205.29 examples/s]Tokenizing GRPO train dataset:  60%|██████    | 1040/1731 [00:05<00:03, 218.35 examples/s]Tokenizing GRPO train dataset:  61%|██████▏   | 1063/1731 [00:05<00:03, 212.64 examples/s]Tokenizing GRPO train dataset:  63%|██████▎   | 1086/1731 [00:05<00:03, 213.25 examples/s]Tokenizing GRPO train dataset:  64%|██████▍   | 1109/1731 [00:05<00:02, 214.21 examples/s]Tokenizing GRPO train dataset:  66%|██████▌   | 1136/1731 [00:05<00:03, 195.07 examples/s]Tokenizing GRPO train dataset:  67%|██████▋   | 1167/1731 [00:06<00:02, 195.77 examples/s]Tokenizing GRPO train dataset:  69%|██████▉   | 1194/1731 [00:06<00:02, 189.96 examples/s]Tokenizing GRPO train dataset:  71%|███████   | 1225/1731 [00:06<00:02, 189.48 examples/s]Tokenizing GRPO train dataset:  72%|███████▏  | 1246/1731 [00:06<00:02, 192.96 examples/s]Tokenizing GRPO train dataset:  73%|███████▎  | 1271/1731 [00:06<00:02, 197.94 examples/s]Tokenizing GRPO train dataset:  75%|███████▍  | 1296/1731 [00:06<00:02, 206.90 examples/s]Tokenizing GRPO train dataset:  76%|███████▌  | 1319/1731 [00:06<00:01, 209.37 examples/s]Tokenizing GRPO train dataset:  78%|███████▊  | 1347/1731 [00:07<00:01, 198.97 examples/s]Tokenizing GRPO train dataset:  79%|███████▉  | 1372/1731 [00:07<00:01, 184.99 examples/s]Tokenizing GRPO train dataset:  81%|████████  | 1394/1731 [00:07<00:01, 190.88 examples/s]Tokenizing GRPO train dataset:  82%|████████▏ | 1423/1731 [00:07<00:01, 188.37 examples/s]Tokenizing GRPO train dataset:  84%|████████▍ | 1450/1731 [00:07<00:01, 182.13 examples/s]Tokenizing GRPO train dataset:  85%|████████▍ | 1469/1731 [00:07<00:01, 180.58 examples/s]Tokenizing GRPO train dataset:  86%|████████▋ | 1495/1731 [00:07<00:01, 176.26 examples/s]Tokenizing GRPO train dataset:  88%|████████▊ | 1516/1731 [00:07<00:01, 183.15 examples/s]Tokenizing GRPO train dataset:  89%|████████▊ | 1536/1731 [00:08<00:01, 184.46 examples/s]Tokenizing GRPO train dataset:  90%|████████▉ | 1557/1731 [00:08<00:00, 186.44 examples/s]Tokenizing GRPO train dataset:  92%|█████████▏| 1588/1731 [00:08<00:00, 189.54 examples/s]Tokenizing GRPO train dataset:  93%|█████████▎| 1608/1731 [00:08<00:00, 189.74 examples/s]Tokenizing GRPO train dataset:  95%|█████████▍| 1637/1731 [00:08<00:00, 187.23 examples/s]Tokenizing GRPO train dataset:  96%|█████████▌| 1657/1731 [00:08<00:00, 177.32 examples/s]Tokenizing GRPO train dataset:  97%|█████████▋| 1677/1731 [00:08<00:00, 181.21 examples/s]Tokenizing GRPO train dataset:  98%|█████████▊| 1703/1731 [00:08<00:00, 176.29 examples/s]Tokenizing GRPO train dataset: 100%|█████████▉| 1723/1731 [00:09<00:00, 173.12 examples/s]Tokenizing GRPO train dataset: 100%|██████████| 1731/1731 [00:09<00:00, 187.86 examples/s]
+2026-08-26 10:17:05 - INFO - __main__ - *** Starting GRPO training ***
+Stage 3 initialize beginning
+MA 4.98 GB         Max_MA 5.94 GB         CA 5.35 GB         Max_CA 7 GB 
+CPU Virtual Memory:  used = 11.59 GB, percent = 4.7%
+DeepSpeedZeRoOffload initialize [begin]
+MA 4.98 GB         Max_MA 4.98 GB         CA 5.35 GB         Max_CA 5 GB 
+CPU Virtual Memory:  used = 11.6 GB, percent = 4.7%
+Parameter Offload - Persistent parameters statistics: param_count = 65, numel = 266240
+DeepSpeedZeRoOffload initialize [end]
+MA 4.98 GB         Max_MA 4.98 GB         CA 5.35 GB         Max_CA 5 GB 
+CPU Virtual Memory:  used = 11.6 GB, percent = 4.7%
+Before creating fp16 partitions
+MA 4.98 GB         Max_MA 4.98 GB         CA 5.35 GB         Max_CA 5 GB 
+CPU Virtual Memory:  used = 11.61 GB, percent = 4.7%
+After creating fp16 partitions: 4
+MA 4.98 GB         Max_MA 4.98 GB         CA 4.98 GB         Max_CA 5 GB 
+CPU Virtual Memory:  used = 21.49 GB, percent = 8.7%
+Before creating fp32 partitions
+MA 4.98 GB         Max_MA 4.98 GB         CA 4.98 GB         Max_CA 5 GB 
+CPU Virtual Memory:  used = 19.98 GB, percent = 8.1%
+After creating fp32 partitions
+MA 14.93 GB         Max_MA 18.7 GB         CA 19.98 GB         Max_CA 20 GB 
+CPU Virtual Memory:  used = 13.81 GB, percent = 5.6%
+Before initializing optimizer states
+MA 14.93 GB         Max_MA 14.93 GB         CA 19.98 GB         Max_CA 20 GB 
+CPU Virtual Memory:  used = 12.21 GB, percent = 4.9%
+After initializing optimizer states
+MA 14.93 GB         Max_MA 18.7 GB         CA 23.75 GB         Max_CA 24 GB 
+CPU Virtual Memory:  used = 12.21 GB, percent = 4.9%
+After initializing ZeRO optimizer
+MA 20.84 GB         Max_MA 21.8 GB         CA 24.96 GB         Max_CA 25 GB 
+CPU Virtual Memory:  used = 12.28 GB, percent = 5.0%
+***** Running training *****
+  Num examples = 1,731
+  Num Epochs = 1
+  Instantaneous batch size per device = 1
+  Total train batch size (w. parallel, distributed & accumulation) = 24
+  Gradient Accumulation steps = 8
+  Total optimization steps = 73
+  Number of trainable parameters = 8,015,581,184
+wandb: Currently logged in as: mz751 (mz751-rutgers-university). Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.28.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.15.12
+wandb: Run data is saved locally in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/wandb/run-20260826_101717-tc5p618b
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run onpolicy_bs128_pi5_20260826_101623
+wandb: ⭐️ View project at https://wandb.ai/mz751-rutgers-university/huggingface
+wandb: 🚀 View run at https://wandb.ai/mz751-rutgers-university/huggingface/runs/tc5p618b
+  0%|          | 0/73 [00:00<?, ?it/s][2026-08-26 10:17:19,041] [WARNING] [torch_autocast.py:122:autocast_if_enabled] torch.autocast is enabled outside DeepSpeed but disabled within the DeepSpeed engine. If you are using DeepSpeed's built-in mixed precision, the engine will follow the settings in bf16/fp16 section. To use torch's native autocast instead, configure the `torch_autocast` section in the DeepSpeed config.
+Traceback (most recent call last):
+  File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/llada_grpo_train.py", line 293, in <module>
+    main(script_args, training_args, model_args)
+  File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/llada_grpo_train.py", line 250, in main
+    train_result = trainer.train(resume_from_checkpoint=checkpoint)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/trainer.py", line 1412, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/trainer.py", line 1742, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/trainer.py", line 1979, in training_step
+    self.accelerator.backward(loss, **kwargs)
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/accelerate/accelerator.py", line 2844, in backward
+    self.deepspeed_engine_wrapped.backward(loss, sync_gradients=self.sync_gradients, **kwargs)
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/accelerate/utils/deepspeed.py", line 281, in backward
+    self.engine.step()
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/engine.py", line 2771, in step
+    self._take_model_step(lr_kwargs)
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/engine.py", line 2666, in _take_model_step
+    self.optimizer.step()
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/utils/nvtx.py", line 20, in wrapped_fn
+    ret_val = func(*args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/zero/stage3.py", line 2255, in step
+    self._optimizer_step(sub_group_id)
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/zero/stage3.py", line 1083, in _optimizer_step
+    step_with_gradscaler(self.optimizer)
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/zero/stage3.py", line 1067, in step_with_gradscaler
+    optimizer.step()
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/optim/optimizer.py", line 493, in wrapper
+    out = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/optim/optimizer.py", line 91, in _use_grad
+    ret = func(self, *args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/optim/adamw.py", line 232, in step
+    has_complex = self._init_group(
+                  ^^^^^^^^^^^^^^^^^
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py", line 745, in _fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/optim/adamw.py", line 175, in _init_group
+    state["exp_avg_sq"] = torch.zeros_like(
+                          ^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 3.77 GiB. GPU 0 has a total capacity of 39.50 GiB of which 2.69 GiB is free. Including non-PyTorch memory, this process has 36.79 GiB memory in use. Of the allocated memory 35.85 GiB is allocated by PyTorch, and 72.63 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/llada_grpo_train.py", line 293, in <module>
+[rank0]:     main(script_args, training_args, model_args)
+[rank0]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/llada_grpo_train.py", line 250, in main
+[rank0]:     train_result = trainer.train(resume_from_checkpoint=checkpoint)
+[rank0]:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/trainer.py", line 1412, in train
+[rank0]:     return inner_training_loop(
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/trainer.py", line 1742, in _inner_training_loop
+[rank0]:     tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+[rank0]:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/trainer.py", line 1979, in training_step
+[rank0]:     self.accelerator.backward(loss, **kwargs)
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/accelerate/accelerator.py", line 2844, in backward
+[rank0]:     self.deepspeed_engine_wrapped.backward(loss, sync_gradients=self.sync_gradients, **kwargs)
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/accelerate/utils/deepspeed.py", line 281, in backward
+[rank0]:     self.engine.step()
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/engine.py", line 2771, in step
+[rank0]:     self._take_model_step(lr_kwargs)
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/engine.py", line 2666, in _take_model_step
+[rank0]:     self.optimizer.step()
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/utils/nvtx.py", line 20, in wrapped_fn
+[rank0]:     ret_val = func(*args, **kwargs)
+[rank0]:               ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/zero/stage3.py", line 2255, in step
+[rank0]:     self._optimizer_step(sub_group_id)
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/zero/stage3.py", line 1083, in _optimizer_step
+[rank0]:     step_with_gradscaler(self.optimizer)
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/zero/stage3.py", line 1067, in step_with_gradscaler
+[rank0]:     optimizer.step()
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/optim/optimizer.py", line 493, in wrapper
+[rank0]:     out = func(*args, **kwargs)
+[rank0]:           ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/optim/optimizer.py", line 91, in _use_grad
+[rank0]:     ret = func(self, *args, **kwargs)
+[rank0]:           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/optim/adamw.py", line 232, in step
+[rank0]:     has_complex = self._init_group(
+[rank0]:                   ^^^^^^^^^^^^^^^^^
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py", line 745, in _fn
+[rank0]:     return fn(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/optim/adamw.py", line 175, in _init_group
+[rank0]:     state["exp_avg_sq"] = torch.zeros_like(
+[rank0]:                           ^^^^^^^^^^^^^^^^^
+[rank0]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 3.77 GiB. GPU 0 has a total capacity of 39.50 GiB of which 2.69 GiB is free. Including non-PyTorch memory, this process has 36.79 GiB memory in use. Of the allocated memory 35.85 GiB is allocated by PyTorch, and 72.63 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/llada_grpo_train.py", line 293, in <module>
+[rank2]:     main(script_args, training_args, model_args)
+[rank2]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/llada_grpo_train.py", line 250, in main
+[rank2]:     train_result = trainer.train(resume_from_checkpoint=checkpoint)
+[rank2]:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/trainer.py", line 1412, in train
+[rank2]:     return inner_training_loop(
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/trainer.py", line 1742, in _inner_training_loop
+[rank2]:     tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+[rank2]:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/trainer.py", line 1979, in training_step
+[rank2]:     self.accelerator.backward(loss, **kwargs)
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/accelerate/accelerator.py", line 2844, in backward
+[rank2]:     self.deepspeed_engine_wrapped.backward(loss, sync_gradients=self.sync_gradients, **kwargs)
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/accelerate/utils/deepspeed.py", line 281, in backward
+[rank2]:     self.engine.step()
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/engine.py", line 2771, in step
+[rank2]:     self._take_model_step(lr_kwargs)
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/engine.py", line 2666, in _take_model_step
+[rank2]:     self.optimizer.step()
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/utils/nvtx.py", line 20, in wrapped_fn
+[rank2]:     ret_val = func(*args, **kwargs)
+[rank2]:               ^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/zero/stage3.py", line 2255, in step
+[rank2]:     self._optimizer_step(sub_group_id)
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/zero/stage3.py", line 1083, in _optimizer_step
+[rank2]:     step_with_gradscaler(self.optimizer)
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/zero/stage3.py", line 1067, in step_with_gradscaler
+[rank2]:     optimizer.step()
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/optim/optimizer.py", line 493, in wrapper
+[rank2]:     out = func(*args, **kwargs)
+[rank2]:           ^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/optim/optimizer.py", line 91, in _use_grad
+[rank2]:     ret = func(self, *args, **kwargs)
+[rank2]:           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/optim/adamw.py", line 232, in step
+[rank2]:     has_complex = self._init_group(
+[rank2]:                   ^^^^^^^^^^^^^^^^^
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py", line 745, in _fn
+[rank2]:     return fn(*args, **kwargs)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/optim/adamw.py", line 175, in _init_group
+[rank2]:     state["exp_avg_sq"] = torch.zeros_like(
+[rank2]:                           ^^^^^^^^^^^^^^^^^
+[rank2]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 3.77 GiB. GPU 2 has a total capacity of 39.50 GiB of which 2.76 GiB is free. Including non-PyTorch memory, this process has 36.73 GiB memory in use. Of the allocated memory 35.85 GiB is allocated by PyTorch, and 72.63 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/llada_grpo_train.py", line 293, in <module>
+[rank1]:     main(script_args, training_args, model_args)
+[rank1]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/llada_grpo_train.py", line 250, in main
+[rank1]:     train_result = trainer.train(resume_from_checkpoint=checkpoint)
+[rank1]:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/trainer.py", line 1412, in train
+[rank1]:     return inner_training_loop(
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/trainer.py", line 1742, in _inner_training_loop
+[rank1]:     tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+[rank1]:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/trainer.py", line 1979, in training_step
+[rank1]:     self.accelerator.backward(loss, **kwargs)
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/accelerate/accelerator.py", line 2844, in backward
+[rank1]:     self.deepspeed_engine_wrapped.backward(loss, sync_gradients=self.sync_gradients, **kwargs)
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/accelerate/utils/deepspeed.py", line 281, in backward
+[rank1]:     self.engine.step()
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/engine.py", line 2771, in step
+[rank1]:     self._take_model_step(lr_kwargs)
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/engine.py", line 2666, in _take_model_step
+[rank1]:     self.optimizer.step()
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/utils/nvtx.py", line 20, in wrapped_fn
+[rank1]:     ret_val = func(*args, **kwargs)
+[rank1]:               ^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/zero/stage3.py", line 2255, in step
+[rank1]:     self._optimizer_step(sub_group_id)
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/zero/stage3.py", line 1083, in _optimizer_step
+[rank1]:     step_with_gradscaler(self.optimizer)
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/zero/stage3.py", line 1067, in step_with_gradscaler
+[rank1]:     optimizer.step()
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/optim/optimizer.py", line 493, in wrapper
+[rank1]:     out = func(*args, **kwargs)
+[rank1]:           ^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/optim/optimizer.py", line 91, in _use_grad
+[rank1]:     ret = func(self, *args, **kwargs)
+[rank1]:           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/optim/adamw.py", line 232, in step
+[rank1]:     has_complex = self._init_group(
+[rank1]:                   ^^^^^^^^^^^^^^^^^
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py", line 745, in _fn
+[rank1]:     return fn(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/optim/adamw.py", line 175, in _init_group
+[rank1]:     state["exp_avg_sq"] = torch.zeros_like(
+[rank1]:                           ^^^^^^^^^^^^^^^^^
+[rank1]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 3.77 GiB. GPU 1 has a total capacity of 39.50 GiB of which 2.68 GiB is free. Including non-PyTorch memory, this process has 36.81 GiB memory in use. Of the allocated memory 35.85 GiB is allocated by PyTorch, and 72.63 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+W0826 10:17:55.001000 1667586 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 1667941 closing signal SIGTERM
+W0826 10:17:55.002000 1667586 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 1667942 closing signal SIGTERM
+E0826 10:17:55.820000 1667586 site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 2 (pid: 1667943) of binary: /research/cbim/vast/mz751/miniforge3/envs/espo/bin/python3.11
+Traceback (most recent call last):
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/bin/accelerate", line 6, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/accelerate/commands/accelerate_cli.py", line 50, in main
+    args.func(args)
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/accelerate/commands/launch.py", line 1266, in launch_command
+    deepspeed_launcher(args)
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/accelerate/commands/launch.py", line 952, in deepspeed_launcher
+    distrib_run.run(args)
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+my_train/llada_grpo_train.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-08-26_10:17:55
+  host      : hermes.cs.rutgers.edu
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 1667943)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+[10:18:59]   rollout 2/3 rank 已完成
+[10:20:59]   rollout 3/3 rank 已完成
+[10:20:59]   Rollout 完成！
+[10:20:59]   merged.jsonl 已存在 (2067 条)
+[10:20:59] Step 3/4: Reward 计算...
+[10:20:59]   train_reward_a.jsonl 已存在 (1731 条)
+[10:20:59]   训练数据: 1731 条
+[10:20:59] Step 3/4: ELBO-PG 训练  π_4 → π_5 (block_length=128)...
+[10:21:07] Step 3/4: ELBO-PG 训练  π_4 → π_5 (block_length=128) [8GPU]...
+[10:22:31] [ERROR] Round 4 训练失败 (exit=1)，退出
+[10:45:26] 训练 exit=0
+[10:47:06]   [ZeRO-3 fix] 从 checkpoint-28 复制完整权重 (16031197344 bytes)...
+[10:47:06]   [OK] 完整模型权重已复制到 pi5/model.safetensors
+[10:48:00]   [存储] 删除 checkpoint-28 子目录
+[10:48:36] ========================================================
+[10:48:36] ========================================================
+[10:48:36] On-Policy Loop [bs128] 启动：Round 4 → 5
+[10:48:36] On-Policy Loop [bs128] 启动：Round 4 → 5
+[10:48:36]   π₀ = sft_llada_x0pred_bs128/ckpt_4 (49.2% CEM-1)
+[10:48:36]   π₀ = sft_llada_x0pred_bs128/ckpt_4 (49.2% CEM-1)
+[10:48:36]   block_size=128  num_steps=128
+[10:48:36]   block_size=128  num_steps=128
+[10:48:36]   输出: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128
+[10:48:36]   输出: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128
+[10:48:36] ========================================================
+[10:48:36] ========================================================
+[10:48:36] 
+[10:48:36] 
+[10:48:36] ========================================================
+[10:48:36] ========================================================
+[10:48:36] Round 4:  π_4 → D_4 → π_5
+[10:48:36] Round 4:  π_4 → D_4 → π_5
+[10:48:36]   Base model : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi4/model
+[10:48:36]   Base model : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi4/model
+[10:48:36]   Output     : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi5/model
+[10:48:36]   Output     : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi5/model
+[10:48:36] ========================================================
+[10:48:36] ========================================================
+[10:48:36]   [OK] 基础模型验证通过
+[10:48:36]   [OK] 基础模型验证通过
+[10:48:36] Step 1/4: Pool  [1024, 1280)...
+[10:48:36] Step 1/4: Pool  [1024, 1280)...
+[10:48:36]   Pool 已存在 (256 题)，跳过
+[10:48:36]   Pool 已存在 (256 题)，跳过
+[10:48:36] Step 2/4: Rollout  π_4 × 256题 × 8rolls (block_size=128)...
+[10:48:36] Step 2/4: Rollout  π_4 × 256题 × 8rolls (block_size=128)...
+[10:48:36]   rank0 已启动 (GPU=0)
+[10:48:36]   rank0 已启动 (GPU=0)
+[10:48:56]   rank1 已启动 (GPU=1)
+[10:48:56]   rank1 已启动 (GPU=1)
+[10:49:16]   rank2 已启动 (GPU=2)
+[10:49:16]   rank2 已启动 (GPU=2)
+[10:49:36]   rank3 已启动 (GPU=3)
+[10:49:36]   rank3 已启动 (GPU=3)
+[10:49:56]   rank4 已启动 (GPU=4)
+[10:49:56]   rank4 已启动 (GPU=4)
+[10:50:16]   rank5 已启动 (GPU=5)
+[10:50:16]   rank5 已启动 (GPU=5)
+[10:50:36]   rank6 已启动 (GPU=6)
+[10:50:36]   rank6 已启动 (GPU=6)
+[10:50:56]   rank7 已启动 (GPU=7)
+[10:50:56]   rank7 已启动 (GPU=7)
+[10:50:56]   等待 rollout 完成（每 2 分钟汇报一次）...
+[10:50:56]   等待 rollout 完成（每 2 分钟汇报一次）...
+[10:50:56]   rollout 0/8 rank 已完成
+[10:50:56]   rollout 0/8 rank 已完成
+[10:52:56]   rollout 0/8 rank 已完成
+[10:52:56]   rollout 0/8 rank 已完成
+[10:54:56]   rollout 0/8 rank 已完成
+[10:54:56]   rollout 0/8 rank 已完成
+[10:56:56]   rollout 8/8 rank 已完成
+[10:56:56]   rollout 8/8 rank 已完成
+[10:56:56]   Rollout 完成！
+[10:56:56]   Rollout 完成！
+[10:56:56]   merged.jsonl 已存在 (2067 条)
+[10:56:56]   merged.jsonl 已存在 (2067 条)
+[10:56:56] Step 3/4: Reward 计算...
+[10:56:56] Step 3/4: Reward 计算...
+[10:56:56]   train_reward_a.jsonl 已存在 (1731 条)
+[10:56:56]   train_reward_a.jsonl 已存在 (1731 条)
+[10:56:56]   训练数据: 1731 条
+[10:56:56]   训练数据: 1731 条
+[10:56:56] Step 3/4: ELBO-PG 训练  π_4 → π_5 (block_length=128)...
+[10:56:56] Step 3/4: ELBO-PG 训练  π_4 → π_5 (block_length=128)...
+[10:56:56]   模型已存在 (15G)，跳过训练
+[10:56:56]   模型已存在 (15G)，跳过训练
+[10:56:56] Step 4/4: eval_600  π_5 (block_size=128)...
+[10:56:56] Step 4/4: eval_600  π_5 (block_size=128)...
+[10:56:56]   eval batch shard 0..7（每批 8 个 GPU 并行）
+[10:56:56]   eval batch shard 0..7（每批 8 个 GPU 并行）
+[10:56:56]   eval shard0 已启动 (CUDA=0, offset=0)
+[10:56:56]   eval shard0 已启动 (CUDA=0, offset=0)
+[10:57:11]   eval shard1 已启动 (CUDA=1, offset=75)
+[10:57:11]   eval shard1 已启动 (CUDA=1, offset=75)
+[10:57:26]   eval shard2 已启动 (CUDA=2, offset=150)
+[10:57:26]   eval shard2 已启动 (CUDA=2, offset=150)
+[10:57:41]   eval shard3 已启动 (CUDA=3, offset=225)
+[10:57:41]   eval shard3 已启动 (CUDA=3, offset=225)
+[10:57:56]   eval shard4 已启动 (CUDA=4, offset=300)
+[10:57:56]   eval shard4 已启动 (CUDA=4, offset=300)
+[10:58:11]   eval shard5 已启动 (CUDA=5, offset=375)
+[10:58:11]   eval shard5 已启动 (CUDA=5, offset=375)
+[10:58:26]   eval shard6 已启动 (CUDA=6, offset=450)
+[10:58:26]   eval shard6 已启动 (CUDA=6, offset=450)
+[10:58:41]   eval shard7 已启动 (CUDA=7, offset=525)
+[10:58:41]   eval shard7 已启动 (CUDA=7, offset=525)
+[10:58:56]   等待本批 eval 完成（每 1 分钟汇报）...
+[10:58:56]   等待本批 eval 完成（每 1 分钟汇报）...
+[10:58:56]   eval 0/8 shard 完成（本批）
+[10:58:56]   eval 0/8 shard 完成（本批）
+[10:59:56]   eval 0/8 shard 完成（本批）
+[10:59:56]   eval 0/8 shard 完成（本批）
+[11:00:57]   eval 0/8 shard 完成（本批）
+[11:00:57]   eval 0/8 shard 完成（本批）
+[11:01:57]   eval 0/8 shard 完成（本批）
+[11:01:57]   eval 0/8 shard 完成（本批）
+[11:02:57]   eval 0/8 shard 完成（本批）
+[11:02:57]   eval 0/8 shard 完成（本批）
+[11:03:57]   eval 0/8 shard 完成（本批）
+[11:03:57]   eval 0/8 shard 完成（本批）
+[11:04:57]   eval 0/8 shard 完成（本批）
+[11:04:57]   eval 0/8 shard 完成（本批）
+[11:05:57]   eval 0/8 shard 完成（本批）
+[11:05:57]   eval 0/8 shard 完成（本批）
+[11:06:57]   eval 0/8 shard 完成（本批）
+[11:06:57]   eval 0/8 shard 完成（本批）
+[11:07:57]   eval 0/8 shard 完成（本批）
+[11:07:57]   eval 0/8 shard 完成（本批）
+[11:08:57]   eval 0/8 shard 完成（本批）
+[11:08:57]   eval 0/8 shard 完成（本批）
+[11:09:57]   eval 0/8 shard 完成（本批）
+[11:09:57]   eval 0/8 shard 完成（本批）
+[11:10:57]   eval 0/8 shard 完成（本批）
+[11:10:57]   eval 0/8 shard 完成（本批）
+[11:11:57]   eval 0/8 shard 完成（本批）
+[11:11:57]   eval 0/8 shard 完成（本批）
+[11:12:57]   eval 0/8 shard 完成（本批）
+[11:12:57]   eval 0/8 shard 完成（本批）
+[11:13:57]   eval 0/8 shard 完成（本批）
+[11:13:57]   eval 0/8 shard 完成（本批）
+[11:14:57]   eval 0/8 shard 完成（本批）
+[11:14:57]   eval 0/8 shard 完成（本批）
+[11:15:57]   eval 0/8 shard 完成（本批）
+[11:15:57]   eval 0/8 shard 完成（本批）
+[11:16:57]   eval 0/8 shard 完成（本批）
+[11:16:57]   eval 0/8 shard 完成（本批）
+[11:17:57]   eval 0/8 shard 完成（本批）
+[11:17:57]   eval 0/8 shard 完成（本批）
+[11:18:57]   eval 0/8 shard 完成（本批）
+[11:18:57]   eval 0/8 shard 完成（本批）
+[11:19:57]   eval 0/8 shard 完成（本批）
+[11:19:57]   eval 0/8 shard 完成（本批）
+[11:20:57]   eval 0/8 shard 完成（本批）
+[11:20:57]   eval 0/8 shard 完成（本批）
+[11:21:57]   eval 0/8 shard 完成（本批）
+[11:21:57]   eval 0/8 shard 完成（本批）
+[11:22:57]   eval 0/8 shard 完成（本批）
+[11:22:57]   eval 0/8 shard 完成（本批）
+[11:23:57]   eval 0/8 shard 完成（本批）
+[11:23:57]   eval 0/8 shard 完成（本批）
+[11:24:57]   eval 0/8 shard 完成（本批）
+[11:24:57]   eval 0/8 shard 完成（本批）
+[11:25:57]   eval 0/8 shard 完成（本批）
+[11:25:57]   eval 0/8 shard 完成（本批）
+[11:26:57]   eval 0/8 shard 完成（本批）
+[11:26:57]   eval 0/8 shard 完成（本批）
+[11:27:57]   eval 0/8 shard 完成（本批）
+[11:27:57]   eval 0/8 shard 完成（本批）
+[11:28:57]   eval 0/8 shard 完成（本批）
+[11:28:57]   eval 0/8 shard 完成（本批）
+[11:29:58]   eval 0/8 shard 完成（本批）
+[11:29:58]   eval 0/8 shard 完成（本批）
+[11:30:58]   eval 0/8 shard 完成（本批）
+[11:30:58]   eval 0/8 shard 完成（本批）
+[11:31:58]   eval 0/8 shard 完成（本批）
+[11:31:58]   eval 0/8 shard 完成（本批）

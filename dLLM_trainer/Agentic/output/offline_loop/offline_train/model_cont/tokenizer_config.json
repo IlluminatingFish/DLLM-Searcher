@@ -1,0 +1,21 @@
+{
+  "backend": "tokenizers",
+  "bos_token": "<|startoftext|>",
+  "clean_up_tokenization_spaces": false,
+  "cls_token": "[CLS]",
+  "eos_token": "<|endoftext|>",
+  "fast_tokenizer": true,
+  "gmask_token": "[gMASK]",
+  "is_local": true,
+  "merges_file": null,
+  "model_input_names": [
+    "input_ids",
+    "attention_mask"
+  ],
+  "model_max_length": 1000000000000000019884624838656,
+  "model_specific_special_tokens": {
+    "gmask_token": "[gMASK]"
+  },
+  "pad_token": "<|endoftext|>",
+  "tokenizer_class": "TokenizersBackend"
+}

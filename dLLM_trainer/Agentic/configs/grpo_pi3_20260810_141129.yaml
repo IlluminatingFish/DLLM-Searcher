@@ -1,0 +1,73 @@
+# =============================================================================
+# Phase 4: Normalized ELBO-PG, Reward A (pure type-aware short-GT F1)
+# Round 0 offline trajectories × Reward A → 第一轮训练
+# Server: dionysos (8×A40 40GB)
+# =============================================================================
+
+# Model — SFT ckpt_6 (round0 rollout基础模型)
+model_name_or_path: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/phase4_elbopg_round2/reward_a/model
+dtype: bfloat16
+trust_remote_code: true
+attn_implementation: eager
+use_peft: false
+
+# Dataset (Phase 3 compute_rewards.py 生成的 Reward A 训练文件)
+dataset_path: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi3/train_reward_a.jsonl
+max_samples: null
+
+# GRPO / ELBO-PG specific
+block_length: 64          # 与 round0 rollout 的 BLOCK_SIZE=64 一致
+num_mc: 1
+mask_token_id: 126336
+advantage_clip: 5.0
+normalize_elbo: true      # Normalized ELBO-PG (per-token ELBO, ESPO 风格)
+tool_resp_left: "<|im_start|>user\n<tool_response>"
+tool_resp_right: "</tool_response><|im_end|>\n<|im_start|>assistant\n"
+
+# DPOConfig compat
+beta: 0.0
+loss_type: sigmoid
+
+# Sequence lengths
+max_prompt_length: 640
+max_completion_length: 640
+max_length: 4096
+
+# Training
+# 每批 offline 数据只训 1 epoch（防止 off-policy 过拟合）
+bf16: true
+do_eval: false
+num_train_epochs: 1
+per_device_train_batch_size: 1
+per_device_eval_batch_size: 1
+gradient_accumulation_steps: 8
+gradient_checkpointing: false
+
+# Optimizer
+learning_rate: 3.0e-7
+adam_beta1: 0.9
+adam_beta2: 0.99
+weight_decay: 0.01
+max_grad_norm: 0.5
+warmup_ratio: 0.05
+lr_scheduler_type: cosine
+
+# Logging & Saving
+output_dir: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi3/model
+logging_steps: 5
+logging_first_step: true
+log_level: info
+save_strategy: "epoch"
+save_total_limit: 1
+eval_strategy: "no"
+
+# Wandb
+report_to:
+  - wandb
+wandb_project: dllm_agentic_rl
+run_name: onpolicy_pi3_20260810_141129
+
+# Other
+seed: 42
+dataloader_num_workers: 0
+remove_unused_columns: false

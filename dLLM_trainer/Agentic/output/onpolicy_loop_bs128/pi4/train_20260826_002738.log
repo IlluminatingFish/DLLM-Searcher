@@ -1,0 +1,426 @@
+W0826 00:27:50.381000 530544 site-packages/torch/distributed/run.py:792] 
+W0826 00:27:50.381000 530544 site-packages/torch/distributed/run.py:792] *****************************************
+W0826 00:27:50.381000 530544 site-packages/torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0826 00:27:50.381000 530544 site-packages/torch/distributed/run.py:792] *****************************************
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+2026-08-26 00:28:04 - INFO - __main__ - Script args: GRPOScriptArgs(dataset_path='/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi4/train_reward_a.jsonl', max_samples=None, block_length=128, num_mc=1, mask_token_id=126336, advantage_clip=5.0, normalize_elbo=True, tool_resp_left='<|im_start|>user\n<tool_response>', tool_resp_right='</tool_response><|im_end|>\n<|im_start|>assistant\n')
+2026-08-26 00:28:04 - INFO - __main__ - Training args: GRPOConfig(
+accelerator_config={'split_batches': False, 'dispatch_batches': None, 'even_batches': True, 'use_seedable_sampler': True, 'non_blocking': False, 'gradient_accumulation_kwargs': None, 'use_configured_state': False},
+adam_beta1=0.9,
+adam_beta2=0.99,
+adam_epsilon=1e-08,
+auto_find_batch_size=False,
+average_tokens_across_devices=True,
+base_model_attribute_name=model,
+batch_eval_metrics=False,
+beta=0.0,
+bf16=True,
+bf16_full_eval=False,
+data_seed=None,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_persistent_workers=False,
+dataloader_pin_memory=True,
+dataloader_prefetch_factor=None,
+dataset_num_proc=None,
+ddp_backend=None,
+ddp_broadcast_buffers=None,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_timeout=1800,
+debug=[],
+deepspeed=None,
+disable_dropout=True,
+disable_tqdm=False,
+discopop_tau=0.05,
+do_eval=False,
+do_predict=False,
+do_train=False,
+enable_jit_checkpoint=False,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_do_concat_batches=True,
+eval_on_start=False,
+eval_steps=None,
+eval_strategy=IntervalStrategy.NO,
+eval_use_gather_object=False,
+f_alpha_divergence_coef=1.0,
+f_divergence_type=reverse_kl,
+force_use_ref_model=None,
+fp16=False,
+fp16_full_eval=False,
+fsdp=[],
+fsdp_config={'min_num_params': 0, 'xla': False, 'xla_fsdp_v2': False, 'xla_fsdp_grad_ckpt': False},
+full_determinism=False,
+generate_during_eval=False,
+gradient_accumulation_steps=8,
+gradient_checkpointing=False,
+gradient_checkpointing_kwargs=None,
+greater_is_better=None,
+hub_always_push=False,
+hub_model_id=None,
+hub_private_repo=None,
+hub_revision=None,
+hub_strategy=HubStrategy.EVERY_SAVE,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+include_for_metrics=[],
+include_num_input_tokens_seen=no,
+label_names=None,
+label_pad_token_id=-100,
+label_smoothing=0.0,
+label_smoothing_factor=0.0,
+ld_alpha=None,
+learning_rate=1e-06,
+length_column_name=length,
+liger_kernel_config=None,
+load_best_model_at_end=False,
+local_rank=-1,
+log_level=info,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=None,
+logging_first_step=True,
+logging_nan_inf_filter=True,
+logging_steps=5,
+logging_strategy=IntervalStrategy.STEPS,
+loss_type=sigmoid,
+loss_weights=None,
+lr_scheduler_kwargs=None,
+lr_scheduler_type=SchedulerType.COSINE,
+max_completion_length=640,
+max_grad_norm=0.5,
+max_length=4096,
+max_prompt_length=640,
+max_steps=-1,
+metric_for_best_model=None,
+model_adapter_name=None,
+model_init_kwargs=None,
+neftune_noise_alpha=None,
+num_train_epochs=1,
+optim=OptimizerNames.ADAMW_TORCH,
+optim_args=None,
+optim_target_modules=None,
+output_dir=/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi4/model,
+pad_token=<PAD_TOKEN>,
+padding_free=False,
+parallelism_config=None,
+per_device_eval_batch_size=1,
+per_device_train_batch_size=1,
+precompute_ref_batch_size=None,
+precompute_ref_log_probs=False,
+prediction_loss_only=False,
+project=huggingface,
+push_to_hub=False,
+ref_adapter_name=None,
+ref_model_init_kwargs=None,
+ref_model_mixup_alpha=0.6,
+ref_model_sync_steps=512,
+reference_free=False,
+remove_unused_columns=False,
+report_to=['wandb'],
+restore_callback_states_from_checkpoint=False,
+resume_from_checkpoint=None,
+rpo_alpha=None,
+run_name=onpolicy_bs128_pi4_20260826_002738,
+save_on_each_node=False,
+save_only_model=False,
+save_steps=500,
+save_strategy=SaveStrategy.EPOCH,
+save_total_limit=1,
+seed=42,
+skip_memory_metrics=True,
+sync_ref_model=False,
+tf32=None,
+tools=None,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torch_empty_cache_steps=None,
+trackio_space_id=trackio,
+train_sampling_strategy=random,
+truncation_mode=keep_end,
+use_cache=False,
+use_cpu=False,
+use_liger_kernel=False,
+use_logits_to_keep=False,
+use_weighting=False,
+wandb_project=dllm_agentic_rl_bs128,
+warmup_ratio=0.05,
+warmup_steps=0.05,
+weight_decay=0.01,
+)
+2026-08-26 00:28:04 - INFO - __main__ - Resume from checkpoint: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi4/model/checkpoint-25
+2026-08-26 00:28:04 - INFO - __main__ - *** Loading GRPO dataset ***
+Using custom data configuration default-854183176d262cc6
+2026-08-26 00:28:04 - INFO - datasets.builder - Using custom data configuration default-854183176d262cc6
+Found cached dataset json (/research/cbim/vast/mz751/.cache/huggingface/datasets/json/default-854183176d262cc6/0.0.0/ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18)
+2026-08-26 00:28:04 - INFO - datasets.builder - Found cached dataset json (/research/cbim/vast/mz751/.cache/huggingface/datasets/json/default-854183176d262cc6/0.0.0/ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18)
+2026-08-26 00:28:04 - INFO - __main__ - Train samples: 1552
+2026-08-26 00:28:04 - INFO - __main__ - *** Loading tokenizer ***
+loading configuration file /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi3/model/config.json
+loading configuration file /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi3/model/config.json
+Model config LLaDAConfig {
+  "activation_type": "silu",
+  "alibi": false,
+  "alibi_bias_max": 8.0,
+  "architectures": [
+    "LLaDAModelLM"
+  ],
+  "attention_dropout": 0.0,
+  "attention_layer_norm": false,
+  "attention_layer_norm_with_affine": true,
+  "auto_map": {
+    "AutoConfig": "configuration_llada.LLaDAConfig",
+    "AutoModel": "modeling_llada.LLaDAModelLM",
+    "AutoModelForCausalLM": "modeling_llada.LLaDAModelLM"
+  },
+  "bias_for_layer_norm": false,
+  "block_group_size": 1,
+  "block_type": "llama",
+  "bos_token_id": 126080,
+  "d_model": 4096,
+  "dtype": "bfloat16",
+  "embedding_dropout": 0.0,
+  "embedding_size": 126464,
+  "eos_token_id": 126081,
+  "flash_attention": false,
+  "include_bias": false,
+  "include_qkv_bias": false,
+  "init_cutoff_factor": null,
+  "init_device": "meta",
+  "init_fn": "mitchell",
+  "init_std": 0.02,
+  "input_emb_norm": false,
+  "layer_norm_type": "rms",
+  "layer_norm_with_affine": true,
+  "mask_token_id": 126336,
+  "max_sequence_length": 4096,
+  "mlp_hidden_size": 12288,
+  "mlp_ratio": 4,
+  "model_type": "llada",
+  "multi_query_attention": null,
+  "n_heads": 32,
+  "n_kv_heads": 32,
+  "n_layers": 32,
+  "pad_token_id": 126081,
+  "precision": "amp_bf16",
+  "residual_dropout": 0.0,
+  "rms_norm_eps": 1e-05,
+  "rope": true,
+  "rope_full_precision": true,
+  "rope_theta": 500000.0,
+  "scale_logits": false,
+  "transformers_version": "5.2.0",
+  "vocab_size": 126464,
+  "weight_tying": false
+}
+
+2026-08-26 00:28:05 - INFO - __main__ - *** Loading model ***
+2026-08-26 00:28:05 - INFO - __main__ - ZeRO stage: 2 (is_zero3=False)
+loading configuration file /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi3/model/config.json
+loading configuration file /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi3/model/config.json
+`torch_dtype` is deprecated! Use `dtype` instead!
+Model config LLaDAConfig {
+  "activation_type": "silu",
+  "alibi": false,
+  "alibi_bias_max": 8.0,
+  "architectures": [
+    "LLaDAModelLM"
+  ],
+  "attention_dropout": 0.0,
+  "attention_layer_norm": false,
+  "attention_layer_norm_with_affine": true,
+  "auto_map": {
+    "AutoConfig": "configuration_llada.LLaDAConfig",
+    "AutoModel": "modeling_llada.LLaDAModelLM",
+    "AutoModelForCausalLM": "modeling_llada.LLaDAModelLM"
+  },
+  "bias_for_layer_norm": false,
+  "block_group_size": 1,
+  "block_type": "llama",
+  "bos_token_id": 126080,
+  "d_model": 4096,
+  "dtype": "bfloat16",
+  "embedding_dropout": 0.0,
+  "embedding_size": 126464,
+  "eos_token_id": 126081,
+  "flash_attention": false,
+  "include_bias": false,
+  "include_qkv_bias": false,
+  "init_cutoff_factor": null,
+  "init_device": "meta",
+  "init_fn": "mitchell",
+  "init_std": 0.02,
+  "input_emb_norm": false,
+  "layer_norm_type": "rms",
+  "layer_norm_with_affine": true,
+  "mask_token_id": 126336,
+  "max_sequence_length": 4096,
+  "mlp_hidden_size": 12288,
+  "mlp_ratio": 4,
+  "model_type": "llada",
+  "multi_query_attention": null,
+  "n_heads": 32,
+  "n_kv_heads": 32,
+  "n_layers": 32,
+  "pad_token_id": 126081,
+  "precision": "amp_bf16",
+  "residual_dropout": 0.0,
+  "rms_norm_eps": 1e-05,
+  "rope": true,
+  "rope_full_precision": true,
+  "rope_theta": 500000.0,
+  "scale_logits": false,
+  "transformers_version": "5.2.0",
+  "vocab_size": 126464,
+  "weight_tying": false
+}
+
+loading weights file /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi3/model/model.safetensors
+Detected DeepSpeed ZeRO-3: activating zero.init() for this model
+Generate config GenerationConfig {
+  "bos_token_id": 126080,
+  "eos_token_id": 126081,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 126081
+}
+
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+NCCL version 2.21.5+cuda12.4
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+dionysos:530937:532451 [4] include/alloc.h:103 NCCL WARN Cuda failure 2 'out of memory'
+[rank4]: Traceback (most recent call last):
+[rank4]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/llada_grpo_train.py", line 293, in <module>
+[rank4]:     main(script_args, training_args, model_args)
+[rank4]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/llada_grpo_train.py", line 210, in main
+[rank4]:     model = AutoModelForCausalLM.from_pretrained(
+[rank4]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 367, in from_pretrained
+[rank4]:     return model_class.from_pretrained(
+[rank4]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/modeling_utils.py", line 4030, in from_pretrained
+[rank4]:     model = cls(config, *model_args, **model_kwargs)
+[rank4]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/zero/partition_parameters.py", line 535, in wrapper
+[rank4]:     f(module, *args, **kwargs)
+[rank4]:   File "/research/cbim/vast/mz751/.cache/huggingface/modules/transformers_modules/model/modeling_llada.py", line 1404, in __init__
+[rank4]:     self.model = LLaDAModel(model_config, init_params=init_params)
+[rank4]:                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/zero/partition_parameters.py", line 535, in wrapper
+[rank4]:     f(module, *args, **kwargs)
+[rank4]:   File "/research/cbim/vast/mz751/.cache/huggingface/modules/transformers_modules/model/modeling_llada.py", line 1061, in __init__
+[rank4]:     wte=nn.Embedding(
+[rank4]:         ^^^^^^^^^^^^^
+[rank4]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/zero/partition_parameters.py", line 545, in wrapper
+[rank4]:     self._post_init_method(module)
+[rank4]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/zero/partition_parameters.py", line 1164, in _post_init_method
+[rank4]:     self._zero_init_param(param)
+[rank4]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/zero/partition_parameters.py", line 1119, in _zero_init_param
+[rank4]:     dist.broadcast(param.data, 0, self.get_dp_process_group())
+[rank4]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/comm/comm.py", line 118, in log_wrapper
+[rank4]:     return func(*args, **kwargs)
+[rank4]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/comm/comm.py", line 225, in broadcast
+[rank4]:     return cdb.broadcast(tensor=tensor, src=src, group=group, async_op=async_op)
+[rank4]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/comm/torch.py", line 215, in broadcast
+[rank4]:     return torch.distributed.broadcast(tensor=tensor, src=src, group=group, async_op=async_op)
+[rank4]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/distributed/c10d_logger.py", line 81, in wrapper
+[rank4]:     return func(*args, **kwargs)
+[rank4]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py", line 2726, in broadcast
+[rank4]:     work = group.broadcast([tensor], opts)
+[rank4]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]: torch.distributed.DistBackendError: NCCL error in: /pytorch/torch/csrc/distributed/c10d/NCCLUtils.hpp:268, unhandled cuda error (run with NCCL_DEBUG=INFO for details), NCCL version 2.21.5
+[rank4]: ncclUnhandledCudaError: Call to CUDA function failed.
+[rank4]: Last error:
+[rank4]: Cuda failure 2 'out of memory'
+W0826 00:28:10.541000 530544 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 530933 closing signal SIGTERM
+W0826 00:28:10.542000 530544 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 530934 closing signal SIGTERM
+W0826 00:28:10.562000 530544 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 530935 closing signal SIGTERM
+W0826 00:28:10.563000 530544 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 530936 closing signal SIGTERM
+W0826 00:28:10.573000 530544 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 530938 closing signal SIGTERM
+W0826 00:28:10.574000 530544 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 530939 closing signal SIGTERM
+W0826 00:28:10.575000 530544 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 530940 closing signal SIGTERM
+E0826 00:28:12.418000 530544 site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 4 (pid: 530937) of binary: /research/cbim/vast/mz751/miniforge3/envs/espo/bin/python3.11
+Traceback (most recent call last):
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/bin/accelerate", line 6, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/accelerate/commands/accelerate_cli.py", line 50, in main
+    args.func(args)
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/accelerate/commands/launch.py", line 1266, in launch_command
+    deepspeed_launcher(args)
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/accelerate/commands/launch.py", line 952, in deepspeed_launcher
+    distrib_run.run(args)
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+my_train/llada_grpo_train.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-08-26_00:28:10
+  host      : dionysos.cs.rutgers.edu
+  rank      : 4 (local_rank: 4)
+  exitcode  : 1 (pid: 530937)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

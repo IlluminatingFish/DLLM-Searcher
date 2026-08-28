@@ -1,0 +1,25 @@
+eval 数据: 300 题  来自 /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/data/eval_600.jsonl
+
+加载模型: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_llada_x0pred_10ep/ckpt_5/optimized
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:03<00:10,  3.49s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:04<00:04,  2.20s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:06<00:01,  1.77s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:06<00:00,  1.17s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:06<00:00,  1.57s/it]
+模型加载完成，mask_token_id=126336
+待评测: 300 题
+
+LLaDA agentic eval:   0%|          | 0/300 [00:00<?, ?it/s]LLaDA agentic eval:   0%|          | 1/300 [00:18<1:30:58, 18.26s/it]LLaDA agentic eval:   1%|          | 2/300 [00:22<50:14, 10.12s/it]  LLaDA agentic eval:   1%|          | 3/300 [00:34<54:25, 10.99s/it]LLaDA agentic eval:   1%|▏         | 4/300 [00:39<41:32,  8.42s/it]LLaDA agentic eval:   2%|▏         | 5/300 [00:53<52:06, 10.60s/it]LLaDA agentic eval:   2%|▏         | 6/300 [01:07<57:16, 11.69s/it]LLaDA agentic eval:   2%|▏         | 7/300 [01:11<45:39,  9.35s/it]LLaDA agentic eval:   3%|▎         | 8/300 [01:16<38:02,  7.82s/it]LLaDA agentic eval:   3%|▎         | 9/300 [01:21<32:55,  6.79s/it]LLaDA agentic eval:   3%|▎         | 10/300 [01:25<29:27,  6.09s/it]LLaDA agentic eval:   4%|▎         | 11/300 [01:30<27:03,  5.62s/it]LLaDA agentic eval:   4%|▍         | 12/300 [01:44<39:37,  8.25s/it]LLaDA agentic eval:   4%|▍         | 13/300 [01:48<34:08,  7.14s/it]LLaDA agentic eval:   5%|▍         | 14/300 [01:53<30:18,  6.36s/it]LLaDA agentic eval:   5%|▌         | 15/300 [01:58<27:38,  5.82s/it]LLaDA agentic eval:   5%|▌         | 16/300 [02:02<25:45,  5.44s/it]LLaDA agentic eval:   6%|▌         | 17/300 [02:16<38:08,  8.09s/it]LLaDA agentic eval:   6%|▌         | 18/300 [02:21<33:04,  7.04s/it]LLaDA agentic eval:   6%|▋         | 19/300 [02:26<29:31,  6.30s/it]LLaDA agentic eval:   7%|▋         | 20/300 [02:30<27:01,  5.79s/it]LLaDA agentic eval:   7%|▋         | 21/300 [02:44<37:32,  8.07s/it]LLaDA agentic eval:   7%|▋         | 22/300 [02:48<32:35,  7.03s/it]LLaDA agentic eval:   8%|▊         | 23/300 [03:03<42:52,  9.29s/it]LLaDA agentic eval:   8%|▊         | 24/300 [03:17<50:10, 10.91s/it]LLaDA agentic eval:   8%|▊         | 24/300 [03:32<40:40,  8.84s/it]
+Traceback (most recent call last):
+  File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/my_eval/run_llada_eval.py", line 458, in main
+    f_out.flush()
+OSError: [Errno 116] Stale file handle
+
+During handling of the above exception, another exception occurred:
+
+OSError: [Errno 116] Stale file handle
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/my_eval/run_llada_eval.py", line 471, in <module>
+    main()
+  File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/my_eval/run_llada_eval.py", line 433, in main
+    with open(out_path, "a") as f_out:
+OSError: [Errno 116] Stale file handle

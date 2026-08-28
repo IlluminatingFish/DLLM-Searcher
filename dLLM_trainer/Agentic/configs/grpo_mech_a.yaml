@@ -1,0 +1,73 @@
+# =============================================================================
+# Mechanism Test: Group A — Raw ELBO-PG (3 bugs fixed, NO length normalization)
+# Baseline: reproduces Round 1 behavior with clean setup.
+#   - block_length: 64  (FIX 1: matches rollout block_size)
+#   - reward: pure_f1   (FIX 3: clean correctness signal, no efficiency/format noise)
+#   - normalize_elbo: false  (Group A baseline — raw ELBO, same as Round 1)
+#
+# Compare with Group B (grpo_mech_b.yaml) which adds length normalization.
+# =============================================================================
+
+model_name_or_path: PLACEHOLDER_MODEL   # overwritten by run_mechanism_test.sh
+dtype: bfloat16
+trust_remote_code: true
+attn_implementation: eager
+use_peft: false
+
+dataset_path: PLACEHOLDER_DATA          # overwritten by run_mechanism_test.sh
+max_samples: null
+
+# GRPO specific
+block_length: 64           # FIX 1: match rollout block_size=64
+num_mc: 1
+mask_token_id: 126336
+advantage_clip: 5.0
+normalize_elbo: false      # Group A: raw ELBO (no per-token normalization)
+tool_resp_left: "<|im_start|>user\n<tool_response>"
+tool_resp_right: "</tool_response><|im_end|>\n<|im_start|>assistant\n"
+
+# DPOConfig compat
+beta: 0.0
+loss_type: sigmoid
+
+# Sequence lengths
+max_prompt_length: 640
+max_completion_length: 640
+max_length: 4096
+
+# Training (light: 1 epoch, accumulate 8 steps → 8 optimizer steps per 64 samples)
+bf16: true
+do_eval: false
+num_train_epochs: 1
+per_device_train_batch_size: 1
+per_device_eval_batch_size: 1
+gradient_accumulation_steps: 8
+gradient_checkpointing: false
+
+# Optimizer
+learning_rate: 3.0e-7
+adam_beta1: 0.9
+adam_beta2: 0.99
+weight_decay: 0.01
+max_grad_norm: 0.5
+warmup_ratio: 0.05
+lr_scheduler_type: cosine
+
+# Logging & Saving
+output_dir: PLACEHOLDER_OUT             # overwritten by run_mechanism_test.sh
+logging_steps: 2
+logging_first_step: true
+log_level: info
+save_strategy: "no"
+eval_strategy: "no"
+
+# Wandb
+report_to:
+  - wandb
+wandb_project: dllm_mechanism_test
+run_name: mech_group_a
+
+# Other
+seed: 42
+dataloader_num_workers: 0
+remove_unused_columns: false

@@ -1,0 +1,22 @@
+eval 数据: 100 题  来自 /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/data/eval_600.jsonl
+
+加载模型: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_llada_x0pred_bs128_v2/ckpt_4/optimized
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:06<00:20,  6.90s/it]Loading checkpoint shards:  25%|██▌       | 1/4 [00:09<00:29,  9.73s/it]
+Traceback (most recent call last):
+  File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/my_eval/run_llada_eval.py", line 481, in <module>
+    main()
+  File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/my_eval/run_llada_eval.py", line 427, in main
+    model = AutoModelForCausalLM.from_pretrained(
+  File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 564, in from_pretrained
+    return model_class.from_pretrained(
+  File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/transformers/modeling_utils.py", line 309, in _wrapper
+    return func(*args, **kwargs)
+  File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4574, in from_pretrained
+    ) = cls._load_pretrained_model(
+  File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/transformers/modeling_utils.py", line 5031, in _load_pretrained_model
+    disk_offload_index, cpu_offload_index = _load_state_dict_into_meta_model(
+  File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/transformers/modeling_utils.py", line 806, in _load_state_dict_into_meta_model
+    param = param[...]
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 32.00 MiB. GPU 0 has a total capacity of 39.50 GiB of which 9.81 MiB is free. Process 3326880 has 32.14 GiB memory in use. Including non-PyTorch memory, this process has 7.32 GiB memory in use. Of the allocated memory 6.90 GiB is allocated by PyTorch, and 13.76 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

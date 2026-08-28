@@ -1,0 +1,16 @@
+==========================================
+sft_llada_continued ckpt_3 eval - 600题 - 8 GPU 并行
+模型: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_llada_continued/ckpt_3/optimized
+输入: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/data/eval_600.jsonl
+==========================================
+GPU 0: 题 0 ~ 74  → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/output/llada_eval/continued_ckpt_3_600_parallel/gpu0.jsonl
+GPU 1: 题 75 ~ 149  → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/output/llada_eval/continued_ckpt_3_600_parallel/gpu1.jsonl
+GPU 2: 题 150 ~ 224  → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/output/llada_eval/continued_ckpt_3_600_parallel/gpu2.jsonl
+GPU 3: 题 225 ~ 299  → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/output/llada_eval/continued_ckpt_3_600_parallel/gpu3.jsonl
+GPU 4: 题 300 ~ 374  → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/output/llada_eval/continued_ckpt_3_600_parallel/gpu4.jsonl
+GPU 5: 题 375 ~ 449  → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/output/llada_eval/continued_ckpt_3_600_parallel/gpu5.jsonl
+GPU 6: 题 450 ~ 524  → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/output/llada_eval/continued_ckpt_3_600_parallel/gpu6.jsonl
+GPU 7: 题 525 ~ 599  → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/output/llada_eval/continued_ckpt_3_600_parallel/gpu7.jsonl
+
+8 个进程已启动: 3249197 3249198 3249199 3249200 3249201 3249202 3249203 3249204
+等待全部完成...

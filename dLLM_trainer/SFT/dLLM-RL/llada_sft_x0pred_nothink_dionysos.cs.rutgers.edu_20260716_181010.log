@@ -1,0 +1,266 @@
+W0716 18:10:21.213000 1637212 site-packages/torch/distributed/run.py:792] 
+W0716 18:10:21.213000 1637212 site-packages/torch/distributed/run.py:792] *****************************************
+W0716 18:10:21.213000 1637212 site-packages/torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0716 18:10:21.213000 1637212 site-packages/torch/distributed/run.py:792] *****************************************
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:959: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:1018: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:959: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:1018: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 `store_kv` is part of SDARModel.forward's signature, but not documented. Make sure to add it to the docstring of the function in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/models/sdar/modeling_sdar.py.
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 `store_kv` is part of SDARModel.forward's signature, but not documented. Make sure to add it to the docstring of the function in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/models/sdar/modeling_sdar.py.
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:959: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:1018: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:959: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:1018: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:959: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:1018: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:959: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:1018: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:959: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:1018: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 `store_kv` is part of SDARModel.forward's signature, but not documented. Make sure to add it to the docstring of the function in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/models/sdar/modeling_sdar.py.
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 `store_kv` is part of SDARModel.forward's signature, but not documented. Make sure to add it to the docstring of the function in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/models/sdar/modeling_sdar.py.
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 `store_kv` is part of SDARModel.forward's signature, but not documented. Make sure to add it to the docstring of the function in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/models/sdar/modeling_sdar.py.
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 `store_kv` is part of SDARModel.forward's signature, but not documented. Make sure to add it to the docstring of the function in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/models/sdar/modeling_sdar.py.
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 `store_kv` is part of SDARModel.forward's signature, but not documented. Make sure to add it to the docstring of the function in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/models/sdar/modeling_sdar.py.
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+07/16/2026 18:10:30 - INFO - __main__ - Distributed environment: DEEPSPEED  Backend: nccl
+Num processes: 7
+Process index: 0
+Local process index: 0
+Device: cuda:0
+
+Mixed precision type: bf16
+ds_config: {'train_batch_size': 'auto', 'train_micro_batch_size_per_gpu': 'auto', 'gradient_accumulation_steps': 'auto', 'zero_optimization': {'stage': 3, 'offload_optimizer': {'device': 'none', 'nvme_path': None}, 'offload_param': {'device': 'none', 'nvme_path': None}, 'stage3_gather_16bit_weights_on_model_save': True}, 'gradient_clipping': 'auto', 'steps_per_print': inf, 'bf16': {'enabled': True}, 'fp16': {'enabled': False}}
+
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /research/cbim/vast/mz751/.netrc.
+wandb: Currently logged in as: mz751 (mz751-rutgers-university) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+07/16/2026 18:10:31 - INFO - __main__ - Distributed environment: DEEPSPEED  Backend: nccl
+Num processes: 7
+Process index: 6
+Local process index: 6
+Device: cuda:6
+
+Mixed precision type: bf16
+ds_config: {'train_batch_size': 'auto', 'train_micro_batch_size_per_gpu': 'auto', 'gradient_accumulation_steps': 'auto', 'zero_optimization': {'stage': 3, 'offload_optimizer': {'device': 'none', 'nvme_path': None}, 'offload_param': {'device': 'none', 'nvme_path': None}, 'stage3_gather_16bit_weights_on_model_save': True}, 'gradient_clipping': 'auto', 'steps_per_print': inf, 'bf16': {'enabled': True}, 'fp16': {'enabled': False}}
+
+wandb: Tracking run with wandb version 0.25.0
+wandb: Run data is saved locally in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/wandb/run-20260716_181031-h2eriuf7
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run sft_llada_x0pred
+wandb: ⭐️ View project at https://wandb.ai/mz751-rutgers-university/sft_llada_x0pred_nothink
+wandb: 🚀 View run at https://wandb.ai/mz751-rutgers-university/sft_llada_x0pred_nothink/runs/h2eriuf7
+07/16/2026 18:10:32 - INFO - __main__ - Loading LLaDA model and tokenizer
+07/16/2026 18:10:32 - INFO - __main__ - Distributed environment: DEEPSPEED  Backend: nccl
+Num processes: 7
+Process index: 5
+Local process index: 5
+Device: cuda:5
+
+Mixed precision type: bf16
+ds_config: {'train_batch_size': 'auto', 'train_micro_batch_size_per_gpu': 'auto', 'gradient_accumulation_steps': 'auto', 'zero_optimization': {'stage': 3, 'offload_optimizer': {'device': 'none', 'nvme_path': None}, 'offload_param': {'device': 'none', 'nvme_path': None}, 'stage3_gather_16bit_weights_on_model_save': True}, 'gradient_clipping': 'auto', 'steps_per_print': inf, 'bf16': {'enabled': True}, 'fp16': {'enabled': False}}
+
+07/16/2026 18:10:32 - INFO - __main__ - Distributed environment: DEEPSPEED  Backend: nccl
+Num processes: 7
+Process index: 2
+Local process index: 2
+Device: cuda:2
+
+Mixed precision type: bf16
+ds_config: {'train_batch_size': 'auto', 'train_micro_batch_size_per_gpu': 'auto', 'gradient_accumulation_steps': 'auto', 'zero_optimization': {'stage': 3, 'offload_optimizer': {'device': 'none', 'nvme_path': None}, 'offload_param': {'device': 'none', 'nvme_path': None}, 'stage3_gather_16bit_weights_on_model_save': True}, 'gradient_clipping': 'auto', 'steps_per_print': inf, 'bf16': {'enabled': True}, 'fp16': {'enabled': False}}
+
+07/16/2026 18:10:32 - INFO - __main__ - Distributed environment: DEEPSPEED  Backend: nccl
+Num processes: 7
+Process index: 1
+Local process index: 1
+Device: cuda:1
+
+Mixed precision type: bf16
+ds_config: {'train_batch_size': 'auto', 'train_micro_batch_size_per_gpu': 'auto', 'gradient_accumulation_steps': 'auto', 'zero_optimization': {'stage': 3, 'offload_optimizer': {'device': 'none', 'nvme_path': None}, 'offload_param': {'device': 'none', 'nvme_path': None}, 'stage3_gather_16bit_weights_on_model_save': True}, 'gradient_clipping': 'auto', 'steps_per_print': inf, 'bf16': {'enabled': True}, 'fp16': {'enabled': False}}
+
+07/16/2026 18:10:33 - INFO - __main__ - Distributed environment: DEEPSPEED  Backend: nccl
+Num processes: 7
+Process index: 4
+Local process index: 4
+Device: cuda:4
+
+Mixed precision type: bf16
+ds_config: {'train_batch_size': 'auto', 'train_micro_batch_size_per_gpu': 'auto', 'gradient_accumulation_steps': 'auto', 'zero_optimization': {'stage': 3, 'offload_optimizer': {'device': 'none', 'nvme_path': None}, 'offload_param': {'device': 'none', 'nvme_path': None}, 'stage3_gather_16bit_weights_on_model_save': True}, 'gradient_clipping': 'auto', 'steps_per_print': inf, 'bf16': {'enabled': True}, 'fp16': {'enabled': False}}
+
+07/16/2026 18:10:33 - INFO - __main__ - Distributed environment: DEEPSPEED  Backend: nccl
+Num processes: 7
+Process index: 3
+Local process index: 3
+Device: cuda:3
+
+Mixed precision type: bf16
+ds_config: {'train_batch_size': 'auto', 'train_micro_batch_size_per_gpu': 'auto', 'gradient_accumulation_steps': 'auto', 'zero_optimization': {'stage': 3, 'offload_optimizer': {'device': 'none', 'nvme_path': None}, 'offload_param': {'device': 'none', 'nvme_path': None}, 'stage3_gather_16bit_weights_on_model_save': True}, 'gradient_clipping': 'auto', 'steps_per_print': inf, 'bf16': {'enabled': True}, 'fp16': {'enabled': False}}
+
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:00<00:04,  1.24it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:00<00:04,  1.20it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:00<00:04,  1.19it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:00<00:04,  1.21it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:00<00:04,  1.20it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:00<00:04,  1.25it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:00<00:04,  1.04it/s]Loading checkpoint shards:  33%|███▎      | 2/6 [00:01<00:03,  1.21it/s]Loading checkpoint shards:  33%|███▎      | 2/6 [00:01<00:03,  1.22it/s]Loading checkpoint shards:  33%|███▎      | 2/6 [00:01<00:03,  1.20it/s]Loading checkpoint shards:  33%|███▎      | 2/6 [00:01<00:03,  1.20it/s]Loading checkpoint shards:  33%|███▎      | 2/6 [00:01<00:03,  1.22it/s]Loading checkpoint shards:  33%|███▎      | 2/6 [00:01<00:03,  1.21it/s]Loading checkpoint shards:  33%|███▎      | 2/6 [00:01<00:03,  1.01it/s]Loading checkpoint shards:  50%|█████     | 3/6 [00:02<00:03,  1.06s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:02<00:03,  1.06s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:02<00:03,  1.05s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:02<00:03,  1.05s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:03<00:03,  1.06s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:02<00:03,  1.06s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:03<00:03,  1.08s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:04<00:02,  1.09s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:04<00:02,  1.09s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:04<00:02,  1.09s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:04<00:02,  1.09s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:04<00:02,  1.09s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:04<00:02,  1.09s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:04<00:02,  1.10s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:05<00:01,  1.07s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:05<00:01,  1.07s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:05<00:01,  1.07s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:05<00:01,  1.07s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:05<00:01,  1.07s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:05<00:01,  1.07s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:05<00:01,  1.08s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.02it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.02it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.02it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.02it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.02it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.01it/s]
+Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.01it/s]
+Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.01it/s]
+Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.00it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.01it/s]
+
+Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.02it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.01it/s]
+[rank5]: Traceback (most recent call last):
+[rank5]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/train/sft_llada_x0pred.py", line 608, in <module>
+[rank5]:     main()
+[rank5]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/train/sft_llada_x0pred.py", line 132, in main
+[rank5]:     model.gradient_checkpointing_enable()
+[rank5]:   File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/transformers/modeling_utils.py", line 3240, in gradient_checkpointing_enable
+[rank5]:     raise ValueError(f"{self.__class__.__name__} does not support gradient checkpointing.")
+[rank5]: ValueError: LLaDAModelLM does not support gradient checkpointing.
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/train/sft_llada_x0pred.py", line 608, in <module>
+[rank2]:     main()
+[rank2]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/train/sft_llada_x0pred.py", line 132, in main
+[rank2]:     model.gradient_checkpointing_enable()
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/transformers/modeling_utils.py", line 3240, in gradient_checkpointing_enable
+[rank2]:     raise ValueError(f"{self.__class__.__name__} does not support gradient checkpointing.")
+[rank2]: ValueError: LLaDAModelLM does not support gradient checkpointing.
+[rank4]: Traceback (most recent call last):
+[rank4]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/train/sft_llada_x0pred.py", line 608, in <module>
+[rank4]:     main()
+[rank4]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/train/sft_llada_x0pred.py", line 132, in main
+[rank4]:     model.gradient_checkpointing_enable()
+[rank4]:   File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/transformers/modeling_utils.py", line 3240, in gradient_checkpointing_enable
+[rank4]:     raise ValueError(f"{self.__class__.__name__} does not support gradient checkpointing.")
+[rank4]: ValueError: LLaDAModelLM does not support gradient checkpointing.
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/train/sft_llada_x0pred.py", line 608, in <module>
+[rank3]:     main()
+[rank3]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/train/sft_llada_x0pred.py", line 132, in main
+[rank3]:     model.gradient_checkpointing_enable()
+[rank3]:   File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/transformers/modeling_utils.py", line 3240, in gradient_checkpointing_enable
+[rank3]:     raise ValueError(f"{self.__class__.__name__} does not support gradient checkpointing.")
+[rank3]: ValueError: LLaDAModelLM does not support gradient checkpointing.
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/train/sft_llada_x0pred.py", line 608, in <module>
+[rank1]:     main()
+[rank1]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/train/sft_llada_x0pred.py", line 132, in main
+[rank1]:     model.gradient_checkpointing_enable()
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/transformers/modeling_utils.py", line 3240, in gradient_checkpointing_enable
+[rank1]:     raise ValueError(f"{self.__class__.__name__} does not support gradient checkpointing.")
+[rank1]: ValueError: LLaDAModelLM does not support gradient checkpointing.
+[rank6]: Traceback (most recent call last):
+[rank6]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/train/sft_llada_x0pred.py", line 608, in <module>
+[rank6]:     main()
+[rank6]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/train/sft_llada_x0pred.py", line 132, in main
+[rank6]:     model.gradient_checkpointing_enable()
+[rank6]:   File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/transformers/modeling_utils.py", line 3240, in gradient_checkpointing_enable
+[rank6]:     raise ValueError(f"{self.__class__.__name__} does not support gradient checkpointing.")
+[rank6]: ValueError: LLaDAModelLM does not support gradient checkpointing.
+Loading checkpoint shards: 100%|██████████| 6/6 [00:06<00:00,  1.03it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:06<00:00,  1.02s/it]
+Traceback (most recent call last):
+  File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/train/sft_llada_x0pred.py", line 608, in <module>
+    main()
+  File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/train/sft_llada_x0pred.py", line 132, in main
+    model.gradient_checkpointing_enable()
+  File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/transformers/modeling_utils.py", line 3240, in gradient_checkpointing_enable
+    raise ValueError(f"{self.__class__.__name__} does not support gradient checkpointing.")
+ValueError: LLaDAModelLM does not support gradient checkpointing.
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/train/sft_llada_x0pred.py", line 608, in <module>
+[rank0]:     main()
+[rank0]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/train/sft_llada_x0pred.py", line 132, in main
+[rank0]:     model.gradient_checkpointing_enable()
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/transformers/modeling_utils.py", line 3240, in gradient_checkpointing_enable
+[rank0]:     raise ValueError(f"{self.__class__.__name__} does not support gradient checkpointing.")
+[rank0]: ValueError: LLaDAModelLM does not support gradient checkpointing.
+[1;34mwandb[0m: 
+[1;34mwandb[0m: 🚀 View run [33msft_llada_x0pred[0m at: [34mhttps://wandb.ai/mz751-rutgers-university/sft_llada_x0pred_nothink/runs/h2eriuf7[0m
+[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20260716_181031-h2eriuf7/logs[0m
+W0716 18:10:50.208000 1637212 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 1637741 closing signal SIGTERM
+W0716 18:10:50.210000 1637212 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 1637742 closing signal SIGTERM
+W0716 18:10:50.210000 1637212 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 1637744 closing signal SIGTERM
+W0716 18:10:50.212000 1637212 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 1637746 closing signal SIGTERM
+W0716 18:10:50.215000 1637212 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 1637751 closing signal SIGTERM
+W0716 18:10:50.216000 1637212 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 1637752 closing signal SIGTERM
+E0716 18:10:51.301000 1637212 site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 4 (pid: 1637748) of binary: /research/cbim/vast/mz751/miniforge3/envs/dllm-rl/bin/python3.10
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Traceback (most recent call last):
+  File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/bin/accelerate", line 6, in <module>
+    sys.exit(main())
+  File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/accelerate/commands/accelerate_cli.py", line 50, in main
+    args.func(args)
+  File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/accelerate/commands/launch.py", line 1266, in launch_command
+    deepspeed_launcher(args)
+  File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/accelerate/commands/launch.py", line 952, in deepspeed_launcher
+    distrib_run.run(args)
+  File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+train/sft_llada_x0pred.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-07-16_18:10:50
+  host      : dionysos.cs.rutgers.edu
+  rank      : 4 (local_rank: 4)
+  exitcode  : 1 (pid: 1637748)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

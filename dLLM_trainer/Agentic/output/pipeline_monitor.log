@@ -1,0 +1,326 @@
+================================================================
+Pipeline Monitor 启动: Fri Aug  7 12:05:49 AM EDT 2026
+================================================================
+[Monitor] 等待 Phase 0 完成...
+[Monitor] Phase 0 dir: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/phase0_eval/20260806_235444
+  00:05:49  Phase0: 187/1200题  0/8 shard 完成
+  00:07:49  Phase0: 237/1200题  0/8 shard 完成
+  00:09:49  Phase0: 289/1200题  0/8 shard 完成
+  00:11:49  Phase0: 342/1200题  0/8 shard 完成
+  00:13:49  Phase0: 392/1200题  0/8 shard 完成
+  00:15:49  Phase0: 445/1200题  0/8 shard 完成
+  00:17:49  Phase0: 494/1200题  0/8 shard 完成
+  00:19:49  Phase0: 549/1200题  0/8 shard 完成
+  00:21:49  Phase0: 603/1200题  0/8 shard 完成
+  00:23:49  Phase0: 657/1200题  0/8 shard 完成
+  00:25:49  Phase0: 705/1200题  0/8 shard 完成
+  00:27:49  Phase0: 755/1200题  0/8 shard 完成
+  00:29:49  Phase0: 811/1200题  0/8 shard 完成
+  00:31:49  Phase0: 864/1200题  0/8 shard 完成
+  00:33:49  Phase0: 916/1200题  1/8 shard 完成
+  00:35:49  Phase0: 955/1200题  3/8 shard 完成
+  00:37:49  Phase0: 977/1200题  3/8 shard 完成
+  00:39:49  Phase0: 1007/1200题  4/8 shard 完成
+  00:41:49  Phase0: 1029/1200题  5/8 shard 完成
+  00:43:49  Phase0: 1052/1200题  5/8 shard 完成
+  00:45:49  Phase0: 1078/1200题  5/8 shard 完成
+  00:47:49  Phase0: 1100/1200题  5/8 shard 完成
+  00:49:49  Phase0: 1123/1200题  5/8 shard 完成
+  00:51:49  Phase0: 1145/1200题  6/8 shard 完成
+  00:53:49  Phase0: 1153/1200题  7/8 shard 完成
+  00:55:49  Phase0: 1162/1200题  7/8 shard 完成
+  00:57:50  Phase0: 1170/1200题  7/8 shard 完成
+  00:59:50  Phase0: 1178/1200题  7/8 shard 完成
+  01:01:50  Phase0: 1186/1200题  7/8 shard 完成
+  01:03:50  Phase0: 1193/1200题  7/8 shard 完成
+  01:05:50  Phase0: 1200/1200题  8/8 shard 完成
+[Monitor] Phase 0 全部完成!
+[Monitor] 合并 sft: 600 题 → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/phase0_eval/20260806_235444/sft_merged.jsonl
+[Monitor] 合并 plan_a: 600 题 → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/phase0_eval/20260806_235444/plan_a_merged.jsonl
+[Monitor] Phase 0 打分中...
+
+[Monitor] ====== Phase 0 打分 ======
+
+--- sft ---
+Valid data entries: 600
+LLM Judge: https://api.openai.com/v1 | model=gpt-4o | key=*brsA
+Starting evaluation...
+  0%|          | 0/600 [00:00<?, ?it/s]  0%|          | 1/600 [00:00<08:47,  1.13it/s]  4%|▍         | 25/600 [00:00<00:16, 34.41it/s]  9%|▉         | 56/600 [00:01<00:06, 79.99it/s] 14%|█▎        | 81/600 [00:01<00:04, 110.78it/s] 17%|█▋        | 104/600 [00:01<00:04, 113.32it/s] 21%|██        | 124/600 [00:01<00:03, 129.22it/s] 24%|██▍       | 147/600 [00:01<00:02, 151.04it/s] 28%|██▊       | 167/600 [00:01<00:02, 155.06it/s] 31%|███       | 186/600 [00:01<00:02, 158.24it/s] 34%|███▍      | 205/600 [00:01<00:02, 160.47it/s] 38%|███▊      | 226/600 [00:02<00:02, 172.02it/s] 41%|████      | 245/600 [00:02<00:02, 173.46it/s] 44%|████▍     | 265/600 [00:02<00:01, 175.53it/s] 47%|████▋     | 284/600 [00:02<00:01, 169.93it/s] 50%|█████     | 302/600 [00:02<00:01, 166.03it/s] 53%|█████▎    | 319/600 [00:02<00:01, 165.98it/s] 56%|█████▌    | 336/600 [00:02<00:01, 165.08it/s] 60%|██████    | 361/600 [00:02<00:01, 187.66it/s] 63%|██████▎   | 380/600 [00:02<00:01, 174.51it/s] 66%|██████▋   | 398/600 [00:03<00:01, 175.55it/s] 70%|██████▉   | 419/600 [00:03<00:00, 184.34it/s] 73%|███████▎  | 438/600 [00:03<00:00, 171.45it/s] 78%|███████▊  | 465/600 [00:03<00:00, 198.13it/s] 81%|████████  | 486/600 [00:03<00:00, 184.73it/s] 84%|████████▍ | 506/600 [00:03<00:00, 188.38it/s] 88%|████████▊ | 526/600 [00:03<00:00, 176.53it/s] 92%|█████████▏| 549/600 [00:03<00:00, 188.12it/s] 96%|█████████▌| 574/600 [00:03<00:00, 204.08it/s] 99%|█████████▉| 595/600 [00:04<00:00, 88.59it/s] 100%|██████████| 600/600 [00:05<00:00, 116.40it/s]
+
+==================================================
+Total questions     : 600
+Answer rate         : 600/600 = 100.0%
+CEM-1  (short GT)   : 135/600 = 22.50%
+Token F1 mean       : 26.93%
+Token F1 > 0.5      : 101/600 = 16.8%
+Token F1 > 0.8      : 5/600 = 0.8%
+LLM Judge           : 267/600 = 44.50%
+
+--- plan_a ---
+Valid data entries: 600
+LLM Judge: https://api.openai.com/v1 | model=gpt-4o | key=*brsA
+Starting evaluation...
+  0%|          | 0/600 [00:00<?, ?it/s]  0%|          | 1/600 [00:00<08:36,  1.16it/s]  4%|▍         | 26/600 [00:00<00:15, 36.24it/s] 10%|▉         | 58/600 [00:01<00:06, 83.25it/s] 15%|█▌        | 91/600 [00:01<00:04, 124.69it/s] 19%|█▉        | 115/600 [00:01<00:04, 118.49it/s] 23%|██▎       | 136/600 [00:01<00:03, 135.54it/s] 27%|██▋       | 161/600 [00:01<00:02, 158.09it/s] 31%|███       | 186/600 [00:01<00:02, 177.22it/s] 35%|███▍      | 208/600 [00:01<00:02, 158.83it/s] 38%|███▊      | 228/600 [00:02<00:02, 167.53it/s] 42%|████▏     | 251/600 [00:02<00:01, 181.45it/s] 45%|████▌     | 272/600 [00:02<00:01, 185.07it/s] 49%|████▊     | 292/600 [00:02<00:01, 186.26it/s] 52%|█████▏    | 312/600 [00:02<00:01, 163.63it/s] 56%|█████▋    | 338/600 [00:02<00:01, 187.25it/s] 61%|██████    | 364/600 [00:02<00:01, 194.36it/s] 65%|██████▌   | 390/600 [00:02<00:00, 210.74it/s] 69%|██████▊   | 412/600 [00:02<00:01, 178.96it/s] 73%|███████▎  | 436/600 [00:03<00:00, 192.98it/s] 77%|███████▋  | 460/600 [00:03<00:00, 203.57it/s] 80%|████████  | 482/600 [00:03<00:00, 171.50it/s] 84%|████████▎ | 501/600 [00:03<00:00, 168.45it/s] 88%|████████▊ | 529/600 [00:03<00:00, 195.81it/s] 92%|█████████▏| 553/600 [00:03<00:00, 204.55it/s] 96%|█████████▌| 575/600 [00:03<00:00, 173.94it/s] 99%|█████████▉| 594/600 [00:04<00:00, 91.27it/s] 100%|██████████| 600/600 [00:06<00:00, 98.99it/s]
+
+==================================================
+Total questions     : 600
+Answer rate         : 600/600 = 100.0%
+CEM-1  (short GT)   : 138/600 = 23.00%
+Token F1 mean       : 27.05%
+Token F1 > 0.5      : 101/600 = 16.8%
+Token F1 > 0.8      : 5/600 = 0.8%
+LLM Judge           : 278/600 = 46.33%
+[Monitor] 启动 Phase 2...
+
+[Monitor] ====== 启动 Phase 2: Round 0 Rollout ======
+[Monitor] Phase 2 round0_master screen 已启动
+[Monitor] 开始时间: Fri Aug  7 01:06:33 AM EDT 2026
+[Monitor] 等待 Phase 2 完成...
+
+[Monitor] 等待 Phase 2 完成...
+  01:06:33  Phase2: 0/2048 records  0 ranks running
+  01:11:33  Phase2: 0/2048 records  2 ranks running
+  01:16:33  Phase2: 0/2048 records  0 ranks running
+  01:21:33  Phase2: 0/2048 records  0 ranks running
+  01:26:33  Phase2: 0/2048 records  0 ranks running
+  01:31:33  Phase2: 0/2048 records  0 ranks running
+  01:36:33  Phase2: 0/2048 records  0 ranks running
+  01:41:33  Phase2: 0/2048 records  0 ranks running
+  01:46:33  Phase2: 0/2048 records  0 ranks running
+  01:51:33  Phase2: 0/2048 records  0 ranks running
+  01:56:33  Phase2: 0/2048 records  0 ranks running
+  02:01:33  Phase2: 0/2048 records  0 ranks running
+  02:06:33  Phase2: 0/2048 records  0 ranks running
+  02:11:33  Phase2: 0/2048 records  0 ranks running
+  02:16:33  Phase2: 0/2048 records  0 ranks running
+  02:21:33  Phase2: 0/2048 records  0 ranks running
+  02:26:33  Phase2: 0/2048 records  0 ranks running
+  02:31:34  Phase2: 0/2048 records  0 ranks running
+  02:36:34  Phase2: 0/2048 records  0 ranks running
+  02:41:34  Phase2: 0/2048 records  0 ranks running
+  02:46:34  Phase2: 0/2048 records  0 ranks running
+  02:51:34  Phase2: 0/2048 records  0 ranks running
+  02:56:34  Phase2: 0/2048 records  0 ranks running
+  03:01:34  Phase2: 0/2048 records  0 ranks running
+  03:06:34  Phase2: 0/2048 records  0 ranks running
+  03:11:34  Phase2: 0/2048 records  0 ranks running
+  03:16:34  Phase2: 0/2048 records  0 ranks running
+  03:21:34  Phase2: 0/2048 records  0 ranks running
+  03:26:34  Phase2: 0/2048 records  0 ranks running
+  03:31:34  Phase2: 0/2048 records  0 ranks running
+  03:36:34  Phase2: 0/2048 records  0 ranks running
+  03:41:34  Phase2: 0/2048 records  0 ranks running
+  03:46:34  Phase2: 0/2048 records  0 ranks running
+  03:51:34  Phase2: 0/2048 records  0 ranks running
+  03:56:34  Phase2: 0/2048 records  0 ranks running
+  04:01:34  Phase2: 0/2048 records  0 ranks running
+  04:06:34  Phase2: 0/2048 records  0 ranks running
+  04:11:34  Phase2: 0/2048 records  0 ranks running
+  04:16:34  Phase2: 0/2048 records  0 ranks running
+  04:21:34  Phase2: 0/2048 records  0 ranks running
+  04:26:34  Phase2: 0/2048 records  0 ranks running
+  04:31:34  Phase2: 0/2048 records  0 ranks running
+  04:36:34  Phase2: 0/2048 records  0 ranks running
+  04:41:34  Phase2: 0/2048 records  0 ranks running
+  04:46:34  Phase2: 0/2048 records  0 ranks running
+  04:51:34  Phase2: 0/2048 records  0 ranks running
+  04:56:34  Phase2: 0/2048 records  0 ranks running
+  05:01:34  Phase2: 0/2048 records  0 ranks running
+  05:06:34  Phase2: 0/2048 records  0 ranks running
+  05:11:34  Phase2: 0/2048 records  0 ranks running
+  05:16:34  Phase2: 0/2048 records  0 ranks running
+  05:21:34  Phase2: 0/2048 records  0 ranks running
+  05:26:34  Phase2: 0/2048 records  0 ranks running
+  05:31:34  Phase2: 0/2048 records  0 ranks running
+  05:36:34  Phase2: 0/2048 records  0 ranks running
+  05:41:34  Phase2: 0/2048 records  0 ranks running
+  05:46:34  Phase2: 0/2048 records  0 ranks running
+  05:51:34  Phase2: 0/2048 records  0 ranks running
+  05:56:34  Phase2: 0/2048 records  0 ranks running
+  06:01:34  Phase2: 0/2048 records  0 ranks running
+  06:06:34  Phase2: 0/2048 records  0 ranks running
+  06:11:34  Phase2: 0/2048 records  0 ranks running
+  06:16:34  Phase2: 0/2048 records  0 ranks running
+  06:21:34  Phase2: 0/2048 records  0 ranks running
+  06:26:34  Phase2: 0/2048 records  0 ranks running
+  06:31:34  Phase2: 0/2048 records  0 ranks running
+  06:36:34  Phase2: 0/2048 records  0 ranks running
+  06:41:34  Phase2: 0/2048 records  0 ranks running
+  06:46:34  Phase2: 0/2048 records  0 ranks running
+  06:51:34  Phase2: 0/2048 records  0 ranks running
+  06:56:34  Phase2: 0/2048 records  0 ranks running
+  07:01:34  Phase2: 0/2048 records  0 ranks running
+  07:06:34  Phase2: 0/2048 records  0 ranks running
+  07:11:34  Phase2: 0/2048 records  0 ranks running
+  07:16:34  Phase2: 0/2048 records  0 ranks running
+  07:21:34  Phase2: 0/2048 records  0 ranks running
+  07:26:34  Phase2: 0/2048 records  0 ranks running
+  07:31:34  Phase2: 0/2048 records  0 ranks running
+  07:36:34  Phase2: 0/2048 records  0 ranks running
+  07:41:34  Phase2: 0/2048 records  0 ranks running
+  07:46:34  Phase2: 0/2048 records  0 ranks running
+  07:51:35  Phase2: 0/2048 records  0 ranks running
+  07:56:35  Phase2: 0/2048 records  0 ranks running
+  08:01:35  Phase2: 0/2048 records  0 ranks running
+  08:06:35  Phase2: 0/2048 records  0 ranks running
+  08:11:35  Phase2: 0/2048 records  0 ranks running
+  08:16:35  Phase2: 0/2048 records  0 ranks running
+  08:21:35  Phase2: 0/2048 records  0 ranks running
+  08:26:35  Phase2: 0/2048 records  0 ranks running
+  08:31:35  Phase2: 0/2048 records  0 ranks running
+  08:36:35  Phase2: 0/2048 records  0 ranks running
+  08:41:35  Phase2: 0/2048 records  0 ranks running
+  08:46:35  Phase2: 0/2048 records  0 ranks running
+  08:51:35  Phase2: 0/2048 records  0 ranks running
+  08:56:35  Phase2: 0/2048 records  0 ranks running
+  09:01:35  Phase2: 0/2048 records  0 ranks running
+  09:06:35  Phase2: 0/2048 records  0 ranks running
+  09:11:35  Phase2: 0/2048 records  0 ranks running
+  09:16:35  Phase2: 0/2048 records  0 ranks running
+  09:21:35  Phase2: 0/2048 records  0 ranks running
+  09:26:35  Phase2: 0/2048 records  0 ranks running
+  09:31:35  Phase2: 0/2048 records  0 ranks running
+  09:36:35  Phase2: 0/2048 records  0 ranks running
+  09:41:35  Phase2: 0/2048 records  0 ranks running
+  09:46:35  Phase2: 0/2048 records  0 ranks running
+  09:51:35  Phase2: 0/2048 records  0 ranks running
+  09:56:35  Phase2: 0/2048 records  0 ranks running
+  10:01:35  Phase2: 0/2048 records  0 ranks running
+  10:06:35  Phase2: 0/2048 records  0 ranks running
+  10:11:35  Phase2: 0/2048 records  0 ranks running
+  10:16:35  Phase2: 0/2048 records  0 ranks running
+  10:21:35  Phase2: 0/2048 records  0 ranks running
+  10:26:35  Phase2: 0/2048 records  0 ranks running
+  10:31:35  Phase2: 0/2048 records  0 ranks running
+  10:36:35  Phase2: 0/2048 records  0 ranks running
+  10:41:35  Phase2: 0/2048 records  0 ranks running
+  10:46:35  Phase2: 0/2048 records  0 ranks running
+  10:51:35  Phase2: 0/2048 records  0 ranks running
+  10:56:35  Phase2: 0/2048 records  0 ranks running
+  11:01:35  Phase2: 0/2048 records  0 ranks running
+  11:06:35  Phase2: 0/2048 records  0 ranks running
+  11:11:35  Phase2: 0/2048 records  0 ranks running
+  11:16:35  Phase2: 0/2048 records  0 ranks running
+  11:21:35  Phase2: 0/2048 records  0 ranks running
+  11:26:35  Phase2: 0/2048 records  0 ranks running
+  11:31:35  Phase2: 0/2048 records  0 ranks running
+  11:36:35  Phase2: 0/2048 records  0 ranks running
+  11:41:35  Phase2: 0/2048 records  0 ranks running
+  11:46:35  Phase2: 0/2048 records  0 ranks running
+  11:51:35  Phase2: 0/2048 records  0 ranks running
+  11:56:35  Phase2: 0/2048 records  0 ranks running
+  12:01:35  Phase2: 0/2048 records  0 ranks running
+  12:06:35  Phase2: 0/2048 records  0 ranks running
+  12:11:35  Phase2: 0/2048 records  0 ranks running
+  12:16:35  Phase2: 0/2048 records  0 ranks running
+  12:21:35  Phase2: 0/2048 records  0 ranks running
+  12:26:35  Phase2: 0/2048 records  0 ranks running
+  12:31:35  Phase2: 0/2048 records  0 ranks running
+  12:36:35  Phase2: 0/2048 records  0 ranks running
+  12:41:35  Phase2: 0/2048 records  0 ranks running
+  12:46:35  Phase2: 0/2048 records  0 ranks running
+  12:51:35  Phase2: 0/2048 records  0 ranks running
+  12:56:35  Phase2: 0/2048 records  0 ranks running
+  13:01:35  Phase2: 0/2048 records  0 ranks running
+  13:06:35  Phase2: 0/2048 records  0 ranks running
+  13:11:36  Phase2: 0/2048 records  0 ranks running
+  13:16:36  Phase2: 0/2048 records  0 ranks running
+  13:21:36  Phase2: 0/2048 records  0 ranks running
+  13:26:36  Phase2: 0/2048 records  0 ranks running
+  13:31:36  Phase2: 0/2048 records  0 ranks running
+  13:36:36  Phase2: 0/2048 records  0 ranks running
+  13:41:36  Phase2: 0/2048 records  0 ranks running
+  13:46:36  Phase2: 0/2048 records  0 ranks running
+  13:51:36  Phase2: 0/2048 records  0 ranks running
+  13:56:36  Phase2: 0/2048 records  0 ranks running
+  14:01:36  Phase2: 0/2048 records  0 ranks running
+  14:06:36  Phase2: 0/2048 records  0 ranks running
+  14:11:36  Phase2: 0/2048 records  0 ranks running
+  14:16:36  Phase2: 0/2048 records  0 ranks running
+  14:21:36  Phase2: 0/2048 records  0 ranks running
+  14:26:36  Phase2: 0/2048 records  0 ranks running
+  14:31:36  Phase2: 0/2048 records  0 ranks running
+  14:36:36  Phase2: 0/2048 records  0 ranks running
+  14:41:36  Phase2: 0/2048 records  0 ranks running
+  14:46:36  Phase2: 0/2048 records  0 ranks running
+  14:51:36  Phase2: 0/2048 records  0 ranks running
+  14:56:36  Phase2: 0/2048 records  0 ranks running
+  15:01:36  Phase2: 0/2048 records  0 ranks running
+  15:06:36  Phase2: 0/2048 records  0 ranks running
+  15:11:36  Phase2: 0/2048 records  0 ranks running
+  15:16:36  Phase2: 0/2048 records  0 ranks running
+  15:21:36  Phase2: 0/2048 records  0 ranks running
+  15:26:36  Phase2: 0/2048 records  0 ranks running
+  15:31:36  Phase2: 0/2048 records  0 ranks running
+  15:36:36  Phase2: 0/2048 records  0 ranks running
+  15:41:36  Phase2: 0/2048 records  0 ranks running
+  15:46:36  Phase2: 0/2048 records  0 ranks running
+  15:51:36  Phase2: 0/2048 records  0 ranks running
+================================================================
+Pipeline Monitor 启动: Fri Aug  7 03:58:38 PM EDT 2026
+================================================================
+[Monitor] 等待 Phase 0 完成...
+[Monitor] Phase 0 dir: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/phase0_eval/20260806_235444
+  15:58:38  Phase0: 1200/1200题  8/8 shard 完成
+[Monitor] Phase 0 全部完成!
+[Monitor] 合并 sft: 600 题 → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/phase0_eval/20260806_235444/sft_merged.jsonl
+[Monitor] 合并 plan_a: 600 题 → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/phase0_eval/20260806_235444/plan_a_merged.jsonl
+[Monitor] Phase 0 打分中...
+
+[Monitor] ====== Phase 0 打分 ======
+
+--- sft ---
+Valid data entries: 600
+LLM Judge: https://api.openai.com/v1 | model=gpt-4o | key=*brsA
+Starting evaluation...
+  0%|          | 0/600 [00:00<?, ?it/s]  0%|          | 1/600 [00:02<21:11,  2.12s/it]  2%|▏         | 12/600 [00:02<01:19,  7.37it/s]  4%|▍         | 26/600 [00:02<00:31, 18.12it/s]  9%|▉         | 54/600 [00:02<00:12, 45.43it/s] 12%|█▏        | 71/600 [00:02<00:08, 60.19it/s] 14%|█▍        | 87/600 [00:02<00:06, 73.56it/s] 17%|█▋        | 103/600 [00:02<00:05, 83.18it/s] 20%|█▉        | 117/600 [00:02<00:05, 91.84it/s] 23%|██▎       | 136/600 [00:03<00:04, 111.58it/s] 26%|██▌       | 155/600 [00:03<00:03, 128.52it/s] 29%|██▊       | 172/600 [00:03<00:03, 129.55it/s] 32%|███▏      | 189/600 [00:03<00:02, 137.82it/s] 34%|███▍      | 207/600 [00:03<00:02, 138.95it/s] 38%|███▊      | 226/600 [00:03<00:02, 149.29it/s] 40%|████      | 242/600 [00:03<00:02, 138.57it/s] 43%|████▎     | 259/600 [00:03<00:02, 144.74it/s] 46%|████▌     | 275/600 [00:03<00:02, 135.21it/s] 50%|████▉     | 298/600 [00:04<00:01, 158.29it/s] 52%|█████▎    | 315/600 [00:04<00:02, 136.16it/s] 55%|█████▌    | 332/600 [00:04<00:01, 141.32it/s] 58%|█████▊    | 347/600 [00:04<00:01, 140.82it/s] 60%|██████    | 362/600 [00:04<00:01, 140.74it/s] 63%|██████▎   | 380/600 [00:04<00:01, 150.17it/s] 66%|██████▌   | 396/600 [00:04<00:01, 135.70it/s] 69%|██████▉   | 414/600 [00:04<00:01, 145.13it/s] 72%|███████▏  | 431/600 [00:05<00:01, 150.20it/s] 75%|███████▌  | 450/600 [00:05<00:00, 153.50it/s] 78%|███████▊  | 466/600 [00:05<00:00, 148.32it/s] 80%|████████  | 482/600 [00:05<00:00, 142.67it/s] 83%|████████▎ | 497/600 [00:05<00:00, 138.50it/s] 86%|████████▌ | 514/600 [00:05<00:00, 132.51it/s] 89%|████████▊ | 532/600 [00:05<00:00, 139.11it/s] 91%|█████████ | 547/600 [00:05<00:00, 137.40it/s] 94%|█████████▎| 561/600 [00:06<00:00, 128.12it/s] 96%|█████████▌| 576/600 [00:06<00:00, 123.20it/s] 98%|█████████▊| 589/600 [00:06<00:00, 94.24it/s]  98%|█████████▊| 589/600 [00:20<00:00, 94.24it/s]100%|██████████| 600/600 [00:27<00:00,  2.12it/s]100%|██████████| 600/600 [00:27<00:00, 21.91it/s]
+
+==================================================
+Total questions     : 600
+Answer rate         : 600/600 = 100.0%
+CEM-1  (short GT)   : 135/600 = 22.50%
+Token F1 mean       : 26.93%
+Token F1 > 0.5      : 101/600 = 16.8%
+Token F1 > 0.8      : 5/600 = 0.8%
+LLM Judge           : 265/600 = 44.17%
+
+--- plan_a ---
+Valid data entries: 600
+LLM Judge: https://api.openai.com/v1 | model=gpt-4o | key=*brsA
+Starting evaluation...
+  0%|          | 0/600 [00:00<?, ?it/s]  0%|          | 1/600 [00:01<10:59,  1.10s/it]  2%|▏         | 10/600 [00:01<00:53, 11.02it/s]  5%|▌         | 32/600 [00:01<00:14, 40.21it/s]  9%|▊         | 52/600 [00:01<00:08, 65.13it/s] 14%|█▎        | 81/600 [00:01<00:04, 106.19it/s] 17%|█▋        | 101/600 [00:01<00:04, 112.52it/s] 20%|█▉        | 118/600 [00:01<00:04, 115.95it/s] 23%|██▎       | 140/600 [00:01<00:03, 138.11it/s] 26%|██▋       | 159/600 [00:02<00:02, 148.87it/s] 30%|██▉       | 179/600 [00:02<00:02, 159.06it/s] 33%|███▎      | 198/600 [00:02<00:02, 143.64it/s] 37%|███▋      | 220/600 [00:02<00:02, 159.99it/s] 40%|███▉      | 238/600 [00:02<00:02, 148.55it/s] 42%|████▎     | 255/600 [00:02<00:02, 144.26it/s] 46%|████▌     | 277/600 [00:02<00:02, 157.68it/s] 49%|████▉     | 295/600 [00:02<00:01, 162.29it/s] 52%|█████▏    | 312/600 [00:03<00:01, 153.74it/s] 55%|█████▍    | 328/600 [00:03<00:01, 147.41it/s] 57%|█████▋    | 344/600 [00:03<00:01, 139.87it/s] 60%|██████    | 363/600 [00:03<00:01, 152.14it/s] 63%|██████▎   | 379/600 [00:03<00:01, 153.10it/s] 67%|██████▋   | 400/600 [00:03<00:01, 168.03it/s] 70%|██████▉   | 418/600 [00:03<00:01, 157.93it/s] 72%|███████▎  | 435/600 [00:03<00:01, 129.79it/s] 76%|███████▌  | 455/600 [00:03<00:00, 145.50it/s] 79%|███████▉  | 474/600 [00:04<00:00, 151.64it/s] 82%|████████▏ | 490/600 [00:04<00:00, 148.74it/s] 85%|████████▍ | 509/600 [00:04<00:00, 157.80it/s] 88%|████████▊ | 526/600 [00:04<00:00, 133.52it/s] 90%|█████████ | 542/600 [00:04<00:00, 139.72it/s] 93%|█████████▎| 559/600 [00:04<00:00, 141.73it/s] 96%|█████████▌| 574/600 [00:04<00:00, 136.09it/s] 98%|█████████▊| 591/600 [00:04<00:00, 134.58it/s] 98%|█████████▊| 591/600 [00:19<00:00, 134.58it/s]100%|██████████| 600/600 [00:41<00:00,  1.31it/s] 100%|██████████| 600/600 [00:41<00:00, 14.55it/s]
+
+==================================================
+Total questions     : 600
+Answer rate         : 600/600 = 100.0%
+CEM-1  (short GT)   : 138/600 = 23.00%
+Token F1 mean       : 27.05%
+Token F1 > 0.5      : 101/600 = 16.8%
+Token F1 > 0.8      : 5/600 = 0.8%
+LLM Judge           : 276/600 = 46.00%
+[Monitor] 启动 Phase 2...
+
+[Monitor] ====== 启动 Phase 2: Round 0 Rollout ======
+[Monitor] Phase 2 round0_master screen 已启动
+[Monitor] 开始时间: Fri Aug  7 04:00:20 PM EDT 2026
+[Monitor] 等待 Phase 2 完成...
+
+[Monitor] 等待 Phase 2 完成...
+  16:00:20  Phase2: 0/2048 records  3 ranks running
+  16:05:20  Phase2: 0/2048 records  4 ranks running
+  16:10:20  Phase2: 10/2048 records  5 ranks running
+  16:15:20  Phase2: 24/2048 records  5 ranks running
+  16:20:20  Phase2: 38/2048 records  5 ranks running
+  16:25:20  Phase2: 54/2048 records  5 ranks running
+  16:30:20  Phase2: 68/2048 records  5 ranks running
+  16:35:20  Phase2: 83/2048 records  5 ranks running
+  16:40:20  Phase2: 98/2048 records  5 ranks running
+  16:45:20  Phase2: 112/2048 records  5 ranks running
+  16:50:20  Phase2: 127/2048 records  5 ranks running
+  16:55:20  Phase2: 143/2048 records  5 ranks running
+  17:00:20  Phase2: 158/2048 records  5 ranks running
+  17:05:20  Phase2: 170/2048 records  5 ranks running
+  17:10:20  Phase2: 181/2048 records  5 ranks running
+  17:15:20  Phase2: 194/2048 records  5 ranks running
+  17:20:20  Phase2: 207/2048 records  4 ranks running
+  17:25:20  Phase2: 219/2048 records  4 ranks running

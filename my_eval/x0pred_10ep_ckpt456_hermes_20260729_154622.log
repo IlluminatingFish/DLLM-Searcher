@@ -1,0 +1,28 @@
+==============================
+  评测 ckpt_4
+  模型: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_llada_x0pred_10ep/ckpt_4/optimized
+==============================
+  GPU 0: 题 0 ~ 74  PID=1673016
+  GPU 1: 题 75 ~ 149  PID=1673017
+  GPU 2: 题 150 ~ 224  PID=1673018
+  GPU 3: 题 225 ~ 299  PID=1673019
+  GPU 4: 题 300 ~ 374  PID=1673020
+  GPU 5: 题 375 ~ 449  PID=1673021
+  GPU 6: 题 450 ~ 524  PID=1673022
+  GPU 7: 题 525 ~ 599  PID=1673023
+等待 ckpt_4 完成...
+ckpt_4 完成: 600 题 → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/output/llada_eval/x0pred_10ep_ckpt_4_600.jsonl
+
+==============================
+  评测 ckpt_5
+  模型: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_llada_x0pred_10ep/ckpt_5/optimized
+==============================
+  GPU 0: 题 0 ~ 74  PID=1749568
+  GPU 1: 题 75 ~ 149  PID=1749569
+  GPU 2: 题 150 ~ 224  PID=1749570
+  GPU 3: 题 225 ~ 299  PID=1749571
+  GPU 4: 题 300 ~ 374  PID=1749572
+  GPU 5: 题 375 ~ 449  PID=1749573
+  GPU 6: 题 450 ~ 524  PID=1749574
+  GPU 7: 题 525 ~ 599  PID=1749575
+等待 ckpt_5 完成...

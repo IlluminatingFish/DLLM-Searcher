@@ -9,7 +9,7 @@ export LOGDIR=output
 RUN_NAME=${DATASET}_dpo_$(date +%Y%m%d_%H%M%S)
 
 # Model path
-model_name_or_path="/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_sdar/ckpt_2/optimized"
+model_name_or_path="/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/output/dpo_dpo_20260308_112756/checkpoints/checkpoint-130"
 
 # Dataset path
 dataset_path="/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/data/train.jsonl"
@@ -24,13 +24,13 @@ mkdir -p "$LOGDIR/$RUN_NAME"
 # DEBUG_DPO_IPDB=1: 单卡 + ipdb 断点调试
 # NUM_GPUS=1: 单卡运行，无 ipdb（用于验证多卡 NaN 是否与单卡不同）
 # 默认 4 卡，可通过 NUM_GPUS 覆盖
-export CUDA_VISIBLE_DEVICES=${CUDA_VISIBLE_DEVICES:-0,1,2,3}
+export CUDA_VISIBLE_DEVICES=${CUDA_VISIBLE_DEVICES:-0,1,2,3,4,5,6,7}
 if [ "${DEBUG_DPO_IPDB}" = "1" ]; then
     NUM_PROCESSES=1
 elif [ "${NUM_GPUS}" = "1" ]; then
     NUM_PROCESSES=1
 else
-    NUM_PROCESSES=${NUM_GPUS:-4}
+    NUM_PROCESSES=${NUM_GPUS:-8}
 fi
 
 # DEBUG_DPO_FP32=1: FP32 训练，模型用 FP32 加载 + 前向，避免 bf16 下 SDAR block diffusion 导致 logits NaN
@@ -70,13 +70,12 @@ accelerate launch \
     --beta 0.1 \
     --block_length 128 \
     --num_mc 1 \
-    --learning_rate 5e-6 \
+    --learning_rate 5e-7 \
     --warmup_ratio 0.1 \
     --max_grad_norm 0.5 \
     --weight_decay 0.01 \
     --lr_scheduler_type cosine \
-    --save_steps 50 \
-    --save_total_limit 5 \
+    --save_strategy no \
     --gradient_checkpointing true \
     --use_peft false \
     --wandb_project "sdar_dpo"

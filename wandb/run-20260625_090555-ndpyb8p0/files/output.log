@@ -1,0 +1,10 @@
+
+  0%|          | 0/36 [00:00<?, ?it/s]
+
+  3%|▎         | 1/36 [02:39<1:32:57, 159.37s/it]
+[2026-06-25 09:08:38,969] [WARNING] [stage3.py:2274:step] 7 pytorch allocator cache flushes since last step. this happens when there is high memory pressure and is detrimental to performance. if this is happening frequently consider adjusting settings to reduce memory consumption. If you are unable to make the cache flushes go away consider adding get_accelerator().empty_cache() calls in your training loop to ensure that all ranks flush their caches at the same time
+
+
+
+
+ 14%|█▍        | 5/36 [11:18<1:09:07, 133.80s/it]

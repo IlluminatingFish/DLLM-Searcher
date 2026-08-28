@@ -1,0 +1,15 @@
+==========================================
+nothink ablation ckpt_8 eval - 8 GPU 并行
+模型: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_llada_x0pred_nothink/ckpt_8/optimized
+==========================================
+GPU 0: 题 0 ~ 12  → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/output/llada_eval/nothink_parallel/gpu0.jsonl
+GPU 1: 题 13 ~ 25  → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/output/llada_eval/nothink_parallel/gpu1.jsonl
+GPU 2: 题 26 ~ 38  → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/output/llada_eval/nothink_parallel/gpu2.jsonl
+GPU 3: 题 39 ~ 51  → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/output/llada_eval/nothink_parallel/gpu3.jsonl
+GPU 4: 题 52 ~ 64  → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/output/llada_eval/nothink_parallel/gpu4.jsonl
+GPU 5: 题 65 ~ 77  → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/output/llada_eval/nothink_parallel/gpu5.jsonl
+GPU 6: 题 78 ~ 90  → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/output/llada_eval/nothink_parallel/gpu6.jsonl
+GPU 7: 题 91 ~ 99  → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/output/llada_eval/nothink_parallel/gpu7.jsonl
+
+8 个进程已启动: 3554525 3554526 3554527 3554528 3554529 3554530 3554531 3554532
+等待全部完成...

@@ -1,0 +1,384 @@
+2026-06-25 09:05:55,910 INFO    StreamThr :1375827 [internal.py:wandb_internal():86] W&B internal server running at pid: 1375827, started at: 2026-06-25 09:05:55.909766
+2026-06-25 09:05:55,911 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status
+2026-06-25 09:05:55,912 INFO    WriterThread:1375827 [datastore.py:open_for_write():85] open: /research/cbim/vast/mz751/Projects/DLLM-Searcher/wandb/run-20260625_090555-ndpyb8p0/run-ndpyb8p0.wandb
+2026-06-25 09:05:55,915 DEBUG   SenderThread:1375827 [sender.py:send():380] send: header
+2026-06-25 09:05:55,923 DEBUG   SenderThread:1375827 [sender.py:send():380] send: run
+2026-06-25 09:05:56,731 INFO    SenderThread:1375827 [dir_watcher.py:__init__():211] watching files in: /research/cbim/vast/mz751/Projects/DLLM-Searcher/wandb/run-20260625_090555-ndpyb8p0/files
+2026-06-25 09:05:56,731 INFO    SenderThread:1375827 [sender.py:_start_run_threads():1122] run started: ndpyb8p0 with start time 1782392755.909469
+2026-06-25 09:05:56,739 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: check_version
+2026-06-25 09:05:56,740 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: check_version
+2026-06-25 09:05:56,845 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: run_start
+2026-06-25 09:05:56,862 DEBUG   HandlerThread:1375827 [system_info.py:__init__():32] System info init
+2026-06-25 09:05:56,862 DEBUG   HandlerThread:1375827 [system_info.py:__init__():47] System info init done
+2026-06-25 09:05:56,863 INFO    HandlerThread:1375827 [system_monitor.py:start():194] Starting system monitor
+2026-06-25 09:05:56,863 INFO    SystemMonitor:1375827 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2026-06-25 09:05:56,864 INFO    HandlerThread:1375827 [system_monitor.py:probe():214] Collecting system info
+2026-06-25 09:05:56,864 INFO    SystemMonitor:1375827 [interfaces.py:start():190] Started cpu monitoring
+2026-06-25 09:05:56,865 INFO    SystemMonitor:1375827 [interfaces.py:start():190] Started disk monitoring
+2026-06-25 09:05:56,866 INFO    SystemMonitor:1375827 [interfaces.py:start():190] Started gpu monitoring
+2026-06-25 09:05:56,866 INFO    SystemMonitor:1375827 [interfaces.py:start():190] Started memory monitoring
+2026-06-25 09:05:56,867 INFO    SystemMonitor:1375827 [interfaces.py:start():190] Started network monitoring
+2026-06-25 09:05:56,920 DEBUG   HandlerThread:1375827 [system_info.py:probe():196] Probing system
+2026-06-25 09:05:56,921 DEBUG   HandlerThread:1375827 [system_info.py:_probe_git():181] Probing git
+2026-06-25 09:05:56,933 DEBUG   HandlerThread:1375827 [system_info.py:_probe_git():189] Probing git done
+2026-06-25 09:05:56,933 DEBUG   HandlerThread:1375827 [system_info.py:probe():244] Probing system done
+2026-06-25 09:05:56,933 DEBUG   HandlerThread:1375827 [system_monitor.py:probe():223] {'os': 'Linux-6.8.0-106-generic-x86_64-with-glibc2.39', 'python': '3.11.14', 'heartbeatAt': '2026-06-25T13:05:56.920972', 'startedAt': '2026-06-25T13:05:55.896335', 'docker': None, 'cuda': None, 'args': ('--config', 'dLLM_trainer/VRPO/output/rl/grpo/logs/round2/grpo_round2_20260625_050354.yaml'), 'state': 'running', 'program': '/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/llada_grpo_train.py', 'codePathLocal': 'dLLM_trainer/VRPO/my_train/llada_grpo_train.py', 'codePath': 'dLLM_trainer/VRPO/my_train/llada_grpo_train.py', 'git': {'remote': 'git@github.com:IlluminatingFish/DLLM-Searcher.git', 'commit': '6cfa0b270262306179be13977f3de2afcb2b5e57'}, 'email': 'mz751@scarletmail.rutgers.edu', 'root': '/research/cbim/vast/mz751/Projects/DLLM-Searcher', 'host': 'dionysos.cs.rutgers.edu', 'username': 'mz751', 'executable': '/research/cbim/vast/mz751/miniforge3/envs/espo/bin/python3.11', 'cpu_count': 32, 'cpu_count_logical': 64, 'cpu_freq': {'current': 3123.0259531249994, 'min': 1500.0, 'max': 3000.0}, 'cpu_freq_per_core': [{'current': 3300.156, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3299.647, 'min': 1500.0, 'max': 3000.0}, {'current': 3081.337, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3300.188, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3296.135, 'min': 1500.0, 'max': 3000.0}, {'current': 3294.379, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 2809.979, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3299.139, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3298.707, 'min': 1500.0, 'max': 3000.0}, {'current': 3300.192, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3302.533, 'min': 1500.0, 'max': 3000.0}, {'current': 3300.19, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3300.188, 'min': 1500.0, 'max': 3000.0}, {'current': 3300.191, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3301.515, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3300.182, 'min': 1500.0, 'max': 3000.0}, {'current': 3300.41, 'min': 1500.0, 'max': 3000.0}, {'current': 3270.409, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3300.192, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3300.366, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3022.777, 'min': 1500.0, 'max': 3000.0}, {'current': 3298.407, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3300.201, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3283.998, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3298.328, 'min': 1500.0, 'max': 3000.0}, {'current': 3291.563, 'min': 1500.0, 'max': 3000.0}, {'current': 3298.786, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3300.144, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}], 'disk': {'/': {'total': 187.9282569885254, 'used': 125.90403366088867}}, 'gpu': 'NVIDIA A100-PCIE-40GB', 'gpu_count': 8, 'gpu_devices': [{'name': 'NVIDIA A100-PCIE-40GB', 'memory_total': 42949672960}, {'name': 'NVIDIA A100-PCIE-40GB', 'memory_total': 42949672960}, {'name': 'NVIDIA A100-PCIE-40GB', 'memory_total': 42949672960}, {'name': 'NVIDIA A100-PCIE-40GB', 'memory_total': 42949672960}, {'name': 'NVIDIA A100-PCIE-40GB', 'memory_total': 42949672960}, {'name': 'NVIDIA A100-PCIE-40GB', 'memory_total': 42949672960}, {'name': 'NVIDIA A100-PCIE-40GB', 'memory_total': 42949672960}, {'name': 'NVIDIA A100-PCIE-40GB', 'memory_total': 42949672960}], 'memory': {'total': 247.4853515625}}
+2026-06-25 09:05:56,934 INFO    HandlerThread:1375827 [system_monitor.py:probe():224] Finished collecting system info
+2026-06-25 09:05:56,934 INFO    HandlerThread:1375827 [system_monitor.py:probe():227] Publishing system info
+2026-06-25 09:05:56,934 DEBUG   HandlerThread:1375827 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2026-06-25 09:05:56,935 DEBUG   HandlerThread:1375827 [system_info.py:_save_pip():68] Saving pip packages done
+2026-06-25 09:05:56,935 DEBUG   HandlerThread:1375827 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2026-06-25 09:05:57,732 INFO    Thread-12 :1375827 [dir_watcher.py:_on_file_created():271] file/dir created: /research/cbim/vast/mz751/Projects/DLLM-Searcher/wandb/run-20260625_090555-ndpyb8p0/files/conda-environment.yaml
+2026-06-25 09:05:57,732 INFO    Thread-12 :1375827 [dir_watcher.py:_on_file_created():271] file/dir created: /research/cbim/vast/mz751/Projects/DLLM-Searcher/wandb/run-20260625_090555-ndpyb8p0/files/requirements.txt
+2026-06-25 09:05:59,582 DEBUG   HandlerThread:1375827 [system_info.py:_save_conda():87] Saving conda packages done
+2026-06-25 09:05:59,583 INFO    HandlerThread:1375827 [system_monitor.py:probe():229] Finished publishing system info
+2026-06-25 09:05:59,590 DEBUG   SenderThread:1375827 [sender.py:send():380] send: files
+2026-06-25 09:05:59,590 INFO    SenderThread:1375827 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2026-06-25 09:05:59,595 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:05:59,595 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:05:59,597 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:05:59,732 INFO    Thread-12 :1375827 [dir_watcher.py:_on_file_modified():288] file/dir modified: /research/cbim/vast/mz751/Projects/DLLM-Searcher/wandb/run-20260625_090555-ndpyb8p0/files/conda-environment.yaml
+2026-06-25 09:05:59,733 INFO    Thread-12 :1375827 [dir_watcher.py:_on_file_created():271] file/dir created: /research/cbim/vast/mz751/Projects/DLLM-Searcher/wandb/run-20260625_090555-ndpyb8p0/files/wandb-metadata.json
+2026-06-25 09:05:59,763 DEBUG   SenderThread:1375827 [sender.py:send():380] send: telemetry
+2026-06-25 09:05:59,763 DEBUG   SenderThread:1375827 [sender.py:send():380] send: config
+2026-06-25 09:05:59,764 DEBUG   SenderThread:1375827 [sender.py:send():380] send: metric
+2026-06-25 09:05:59,764 DEBUG   SenderThread:1375827 [sender.py:send():380] send: telemetry
+2026-06-25 09:05:59,765 DEBUG   SenderThread:1375827 [sender.py:send():380] send: metric
+2026-06-25 09:05:59,765 WARNING SenderThread:1375827 [sender.py:send_metric():1329] Seen metric with glob (shouldn't happen)
+2026-06-25 09:05:59,765 DEBUG   SenderThread:1375827 [sender.py:send():380] send: telemetry
+2026-06-25 09:05:59,765 DEBUG   SenderThread:1375827 [sender.py:send():380] send: telemetry
+2026-06-25 09:05:59,766 DEBUG   SenderThread:1375827 [sender.py:send():380] send: config
+2026-06-25 09:05:59,914 INFO    wandb-upload_0:1375827 [upload_job.py:push():131] Uploaded file /tmp/tmpdotoifwkwandb/7j6wdkae-wandb-metadata.json
+2026-06-25 09:06:00,733 INFO    Thread-12 :1375827 [dir_watcher.py:_on_file_created():271] file/dir created: /research/cbim/vast/mz751/Projects/DLLM-Searcher/wandb/run-20260625_090555-ndpyb8p0/files/output.log
+2026-06-25 09:06:01,770 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:06:02,735 INFO    Thread-12 :1375827 [dir_watcher.py:_on_file_modified():288] file/dir modified: /research/cbim/vast/mz751/Projects/DLLM-Searcher/wandb/run-20260625_090555-ndpyb8p0/files/output.log
+2026-06-25 09:06:06,771 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:06:11,774 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:06:14,595 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:06:14,595 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:06:14,636 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:06:16,788 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:06:21,788 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:06:26,792 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:06:27,751 INFO    Thread-12 :1375827 [dir_watcher.py:_on_file_modified():288] file/dir modified: /research/cbim/vast/mz751/Projects/DLLM-Searcher/wandb/run-20260625_090555-ndpyb8p0/files/config.yaml
+2026-06-25 09:06:29,596 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:06:29,597 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:06:29,637 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:06:32,818 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:06:37,819 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:06:42,820 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:06:44,596 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:06:44,597 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:06:44,637 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:06:48,738 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:06:53,739 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:06:56,867 DEBUG   SystemMonitor:1375827 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2026-06-25 09:06:56,871 DEBUG   SenderThread:1375827 [sender.py:send():380] send: stats
+2026-06-25 09:06:58,872 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:06:59,595 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:06:59,596 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:06:59,635 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:07:04,749 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:07:09,750 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:07:14,596 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:07:14,596 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:07:14,637 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:07:15,735 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:07:20,735 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:07:25,736 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:07:26,874 DEBUG   SenderThread:1375827 [sender.py:send():380] send: stats
+2026-06-25 09:07:29,596 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:07:29,596 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:07:29,637 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:07:31,697 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:07:36,699 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:07:41,699 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:07:44,596 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:07:44,597 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:07:44,637 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:07:46,717 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:07:51,717 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:07:56,718 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:07:56,876 DEBUG   SenderThread:1375827 [sender.py:send():380] send: stats
+2026-06-25 09:07:59,596 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:07:59,596 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:07:59,636 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:08:01,729 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:08:06,730 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:08:11,731 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:08:14,596 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:08:14,596 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:08:14,637 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:08:16,791 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:08:21,792 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:08:26,792 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:08:26,878 DEBUG   SenderThread:1375827 [sender.py:send():380] send: stats
+2026-06-25 09:08:29,596 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:08:29,596 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:08:29,636 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:08:32,776 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:08:37,776 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:08:39,011 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: partial_history
+2026-06-25 09:08:39,014 DEBUG   SenderThread:1375827 [sender.py:send():380] send: metric
+2026-06-25 09:08:39,015 DEBUG   SenderThread:1375827 [sender.py:send():380] send: metric
+2026-06-25 09:08:39,015 DEBUG   SenderThread:1375827 [sender.py:send():380] send: metric
+2026-06-25 09:08:39,015 DEBUG   SenderThread:1375827 [sender.py:send():380] send: metric
+2026-06-25 09:08:39,015 DEBUG   SenderThread:1375827 [sender.py:send():380] send: metric
+2026-06-25 09:08:39,016 DEBUG   SenderThread:1375827 [sender.py:send():380] send: metric
+2026-06-25 09:08:39,016 DEBUG   SenderThread:1375827 [sender.py:send():380] send: metric
+2026-06-25 09:08:39,016 DEBUG   SenderThread:1375827 [sender.py:send():380] send: history
+2026-06-25 09:08:39,017 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: summary_record
+2026-06-25 09:08:39,018 INFO    SenderThread:1375827 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2026-06-25 09:08:39,830 INFO    Thread-12 :1375827 [dir_watcher.py:_on_file_modified():288] file/dir modified: /research/cbim/vast/mz751/Projects/DLLM-Searcher/wandb/run-20260625_090555-ndpyb8p0/files/output.log
+2026-06-25 09:08:39,830 INFO    Thread-12 :1375827 [dir_watcher.py:_on_file_created():271] file/dir created: /research/cbim/vast/mz751/Projects/DLLM-Searcher/wandb/run-20260625_090555-ndpyb8p0/files/wandb-summary.json
+2026-06-25 09:08:43,019 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:08:44,596 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:08:44,597 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:08:44,597 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:08:48,799 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:08:53,800 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:08:56,879 DEBUG   SenderThread:1375827 [sender.py:send():380] send: stats
+2026-06-25 09:08:58,880 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:08:59,596 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:08:59,597 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:08:59,637 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:09:04,782 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:09:05,847 INFO    Thread-12 :1375827 [dir_watcher.py:_on_file_modified():288] file/dir modified: /research/cbim/vast/mz751/Projects/DLLM-Searcher/wandb/run-20260625_090555-ndpyb8p0/files/config.yaml
+2026-06-25 09:09:10,001 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:09:14,596 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:09:14,597 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:09:14,637 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:09:15,776 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:09:20,777 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:09:25,778 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:09:26,882 DEBUG   SenderThread:1375827 [sender.py:send():380] send: stats
+2026-06-25 09:09:29,597 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:09:29,597 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:09:29,637 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:09:30,781 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:09:35,782 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:09:40,782 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:09:44,597 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:09:44,597 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:09:44,637 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:09:46,775 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:09:51,776 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:09:56,777 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:09:56,884 DEBUG   SenderThread:1375827 [sender.py:send():380] send: stats
+2026-06-25 09:09:59,598 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:09:59,599 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:09:59,638 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:10:01,799 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:10:06,800 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:10:11,801 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:10:14,597 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:10:14,598 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:10:14,638 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:10:17,801 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:10:22,802 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:10:26,887 DEBUG   SenderThread:1375827 [sender.py:send():380] send: stats
+2026-06-25 09:10:27,888 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:10:29,597 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:10:29,598 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:10:29,638 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:10:33,686 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:10:38,687 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:10:43,688 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:10:44,597 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:10:44,598 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:10:44,638 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:10:48,731 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:10:53,732 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:10:56,888 DEBUG   SenderThread:1375827 [sender.py:send():380] send: stats
+2026-06-25 09:10:57,918 INFO    Thread-12 :1375827 [dir_watcher.py:_on_file_modified():288] file/dir modified: /research/cbim/vast/mz751/Projects/DLLM-Searcher/wandb/run-20260625_090555-ndpyb8p0/files/output.log
+2026-06-25 09:10:58,889 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:10:59,597 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:10:59,598 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:10:59,598 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:11:04,712 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:11:09,713 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:11:14,597 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:11:14,598 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:11:14,638 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:11:14,780 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:11:19,780 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:11:24,781 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:11:26,890 DEBUG   SenderThread:1375827 [sender.py:send():380] send: stats
+2026-06-25 09:11:29,598 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:11:29,600 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:11:29,639 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:11:29,789 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:11:34,790 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:11:39,791 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:11:44,597 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:11:44,598 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:11:44,638 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:11:44,795 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:11:49,796 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:11:54,796 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:11:56,892 DEBUG   SenderThread:1375827 [sender.py:send():380] send: stats
+2026-06-25 09:11:59,598 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:11:59,599 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:11:59,638 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:12:00,700 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:12:05,700 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:12:10,701 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:12:14,598 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:12:14,599 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:12:14,639 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:12:15,776 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:12:20,777 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:12:25,778 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:12:26,894 DEBUG   SenderThread:1375827 [sender.py:send():380] send: stats
+2026-06-25 09:12:29,598 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:12:29,599 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:12:29,638 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:12:30,778 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:12:35,779 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:12:40,780 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:12:44,598 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:12:44,599 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:12:44,639 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:12:46,734 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:12:51,735 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:12:53,987 INFO    Thread-12 :1375827 [dir_watcher.py:_on_file_modified():288] file/dir modified: /research/cbim/vast/mz751/Projects/DLLM-Searcher/wandb/run-20260625_090555-ndpyb8p0/files/output.log
+2026-06-25 09:12:56,897 DEBUG   SenderThread:1375827 [sender.py:send():380] send: stats
+2026-06-25 09:12:56,899 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:12:59,598 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:12:59,599 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:12:59,600 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:13:02,694 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:13:07,695 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:13:12,696 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:13:14,599 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:13:14,600 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:13:14,640 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:13:17,747 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:13:22,748 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:13:26,898 DEBUG   SenderThread:1375827 [sender.py:send():380] send: stats
+2026-06-25 09:13:27,900 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:13:29,599 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:13:29,599 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:13:29,638 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:13:33,691 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:13:38,692 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:13:43,693 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:13:44,599 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:13:44,599 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:13:44,639 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:13:48,757 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:13:53,757 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:13:56,903 DEBUG   SenderThread:1375827 [sender.py:send():380] send: stats
+2026-06-25 09:13:58,905 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:13:59,599 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:13:59,600 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:13:59,640 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:14:04,798 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:14:09,798 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:14:14,599 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:14:14,599 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:14:14,639 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:14:15,678 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:14:20,679 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:14:25,680 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:14:26,903 DEBUG   SenderThread:1375827 [sender.py:send():380] send: stats
+2026-06-25 09:14:29,599 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:14:29,600 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:14:29,639 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:14:30,702 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:14:35,702 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:14:40,703 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:14:44,599 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:14:44,600 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:14:44,639 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:14:45,739 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:14:50,740 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:14:56,060 INFO    Thread-12 :1375827 [dir_watcher.py:_on_file_modified():288] file/dir modified: /research/cbim/vast/mz751/Projects/DLLM-Searcher/wandb/run-20260625_090555-ndpyb8p0/files/output.log
+2026-06-25 09:14:56,106 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:14:56,904 DEBUG   SenderThread:1375827 [sender.py:send():380] send: stats
+2026-06-25 09:14:59,600 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:14:59,600 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:14:59,600 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:15:01,780 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:15:06,780 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:15:11,781 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:15:14,599 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:15:14,600 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:15:14,639 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:15:17,779 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:15:22,780 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:15:26,907 DEBUG   SenderThread:1375827 [sender.py:send():380] send: stats
+2026-06-25 09:15:27,908 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:15:29,599 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:15:29,600 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:15:29,640 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:15:33,823 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:15:38,824 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:15:43,825 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:15:44,600 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:15:44,600 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:15:44,640 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:15:48,873 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:15:53,874 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:15:56,908 DEBUG   SenderThread:1375827 [sender.py:send():380] send: stats
+2026-06-25 09:15:58,909 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:15:59,600 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:15:59,600 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:15:59,640 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:16:04,773 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:16:09,774 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:16:14,600 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:16:14,600 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:16:14,640 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:16:15,764 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:16:20,765 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:16:25,765 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:16:26,910 DEBUG   SenderThread:1375827 [sender.py:send():380] send: stats
+2026-06-25 09:16:29,600 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:16:29,601 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:16:29,640 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:16:30,778 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:16:35,779 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:16:40,780 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:16:44,600 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:16:44,601 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:16:44,640 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:16:46,719 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:16:51,720 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:16:56,721 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:16:56,912 DEBUG   SenderThread:1375827 [sender.py:send():380] send: stats
+2026-06-25 09:16:59,600 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:16:59,600 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:16:59,640 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:17:02,704 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:17:07,705 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:17:12,705 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:17:14,600 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:17:14,601 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:17:14,640 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:17:17,689 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: partial_history
+2026-06-25 09:17:17,691 DEBUG   SenderThread:1375827 [sender.py:send():380] send: history
+2026-06-25 09:17:17,692 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: summary_record
+2026-06-25 09:17:17,693 INFO    SenderThread:1375827 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2026-06-25 09:17:18,142 INFO    Thread-12 :1375827 [dir_watcher.py:_on_file_modified():288] file/dir modified: /research/cbim/vast/mz751/Projects/DLLM-Searcher/wandb/run-20260625_090555-ndpyb8p0/files/wandb-summary.json
+2026-06-25 09:17:18,694 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:17:20,143 INFO    Thread-12 :1375827 [dir_watcher.py:_on_file_modified():288] file/dir modified: /research/cbim/vast/mz751/Projects/DLLM-Searcher/wandb/run-20260625_090555-ndpyb8p0/files/output.log
+2026-06-25 09:17:23,694 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:17:26,914 DEBUG   SenderThread:1375827 [sender.py:send():380] send: stats
+2026-06-25 09:17:28,915 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:17:29,601 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:17:29,602 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:17:29,602 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:17:34,838 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:17:39,839 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:17:44,601 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: stop_status
+2026-06-25 09:17:44,601 DEBUG   SenderThread:1375827 [sender.py:send_request():407] send_request: stop_status
+2026-06-25 09:17:44,642 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: internal_messages
+2026-06-25 09:17:45,706 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:17:50,707 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:17:55,707 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:17:56,916 DEBUG   SenderThread:1375827 [sender.py:send():380] send: stats
+2026-06-25 09:18:00,918 DEBUG   HandlerThread:1375827 [handler.py:handle_request():146] handle_request: status_report
+2026-06-25 09:18:04,978 INFO    MainThread:1375827 [internal.py:handle_exit():76] Internal process exited
+2026-06-25 09:18:04,980 WARNING StreamThr :1375827 [internal.py:is_dead():414] Internal process exiting, parent pid 1372922 disappeared
+2026-06-25 09:18:04,981 ERROR   StreamThr :1375827 [internal.py:wandb_internal():152] Internal process shutdown.

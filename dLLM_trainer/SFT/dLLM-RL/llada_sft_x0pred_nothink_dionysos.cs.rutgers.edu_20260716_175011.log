@@ -1,0 +1,256 @@
+W0716 17:50:23.447000 1606136 site-packages/torch/distributed/run.py:792] 
+W0716 17:50:23.447000 1606136 site-packages/torch/distributed/run.py:792] *****************************************
+W0716 17:50:23.447000 1606136 site-packages/torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0716 17:50:23.447000 1606136 site-packages/torch/distributed/run.py:792] *****************************************
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:959: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:959: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:1018: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:1018: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:959: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:1018: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:959: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:1018: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:959: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:1018: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:959: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:1018: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:959: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:1018: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:959: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:1018: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+
+
+
+
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+
+
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+
+
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+
+
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 `store_kv` is part of SDARModel.forward's signature, but not documented. Make sure to add it to the docstring of the function in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/models/sdar/modeling_sdar.py.
+🚨 `store_kv` is part of SDARModel.forward's signature, but not documented. Make sure to add it to the docstring of the function in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/models/sdar/modeling_sdar.py.🚨 `store_kv` is part of SDARModel.forward's signature, but not documented. Make sure to add it to the docstring of the function in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/models/sdar/modeling_sdar.py.🚨 `store_kv` is part of SDARModel.forward's signature, but not documented. Make sure to add it to the docstring of the function in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/models/sdar/modeling_sdar.py.
+
+
+🚨 `store_kv` is part of SDARModel.forward's signature, but not documented. Make sure to add it to the docstring of the function in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/models/sdar/modeling_sdar.py.🚨 `store_kv` is part of SDARModel.forward's signature, but not documented. Make sure to add it to the docstring of the function in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/models/sdar/modeling_sdar.py.
+
+🚨 `store_kv` is part of SDARModel.forward's signature, but not documented. Make sure to add it to the docstring of the function in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/models/sdar/modeling_sdar.py.
+🚨 `store_kv` is part of SDARModel.forward's signature, but not documented. Make sure to add it to the docstring of the function in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/models/sdar/modeling_sdar.py.
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+
+
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+
+
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+07/16/2026 17:50:36 - INFO - __main__ - Distributed environment: DEEPSPEED  Backend: nccl
+Num processes: 8
+Process index: 0
+Local process index: 0
+Device: cuda:0
+
+Mixed precision type: bf16
+ds_config: {'train_batch_size': 'auto', 'train_micro_batch_size_per_gpu': 'auto', 'gradient_accumulation_steps': 'auto', 'zero_optimization': {'stage': 3, 'offload_optimizer': {'device': 'cpu', 'nvme_path': None}, 'offload_param': {'device': 'cpu', 'nvme_path': None}, 'stage3_gather_16bit_weights_on_model_save': True}, 'gradient_clipping': 'auto', 'steps_per_print': inf, 'bf16': {'enabled': True}, 'fp16': {'enabled': False}}
+
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /research/cbim/vast/mz751/.netrc.
+07/16/2026 17:50:36 - INFO - __main__ - Distributed environment: DEEPSPEED  Backend: nccl
+Num processes: 8
+Process index: 2
+Local process index: 2
+Device: cuda:2
+
+Mixed precision type: bf16
+ds_config: {'train_batch_size': 'auto', 'train_micro_batch_size_per_gpu': 'auto', 'gradient_accumulation_steps': 'auto', 'zero_optimization': {'stage': 3, 'offload_optimizer': {'device': 'cpu', 'nvme_path': None}, 'offload_param': {'device': 'cpu', 'nvme_path': None}, 'stage3_gather_16bit_weights_on_model_save': True}, 'gradient_clipping': 'auto', 'steps_per_print': inf, 'bf16': {'enabled': True}, 'fp16': {'enabled': False}}
+
+07/16/2026 17:50:36 - INFO - __main__ - Distributed environment: DEEPSPEED  Backend: nccl
+Num processes: 8
+Process index: 7
+Local process index: 7
+Device: cuda:7
+
+Mixed precision type: bf16
+ds_config: {'train_batch_size': 'auto', 'train_micro_batch_size_per_gpu': 'auto', 'gradient_accumulation_steps': 'auto', 'zero_optimization': {'stage': 3, 'offload_optimizer': {'device': 'cpu', 'nvme_path': None}, 'offload_param': {'device': 'cpu', 'nvme_path': None}, 'stage3_gather_16bit_weights_on_model_save': True}, 'gradient_clipping': 'auto', 'steps_per_print': inf, 'bf16': {'enabled': True}, 'fp16': {'enabled': False}}
+
+07/16/2026 17:50:36 - INFO - __main__ - Distributed environment: DEEPSPEED  Backend: nccl
+Num processes: 8
+Process index: 3
+Local process index: 3
+Device: cuda:3
+
+Mixed precision type: bf16
+ds_config: {'train_batch_size': 'auto', 'train_micro_batch_size_per_gpu': 'auto', 'gradient_accumulation_steps': 'auto', 'zero_optimization': {'stage': 3, 'offload_optimizer': {'device': 'cpu', 'nvme_path': None}, 'offload_param': {'device': 'cpu', 'nvme_path': None}, 'stage3_gather_16bit_weights_on_model_save': True}, 'gradient_clipping': 'auto', 'steps_per_print': inf, 'bf16': {'enabled': True}, 'fp16': {'enabled': False}}
+
+07/16/2026 17:50:36 - INFO - __main__ - Distributed environment: DEEPSPEED  Backend: nccl
+Num processes: 8
+Process index: 4
+Local process index: 4
+Device: cuda:4
+
+Mixed precision type: bf16
+ds_config: {'train_batch_size': 'auto', 'train_micro_batch_size_per_gpu': 'auto', 'gradient_accumulation_steps': 'auto', 'zero_optimization': {'stage': 3, 'offload_optimizer': {'device': 'cpu', 'nvme_path': None}, 'offload_param': {'device': 'cpu', 'nvme_path': None}, 'stage3_gather_16bit_weights_on_model_save': True}, 'gradient_clipping': 'auto', 'steps_per_print': inf, 'bf16': {'enabled': True}, 'fp16': {'enabled': False}}
+
+07/16/2026 17:50:36 - INFO - __main__ - Distributed environment: DEEPSPEED  Backend: nccl
+Num processes: 8
+Process index: 5
+Local process index: 5
+Device: cuda:5
+
+Mixed precision type: bf16
+ds_config: {'train_batch_size': 'auto', 'train_micro_batch_size_per_gpu': 'auto', 'gradient_accumulation_steps': 'auto', 'zero_optimization': {'stage': 3, 'offload_optimizer': {'device': 'cpu', 'nvme_path': None}, 'offload_param': {'device': 'cpu', 'nvme_path': None}, 'stage3_gather_16bit_weights_on_model_save': True}, 'gradient_clipping': 'auto', 'steps_per_print': inf, 'bf16': {'enabled': True}, 'fp16': {'enabled': False}}
+
+07/16/2026 17:50:36 - INFO - __main__ - Distributed environment: DEEPSPEED  Backend: nccl
+Num processes: 8
+Process index: 1
+Local process index: 1
+Device: cuda:1
+
+Mixed precision type: bf16
+ds_config: {'train_batch_size': 'auto', 'train_micro_batch_size_per_gpu': 'auto', 'gradient_accumulation_steps': 'auto', 'zero_optimization': {'stage': 3, 'offload_optimizer': {'device': 'cpu', 'nvme_path': None}, 'offload_param': {'device': 'cpu', 'nvme_path': None}, 'stage3_gather_16bit_weights_on_model_save': True}, 'gradient_clipping': 'auto', 'steps_per_print': inf, 'bf16': {'enabled': True}, 'fp16': {'enabled': False}}
+
+07/16/2026 17:50:36 - INFO - __main__ - Distributed environment: DEEPSPEED  Backend: nccl
+Num processes: 8
+Process index: 6
+Local process index: 6
+Device: cuda:6
+
+Mixed precision type: bf16
+ds_config: {'train_batch_size': 'auto', 'train_micro_batch_size_per_gpu': 'auto', 'gradient_accumulation_steps': 'auto', 'zero_optimization': {'stage': 3, 'offload_optimizer': {'device': 'cpu', 'nvme_path': None}, 'offload_param': {'device': 'cpu', 'nvme_path': None}, 'stage3_gather_16bit_weights_on_model_save': True}, 'gradient_clipping': 'auto', 'steps_per_print': inf, 'bf16': {'enabled': True}, 'fp16': {'enabled': False}}
+
+wandb: Currently logged in as: mz751 (mz751-rutgers-university) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run w9z6sy5u
+wandb: Tracking run with wandb version 0.25.0
+wandb: Run data is saved locally in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/wandb/run-20260716_175036-w9z6sy5u
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run sft_llada_x0pred
+wandb: ⭐️ View project at https://wandb.ai/mz751-rutgers-university/sft_llada_x0pred_nothink
+wandb: 🚀 View run at https://wandb.ai/mz751-rutgers-university/sft_llada_x0pred_nothink/runs/w9z6sy5u
+07/16/2026 17:50:38 - INFO - __main__ - Loading LLaDA model and tokenizer
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:10<00:54, 10.94s/it]Loading checkpoint shards:  17%|█▋        | 1/6 [00:10<00:54, 10.93s/it]Loading checkpoint shards:  17%|█▋        | 1/6 [00:10<00:54, 10.95s/it]Loading checkpoint shards:  17%|█▋        | 1/6 [00:10<00:54, 10.95s/it]Loading checkpoint shards:  17%|█▋        | 1/6 [00:10<00:54, 10.93s/it]Loading checkpoint shards:  17%|█▋        | 1/6 [00:10<00:54, 10.93s/it]Loading checkpoint shards:  17%|█▋        | 1/6 [00:10<00:54, 10.93s/it]Loading checkpoint shards:  17%|█▋        | 1/6 [00:11<00:55, 11.03s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:20<00:40, 10.13s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:20<00:40, 10.13s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:20<00:40, 10.13s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:20<00:40, 10.12s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:20<00:40, 10.12s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:20<00:40, 10.13s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:20<00:40, 10.15s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:20<00:40, 10.18s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:28<00:28,  9.35s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:28<00:28,  9.35s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:28<00:28,  9.35s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:28<00:28,  9.34s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:28<00:28,  9.35s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:28<00:28,  9.35s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:28<00:28,  9.35s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:29<00:28,  9.39s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:37<00:17,  8.89s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:37<00:17,  8.89s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:37<00:17,  8.88s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:37<00:17,  8.89s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:37<00:17,  8.89s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:37<00:17,  8.89s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:37<00:17,  8.89s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:37<00:17,  8.91s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:42<00:07,  7.71s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:42<00:07,  7.71s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:42<00:07,  7.71s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:42<00:07,  7.71s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:42<00:07,  7.71s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:42<00:07,  7.71s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:42<00:07,  7.71s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:42<00:07,  7.73s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:46<00:00,  6.40s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:46<00:00,  7.77s/it]
+Loading checkpoint shards: 100%|██████████| 6/6 [00:46<00:00,  6.40s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:46<00:00,  6.40s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:46<00:00,  7.76s/it]
+Loading checkpoint shards: 100%|██████████| 6/6 [00:46<00:00,  7.76s/it]
+Loading checkpoint shards: 100%|██████████| 6/6 [00:46<00:00,  6.40s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:46<00:00,  6.40s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:46<00:00,  6.40s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:46<00:00,  7.77s/it]
+Loading checkpoint shards: 100%|██████████| 6/6 [00:46<00:00,  6.40s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:46<00:00,  7.77s/it]
+Loading checkpoint shards: 100%|██████████| 6/6 [00:46<00:00,  7.76s/it]
+Loading checkpoint shards: 100%|██████████| 6/6 [00:46<00:00,  7.76s/it]
+Loading checkpoint shards: 100%|██████████| 6/6 [00:46<00:00,  6.40s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:46<00:00,  7.78s/it]
+07/16/2026 17:51:35 - INFO - __main__ - x0pred config: lambda_c=0.1 sigma=[0.1,1.0]
+07/16/2026 17:51:35 - INFO - __main__ - x0_head: Linear(4096,4096) — 16.8M params
+07/16/2026 17:51:36 - INFO - __main__ - sigma_proj: MLP(1->4096->4096) for sigma conditioning
+07/16/2026 17:51:36 - INFO - __main__ - Loading dataset
+07/16/2026 17:51:36 - INFO - __main__ - strip_think=True: removed <think>...</think> from all responses
+07/16/2026 17:52:07 - INFO - __main__ - think tokens: start=[27, 30583, 29] end=[1263, 30583, 29] use_think_latent=True
+07/16/2026 17:52:10 - INFO - __main__ - Filtered 96 samples with unclosed tool_response span
+Installed CUDA version 12.5 does not match the version torch was compiled with 12.4 but since the APIs are compatible, accepting this combination
+Installed CUDA version 12.5 does not match the version torch was compiled with 12.4 but since the APIs are compatible, accepting this combination
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/torch/utils/cpp_extension.py:2059: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+Installed CUDA version 12.5 does not match the version torch was compiled with 12.4 but since the APIs are compatible, accepting this combination
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/torch/utils/cpp_extension.py:2059: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+Stage 3 initialize beginning
+MA 0.06 GB         Max_MA 1.09 GB         CA 1.1 GB         Max_CA 1 GB 
+CPU Virtual Memory:  used = 136.46 GB, percent = 55.1%
+DeepSpeedZeRoOffload initialize [begin]
+MA 0.06 GB         Max_MA 0.06 GB         CA 1.1 GB         Max_CA 1 GB 
+CPU Virtual Memory:  used = 136.44 GB, percent = 55.1%
+Parameter Offload - Persistent parameters statistics: param_count = 65, numel = 266240
+Installed CUDA version 12.5 does not match the version torch was compiled with 12.4 but since the APIs are compatible, accepting this combination
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/torch/utils/cpp_extension.py:2059: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+Installed CUDA version 12.5 does not match the version torch was compiled with 12.4 but since the APIs are compatible, accepting this combination
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/torch/utils/cpp_extension.py:2059: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+Installed CUDA version 12.5 does not match the version torch was compiled with 12.4 but since the APIs are compatible, accepting this combination
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/torch/utils/cpp_extension.py:2059: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+Installed CUDA version 12.5 does not match the version torch was compiled with 12.4 but since the APIs are compatible, accepting this combination
+Installed CUDA version 12.5 does not match the version torch was compiled with 12.4 but since the APIs are compatible, accepting this combination
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/torch/utils/cpp_extension.py:2059: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+DeepSpeedZeRoOffload initialize [end]
+MA 0.06 GB         Max_MA 0.06 GB         CA 1.1 GB         Max_CA 1 GB 
+CPU Virtual Memory:  used = 136.13 GB, percent = 55.0%
+Before creating fp16 partitions
+MA 0.06 GB         Max_MA 0.06 GB         CA 1.1 GB         Max_CA 1 GB 
+CPU Virtual Memory:  used = 136.02 GB, percent = 55.0%
+After creating fp16 partitions: 1
+MA 0.06 GB         Max_MA 0.06 GB         CA 1.1 GB         Max_CA 1 GB 
+CPU Virtual Memory:  used = 141.54 GB, percent = 57.2%
+Before creating fp32 partitions
+MA 0.06 GB         Max_MA 0.06 GB         CA 1.1 GB         Max_CA 1 GB 
+CPU Virtual Memory:  used = 143.31 GB, percent = 57.9%
+After creating fp32 partitions
+MA 0.06 GB         Max_MA 0.06 GB         CA 1.1 GB         Max_CA 1 GB 
+CPU Virtual Memory:  used = 172.06 GB, percent = 69.5%
+Before initializing optimizer states
+MA 0.06 GB         Max_MA 0.06 GB         CA 1.1 GB         Max_CA 1 GB 
+CPU Virtual Memory:  used = 174.34 GB, percent = 70.4%
+After initializing optimizer states
+MA 0.06 GB         Max_MA 0.06 GB         CA 1.1 GB         Max_CA 1 GB 
+CPU Virtual Memory:  used = 202.74 GB, percent = 81.9%
+After initializing ZeRO optimizer
+MA 0.99 GB         Max_MA 2.08 GB         CA 2.09 GB         Max_CA 2 GB 
+CPU Virtual Memory:  used = 216.13 GB, percent = 87.3%
+07/16/2026 17:52:55 - INFO - __main__ - ***** Running LLaDA x0-prediction SFT training *****
+07/16/2026 17:52:55 - INFO - __main__ -   Dataset size:      3373
+07/16/2026 17:52:55 - INFO - __main__ -   Dropped (too long):0
+07/16/2026 17:52:55 - INFO - __main__ -   Training samples:  3277
+07/16/2026 17:52:55 - INFO - __main__ -   Max steps:         722
+07/16/2026 17:52:55 - INFO - __main__ -   lambda_c=0.1  sigma=[0.1,1.0]
+Epoch 1/7:   0%|          | 0/410 [00:00<?, ?it/s]g samples:  3277
+07/16/2026 17:52:55 - INFO - __main__ -   Max steps:         722
+07/16/2026 17:52:55 - INFO - __main__ -   lambda_c=0.1  sigma=[0.1,1.0]
+Epoch 1/7:   0%|          | 0/410 [00:00<?, ?it/s]

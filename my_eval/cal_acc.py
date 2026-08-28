@@ -114,57 +114,107 @@ def llm_judge_single(question, reference, prediction):
     return llm_correct
 
 
+def token_f1(prediction, reference):
+    """Token-level F1 between prediction and reference."""
+    if not prediction or not reference:
+        return 0.0
+    pred_tokens = normalize_answer(bool_mapping(str(prediction))).split()
+    ref_tokens  = normalize_answer(bool_mapping(str(reference))).split()
+    if not pred_tokens or not ref_tokens:
+        return 0.0
+    common = set(pred_tokens) & set(ref_tokens)
+    if not common:
+        return 0.0
+    precision = len(common) / len(pred_tokens)
+    recall    = len(common) / len(ref_tokens)
+    return 2 * precision * recall / (precision + recall)
+
+
 def evaluate(data_path):
-    """Evaluate data file, compute CEM-1 and LLM Judge scores"""
+    """Evaluate data file.
+
+    Metrics:
+    - CEM-1        : uses `short_answer` field when available, else `answer`
+    - LLM Judge    : always uses `answer` (long reference is better for judge)
+    - Token F1     : uses `short_answer` when available, else `answer`
+    - Answer rate  : fraction of non-empty predictions
+    - F1 > 0.5 / > 0.8 thresholds
+    """
     query_info = {}
-    
-    # Load data
+
     with open(data_path, 'r', encoding='utf-8') as f:
         for line in f:
             try:
                 data = json.loads(line)
                 question = data["question"]
+                # short_answer: CEM-1 / token-F1 / LLM Judge 统一用短GT
+                short_gt  = data.get("short_answer") or data.get("answer") or ""
                 query_info[question] = {
-                    "reference": data["answer"],
-                    "prediction": data.get("prediction") or "",  # JSON null -> ""
+                    "short_gt":   short_gt,
+                    "prediction": data.get("prediction") or "",
+                    "source":     data.get("source", "unknown"),
                 }
-            except json.JSONDecodeError as e:
+            except json.JSONDecodeError:
                 print(f"Error parsing line: {line[:100]}...")
                 continue
-    
+
     rich.print(f"Valid data entries: {len(query_info)}")
     key_mask = ("*" + API_KEY[-4:]) if API_KEY and len(API_KEY) > 4 and API_KEY != "YOUR_API_KEY" else "(unset)"
     rich.print(f"[dim]LLM Judge: {API_BASE_URL} | model={MODEL_NAME} | key={key_mask}[/dim]")
 
-    cem1_count = 0
-    llm_count = 0
-    
+    cem1_count  = 0
+    llm_count   = 0
+    f1_scores   = []
+    answer_count = 0
+
     items = list(query_info.items())
-    
+
     def process_item(item):
         question, info = item
-        reference = info["reference"]
-        prediction = info["prediction"]
-        
-        cem1 = cover_exact_match_score_1(prediction, reference)
-        llm_correct = llm_judge_single(question, reference, prediction)
-        
-        return cem1, llm_correct
-    
+        pred = info["prediction"]
+        has_answer = bool(pred and str(pred).strip())
+        f1  = token_f1(pred, info["short_gt"])
+        cem1 = cover_exact_match_score_1(pred, info["short_gt"])
+        llm  = llm_judge_single(question, info["short_gt"], pred)
+        return cem1, llm, f1, has_answer
+
     rich.print("Starting evaluation...")
     with ThreadPoolExecutor(max_workers=100) as executor:
         futures = [executor.submit(process_item, item) for item in items]
         for future in tqdm(as_completed(futures), total=len(futures)):
-            cem1, llm_correct = future.result()
-            if cem1:
-                cem1_count += 1
-            if llm_correct:
-                llm_count += 1
-    
+            cem1, llm, f1, has_ans = future.result()
+            if cem1:      cem1_count  += 1
+            if llm:       llm_count   += 1
+            if has_ans:   answer_count += 1
+            f1_scores.append(f1)
+
     total = len(query_info)
+    mean_f1  = sum(f1_scores) / total if total else 0
+    f1_gt05  = sum(1 for s in f1_scores if s > 0.5)
+    f1_gt08  = sum(1 for s in f1_scores if s > 0.8)
+
     rich.print(f"\n{'='*50}")
-    rich.print(f"CEM-1 (word coverage): {cem1_count}/{total} = {cem1_count/total*100:.2f}%")
-    rich.print(f"LLM as Judge        : {llm_count}/{total} = {llm_count/total*100:.2f}%")
+    rich.print(f"Total questions     : {total}")
+    rich.print(f"Answer rate         : {answer_count}/{total} = {answer_count/total*100:.1f}%")
+    rich.print(f"CEM-1  (short GT)   : {cem1_count}/{total} = {cem1_count/total*100:.2f}%")
+    rich.print(f"Token F1 mean       : {mean_f1*100:.2f}%")
+    rich.print(f"Token F1 > 0.5      : {f1_gt05}/{total} = {f1_gt05/total*100:.1f}%")
+    rich.print(f"Token F1 > 0.8      : {f1_gt08}/{total} = {f1_gt08/total*100:.1f}%")
+    rich.print(f"LLM Judge           : {llm_count}/{total} = {llm_count/total*100:.2f}%")
+
+    # 按数据集来源分组汇报
+    sources = {}
+    for q, info in query_info.items():
+        s = info["source"]
+        if s not in sources:
+            sources[s] = []
+        sources[s].append(info)
+    if len(sources) > 1:
+        rich.print(f"\n--- By source ---")
+        for src, infos in sorted(sources.items()):
+            src_preds = [i["prediction"] for i in infos]
+            src_ans = sum(1 for p in src_preds if p and str(p).strip())
+            rich.print(f"  {src}: {len(infos)}题  answer_rate={src_ans/len(infos)*100:.0f}%")
 
 
 if __name__ == "__main__":

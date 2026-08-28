@@ -1,0 +1,44 @@
+wandb:
+  project: "coconut-sft-llada"
+  run_name: "stage1-resume-from180"
+
+model:
+  pretrained_model: "/common/users/mz751/Projects/dLLM_trainer/checkpoints/SFT/coconut_stage1/checkpoint-180"
+  dtype: "bfloat16"
+  mask_token_id: 126336
+
+dataset:
+  path: "/research/cbim/vast/mz751/Projects/DLLM-Searcher/Dataroller/data/sft_with_plans.jsonl"
+
+coconut:
+  stage: 1
+  n_latent: 64
+  block_size: 64
+  aux_loss_weight: 0.1
+
+sequence:
+  max_ctx_len: 4096      # matches original SFT max_prompt_len
+  max_act_len: 4096      # matches original SFT max_gen_length
+
+training:
+  num_train_epochs: 3
+  max_steps: 204
+  per_device_train_batch_size: 1
+  gradient_accumulation_steps: 4   # effective batch = 1 x 8 GPU x 4 = 32
+  gradient_checkpointing: true
+  max_grad_norm: 1.0
+
+optimizer:
+  learning_rate: 5.0e-5
+  lr_scheduler_type: "cosine"
+  warmup_ratio: 0.05
+
+output:
+  output_dir: "/common/users/mz751/Projects/dLLM_trainer/checkpoints/SFT/coconut_stage1"
+  logging_steps: 10
+  save_steps: 90
+  save_total_limit: 1
+  save_only_model: true
+
+accelerate:
+  config_file: "recipes/accelerate_configs/zero2.yaml"

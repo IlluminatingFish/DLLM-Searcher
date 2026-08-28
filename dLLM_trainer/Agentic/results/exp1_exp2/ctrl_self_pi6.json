@@ -1,0 +1,11 @@
+{
+  "label": "self_pi6",
+  "model1": "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi6/model",
+  "model2": "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi6/model",
+  "exp1b": {
+    "kl_12": 0.0,
+    "kl_21": 0.0,
+    "kl_sym": 0.0,
+    "n": 128
+  }
+}

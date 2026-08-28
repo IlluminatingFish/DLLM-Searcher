@@ -1,0 +1,11 @@
+{
+  "label": "self_sft",
+  "model1": "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_llada_x0pred/ckpt_6/optimized",
+  "model2": "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_llada_x0pred/ckpt_6/optimized",
+  "exp1b": {
+    "kl_12": 0.0,
+    "kl_21": 0.0,
+    "kl_sym": 0.0,
+    "n": 128
+  }
+}

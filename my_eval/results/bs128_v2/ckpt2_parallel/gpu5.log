@@ -1,0 +1,4 @@
+eval 数据: 100 题  来自 /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/data/eval_600.jsonl
+已完成 100 题，继续剩余部分
+全部题目已完成！运行打分:
+  python my_eval/cal_acc.py --data /research/cbim/vast/mz751/Projects/DLLM-Searcher/my_eval/results/bs128_v2/ckpt2_parallel/gpu5.jsonl

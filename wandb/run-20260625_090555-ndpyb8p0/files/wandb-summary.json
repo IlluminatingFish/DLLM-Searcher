@@ -1,0 +1,1 @@
+{"train/loss": 268.0885009765625, "train/grad_norm": 4386.40771484375, "train/learning_rate": 1.982973099683902e-07, "train/rewards/mean": 0.286865234375, "train/rewards/positive": 0.875, "train/elbo/mean": -2082.28173828125, "train/epoch": 0.14184397163120568, "train/global_step": 5, "_timestamp": 1782393437.667007, "_runtime": 681.7575380802155, "_step": 1}

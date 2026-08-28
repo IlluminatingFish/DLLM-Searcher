@@ -1,0 +1,38 @@
+/research/cbim/vast/mz751/miniforge3/lib/python3.12/site-packages/huggingface_hub/commands/download.py:141: FutureWarning: Ignoring --local-dir-use-symlinks. Downloading to a local directory does not use symlinks anymore.
+  warnings.warn(
+[33m⚠️  Warning: 'huggingface-cli download' is deprecated. Use 'hf download' instead.[0m
+Fetching 16 files:   0%|          | 0/16 [00:00<?, ?it/s]Downloading 'config.json' to 'llada_model/.cache/huggingface/download/8_PA_wEVGiVa2goH2H4KQOQpvVY=.021f5f1dbc5c4ff994be034f80a68eda43023de6.incomplete'
+Downloading 'configuration_llada.py' to 'llada_model/.cache/huggingface/download/nTJ9Ubrc_YkN-9ZP9cZQliUntxw=.3556bdac0bc0b06c6ec606830a28e9b3e6aeed56.incomplete'
+Download complete. Moving file to llada_model/config.json
+Download complete. Moving file to llada_model/configuration_llada.py
+Downloading 'model-00005-of-00006.safetensors' to 'llada_model/.cache/huggingface/download/oSetzz1DFkf7L3TvpxdZ6YtuoKo=.ff5f765eb7ec8bfdbe3b962a9e920d71de43d55e04eb4844710c0efcc8855092.incomplete'
+Downloading 'model-00004-of-00006.safetensors' to 'llada_model/.cache/huggingface/download/71f3TSsxAmosSx1AFSGJtFrSxfc=.93d8706872e7432d5cd40c9a61f9f9d270c101828cef2adaf27c67743d3dcf1a.incomplete'
+Still waiting to acquire lock on llada_model/.cache/huggingface/.gitignore.lock (elapsed: 0.1 seconds)
+Downloading 'model-00003-of-00006.safetensors' to 'llada_model/.cache/huggingface/download/XYxS_-gMKqyeF0pSwDVvLc_63Nc=.8347db2fd61a3b5bad2970c2f83ecb84b93632e276a41ca169dcc5efae15462c.incomplete'
+Downloading '.gitattributes' to 'llada_model/.cache/huggingface/download/wPaCkH-WbT7GsmxMKKrNZTV4nSM=.a6344aac8c09253b3b630fb776ae94478aa0275b.incomplete'
+Downloading 'model-00002-of-00006.safetensors' to 'llada_model/.cache/huggingface/download/H1O8ZB_QwtWjsrLtliP4_68j6q4=.b8ddf571b47f57ce654913877f3625d2c7b9a4c3f81cb6f41f6c3055473b0281.incomplete'
+Download complete. Moving file to llada_model/.gitattributes
+Fetching 16 files:   6%|▋         | 1/16 [00:00<00:01,  7.74it/s]Downloading 'model-00006-of-00006.safetensors' to 'llada_model/.cache/huggingface/download/uHlhOCT17Z6wYlt1x1jlrCcHTyE=.f25d4cc57b24a79a840d49c3b25d9a22dd5caf3a9766f591e4625377901194e2.incomplete'
+Downloading 'model-00001-of-00006.safetensors' to 'llada_model/.cache/huggingface/download/lPnGVsdaF542Y6w1ufNAL-pphxo=.ff6699df9635a267fb4ac801ea8012d39b21bb22ed290d5a57128521b889c230.incomplete'
+Downloading 'README.md' to 'llada_model/.cache/huggingface/download/Xn7B-BWUGOee2Y6hCZtEhtFu4BE=.ee618ef47226bd42d5d4e650e0ddb19004e57793.incomplete'
+Downloading 'generation_config.json' to 'llada_model/.cache/huggingface/download/3EVKVggOldJcKSsGjSdoUCN1AyQ=.eb204a82510094c3858dbd5a74ce794d936b73e9.incomplete'
+Download complete. Moving file to llada_model/README.md
+Download complete. Moving file to llada_model/generation_config.json
+Downloading 'model.safetensors.index.json' to 'llada_model/.cache/huggingface/download/yVzAsSxRSINSz-tQbpx-TLpfkLU=.09d69a72c025a27f33511d39ddfb7c4ad2cff3f0.incomplete'
+Downloading 'modeling_llada.py' to 'llada_model/.cache/huggingface/download/SoNrMiVqOuReNgTSM1JxBaKVEC8=.810676f774fa5541030f36fbd7c451be588e8628.incomplete'
+Download complete. Moving file to llada_model/model.safetensors.index.json
+Download complete. Moving file to llada_model/modeling_llada.py
+Downloading 'special_tokens_map.json' to 'llada_model/.cache/huggingface/download/ahkChHUJFxEmOdq5GDFEmerRzCY=.fc6b5867397d3b8563cfa7f4aa826b10c3f8ffee.incomplete'
+Download complete. Moving file to llada_model/special_tokens_map.json
+Downloading 'tokenizer.json' to 'llada_model/.cache/huggingface/download/HgM_lKo9sdSCfRtVg7MMFS7EKqo=.cad7554367f38d7cf0234b8bc7ed098053e12714.incomplete'
+Downloading 'tokenizer_config.json' to 'llada_model/.cache/huggingface/download/vzaExXFZNBay89bvlQv-ZcI6BTg=.3d3e45476f407f76fdb89dd78c543a990e3e664b.incomplete'
+Download complete. Moving file to llada_model/tokenizer_config.json
+Download complete. Moving file to llada_model/tokenizer.json
+Download complete. Moving file to llada_model/model-00006-of-00006.safetensors
+Download complete. Moving file to llada_model/model-00005-of-00006.safetensors
+Download complete. Moving file to llada_model/model-00004-of-00006.safetensors
+Download complete. Moving file to llada_model/model-00001-of-00006.safetensors
+Fetching 16 files:  38%|███▊      | 6/16 [01:20<02:20, 14.03s/it]Download complete. Moving file to llada_model/model-00002-of-00006.safetensors
+Fetching 16 files:  44%|████▍     | 7/16 [01:27<01:55, 12.80s/it]Download complete. Moving file to llada_model/model-00003-of-00006.safetensors
+Fetching 16 files:  50%|█████     | 8/16 [01:28<01:20, 10.10s/it]Fetching 16 files: 100%|██████████| 16/16 [01:28<00:00,  5.54s/it]
+/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/llada_model

@@ -1,0 +1,19 @@
+eval 数据: 200 题  来自 /research/cbim/vast/mz751/Projects/DLLM-Searcher/Dataroller/sft_output_v2/eval_test_set.jsonl
+
+加载模型: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_llada/ckpt_1/optimized
+Traceback (most recent call last):
+  File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/my_eval/run_llada_eval.py", line 401, in <module>
+    main()
+  File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/my_eval/run_llada_eval.py", line 350, in main
+    model = AutoModelForCausalLM.from_pretrained(
+  File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 558, in from_pretrained
+    model_class = get_class_from_dynamic_module(
+  File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/transformers/dynamic_module_utils.py", line 569, in get_class_from_dynamic_module
+    final_module = get_cached_module_file(
+  File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/transformers/dynamic_module_utils.py", line 372, in get_cached_module_file
+    resolved_module_file = cached_file(
+  File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/transformers/utils/hub.py", line 312, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/transformers/utils/hub.py", line 427, in cached_files
+    raise OSError(
+OSError: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_llada/ckpt_1/optimized does not appear to have a file named modeling_llada.py. Checkout 'https://huggingface.co//research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_llada/ckpt_1/optimized/tree/main' for available files.

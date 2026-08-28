@@ -1,0 +1,727 @@
+W0525 18:03:01.427000 791154 site-packages/torch/distributed/run.py:792] 
+W0525 18:03:01.427000 791154 site-packages/torch/distributed/run.py:792] *****************************************
+W0525 18:03:01.427000 791154 site-packages/torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0525 18:03:01.427000 791154 site-packages/torch/distributed/run.py:792] *****************************************
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+2026-05-25 18:03:13 - WARNING - __main__ - Process rank: -1, device: cuda:0, n_gpu: 1, distributed training: False, bf16: False
+2026-05-25 18:03:13 - INFO - __main__ - Model parameters: ModelConfig(model_name_or_path='/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_sdar/ckpt_8/optimized', model_revision='main', dtype='float32', trust_remote_code=True, attn_implementation='flash_attention_2', use_peft=False, lora_r=128, lora_alpha=64, lora_dropout=0.05, lora_target_modules=['q_proj', 'k_proj', 'v_proj', 'o_proj', 'up_proj', 'down_proj', 'gate_proj'], lora_target_parameters=None, lora_modules_to_save=None, lora_task_type='CAUSAL_LM', use_rslora=False, use_dora=False, load_in_8bit=False, load_in_4bit=False, bnb_4bit_quant_type='nf4', use_bnb_nested_quant=False, bnb_4bit_quant_storage=None)
+2026-05-25 18:03:13 - INFO - __main__ - Script parameters: SDARDPOScriptArguments(dataset_name='dpo', dataset_path='/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/data/train.jsonl', dataset_train_split='train', dataset_eval_split=None, max_samples=None, block_length=128, num_mc=1, mask_token_id=None, tool_resp_left='<|im_start|>user\n<tool_response>', tool_resp_right='</tool_response><|im_end|>\n<|im_start|>assistant\n')
+2026-05-25 18:03:13 - INFO - __main__ - Training parameters: SDARDPOConfig(
+accelerator_config={'split_batches': False, 'dispatch_batches': None, 'even_batches': True, 'use_seedable_sampler': True, 'non_blocking': False, 'gradient_accumulation_kwargs': None, 'use_configured_state': False},
+adam_beta1=0.9,
+adam_beta2=0.99,
+adam_epsilon=1e-08,
+auto_find_batch_size=False,
+average_tokens_across_devices=True,
+base_model_attribute_name=model,
+batch_eval_metrics=False,
+beta=0.1,
+bf16=False,
+bf16_full_eval=False,
+data_seed=None,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_persistent_workers=False,
+dataloader_pin_memory=True,
+dataloader_prefetch_factor=None,
+dataset_num_proc=None,
+ddp_backend=None,
+ddp_broadcast_buffers=None,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_timeout=1800,
+debug=[],
+deepspeed=None,
+disable_dropout=True,
+disable_tqdm=False,
+discopop_tau=0.05,
+do_eval=False,
+do_predict=False,
+do_train=False,
+enable_jit_checkpoint=False,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_do_concat_batches=True,
+eval_on_start=False,
+eval_steps=None,
+eval_strategy=IntervalStrategy.NO,
+eval_use_gather_object=False,
+f_alpha_divergence_coef=1.0,
+f_divergence_type=reverse_kl,
+force_use_ref_model=None,
+fp16=False,
+fp16_full_eval=False,
+fsdp=[],
+fsdp_config={'min_num_params': 0, 'xla': False, 'xla_fsdp_v2': False, 'xla_fsdp_grad_ckpt': False},
+full_determinism=False,
+generate_during_eval=False,
+gradient_accumulation_steps=8,
+gradient_checkpointing=True,
+gradient_checkpointing_kwargs={'use_reentrant': False},
+greater_is_better=None,
+hub_always_push=False,
+hub_model_id=None,
+hub_private_repo=None,
+hub_revision=None,
+hub_strategy=HubStrategy.EVERY_SAVE,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+include_for_metrics=[],
+include_num_input_tokens_seen=no,
+label_names=None,
+label_pad_token_id=-100,
+label_smoothing=0.0,
+label_smoothing_factor=0.0,
+ld_alpha=None,
+learning_rate=5e-07,
+length_column_name=length,
+liger_kernel_config=None,
+load_best_model_at_end=False,
+local_rank=-1,
+log_level=info,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=None,
+logging_first_step=True,
+logging_nan_inf_filter=True,
+logging_steps=1.0,
+logging_strategy=IntervalStrategy.STEPS,
+loss_type=sigmoid,
+loss_weights=None,
+lr_scheduler_kwargs=None,
+lr_scheduler_type=SchedulerType.COSINE,
+max_completion_length=4096,
+max_grad_norm=0.5,
+max_length=8192,
+max_prompt_length=1024,
+max_steps=-1,
+metric_for_best_model=None,
+model_adapter_name=None,
+model_init_kwargs=None,
+neftune_noise_alpha=None,
+num_train_epochs=5,
+optim=OptimizerNames.ADAMW_TORCH,
+optim_args=None,
+optim_target_modules=None,
+output_dir=output/dpo_dpo_20260525_180250/checkpoints,
+pad_token=<PAD_TOKEN>,
+padding_free=False,
+parallelism_config=None,
+per_device_eval_batch_size=1,
+per_device_train_batch_size=1,
+precompute_ref_batch_size=None,
+precompute_ref_log_probs=False,
+prediction_loss_only=False,
+project=huggingface,
+push_to_hub=False,
+ref_adapter_name=None,
+ref_model_init_kwargs=None,
+ref_model_mixup_alpha=0.6,
+ref_model_sync_steps=512,
+reference_free=False,
+remove_unused_columns=False,
+report_to=['wandb'],
+restore_callback_states_from_checkpoint=False,
+resume_from_checkpoint=None,
+rpo_alpha=None,
+run_name=dpo_dpo_20260525_180250,
+save_on_each_node=False,
+save_only_model=False,
+save_steps=100,
+save_strategy=SaveStrategy.NO,
+save_total_limit=5,
+seed=42,
+skip_memory_metrics=True,
+sync_ref_model=False,
+tf32=None,
+tools=None,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torch_empty_cache_steps=None,
+trackio_space_id=trackio,
+train_sampling_strategy=random,
+truncation_mode=keep_end,
+use_cache=False,
+use_cpu=False,
+use_liger_kernel=False,
+use_logits_to_keep=False,
+use_weighting=False,
+wandb_project=sdar_dpo,
+warmup_ratio=0.1,
+warmup_steps=0.1,
+weight_decay=0.01,
+)
+2026-05-25 18:03:13 - INFO - __main__ - *** Loading dataset ***
+2026-05-25 18:03:13 - WARNING - __main__ - Process rank: -1, device: cuda:4, n_gpu: 1, distributed training: False, bf16: False
+Using custom data configuration default-7134ebc009ec22f3
+2026-05-25 18:03:13 - INFO - datasets.builder - Using custom data configuration default-7134ebc009ec22f3
+2026-05-25 18:03:13 - WARNING - __main__ - Process rank: -1, device: cuda:5, n_gpu: 1, distributed training: False, bf16: False
+Found cached dataset json (/research/cbim/vast/mz751/.cache/huggingface/datasets/json/default-7134ebc009ec22f3/0.0.0/ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18)
+2026-05-25 18:03:13 - INFO - datasets.builder - Found cached dataset json (/research/cbim/vast/mz751/.cache/huggingface/datasets/json/default-7134ebc009ec22f3/0.0.0/ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18)
+2026-05-25 18:03:13 - WARNING - __main__ - Process rank: -1, device: cuda:3, n_gpu: 1, distributed training: False, bf16: False
+2026-05-25 18:03:13 - WARNING - __main__ - Process rank: -1, device: cuda:6, n_gpu: 1, distributed training: False, bf16: False
+2026-05-25 18:03:13 - INFO - __main__ - Dataset validated. Columns: ['prompt', 'chosen', 'rejected']
+2026-05-25 18:03:13 - INFO - __main__ - Train dataset size: 2236
+2026-05-25 18:03:13 - INFO - __main__ - *** Loading tokenizer ***
+2026-05-25 18:03:13 - WARNING - __main__ - Process rank: -1, device: cuda:1, n_gpu: 1, distributed training: False, bf16: False
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 419, in cached_files
+[rank0]:     hf_hub_download(
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 85, in _inner_fn
+[rank0]:     validate_repo_id(arg_value)
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 129, in validate_repo_id
+[rank0]:     raise HFValidationError(
+[rank0]: huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_sdar/ckpt_8/optimized'. Use `repo_type` argument if needed.
+
+[rank0]: The above exception was the direct cause of the following exception:
+
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/models/auto/tokenization_auto.py", line 624, in from_pretrained
+[rank0]:     config = AutoConfig.from_pretrained(
+[rank0]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/models/auto/configuration_auto.py", line 1403, in from_pretrained
+[rank0]:     config_dict, unused_kwargs = PreTrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+[rank0]:                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/configuration_utils.py", line 572, in get_config_dict
+[rank0]:     config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+[rank0]:                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/configuration_utils.py", line 627, in _get_config_dict
+[rank0]:     resolved_config_file = cached_file(
+[rank0]:                            ^^^^^^^^^^^^
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 276, in cached_file
+[rank0]:     file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 468, in cached_files
+[rank0]:     raise OSError(f"{e}") from e
+[rank0]: OSError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_sdar/ckpt_8/optimized'. Use `repo_type` argument if needed.
+
+[rank0]: During handling of the above exception, another exception occurred:
+
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 419, in cached_files
+[rank0]:     hf_hub_download(
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 85, in _inner_fn
+[rank0]:     validate_repo_id(arg_value)
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 129, in validate_repo_id
+[rank0]:     raise HFValidationError(
+[rank0]: huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_sdar/ckpt_8/optimized'. Use `repo_type` argument if needed.
+
+[rank0]: The above exception was the direct cause of the following exception:
+
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/my_dpo_train.py", line 346, in <module>
+[rank0]:     main(script_args, training_args, model_args)
+[rank0]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/my_dpo_train.py", line 252, in main
+[rank0]:     tokenizer = AutoTokenizer.from_pretrained(
+[rank0]:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/models/auto/tokenization_auto.py", line 628, in from_pretrained
+[rank0]:     config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+[rank0]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/configuration_utils.py", line 531, in from_pretrained
+[rank0]:     config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+[rank0]:                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/configuration_utils.py", line 572, in get_config_dict
+[rank0]:     config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+[rank0]:                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/configuration_utils.py", line 627, in _get_config_dict
+[rank0]:     resolved_config_file = cached_file(
+[rank0]:                            ^^^^^^^^^^^^
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 276, in cached_file
+[rank0]:     file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 468, in cached_files
+[rank0]:     raise OSError(f"{e}") from e
+[rank0]: OSError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_sdar/ckpt_8/optimized'. Use `repo_type` argument if needed.
+2026-05-25 18:03:13 - WARNING - __main__ - Process rank: -1, device: cuda:2, n_gpu: 1, distributed training: False, bf16: False
+[rank4]: Traceback (most recent call last):
+[rank4]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 419, in cached_files
+[rank4]:     hf_hub_download(
+[rank4]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 85, in _inner_fn
+[rank4]:     validate_repo_id(arg_value)
+[rank4]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 129, in validate_repo_id
+[rank4]:     raise HFValidationError(
+[rank4]: huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_sdar/ckpt_8/optimized'. Use `repo_type` argument if needed.
+
+[rank4]: The above exception was the direct cause of the following exception:
+
+[rank4]: Traceback (most recent call last):
+[rank4]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/models/auto/tokenization_auto.py", line 624, in from_pretrained
+[rank4]:     config = AutoConfig.from_pretrained(
+[rank4]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/models/auto/configuration_auto.py", line 1403, in from_pretrained
+[rank4]:     config_dict, unused_kwargs = PreTrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+[rank4]:                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/configuration_utils.py", line 572, in get_config_dict
+[rank4]:     config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+[rank4]:                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/configuration_utils.py", line 627, in _get_config_dict
+[rank4]:     resolved_config_file = cached_file(
+[rank4]:                            ^^^^^^^^^^^^
+[rank4]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 276, in cached_file
+[rank4]:     file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+[rank4]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 468, in cached_files
+[rank4]:     raise OSError(f"{e}") from e
+[rank4]: OSError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_sdar/ckpt_8/optimized'. Use `repo_type` argument if needed.
+
+[rank4]: During handling of the above exception, another exception occurred:
+
+[rank4]: Traceback (most recent call last):
+[rank4]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 419, in cached_files
+[rank4]:     hf_hub_download(
+[rank4]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 85, in _inner_fn
+[rank4]:     validate_repo_id(arg_value)
+[rank4]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 129, in validate_repo_id
+[rank4]:     raise HFValidationError(
+[rank4]: huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_sdar/ckpt_8/optimized'. Use `repo_type` argument if needed.
+
+[rank4]: The above exception was the direct cause of the following exception:
+
+[rank4]: Traceback (most recent call last):
+[rank4]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/my_dpo_train.py", line 346, in <module>
+[rank4]:     main(script_args, training_args, model_args)
+[rank4]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/my_dpo_train.py", line 252, in main
+[rank4]:     tokenizer = AutoTokenizer.from_pretrained(
+[rank4]:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/models/auto/tokenization_auto.py", line 628, in from_pretrained
+[rank4]:     config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+[rank4]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/configuration_utils.py", line 531, in from_pretrained
+[rank4]:     config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+[rank4]:                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/configuration_utils.py", line 572, in get_config_dict
+[rank4]:     config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+[rank4]:                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/configuration_utils.py", line 627, in _get_config_dict
+[rank4]:     resolved_config_file = cached_file(
+[rank4]:                            ^^^^^^^^^^^^
+[rank4]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 276, in cached_file
+[rank4]:     file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+[rank4]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 468, in cached_files
+[rank4]:     raise OSError(f"{e}") from e
+[rank4]: OSError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_sdar/ckpt_8/optimized'. Use `repo_type` argument if needed.
+[rank5]: Traceback (most recent call last):
+[rank5]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 419, in cached_files
+[rank5]:     hf_hub_download(
+[rank5]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 85, in _inner_fn
+[rank5]:     validate_repo_id(arg_value)
+[rank5]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 129, in validate_repo_id
+[rank5]:     raise HFValidationError(
+[rank5]: huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_sdar/ckpt_8/optimized'. Use `repo_type` argument if needed.
+
+[rank5]: The above exception was the direct cause of the following exception:
+
+[rank5]: Traceback (most recent call last):
+[rank5]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/models/auto/tokenization_auto.py", line 624, in from_pretrained
+[rank5]:     config = AutoConfig.from_pretrained(
+[rank5]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/models/auto/configuration_auto.py", line 1403, in from_pretrained
+[rank5]:     config_dict, unused_kwargs = PreTrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+[rank5]:                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/configuration_utils.py", line 572, in get_config_dict
+[rank5]:     config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+[rank5]:                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/configuration_utils.py", line 627, in _get_config_dict
+[rank5]:     resolved_config_file = cached_file(
+[rank5]:                            ^^^^^^^^^^^^
+[rank5]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 276, in cached_file
+[rank5]:     file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+[rank5]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 468, in cached_files
+[rank5]:     raise OSError(f"{e}") from e
+[rank5]: OSError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_sdar/ckpt_8/optimized'. Use `repo_type` argument if needed.
+
+[rank5]: During handling of the above exception, another exception occurred:
+
+[rank5]: Traceback (most recent call last):
+[rank5]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 419, in cached_files
+[rank5]:     hf_hub_download(
+[rank5]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 85, in _inner_fn
+[rank5]:     validate_repo_id(arg_value)
+[rank5]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 129, in validate_repo_id
+[rank5]:     raise HFValidationError(
+[rank5]: huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_sdar/ckpt_8/optimized'. Use `repo_type` argument if needed.
+
+[rank5]: The above exception was the direct cause of the following exception:
+
+[rank5]: Traceback (most recent call last):
+[rank5]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/my_dpo_train.py", line 346, in <module>
+[rank5]:     main(script_args, training_args, model_args)
+[rank5]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/my_dpo_train.py", line 252, in main
+[rank5]:     tokenizer = AutoTokenizer.from_pretrained(
+[rank5]:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/models/auto/tokenization_auto.py", line 628, in from_pretrained
+[rank5]:     config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+[rank5]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/configuration_utils.py", line 531, in from_pretrained
+[rank5]:     config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+[rank5]:                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/configuration_utils.py", line 572, in get_config_dict
+[rank5]:     config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+[rank5]:                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/configuration_utils.py", line 627, in _get_config_dict
+[rank5]:     resolved_config_file = cached_file(
+[rank5]:                            ^^^^^^^^^^^^
+[rank5]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 276, in cached_file
+[rank5]:     file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+[rank5]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 468, in cached_files
+[rank5]:     raise OSError(f"{e}") from e
+[rank5]: OSError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_sdar/ckpt_8/optimized'. Use `repo_type` argument if needed.
+[rank6]: Traceback (most recent call last):
+[rank6]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 419, in cached_files
+[rank6]:     hf_hub_download(
+[rank6]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 85, in _inner_fn
+[rank6]:     validate_repo_id(arg_value)
+[rank6]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 129, in validate_repo_id
+[rank6]:     raise HFValidationError(
+[rank6]: huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_sdar/ckpt_8/optimized'. Use `repo_type` argument if needed.
+
+[rank6]: The above exception was the direct cause of the following exception:
+
+[rank6]: Traceback (most recent call last):
+[rank6]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/models/auto/tokenization_auto.py", line 624, in from_pretrained
+[rank6]:     config = AutoConfig.from_pretrained(
+[rank6]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/models/auto/configuration_auto.py", line 1403, in from_pretrained
+[rank6]:     config_dict, unused_kwargs = PreTrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+[rank6]:                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/configuration_utils.py", line 572, in get_config_dict
+[rank6]:     config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+[rank6]:                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/configuration_utils.py", line 627, in _get_config_dict
+[rank6]:     resolved_config_file = cached_file(
+[rank6]:                            ^^^^^^^^^^^^
+[rank6]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 276, in cached_file
+[rank6]:     file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+[rank6]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 468, in cached_files
+[rank6]:     raise OSError(f"{e}") from e
+[rank6]: OSError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_sdar/ckpt_8/optimized'. Use `repo_type` argument if needed.
+
+[rank6]: During handling of the above exception, another exception occurred:
+
+[rank6]: Traceback (most recent call last):
+[rank6]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 419, in cached_files
+[rank6]:     hf_hub_download(
+[rank6]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 85, in _inner_fn
+[rank6]:     validate_repo_id(arg_value)
+[rank6]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 129, in validate_repo_id
+[rank6]:     raise HFValidationError(
+[rank6]: huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_sdar/ckpt_8/optimized'. Use `repo_type` argument if needed.
+
+[rank6]: The above exception was the direct cause of the following exception:
+
+[rank6]: Traceback (most recent call last):
+[rank6]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/my_dpo_train.py", line 346, in <module>
+[rank6]:     main(script_args, training_args, model_args)
+[rank6]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/my_dpo_train.py", line 252, in main
+[rank6]:     tokenizer = AutoTokenizer.from_pretrained(
+[rank6]:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/models/auto/tokenization_auto.py", line 628, in from_pretrained
+[rank6]:     config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+[rank6]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/configuration_utils.py", line 531, in from_pretrained
+[rank6]:     config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+[rank6]:                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/configuration_utils.py", line 572, in get_config_dict
+[rank6]:     config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+[rank6]:                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/configuration_utils.py", line 627, in _get_config_dict
+[rank6]:     resolved_config_file = cached_file(
+[rank6]:                            ^^^^^^^^^^^^
+[rank6]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 276, in cached_file
+[rank6]:     file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+[rank6]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 468, in cached_files
+[rank6]:     raise OSError(f"{e}") from e
+[rank6]: OSError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_sdar/ckpt_8/optimized'. Use `repo_type` argument if needed.
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 419, in cached_files
+[rank3]:     hf_hub_download(
+[rank3]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 85, in _inner_fn
+[rank3]:     validate_repo_id(arg_value)
+[rank3]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 129, in validate_repo_id
+[rank3]:     raise HFValidationError(
+[rank3]: huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_sdar/ckpt_8/optimized'. Use `repo_type` argument if needed.
+
+[rank3]: The above exception was the direct cause of the following exception:
+
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/models/auto/tokenization_auto.py", line 624, in from_pretrained
+[rank3]:     config = AutoConfig.from_pretrained(
+[rank3]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/models/auto/configuration_auto.py", line 1403, in from_pretrained
+[rank3]:     config_dict, unused_kwargs = PreTrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+[rank3]:                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/configuration_utils.py", line 572, in get_config_dict
+[rank3]:     config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+[rank3]:                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/configuration_utils.py", line 627, in _get_config_dict
+[rank3]:     resolved_config_file = cached_file(
+[rank3]:                            ^^^^^^^^^^^^
+[rank3]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 276, in cached_file
+[rank3]:     file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 468, in cached_files
+[rank3]:     raise OSError(f"{e}") from e
+[rank3]: OSError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_sdar/ckpt_8/optimized'. Use `repo_type` argument if needed.
+
+[rank3]: During handling of the above exception, another exception occurred:
+
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 419, in cached_files
+[rank3]:     hf_hub_download(
+[rank3]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 85, in _inner_fn
+[rank3]:     validate_repo_id(arg_value)
+[rank3]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 129, in validate_repo_id
+[rank3]:     raise HFValidationError(
+[rank3]: huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_sdar/ckpt_8/optimized'. Use `repo_type` argument if needed.
+
+[rank3]: The above exception was the direct cause of the following exception:
+
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/my_dpo_train.py", line 346, in <module>
+[rank3]:     main(script_args, training_args, model_args)
+[rank3]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/my_dpo_train.py", line 252, in main
+[rank3]:     tokenizer = AutoTokenizer.from_pretrained(
+[rank3]:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/models/auto/tokenization_auto.py", line 628, in from_pretrained
+[rank3]:     config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+[rank3]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/configuration_utils.py", line 531, in from_pretrained
+[rank3]:     config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+[rank3]:                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/configuration_utils.py", line 572, in get_config_dict
+[rank3]:     config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+[rank3]:                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/configuration_utils.py", line 627, in _get_config_dict
+[rank3]:     resolved_config_file = cached_file(
+[rank3]:                            ^^^^^^^^^^^^
+[rank3]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 276, in cached_file
+[rank3]:     file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 468, in cached_files
+[rank3]:     raise OSError(f"{e}") from e
+[rank3]: OSError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_sdar/ckpt_8/optimized'. Use `repo_type` argument if needed.
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 419, in cached_files
+[rank2]:     hf_hub_download(
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 85, in _inner_fn
+[rank2]:     validate_repo_id(arg_value)
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 129, in validate_repo_id
+[rank2]:     raise HFValidationError(
+[rank2]: huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_sdar/ckpt_8/optimized'. Use `repo_type` argument if needed.
+
+[rank2]: The above exception was the direct cause of the following exception:
+
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/models/auto/tokenization_auto.py", line 624, in from_pretrained
+[rank2]:     config = AutoConfig.from_pretrained(
+[rank2]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/models/auto/configuration_auto.py", line 1403, in from_pretrained
+[rank2]:     config_dict, unused_kwargs = PreTrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+[rank2]:                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/configuration_utils.py", line 572, in get_config_dict
+[rank2]:     config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+[rank2]:                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/configuration_utils.py", line 627, in _get_config_dict
+[rank2]:     resolved_config_file = cached_file(
+[rank2]:                            ^^^^^^^^^^^^
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 276, in cached_file
+[rank2]:     file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 468, in cached_files
+[rank2]:     raise OSError(f"{e}") from e
+[rank2]: OSError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_sdar/ckpt_8/optimized'. Use `repo_type` argument if needed.
+
+[rank2]: During handling of the above exception, another exception occurred:
+
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 419, in cached_files
+[rank2]:     hf_hub_download(
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 85, in _inner_fn
+[rank2]:     validate_repo_id(arg_value)
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 129, in validate_repo_id
+[rank2]:     raise HFValidationError(
+[rank2]: huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_sdar/ckpt_8/optimized'. Use `repo_type` argument if needed.
+
+[rank2]: The above exception was the direct cause of the following exception:
+
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/my_dpo_train.py", line 346, in <module>
+[rank2]:     main(script_args, training_args, model_args)
+[rank2]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/my_dpo_train.py", line 252, in main
+[rank2]:     tokenizer = AutoTokenizer.from_pretrained(
+[rank2]:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/models/auto/tokenization_auto.py", line 628, in from_pretrained
+[rank2]:     config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+[rank2]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/configuration_utils.py", line 531, in from_pretrained
+[rank2]:     config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+[rank2]:                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/configuration_utils.py", line 572, in get_config_dict
+[rank2]:     config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+[rank2]:                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/configuration_utils.py", line 627, in _get_config_dict
+[rank2]:     resolved_config_file = cached_file(
+[rank2]:                            ^^^^^^^^^^^^
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 276, in cached_file
+[rank2]:     file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 468, in cached_files
+[rank2]:     raise OSError(f"{e}") from e
+[rank2]: OSError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_sdar/ckpt_8/optimized'. Use `repo_type` argument if needed.
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 419, in cached_files
+[rank1]:     hf_hub_download(
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 85, in _inner_fn
+[rank1]:     validate_repo_id(arg_value)
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 129, in validate_repo_id
+[rank1]:     raise HFValidationError(
+[rank1]: huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_sdar/ckpt_8/optimized'. Use `repo_type` argument if needed.
+
+[rank1]: The above exception was the direct cause of the following exception:
+
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/models/auto/tokenization_auto.py", line 624, in from_pretrained
+[rank1]:     config = AutoConfig.from_pretrained(
+[rank1]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/models/auto/configuration_auto.py", line 1403, in from_pretrained
+[rank1]:     config_dict, unused_kwargs = PreTrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+[rank1]:                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/configuration_utils.py", line 572, in get_config_dict
+[rank1]:     config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+[rank1]:                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/configuration_utils.py", line 627, in _get_config_dict
+[rank1]:     resolved_config_file = cached_file(
+[rank1]:                            ^^^^^^^^^^^^
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 276, in cached_file
+[rank1]:     file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 468, in cached_files
+[rank1]:     raise OSError(f"{e}") from e
+[rank1]: OSError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_sdar/ckpt_8/optimized'. Use `repo_type` argument if needed.
+
+[rank1]: During handling of the above exception, another exception occurred:
+
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 419, in cached_files
+[rank1]:     hf_hub_download(
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 85, in _inner_fn
+[rank1]:     validate_repo_id(arg_value)
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 129, in validate_repo_id
+[rank1]:     raise HFValidationError(
+[rank1]: huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_sdar/ckpt_8/optimized'. Use `repo_type` argument if needed.
+
+[rank1]: The above exception was the direct cause of the following exception:
+
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/my_dpo_train.py", line 346, in <module>
+[rank1]:     main(script_args, training_args, model_args)
+[rank1]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/my_dpo_train.py", line 252, in main
+[rank1]:     tokenizer = AutoTokenizer.from_pretrained(
+[rank1]:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/models/auto/tokenization_auto.py", line 628, in from_pretrained
+[rank1]:     config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+[rank1]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/configuration_utils.py", line 531, in from_pretrained
+[rank1]:     config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+[rank1]:                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/configuration_utils.py", line 572, in get_config_dict
+[rank1]:     config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+[rank1]:                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/configuration_utils.py", line 627, in _get_config_dict
+[rank1]:     resolved_config_file = cached_file(
+[rank1]:                            ^^^^^^^^^^^^
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 276, in cached_file
+[rank1]:     file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/utils/hub.py", line 468, in cached_files
+[rank1]:     raise OSError(f"{e}") from e
+[rank1]: OSError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_sdar/ckpt_8/optimized'. Use `repo_type` argument if needed.
+[rank0]:[W525 18:03:14.457074200 ProcessGroupNCCL.cpp:1496] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+W0525 18:03:14.867000 791154 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 791648 closing signal SIGTERM
+W0525 18:03:14.868000 791154 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 791649 closing signal SIGTERM
+W0525 18:03:14.868000 791154 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 791650 closing signal SIGTERM
+W0525 18:03:14.868000 791154 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 791651 closing signal SIGTERM
+W0525 18:03:14.870000 791154 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 791652 closing signal SIGTERM
+W0525 18:03:14.871000 791154 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 791653 closing signal SIGTERM
+E0525 18:03:15.902000 791154 site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 0 (pid: 791647) of binary: /research/cbim/vast/mz751/miniforge3/envs/espo/bin/python3.11
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Traceback (most recent call last):
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/bin/accelerate", line 6, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/accelerate/commands/accelerate_cli.py", line 50, in main
+    args.func(args)
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/accelerate/commands/launch.py", line 1266, in launch_command
+    deepspeed_launcher(args)
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/accelerate/commands/launch.py", line 952, in deepspeed_launcher
+    distrib_run.run(args)
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+my_train/my_dpo_train.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-05-25_18:03:14
+  host      : dionysos.cs.rutgers.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 791647)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

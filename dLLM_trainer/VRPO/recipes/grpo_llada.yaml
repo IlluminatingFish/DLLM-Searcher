@@ -1,0 +1,70 @@
+# =============================================================================
+# GRPO Training Configuration（LLaDA diffusion model）
+# =============================================================================
+
+# Model
+model_name_or_path: /common/users/mz751/Projects/dLLM_trainer/checkpoints/RL/plan_a/model/checkpoint-3
+dtype: bfloat16
+trust_remote_code: true
+attn_implementation: eager
+use_peft: false
+
+# Dataset（由 make_grpo_data.py 生成）
+dataset_path: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/data/grpo_train.jsonl
+max_samples: null
+
+# GRPO specific
+block_length: 128
+num_mc: 1
+mask_token_id: 126336
+advantage_clip: 5.0
+tool_resp_left: "<|im_start|>user\n<tool_response>"
+tool_resp_right: "</tool_response><|im_end|>\n<|im_start|>assistant\n"
+
+# DPOConfig 兼容参数（GRPO 不使用 beta/loss_type，但继承 DPOConfig 需要声明）
+beta: 0.0
+loss_type: sigmoid
+
+# Sequence lengths: num_mc=1 halves attention; max_completion=1024 → N≤2816 → ~22GB total
+max_prompt_length: 640
+max_completion_length: 1024
+max_length: 4096
+
+# Training
+bf16: true
+do_eval: false
+num_train_epochs: 3
+per_device_train_batch_size: 1
+per_device_eval_batch_size: 1
+gradient_accumulation_steps: 8
+gradient_checkpointing: false
+
+# Optimizer
+learning_rate: 5.0e-7
+adam_beta1: 0.9
+adam_beta2: 0.99
+weight_decay: 0.01
+max_grad_norm: 0.5
+warmup_ratio: 0.05
+lr_scheduler_type: cosine
+
+# Logging & Saving
+output_dir: /common/users/mz751/Projects/dLLM_trainer/checkpoints/RL/grpo/round1/model
+logging_steps: 5
+logging_first_step: true
+log_level: info
+save_strategy: steps
+save_steps: 50
+save_total_limit: 3
+eval_strategy: "no"
+
+# Wandb
+report_to:
+  - wandb
+wandb_project: llada_grpo
+run_name: null
+
+# Other
+seed: 42
+dataloader_num_workers: 0
+remove_unused_columns: false

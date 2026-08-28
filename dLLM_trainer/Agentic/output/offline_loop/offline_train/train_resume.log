@@ -1,0 +1,499 @@
+W0815 03:52:07.701000 3457509 site-packages/torch/distributed/run.py:792] 
+W0815 03:52:07.701000 3457509 site-packages/torch/distributed/run.py:792] *****************************************
+W0815 03:52:07.701000 3457509 site-packages/torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0815 03:52:07.701000 3457509 site-packages/torch/distributed/run.py:792] *****************************************
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+2026-08-15 03:52:19 - INFO - __main__ - Script args: GRPOScriptArgs(dataset_path='/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/offline_loop/all_train_reward_a.jsonl', max_samples=None, block_length=64, num_mc=1, mask_token_id=126336, advantage_clip=5.0, normalize_elbo=True, tool_resp_left='<|im_start|>user\n<tool_response>', tool_resp_right='</tool_response><|im_end|>\n<|im_start|>assistant\n')
+2026-08-15 03:52:19 - INFO - __main__ - Training args: GRPOConfig(
+accelerator_config={'split_batches': False, 'dispatch_batches': None, 'even_batches': True, 'use_seedable_sampler': True, 'non_blocking': False, 'gradient_accumulation_kwargs': None, 'use_configured_state': False},
+adam_beta1=0.9,
+adam_beta2=0.99,
+adam_epsilon=1e-08,
+auto_find_batch_size=False,
+average_tokens_across_devices=True,
+base_model_attribute_name=model,
+batch_eval_metrics=False,
+beta=0.0,
+bf16=True,
+bf16_full_eval=False,
+data_seed=None,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_persistent_workers=False,
+dataloader_pin_memory=True,
+dataloader_prefetch_factor=None,
+dataset_num_proc=None,
+ddp_backend=None,
+ddp_broadcast_buffers=None,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_timeout=1800,
+debug=[],
+deepspeed=None,
+disable_dropout=True,
+disable_tqdm=False,
+discopop_tau=0.05,
+do_eval=False,
+do_predict=False,
+do_train=False,
+enable_jit_checkpoint=False,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_do_concat_batches=True,
+eval_on_start=False,
+eval_steps=None,
+eval_strategy=IntervalStrategy.NO,
+eval_use_gather_object=False,
+f_alpha_divergence_coef=1.0,
+f_divergence_type=reverse_kl,
+force_use_ref_model=None,
+fp16=False,
+fp16_full_eval=False,
+fsdp=[],
+fsdp_config={'min_num_params': 0, 'xla': False, 'xla_fsdp_v2': False, 'xla_fsdp_grad_ckpt': False},
+full_determinism=False,
+generate_during_eval=False,
+gradient_accumulation_steps=8,
+gradient_checkpointing=False,
+gradient_checkpointing_kwargs=None,
+greater_is_better=None,
+hub_always_push=False,
+hub_model_id=None,
+hub_private_repo=None,
+hub_revision=None,
+hub_strategy=HubStrategy.EVERY_SAVE,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+include_for_metrics=[],
+include_num_input_tokens_seen=no,
+label_names=None,
+label_pad_token_id=-100,
+label_smoothing=0.0,
+label_smoothing_factor=0.0,
+ld_alpha=None,
+learning_rate=1e-06,
+length_column_name=length,
+liger_kernel_config=None,
+load_best_model_at_end=False,
+local_rank=-1,
+log_level=info,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=None,
+logging_first_step=True,
+logging_nan_inf_filter=True,
+logging_steps=5,
+logging_strategy=IntervalStrategy.STEPS,
+loss_type=sigmoid,
+loss_weights=None,
+lr_scheduler_kwargs=None,
+lr_scheduler_type=SchedulerType.COSINE,
+max_completion_length=640,
+max_grad_norm=0.5,
+max_length=4096,
+max_prompt_length=640,
+max_steps=75,
+metric_for_best_model=None,
+model_adapter_name=None,
+model_init_kwargs=None,
+neftune_noise_alpha=None,
+num_train_epochs=3.0,
+optim=OptimizerNames.ADAMW_TORCH,
+optim_args=None,
+optim_target_modules=None,
+output_dir=/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/offline_loop/offline_train/model_cont,
+pad_token=<PAD_TOKEN>,
+padding_free=False,
+parallelism_config=None,
+per_device_eval_batch_size=1,
+per_device_train_batch_size=1,
+precompute_ref_batch_size=None,
+precompute_ref_log_probs=False,
+prediction_loss_only=False,
+project=huggingface,
+push_to_hub=False,
+ref_adapter_name=None,
+ref_model_init_kwargs=None,
+ref_model_mixup_alpha=0.6,
+ref_model_sync_steps=512,
+reference_free=False,
+remove_unused_columns=False,
+report_to=['wandb'],
+restore_callback_states_from_checkpoint=False,
+resume_from_checkpoint=None,
+rpo_alpha=None,
+run_name=offline_baseline_resume_step50,
+save_on_each_node=False,
+save_only_model=False,
+save_steps=25,
+save_strategy=SaveStrategy.STEPS,
+save_total_limit=3,
+seed=42,
+skip_memory_metrics=True,
+sync_ref_model=False,
+tf32=None,
+tools=None,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torch_empty_cache_steps=None,
+trackio_space_id=trackio,
+train_sampling_strategy=random,
+truncation_mode=keep_end,
+use_cache=False,
+use_cpu=False,
+use_liger_kernel=False,
+use_logits_to_keep=False,
+use_weighting=False,
+wandb_project=dllm_agentic_rl,
+warmup_ratio=0.05,
+warmup_steps=0.05,
+weight_decay=0.01,
+)
+2026-08-15 03:52:19 - INFO - __main__ - *** Loading GRPO dataset ***
+Using custom data configuration default-d629f75b822dd3b4
+2026-08-15 03:52:19 - INFO - datasets.builder - Using custom data configuration default-d629f75b822dd3b4
+Found cached dataset json (/research/cbim/vast/mz751/.cache/huggingface/datasets/json/default-d629f75b822dd3b4/0.0.0/ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18)
+2026-08-15 03:52:19 - INFO - datasets.builder - Found cached dataset json (/research/cbim/vast/mz751/.cache/huggingface/datasets/json/default-d629f75b822dd3b4/0.0.0/ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18)
+2026-08-15 03:52:19 - INFO - __main__ - Train samples: 6344
+2026-08-15 03:52:19 - INFO - __main__ - *** Loading tokenizer ***
+loading configuration file /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/offline_loop/offline_train/model/checkpoint-50/config.json
+loading configuration file /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/offline_loop/offline_train/model/checkpoint-50/config.json
+Model config LLaDAConfig {
+  "activation_type": "silu",
+  "alibi": false,
+  "alibi_bias_max": 8.0,
+  "architectures": [
+    "LLaDAModelLM"
+  ],
+  "attention_dropout": 0.0,
+  "attention_layer_norm": false,
+  "attention_layer_norm_with_affine": true,
+  "auto_map": {
+    "AutoConfig": "configuration_llada.LLaDAConfig",
+    "AutoModel": "modeling_llada.LLaDAModelLM",
+    "AutoModelForCausalLM": "modeling_llada.LLaDAModelLM"
+  },
+  "bias_for_layer_norm": false,
+  "block_group_size": 1,
+  "block_type": "llama",
+  "bos_token_id": 126080,
+  "d_model": 4096,
+  "dtype": "bfloat16",
+  "embedding_dropout": 0.0,
+  "embedding_size": 126464,
+  "eos_token_id": 126081,
+  "flash_attention": false,
+  "include_bias": false,
+  "include_qkv_bias": false,
+  "init_cutoff_factor": null,
+  "init_device": "meta",
+  "init_fn": "mitchell",
+  "init_std": 0.02,
+  "input_emb_norm": false,
+  "layer_norm_type": "rms",
+  "layer_norm_with_affine": true,
+  "mask_token_id": 126336,
+  "max_sequence_length": 4096,
+  "mlp_hidden_size": 12288,
+  "mlp_ratio": 4,
+  "model_type": "llada",
+  "multi_query_attention": null,
+  "n_heads": 32,
+  "n_kv_heads": 32,
+  "n_layers": 32,
+  "pad_token_id": 126081,
+  "precision": "amp_bf16",
+  "residual_dropout": 0.0,
+  "rms_norm_eps": 1e-05,
+  "rope": true,
+  "rope_full_precision": true,
+  "rope_theta": 500000.0,
+  "scale_logits": false,
+  "transformers_version": "5.2.0",
+  "vocab_size": 126464,
+  "weight_tying": false
+}
+
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+2026-08-15 03:52:21 - INFO - __main__ - *** Loading model ***
+2026-08-15 03:52:21 - INFO - __main__ - ZeRO stage: 2 (is_zero3=False)
+loading configuration file /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/offline_loop/offline_train/model/checkpoint-50/config.json
+loading configuration file /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/offline_loop/offline_train/model/checkpoint-50/config.json
+`torch_dtype` is deprecated! Use `dtype` instead!
+Model config LLaDAConfig {
+  "activation_type": "silu",
+  "alibi": false,
+  "alibi_bias_max": 8.0,
+  "architectures": [
+    "LLaDAModelLM"
+  ],
+  "attention_dropout": 0.0,
+  "attention_layer_norm": false,
+  "attention_layer_norm_with_affine": true,
+  "auto_map": {
+    "AutoConfig": "configuration_llada.LLaDAConfig",
+    "AutoModel": "modeling_llada.LLaDAModelLM",
+    "AutoModelForCausalLM": "modeling_llada.LLaDAModelLM"
+  },
+  "bias_for_layer_norm": false,
+  "block_group_size": 1,
+  "block_type": "llama",
+  "bos_token_id": 126080,
+  "d_model": 4096,
+  "dtype": "bfloat16",
+  "embedding_dropout": 0.0,
+  "embedding_size": 126464,
+  "eos_token_id": 126081,
+  "flash_attention": false,
+  "include_bias": false,
+  "include_qkv_bias": false,
+  "init_cutoff_factor": null,
+  "init_device": "meta",
+  "init_fn": "mitchell",
+  "init_std": 0.02,
+  "input_emb_norm": false,
+  "layer_norm_type": "rms",
+  "layer_norm_with_affine": true,
+  "mask_token_id": 126336,
+  "max_sequence_length": 4096,
+  "mlp_hidden_size": 12288,
+  "mlp_ratio": 4,
+  "model_type": "llada",
+  "multi_query_attention": null,
+  "n_heads": 32,
+  "n_kv_heads": 32,
+  "n_layers": 32,
+  "pad_token_id": 126081,
+  "precision": "amp_bf16",
+  "residual_dropout": 0.0,
+  "rms_norm_eps": 1e-05,
+  "rope": true,
+  "rope_full_precision": true,
+  "rope_theta": 500000.0,
+  "scale_logits": false,
+  "transformers_version": "5.2.0",
+  "vocab_size": 126464,
+  "weight_tying": false
+}
+
+loading weights file /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/offline_loop/offline_train/model/checkpoint-50/model.safetensors
+Detected DeepSpeed ZeRO-3: activating zero.init() for this model
+Generate config GenerationConfig {
+  "bos_token_id": 126080,
+  "eos_token_id": 126081,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 126081
+}
+
+NCCL version 2.21.5+cuda12.4
+loading configuration file /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/offline_loop/offline_train/model/checkpoint-50/generation_config.json
+Generate config GenerationConfig {
+  "bos_token_id": 126080,
+  "eos_token_id": [
+    126081
+  ],
+  "pad_token_id": 126081
+}
+
+Could not locate the custom_generate/generate.py inside /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/offline_loop/offline_train/model/checkpoint-50.
+2026-08-15 03:52:35 - INFO - __main__ - Model loaded to cuda:0 (ZeRO-2)
+2026-08-15 03:52:35 - INFO - __main__ - LLaDA activation checkpointing enabled: whole_layer
+2026-08-15 03:52:35 - INFO - __main__ - *** Initializing GRPO Trainer ***
+Tokenizing GRPO train dataset:   0%|          | 0/6344 [00:00<?, ? examples/s]Caching processed dataset at /research/cbim/vast/mz751/.cache/huggingface/datasets/json/default-d629f75b822dd3b4/0.0.0/ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18/cache-3eaf74cf2513ce51.arrow
+2026-08-15 03:52:35 - INFO - datasets.arrow_dataset - Caching processed dataset at /research/cbim/vast/mz751/.cache/huggingface/datasets/json/default-d629f75b822dd3b4/0.0.0/ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18/cache-3eaf74cf2513ce51.arrow
+Tokenizing GRPO train dataset:   0%|          | 20/6344 [00:00<00:34, 183.88 examples/s]Tokenizing GRPO train dataset:   1%|          | 44/6344 [00:00<00:29, 212.70 examples/s]Tokenizing GRPO train dataset:   1%|          | 70/6344 [00:00<00:27, 226.24 examples/s]Tokenizing GRPO train dataset:   2%|▏         | 104/6344 [00:00<00:28, 221.34 examples/s]Tokenizing GRPO train dataset:   2%|▏         | 137/6344 [00:00<00:28, 215.47 examples/s]Tokenizing GRPO train dataset:   3%|▎         | 160/6344 [00:00<00:28, 214.71 examples/s]Tokenizing GRPO train dataset:   3%|▎         | 187/6344 [00:00<00:27, 225.94 examples/s]Tokenizing GRPO train dataset:   3%|▎         | 218/6344 [00:01<00:28, 214.35 examples/s]Tokenizing GRPO train dataset:   4%|▍         | 240/6344 [00:01<00:28, 211.64 examples/s]Tokenizing GRPO train dataset:   4%|▍         | 265/6344 [00:01<00:27, 220.62 examples/s]Tokenizing GRPO train dataset:   5%|▍         | 289/6344 [00:01<00:27, 221.84 examples/s]Tokenizing GRPO train dataset:   5%|▌         | 319/6344 [00:01<00:28, 209.38 examples/s]Tokenizing GRPO train dataset:   6%|▌         | 350/6344 [00:01<00:29, 202.24 examples/s]Tokenizing GRPO train dataset:   6%|▌         | 372/6344 [00:01<00:29, 202.49 examples/s]Tokenizing GRPO train dataset:   6%|▌         | 393/6344 [00:01<00:29, 200.62 examples/s]Tokenizing GRPO train dataset:   7%|▋         | 414/6344 [00:01<00:29, 199.49 examples/s]Tokenizing GRPO train dataset:   7%|▋         | 446/6344 [00:02<00:29, 201.06 examples/s]Tokenizing GRPO train dataset:   7%|▋         | 470/6344 [00:02<00:29, 196.96 examples/s]Tokenizing GRPO train dataset:   8%|▊         | 492/6344 [00:02<00:29, 200.65 examples/s]Tokenizing GRPO train dataset:   8%|▊         | 520/6344 [00:02<00:26, 217.62 examples/s]Tokenizing GRPO train dataset:   9%|▊         | 544/6344 [00:02<00:26, 222.12 examples/s]Tokenizing GRPO train dataset:   9%|▉         | 573/6344 [00:02<00:27, 207.68 examples/s]Tokenizing GRPO train dataset:   9%|▉         | 596/6344 [00:02<00:27, 211.72 examples/s]Tokenizing GRPO train dataset:  10%|▉         | 627/6344 [00:02<00:27, 208.31 examples/s]Tokenizing GRPO train dataset:  10%|█         | 658/6344 [00:03<00:28, 202.30 examples/s]Tokenizing GRPO train dataset:  11%|█         | 685/6344 [00:03<00:29, 190.99 examples/s]Tokenizing GRPO train dataset:  11%|█▏        | 715/6344 [00:03<00:29, 192.09 examples/s]Tokenizing GRPO train dataset:  12%|█▏        | 736/6344 [00:03<00:28, 194.58 examples/s]Tokenizing GRPO train dataset:  12%|█▏        | 763/6344 [00:03<00:27, 204.70 examples/s]Tokenizing GRPO train dataset:  12%|█▏        | 784/6344 [00:03<00:27, 205.16 examples/s]Tokenizing GRPO train dataset:  13%|█▎        | 812/6344 [00:03<00:28, 197.14 examples/s]Tokenizing GRPO train dataset:  13%|█▎        | 837/6344 [00:04<00:26, 206.18 examples/s]Tokenizing GRPO train dataset:  14%|█▎        | 868/6344 [00:04<00:27, 202.51 examples/s]Tokenizing GRPO train dataset:  14%|█▍        | 890/6344 [00:04<00:26, 204.29 examples/s]Tokenizing GRPO train dataset:  15%|█▍        | 922/6344 [00:04<00:26, 202.55 examples/s]Tokenizing GRPO train dataset:  15%|█▌        | 953/6344 [00:04<00:26, 202.87 examples/s]Tokenizing GRPO train dataset:  15%|█▌        | 983/6344 [00:04<00:26, 199.20 examples/s]Tokenizing GRPO train dataset:  16%|█▌        | 1004/6344 [00:04<00:26, 199.52 examples/s]Tokenizing GRPO train dataset:  16%|█▌        | 1026/6344 [00:04<00:26, 201.99 examples/s]Tokenizing GRPO train dataset:  17%|█▋        | 1049/6344 [00:05<00:25, 208.20 examples/s]Tokenizing GRPO train dataset:  17%|█▋        | 1072/6344 [00:05<00:24, 213.11 examples/s]Tokenizing GRPO train dataset:  17%|█▋        | 1095/6344 [00:05<00:24, 215.72 examples/s]Tokenizing GRPO train dataset:  18%|█▊        | 1118/6344 [00:05<00:24, 216.47 examples/s]Tokenizing GRPO train dataset:  18%|█▊        | 1142/6344 [00:05<00:23, 222.13 examples/s]Tokenizing GRPO train dataset:  18%|█▊        | 1173/6344 [00:05<00:24, 209.99 examples/s]Tokenizing GRPO train dataset:  19%|█▉        | 1205/6344 [00:05<00:24, 205.58 examples/s]Tokenizing GRPO train dataset:  19%|█▉        | 1226/6344 [00:05<00:24, 204.73 examples/s]Tokenizing GRPO train dataset:  20%|█▉        | 1247/6344 [00:06<00:24, 204.66 examples/s]Tokenizing GRPO train dataset:  20%|██        | 1269/6344 [00:06<00:24, 206.41 examples/s]Tokenizing GRPO train dataset:  20%|██        | 1291/6344 [00:06<00:24, 203.99 examples/s]Tokenizing GRPO train dataset:  21%|██        | 1312/6344 [00:06<00:24, 202.43 examples/s]Tokenizing GRPO train dataset:  21%|██        | 1334/6344 [00:06<00:24, 204.21 examples/s]Tokenizing GRPO train dataset:  22%|██▏       | 1366/6344 [00:06<00:24, 206.55 examples/s]Tokenizing GRPO train dataset:  22%|██▏       | 1388/6344 [00:06<00:23, 207.42 examples/s]Tokenizing GRPO train dataset:  22%|██▏       | 1411/6344 [00:06<00:23, 210.17 examples/s]Tokenizing GRPO train dataset:  23%|██▎       | 1436/6344 [00:06<00:22, 217.23 examples/s]Tokenizing GRPO train dataset:  23%|██▎       | 1459/6344 [00:07<00:22, 218.04 examples/s]Tokenizing GRPO train dataset:  23%|██▎       | 1485/6344 [00:07<00:21, 224.32 examples/s]Tokenizing GRPO train dataset:  24%|██▍       | 1512/6344 [00:07<00:23, 202.13 examples/s]Tokenizing GRPO train dataset:  24%|██▍       | 1540/6344 [00:07<00:25, 190.43 examples/s]Tokenizing GRPO train dataset:  25%|██▍       | 1562/6344 [00:07<00:24, 193.92 examples/s]Tokenizing GRPO train dataset:  25%|██▌       | 1594/6344 [00:07<00:24, 195.86 examples/s]Tokenizing GRPO train dataset:  26%|██▌       | 1619/6344 [00:07<00:23, 204.67 examples/s]Tokenizing GRPO train dataset:  26%|██▌       | 1641/6344 [00:07<00:22, 205.73 examples/s]Tokenizing GRPO train dataset:  26%|██▋       | 1673/6344 [00:08<00:22, 205.52 examples/s]Tokenizing GRPO train dataset:  27%|██▋       | 1704/6344 [00:08<00:22, 203.56 examples/s]Tokenizing GRPO train dataset:  27%|██▋       | 1726/6344 [00:08<00:22, 204.74 examples/s]Tokenizing GRPO train dataset:  28%|██▊       | 1752/6344 [00:08<00:21, 214.79 examples/s]Tokenizing GRPO train dataset:  28%|██▊       | 1782/6344 [00:08<00:22, 207.29 examples/s]Tokenizing GRPO train dataset:  28%|██▊       | 1804/6344 [00:08<00:21, 208.27 examples/s]Tokenizing GRPO train dataset:  29%|██▉       | 1828/6344 [00:08<00:21, 213.05 examples/s]Tokenizing GRPO train dataset:  29%|██▉       | 1859/6344 [00:08<00:21, 208.09 examples/s]Tokenizing GRPO train dataset:  30%|██▉       | 1890/6344 [00:09<00:21, 204.63 examples/s]Tokenizing GRPO train dataset:  30%|███       | 1923/6344 [00:09<00:21, 203.21 examples/s]Tokenizing GRPO train dataset:  31%|███       | 1946/6344 [00:09<00:21, 207.99 examples/s]Tokenizing GRPO train dataset:  31%|███       | 1969/6344 [00:09<00:20, 211.58 examples/s]Tokenizing GRPO train dataset:  32%|███▏      | 2000/6344 [00:09<00:21, 204.74 examples/s]Tokenizing GRPO train dataset:  32%|███▏      | 2030/6344 [00:09<00:21, 200.36 examples/s]Tokenizing GRPO train dataset:  32%|███▏      | 2060/6344 [00:09<00:19, 220.80 examples/s]Tokenizing GRPO train dataset:  33%|███▎      | 2084/6344 [00:10<00:19, 220.64 examples/s]Tokenizing GRPO train dataset:  33%|███▎      | 2109/6344 [00:10<00:18, 225.66 examples/s]Tokenizing GRPO train dataset:  34%|███▍      | 2142/6344 [00:10<00:19, 214.17 examples/s]Tokenizing GRPO train dataset:  34%|███▍      | 2164/6344 [00:10<00:19, 212.90 examples/s]Tokenizing GRPO train dataset:  34%|███▍      | 2187/6344 [00:10<00:19, 214.24 examples/s]Tokenizing GRPO train dataset:  35%|███▍      | 2211/6344 [00:10<00:21, 192.55 examples/s]Tokenizing GRPO train dataset:  35%|███▌      | 2233/6344 [00:10<00:20, 196.34 examples/s]Tokenizing GRPO train dataset:  36%|███▌      | 2259/6344 [00:10<00:19, 210.61 examples/s]Tokenizing GRPO train dataset:  36%|███▌      | 2282/6344 [00:11<00:19, 208.18 examples/s]Tokenizing GRPO train dataset:  36%|███▋      | 2304/6344 [00:11<00:19, 208.90 examples/s]Tokenizing GRPO train dataset:  37%|███▋      | 2326/6344 [00:11<00:19, 207.87 examples/s]Tokenizing GRPO train dataset:  37%|███▋      | 2358/6344 [00:11<00:19, 207.66 examples/s]Tokenizing GRPO train dataset:  38%|███▊      | 2385/6344 [00:11<00:20, 195.32 examples/s]Tokenizing GRPO train dataset:  38%|███▊      | 2410/6344 [00:11<00:19, 206.22 examples/s]Tokenizing GRPO train dataset:  38%|███▊      | 2442/6344 [00:11<00:19, 203.89 examples/s]Tokenizing GRPO train dataset:  39%|███▉      | 2469/6344 [00:11<00:17, 216.14 examples/s]Tokenizing GRPO train dataset:  39%|███▉      | 2500/6344 [00:12<00:18, 203.91 examples/s]Tokenizing GRPO train dataset:  40%|███▉      | 2523/6344 [00:12<00:18, 206.52 examples/s]Tokenizing GRPO train dataset:  40%|████      | 2548/6344 [00:12<00:17, 216.52 examples/s]Tokenizing GRPO train dataset:  41%|████      | 2572/6344 [00:12<00:17, 214.75 examples/s]Tokenizing GRPO train dataset:  41%|████      | 2603/6344 [00:12<00:17, 208.74 examples/s]Tokenizing GRPO train dataset:  41%|████▏     | 2630/6344 [00:12<00:17, 217.58 examples/s]Tokenizing GRPO train dataset:  42%|████▏     | 2664/6344 [00:12<00:16, 217.47 examples/s]Tokenizing GRPO train dataset:  42%|████▏     | 2696/6344 [00:12<00:17, 214.57 examples/s]Tokenizing GRPO train dataset:  43%|████▎     | 2720/6344 [00:13<00:16, 218.60 examples/s]Tokenizing GRPO train dataset:  43%|████▎     | 2752/6344 [00:13<00:17, 210.82 examples/s]Tokenizing GRPO train dataset:  44%|████▍     | 2784/6344 [00:13<00:17, 204.71 examples/s]Tokenizing GRPO train dataset:  44%|████▍     | 2806/6344 [00:13<00:17, 204.47 examples/s]Tokenizing GRPO train dataset:  45%|████▍     | 2830/6344 [00:13<00:16, 208.33 examples/s]Tokenizing GRPO train dataset:  45%|████▌     | 2856/6344 [00:13<00:15, 219.00 examples/s]Tokenizing GRPO train dataset:  45%|████▌     | 2880/6344 [00:13<00:15, 223.53 examples/s]Tokenizing GRPO train dataset:  46%|████▌     | 2910/6344 [00:14<00:16, 207.71 examples/s]Tokenizing GRPO train dataset:  46%|████▋     | 2938/6344 [00:14<00:15, 222.59 examples/s]Tokenizing GRPO train dataset:  47%|████▋     | 2963/6344 [00:14<00:15, 219.53 examples/s]Tokenizing GRPO train dataset:  47%|████▋     | 2986/6344 [00:14<00:15, 219.20 examples/s]Tokenizing GRPO train dataset:  47%|████▋     | 3010/6344 [00:14<00:15, 218.96 examples/s]Tokenizing GRPO train dataset:  48%|████▊     | 3034/6344 [00:14<00:14, 222.67 examples/s]Tokenizing GRPO train dataset:  48%|████▊     | 3058/6344 [00:14<00:14, 226.38 examples/s]Tokenizing GRPO train dataset:  49%|████▊     | 3091/6344 [00:14<00:15, 213.09 examples/s]Tokenizing GRPO train dataset:  49%|████▉     | 3117/6344 [00:14<00:14, 222.72 examples/s]Tokenizing GRPO train dataset:  50%|████▉     | 3142/6344 [00:15<00:14, 222.97 examples/s]Tokenizing GRPO train dataset:  50%|█████     | 3174/6344 [00:15<00:14, 214.90 examples/s]Tokenizing GRPO train dataset:  50%|█████     | 3197/6344 [00:15<00:14, 214.94 examples/s]Tokenizing GRPO train dataset:  51%|█████     | 3220/6344 [00:15<00:14, 215.68 examples/s]Tokenizing GRPO train dataset:  51%|█████     | 3251/6344 [00:15<00:15, 205.87 examples/s]Tokenizing GRPO train dataset:  52%|█████▏    | 3288/6344 [00:15<00:14, 217.22 examples/s]Tokenizing GRPO train dataset:  52%|█████▏    | 3316/6344 [00:15<00:14, 202.47 examples/s]Tokenizing GRPO train dataset:  53%|█████▎    | 3347/6344 [00:16<00:14, 200.27 examples/s]Tokenizing GRPO train dataset:  53%|█████▎    | 3370/6344 [00:16<00:14, 201.33 examples/s]Tokenizing GRPO train dataset:  53%|█████▎    | 3393/6344 [00:16<00:14, 206.00 examples/s]Tokenizing GRPO train dataset:  54%|█████▍    | 3415/6344 [00:16<00:14, 209.04 examples/s]Tokenizing GRPO train dataset:  54%|█████▍    | 3445/6344 [00:16<00:14, 204.84 examples/s]Tokenizing GRPO train dataset:  55%|█████▍    | 3468/6344 [00:16<00:13, 209.67 examples/s]Tokenizing GRPO train dataset:  55%|█████▌    | 3490/6344 [00:16<00:13, 209.36 examples/s]Tokenizing GRPO train dataset:  55%|█████▌    | 3520/6344 [00:16<00:14, 194.71 examples/s]Tokenizing GRPO train dataset:  56%|█████▌    | 3540/6344 [00:17<00:14, 192.60 examples/s]Tokenizing GRPO train dataset:  56%|█████▌    | 3562/6344 [00:17<00:14, 198.10 examples/s]Tokenizing GRPO train dataset:  57%|█████▋    | 3587/6344 [00:17<00:13, 210.20 examples/s]Tokenizing GRPO train dataset:  57%|█████▋    | 3610/6344 [00:17<00:12, 210.86 examples/s]Tokenizing GRPO train dataset:  57%|█████▋    | 3640/6344 [00:17<00:11, 226.61 examples/s]Tokenizing GRPO train dataset:  58%|█████▊    | 3663/6344 [00:17<00:11, 224.37 examples/s]Tokenizing GRPO train dataset:  58%|█████▊    | 3697/6344 [00:17<00:11, 221.79 examples/s]Tokenizing GRPO train dataset:  59%|█████▊    | 3724/6344 [00:17<00:12, 206.51 examples/s]Tokenizing GRPO train dataset:  59%|█████▉    | 3747/6344 [00:17<00:12, 208.20 examples/s]Tokenizing GRPO train dataset:  59%|█████▉    | 3769/6344 [00:18<00:12, 208.86 examples/s]Tokenizing GRPO train dataset:  60%|█████▉    | 3801/6344 [00:18<00:12, 202.20 examples/s]Tokenizing GRPO train dataset:  60%|██████    | 3830/6344 [00:18<00:13, 192.08 examples/s]Tokenizing GRPO train dataset:  61%|██████    | 3853/6344 [00:18<00:12, 199.33 examples/s]Tokenizing GRPO train dataset:  61%|██████    | 3880/6344 [00:18<00:11, 211.86 examples/s]Tokenizing GRPO train dataset:  62%|██████▏   | 3905/6344 [00:18<00:11, 218.06 examples/s]Tokenizing GRPO train dataset:  62%|██████▏   | 3938/6344 [00:18<00:11, 215.57 examples/s]Tokenizing GRPO train dataset:  62%|██████▏   | 3961/6344 [00:18<00:11, 215.75 examples/s]Tokenizing GRPO train dataset:  63%|██████▎   | 3983/6344 [00:19<00:11, 214.58 examples/s]Tokenizing GRPO train dataset:  63%|██████▎   | 4013/6344 [00:19<00:11, 206.44 examples/s]Tokenizing GRPO train dataset:  64%|██████▎   | 4039/6344 [00:19<00:10, 216.36 examples/s]Tokenizing GRPO train dataset:  64%|██████▍   | 4069/6344 [00:19<00:11, 206.22 examples/s]Tokenizing GRPO train dataset:  65%|██████▍   | 4099/6344 [00:19<00:11, 203.47 examples/s]Tokenizing GRPO train dataset:  65%|██████▍   | 4120/6344 [00:19<00:11, 201.70 examples/s]Tokenizing GRPO train dataset:  65%|██████▌   | 4143/6344 [00:19<00:10, 205.57 examples/s]Tokenizing GRPO train dataset:  66%|██████▌   | 4170/6344 [00:19<00:10, 216.52 examples/s]Tokenizing GRPO train dataset:  66%|██████▌   | 4192/6344 [00:20<00:09, 215.63 examples/s]Tokenizing GRPO train dataset:  67%|██████▋   | 4228/6344 [00:20<00:09, 218.62 examples/s]Tokenizing GRPO train dataset:  67%|██████▋   | 4253/6344 [00:20<00:09, 217.55 examples/s]Tokenizing GRPO train dataset:  67%|██████▋   | 4275/6344 [00:20<00:09, 214.49 examples/s]Tokenizing GRPO train dataset:  68%|██████▊   | 4298/6344 [00:20<00:09, 216.66 examples/s]Tokenizing GRPO train dataset:  68%|██████▊   | 4333/6344 [00:20<00:09, 218.31 examples/s]Tokenizing GRPO train dataset:  69%|██████▊   | 4355/6344 [00:20<00:09, 215.90 examples/s]Tokenizing GRPO train dataset:  69%|██████▉   | 4382/6344 [00:20<00:09, 201.24 examples/s]Tokenizing GRPO train dataset:  70%|██████▉   | 4410/6344 [00:21<00:09, 194.27 examples/s]Tokenizing GRPO train dataset:  70%|██████▉   | 4432/6344 [00:21<00:09, 197.03 examples/s]Tokenizing GRPO train dataset:  70%|███████   | 4453/6344 [00:21<00:09, 198.42 examples/s]Tokenizing GRPO train dataset:  71%|███████   | 4483/6344 [00:21<00:09, 197.72 examples/s]Tokenizing GRPO train dataset:  71%|███████   | 4508/6344 [00:21<00:08, 207.77 examples/s]Tokenizing GRPO train dataset:  71%|███████▏  | 4533/6344 [00:21<00:08, 208.21 examples/s]Tokenizing GRPO train dataset:  72%|███████▏  | 4558/6344 [00:21<00:08, 216.77 examples/s]Tokenizing GRPO train dataset:  72%|███████▏  | 4585/6344 [00:21<00:08, 200.34 examples/s]Tokenizing GRPO train dataset:  73%|███████▎  | 4608/6344 [00:22<00:08, 204.96 examples/s]Tokenizing GRPO train dataset:  73%|███████▎  | 4630/6344 [00:22<00:08, 207.35 examples/s]Tokenizing GRPO train dataset:  73%|███████▎  | 4652/6344 [00:22<00:08, 210.00 examples/s]Tokenizing GRPO train dataset:  74%|███████▍  | 4685/6344 [00:22<00:07, 210.47 examples/s]Tokenizing GRPO train dataset:  74%|███████▍  | 4717/6344 [00:22<00:07, 207.13 examples/s]Tokenizing GRPO train dataset:  75%|███████▍  | 4743/6344 [00:22<00:08, 194.50 examples/s]Tokenizing GRPO train dataset:  75%|███████▌  | 4770/6344 [00:22<00:07, 209.38 examples/s]Tokenizing GRPO train dataset:  76%|███████▌  | 4800/6344 [00:23<00:07, 202.20 examples/s]Tokenizing GRPO train dataset:  76%|███████▌  | 4822/6344 [00:23<00:07, 204.18 examples/s]Tokenizing GRPO train dataset:  76%|███████▋  | 4853/6344 [00:23<00:07, 202.57 examples/s]Tokenizing GRPO train dataset:  77%|███████▋  | 4877/6344 [00:23<00:07, 209.48 examples/s]Tokenizing GRPO train dataset:  77%|███████▋  | 4900/6344 [00:23<00:06, 208.29 examples/s]Tokenizing GRPO train dataset:  78%|███████▊  | 4924/6344 [00:23<00:06, 214.56 examples/s]Tokenizing GRPO train dataset:  78%|███████▊  | 4947/6344 [00:23<00:06, 217.62 examples/s]Tokenizing GRPO train dataset:  78%|███████▊  | 4977/6344 [00:23<00:06, 208.27 examples/s]Tokenizing GRPO train dataset:  79%|███████▉  | 5000/6344 [00:23<00:06, 206.70 examples/s]Tokenizing GRPO train dataset:  79%|███████▉  | 5024/6344 [00:24<00:06, 213.40 examples/s]Tokenizing GRPO train dataset:  80%|███████▉  | 5058/6344 [00:24<00:06, 212.79 examples/s]Tokenizing GRPO train dataset:  80%|████████  | 5087/6344 [00:24<00:06, 200.53 examples/s]Tokenizing GRPO train dataset:  81%|████████  | 5110/6344 [00:24<00:06, 198.27 examples/s]Tokenizing GRPO train dataset:  81%|████████  | 5131/6344 [00:24<00:06, 197.27 examples/s]Tokenizing GRPO train dataset:  81%|████████  | 5153/6344 [00:24<00:05, 200.39 examples/s]Tokenizing GRPO train dataset:  82%|████████▏ | 5174/6344 [00:24<00:05, 201.99 examples/s]Tokenizing GRPO train dataset:  82%|████████▏ | 5200/6344 [00:24<00:05, 207.75 examples/s]Tokenizing GRPO train dataset:  82%|████████▏ | 5227/6344 [00:25<00:05, 222.57 examples/s]Tokenizing GRPO train dataset:  83%|████████▎ | 5257/6344 [00:25<00:05, 210.15 examples/s]Tokenizing GRPO train dataset:  83%|████████▎ | 5280/6344 [00:25<00:05, 209.15 examples/s]Tokenizing GRPO train dataset:  84%|████████▎ | 5313/6344 [00:25<00:04, 209.97 examples/s]Tokenizing GRPO train dataset:  84%|████████▍ | 5338/6344 [00:25<00:05, 188.13 examples/s]Tokenizing GRPO train dataset:  85%|████████▍ | 5361/6344 [00:25<00:05, 194.47 examples/s]Tokenizing GRPO train dataset:  85%|████████▍ | 5384/6344 [00:25<00:04, 200.45 examples/s]Tokenizing GRPO train dataset:  85%|████████▌ | 5411/6344 [00:26<00:04, 187.92 examples/s]Tokenizing GRPO train dataset:  86%|████████▌ | 5437/6344 [00:26<00:05, 177.55 examples/s]Tokenizing GRPO train dataset:  86%|████████▌ | 5457/6344 [00:26<00:04, 180.56 examples/s]Tokenizing GRPO train dataset:  86%|████████▋ | 5476/6344 [00:26<00:04, 181.21 examples/s]Tokenizing GRPO train dataset:  87%|████████▋ | 5500/6344 [00:26<00:04, 171.95 examples/s]Tokenizing GRPO train dataset:  87%|████████▋ | 5521/6344 [00:26<00:04, 175.89 examples/s]Tokenizing GRPO train dataset:  87%|████████▋ | 5550/6344 [00:26<00:04, 197.38 examples/s]Tokenizing GRPO train dataset:  88%|████████▊ | 5575/6344 [00:26<00:03, 207.88 examples/s]Tokenizing GRPO train dataset:  88%|████████▊ | 5597/6344 [00:26<00:03, 209.54 examples/s]Tokenizing GRPO train dataset:  89%|████████▊ | 5620/6344 [00:27<00:03, 212.13 examples/s]Tokenizing GRPO train dataset:  89%|████████▉ | 5646/6344 [00:27<00:03, 223.14 examples/s]Tokenizing GRPO train dataset:  89%|████████▉ | 5670/6344 [00:27<00:03, 219.24 examples/s]Tokenizing GRPO train dataset:  90%|████████▉ | 5695/6344 [00:27<00:02, 225.07 examples/s]Tokenizing GRPO train dataset:  90%|█████████ | 5723/6344 [00:27<00:03, 206.85 examples/s]Tokenizing GRPO train dataset:  91%|█████████ | 5747/6344 [00:27<00:02, 214.53 examples/s]Tokenizing GRPO train dataset:  91%|█████████ | 5772/6344 [00:27<00:02, 221.63 examples/s]Tokenizing GRPO train dataset:  91%|█████████▏| 5797/6344 [00:27<00:02, 227.83 examples/s]Tokenizing GRPO train dataset:  92%|█████████▏| 5830/6344 [00:28<00:02, 222.85 examples/s]Tokenizing GRPO train dataset:  92%|█████████▏| 5853/6344 [00:28<00:02, 221.72 examples/s]Tokenizing GRPO train dataset:  93%|█████████▎| 5877/6344 [00:28<00:02, 225.20 examples/s]Tokenizing GRPO train dataset:  93%|█████████▎| 5900/6344 [00:28<00:01, 222.49 examples/s]Tokenizing GRPO train dataset:  94%|█████████▎| 5934/6344 [00:28<00:01, 215.12 examples/s]Tokenizing GRPO train dataset:  94%|█████████▍| 5965/6344 [00:28<00:01, 211.17 examples/s]Tokenizing GRPO train dataset:  94%|█████████▍| 5992/6344 [00:28<00:01, 198.82 examples/s]Tokenizing GRPO train dataset:  95%|█████████▍| 6020/6344 [00:28<00:01, 190.96 examples/s]Tokenizing GRPO train dataset:  95%|█████████▌| 6040/6344 [00:29<00:01, 189.79 examples/s]Tokenizing GRPO train dataset:  96%|█████████▌| 6060/6344 [00:29<00:01, 189.60 examples/s]Tokenizing GRPO train dataset:  96%|█████████▌| 6082/6344 [00:29<00:01, 193.08 examples/s]Tokenizing GRPO train dataset:  96%|█████████▌| 6106/6344 [00:29<00:01, 203.39 examples/s]Tokenizing GRPO train dataset:  97%|█████████▋| 6129/6344 [00:29<00:01, 206.97 examples/s]Tokenizing GRPO train dataset:  97%|█████████▋| 6152/6344 [00:29<00:00, 211.33 examples/s]Tokenizing GRPO train dataset:  97%|█████████▋| 6175/6344 [00:29<00:00, 213.91 examples/s]Tokenizing GRPO train dataset:  98%|█████████▊| 6198/6344 [00:29<00:00, 216.78 examples/s]Tokenizing GRPO train dataset:  98%|█████████▊| 6230/6344 [00:29<00:00, 209.90 examples/s]Tokenizing GRPO train dataset:  99%|█████████▊| 6258/6344 [00:30<00:00, 225.66 examples/s]Tokenizing GRPO train dataset:  99%|█████████▉| 6281/6344 [00:30<00:00, 220.44 examples/s]Tokenizing GRPO train dataset:  99%|█████████▉| 6306/6344 [00:30<00:00, 224.18 examples/s]Tokenizing GRPO train dataset: 100%|█████████▉| 6331/6344 [00:30<00:00, 222.98 examples/s]Tokenizing GRPO train dataset: 100%|██████████| 6344/6344 [00:30<00:00, 206.35 examples/s]
+max_steps is given, it will override any value given in num_train_epochs
+2026-08-15 03:53:06 - INFO - __main__ - *** Starting GRPO training ***
+Stage 3 initialize beginning
+MA 1.87 GB         Max_MA 2.83 GB         CA 1.94 GB         Max_CA 4 GB 
+CPU Virtual Memory:  used = 40.17 GB, percent = 16.2%
+DeepSpeedZeRoOffload initialize [begin]
+MA 1.87 GB         Max_MA 1.87 GB         CA 1.94 GB         Max_CA 2 GB 
+CPU Virtual Memory:  used = 40.17 GB, percent = 16.2%
+Parameter Offload - Persistent parameters statistics: param_count = 65, numel = 266240
+DeepSpeedZeRoOffload initialize [end]
+MA 1.87 GB         Max_MA 1.87 GB         CA 1.94 GB         Max_CA 2 GB 
+CPU Virtual Memory:  used = 40.17 GB, percent = 16.2%
+Before creating fp16 partitions
+MA 1.87 GB         Max_MA 1.87 GB         CA 1.94 GB         Max_CA 2 GB 
+CPU Virtual Memory:  used = 40.16 GB, percent = 16.2%
+After creating fp16 partitions: 2
+MA 1.87 GB         Max_MA 1.87 GB         CA 1.88 GB         Max_CA 2 GB 
+CPU Virtual Memory:  used = 43.01 GB, percent = 17.4%
+Before creating fp32 partitions
+MA 1.87 GB         Max_MA 1.87 GB         CA 1.88 GB         Max_CA 2 GB 
+CPU Virtual Memory:  used = 43.01 GB, percent = 17.4%
+After creating fp32 partitions
+MA 5.6 GB         Max_MA 9.33 GB         CA 9.34 GB         Max_CA 9 GB 
+CPU Virtual Memory:  used = 43.01 GB, percent = 17.4%
+Before initializing optimizer states
+MA 5.6 GB         Max_MA 5.6 GB         CA 9.34 GB         Max_CA 9 GB 
+CPU Virtual Memory:  used = 42.98 GB, percent = 17.4%
+After initializing optimizer states
+MA 5.6 GB         Max_MA 9.33 GB         CA 9.34 GB         Max_CA 9 GB 
+CPU Virtual Memory:  used = 42.95 GB, percent = 17.4%
+After initializing ZeRO optimizer
+MA 8.4 GB         Max_MA 9.36 GB         CA 10.31 GB         Max_CA 10 GB 
+CPU Virtual Memory:  used = 43.18 GB, percent = 17.4%
+***** Running training *****
+  Num examples = 6,344
+  Num Epochs = 1
+  Instantaneous batch size per device = 1
+  Total train batch size (w. parallel, distributed & accumulation) = 64
+  Gradient Accumulation steps = 8
+  Total optimization steps = 75
+  Number of trainable parameters = 8,015,581,184
+wandb: Currently logged in as: mz751 (mz751-rutgers-university). Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.28.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.15.12
+wandb: Run data is saved locally in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/wandb/run-20260815_035314-o5g8wacd
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run offline_baseline_resume_step50
+wandb: ⭐️ View project at https://wandb.ai/mz751-rutgers-university/huggingface
+wandb: 🚀 View run at https://wandb.ai/mz751-rutgers-university/huggingface/runs/o5g8wacd
+  0%|          | 0/75 [00:00<?, ?it/s][2026-08-15 03:53:14,955] [WARNING] [torch_autocast.py:122:autocast_if_enabled] torch.autocast is enabled outside DeepSpeed but disabled within the DeepSpeed engine. If you are using DeepSpeed's built-in mixed precision, the engine will follow the settings in bf16/fp16 section. To use torch's native autocast instead, configure the `torch_autocast` section in the DeepSpeed config.
+  1%|▏         | 1/75 [00:38<46:56, 38.07s/it]                                              {'loss': '2.915', 'grad_norm': '23.7', 'learning_rate': '0', 'rewards/mean': '0.3837', 'rewards/positive': '0.5', 'elbo/mean': '-6.628', 'epoch': '0.01009'}
+  1%|▏         | 1/75 [00:38<46:56, 38.07s/it]  3%|▎         | 2/75 [01:15<45:54, 37.74s/it]  4%|▍         | 3/75 [01:51<44:31, 37.10s/it]  5%|▌         | 4/75 [02:28<43:29, 36.76s/it]  7%|▋         | 5/75 [03:06<43:25, 37.23s/it]                                              {'loss': '0.9321', 'grad_norm': '18.45', 'learning_rate': '1e-06', 'rewards/mean': '0.1057', 'rewards/positive': '0.5', 'elbo/mean': '-7.284', 'epoch': '0.05044'}
+  7%|▋         | 5/75 [03:06<43:25, 37.23s/it]  8%|▊         | 6/75 [03:42<42:27, 36.93s/it]  9%|▉         | 7/75 [04:18<41:23, 36.53s/it] 11%|█         | 8/75 [04:55<41:11, 36.89s/it] 12%|█▏        | 9/75 [05:32<40:23, 36.72s/it] 13%|█▎        | 10/75 [06:08<39:45, 36.70s/it]                                               {'loss': '-0.8622', 'grad_norm': '14.18', 'learning_rate': '9.878e-07', 'rewards/mean': '-0.1472', 'rewards/positive': '0.5', 'elbo/mean': '-7.057', 'epoch': '0.1009'}
+ 13%|█▎        | 10/75 [06:08<39:45, 36.70s/it] 15%|█▍        | 11/75 [06:48<39:57, 37.47s/it] 16%|█▌        | 12/75 [07:24<38:54, 37.05s/it] 17%|█▋        | 13/75 [08:00<37:57, 36.73s/it] 19%|█▊        | 14/75 [08:36<37:03, 36.44s/it] 20%|██        | 15/75 [09:13<36:50, 36.85s/it]                                               {'loss': '0.6413', 'grad_norm': '12.55', 'learning_rate': '9.518e-07', 'rewards/mean': '0.1024', 'rewards/positive': '0.425', 'elbo/mean': '-7.055', 'epoch': '0.1513'}
+ 20%|██        | 15/75 [09:13<36:50, 36.85s/it] 21%|██▏       | 16/75 [09:49<36:01, 36.63s/it] 23%|██▎       | 17/75 [10:25<35:11, 36.40s/it] 24%|██▍       | 18/75 [11:03<34:55, 36.77s/it] 25%|██▌       | 19/75 [11:39<34:01, 36.45s/it] 27%|██▋       | 20/75 [12:15<33:17, 36.31s/it]                                               {'loss': '-1.061', 'grad_norm': '14.84', 'learning_rate': '8.939e-07', 'rewards/mean': '-0.1695', 'rewards/positive': '0.4', 'elbo/mean': '-7.098', 'epoch': '0.2018'}
+ 27%|██▋       | 20/75 [12:15<33:17, 36.31s/it] 28%|██▊       | 21/75 [12:52<33:04, 36.74s/it] 29%|██▉       | 22/75 [13:28<32:12, 36.46s/it] 31%|███       | 23/75 [14:05<31:38, 36.51s/it] 32%|███▏      | 24/75 [14:41<30:52, 36.33s/it] 33%|███▎      | 25/75 [15:18<30:33, 36.67s/it]                                               {'loss': '-0.2969', 'grad_norm': '14.41', 'learning_rate': '8.167e-07', 'rewards/mean': '-0.008447', 'rewards/positive': '0.425', 'elbo/mean': '-7.304', 'epoch': '0.2522'}
+ 33%|███▎      | 25/75 [15:18<30:33, 36.67s/it]Saving model checkpoint to /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/offline_loop/offline_train/model_cont/checkpoint-25
+Configuration saved in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/offline_loop/offline_train/model_cont/checkpoint-25/config.json
+Configuration saved in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/offline_loop/offline_train/model_cont/checkpoint-25/generation_config.json
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s][A
+Writing model shards: 100%|██████████| 1/1 [00:42<00:00, 42.15s/it][AWriting model shards: 100%|██████████| 1/1 [00:42<00:00, 42.16s/it]
+Model weights saved in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/offline_loop/offline_train/model_cont/checkpoint-25/model.safetensors
+chat template saved in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/offline_loop/offline_train/model_cont/checkpoint-25/chat_template.jinja
+tokenizer config file saved in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/offline_loop/offline_train/model_cont/checkpoint-25/tokenizer_config.json
+ 35%|███▍      | 26/75 [22:08<2:01:15, 148.49s/it] 36%|███▌      | 27/75 [22:45<1:32:08, 115.18s/it] 37%|███▋      | 28/75 [23:24<1:12:12, 92.19s/it]  39%|███▊      | 29/75 [24:00<57:54, 75.53s/it]   40%|████      | 30/75 [24:37<47:51, 63.81s/it]                                               {'loss': '-0.06735', 'grad_norm': '113.5', 'learning_rate': '7.24e-07', 'rewards/mean': '-0.01327', 'rewards/positive': '0.425', 'elbo/mean': '-7.404', 'epoch': '0.3026'}
+ 40%|████      | 30/75 [24:37<47:51, 63.81s/it] 41%|████▏     | 31/75 [25:15<41:12, 56.19s/it] 43%|████▎     | 32/75 [25:52<36:06, 50.38s/it] 44%|████▍     | 33/75 [26:29<32:30, 46.43s/it] 45%|████▌     | 34/75 [27:09<30:22, 44.46s/it] 47%|████▋     | 35/75 [27:47<28:18, 42.47s/it]                                               {'loss': '-0.119', 'grad_norm': '19.6', 'learning_rate': '6.205e-07', 'rewards/mean': '-0.02251', 'rewards/positive': '0.55', 'elbo/mean': '-7.303', 'epoch': '0.3531'}
+ 47%|████▋     | 35/75 [27:47<28:18, 42.47s/it] 48%|████▊     | 36/75 [28:23<26:27, 40.70s/it] 49%|████▉     | 37/75 [29:02<25:22, 40.07s/it] 51%|█████     | 38/75 [29:39<24:11, 39.23s/it] 52%|█████▏    | 39/75 [30:16<23:04, 38.46s/it] 53%|█████▎    | 40/75 [30:55<22:28, 38.53s/it]                                               {'loss': '0.09105', 'grad_norm': '10.38', 'learning_rate': '5.111e-07', 'rewards/mean': '0.02118', 'rewards/positive': '0.45', 'elbo/mean': '-7.356', 'epoch': '0.4035'}
+ 53%|█████▎    | 40/75 [30:55<22:28, 38.53s/it] 55%|█████▍    | 41/75 [31:32<21:34, 38.06s/it] 56%|█████▌    | 42/75 [32:08<20:44, 37.71s/it] 57%|█████▋    | 43/75 [32:47<20:18, 38.06s/it] 59%|█████▊    | 44/75 [33:24<19:28, 37.69s/it] 60%|██████    | 45/75 [34:01<18:44, 37.48s/it]                                               {'loss': '-1.459', 'grad_norm': '15.34', 'learning_rate': '4.011e-07', 'rewards/mean': '-0.2238', 'rewards/positive': '0.4', 'elbo/mean': '-7.437', 'epoch': '0.454'}
+ 60%|██████    | 45/75 [34:01<18:44, 37.48s/it] 61%|██████▏   | 46/75 [34:39<18:07, 37.49s/it] 63%|██████▎   | 47/75 [35:18<17:46, 38.08s/it] 64%|██████▍   | 48/75 [35:55<16:58, 37.71s/it] 65%|██████▌   | 49/75 [36:31<16:08, 37.27s/it] 67%|██████▋   | 50/75 [37:10<15:44, 37.77s/it]                                               {'loss': '-0.251', 'grad_norm': '11.95', 'learning_rate': '2.96e-07', 'rewards/mean': '-0.04756', 'rewards/positive': '0.425', 'elbo/mean': '-7.361', 'epoch': '0.5044'}
+ 67%|██████▋   | 50/75 [37:10<15:44, 37.77s/it]Saving model checkpoint to /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/offline_loop/offline_train/model_cont/checkpoint-50
+Configuration saved in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/offline_loop/offline_train/model_cont/checkpoint-50/config.json
+Configuration saved in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/offline_loop/offline_train/model_cont/checkpoint-50/generation_config.json
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s][A
+Writing model shards: 100%|██████████| 1/1 [04:06<00:00, 246.98s/it][AWriting model shards: 100%|██████████| 1/1 [04:06<00:00, 246.98s/it]
+Model weights saved in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/offline_loop/offline_train/model_cont/checkpoint-50/model.safetensors
+chat template saved in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/offline_loop/offline_train/model_cont/checkpoint-50/chat_template.jinja
+tokenizer config file saved in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/offline_loop/offline_train/model_cont/checkpoint-50/tokenizer_config.json
+ 68%|██████▊   | 51/75 [43:47<58:13, 145.58s/it] 69%|██████▉   | 52/75 [44:24<43:17, 112.91s/it] 71%|███████   | 53/75 [45:03<33:16, 90.75s/it]  72%|███████▏  | 54/75 [45:40<26:09, 74.73s/it] 73%|███████▎  | 55/75 [46:17<21:07, 63.35s/it]                                               {'loss': '0.7832', 'grad_norm': '9.808', 'learning_rate': '2.008e-07', 'rewards/mean': '0.0732', 'rewards/positive': '0.475', 'elbo/mean': '-7.59', 'epoch': '0.5549'}
+ 73%|███████▎  | 55/75 [46:17<21:07, 63.35s/it] 75%|███████▍  | 56/75 [46:56<17:44, 56.00s/it] 76%|███████▌  | 57/75 [47:34<15:07, 50.44s/it] 77%|███████▋  | 58/75 [48:11<13:10, 46.49s/it] 79%|███████▊  | 59/75 [48:49<11:45, 44.09s/it] 80%|████████  | 60/75 [49:26<10:30, 42.00s/it]                                               {'loss': '0.2548', 'grad_norm': '16.41', 'learning_rate': '1.202e-07', 'rewards/mean': '0.01835', 'rewards/positive': '0.475', 'elbo/mean': '-7.047', 'epoch': '0.6053'}
+ 80%|████████  | 60/75 [49:26<10:30, 42.00s/it] 81%|████████▏ | 61/75 [50:03<09:26, 40.50s/it] 83%|████████▎ | 62/75 [50:40<08:32, 39.42s/it] 84%|████████▍ | 63/75 [51:18<07:48, 39.03s/it] 85%|████████▌ | 64/75 [51:55<07:02, 38.42s/it] 87%|████████▋ | 65/75 [52:32<06:19, 37.92s/it]                                               {'loss': '0.348', 'grad_norm': '13.24', 'learning_rate': '5.807e-08', 'rewards/mean': '0.0454', 'rewards/positive': '0.375', 'elbo/mean': '-7.162', 'epoch': '0.6557'}
+ 87%|████████▋ | 65/75 [52:32<06:19, 37.92s/it] 88%|████████▊ | 66/75 [53:11<05:42, 38.09s/it] 89%|████████▉ | 67/75 [53:47<05:01, 37.71s/it] 91%|█████████ | 68/75 [54:24<04:21, 37.39s/it] 92%|█████████▏| 69/75 [55:04<03:48, 38.01s/it] 93%|█████████▎| 70/75 [55:41<03:09, 37.82s/it]                                               {'loss': '-0.4721', 'grad_norm': '22.45', 'learning_rate': '1.752e-08', 'rewards/mean': '-0.12', 'rewards/positive': '0.425', 'elbo/mean': '-7.284', 'epoch': '0.7062'}
+ 93%|█████████▎| 70/75 [55:41<03:09, 37.82s/it] 95%|█████████▍| 71/75 [56:18<02:30, 37.60s/it] 96%|█████████▌| 72/75 [56:57<01:53, 37.99s/it] 97%|█████████▋| 73/75 [57:34<01:15, 37.79s/it] 99%|█████████▊| 74/75 [58:12<00:37, 37.68s/it]100%|██████████| 75/75 [58:51<00:00, 38.13s/it]                                               {'loss': '0.8097', 'grad_norm': '19.11', 'learning_rate': '4.894e-10', 'rewards/mean': '0.09714', 'rewards/positive': '0.425', 'elbo/mean': '-7.182', 'epoch': '0.7566'}
+100%|██████████| 75/75 [58:51<00:00, 38.13s/it]Saving model checkpoint to /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/offline_loop/offline_train/model_cont/checkpoint-75
+Configuration saved in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/offline_loop/offline_train/model_cont/checkpoint-75/config.json
+Configuration saved in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/offline_loop/offline_train/model_cont/checkpoint-75/generation_config.json
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s][A
+Writing model shards: 100%|██████████| 1/1 [02:20<00:00, 140.82s/it][AWriting model shards: 100%|██████████| 1/1 [02:20<00:00, 140.82s/it]
+Model weights saved in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/offline_loop/offline_train/model_cont/checkpoint-75/model.safetensors
+chat template saved in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/offline_loop/offline_train/model_cont/checkpoint-75/chat_template.jinja
+tokenizer config file saved in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/offline_loop/offline_train/model_cont/checkpoint-75/tokenizer_config.json
+
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+                                               {'train_runtime': '3788', 'train_samples_per_second': '1.267', 'train_steps_per_second': '0.02', 'train_loss': '-0.02742', 'epoch': '0.7566'}
+100%|██████████| 75/75 [1:03:05<00:00, 38.13s/it]100%|██████████| 75/75 [1:03:05<00:00, 50.48s/it]
+***** train metrics *****
+  epoch                    =     0.7566
+  total_flos               =        0GF
+  train_loss               =    -0.0274
+  train_runtime            = 1:03:07.62
+  train_samples            =       6344
+  train_samples_per_second =      1.267
+  train_steps_per_second   =       0.02
+2026-08-15 04:56:20 - INFO - __main__ - *** Saving model ***
+Configuration saved in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/offline_loop/offline_train/model_cont/config.json
+Configuration saved in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/offline_loop/offline_train/model_cont/generation_config.json
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00, 79.31it/s]
+Model weights saved in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/offline_loop/offline_train/model_cont/model.safetensors
+chat template saved in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/offline_loop/offline_train/model_cont/chat_template.jinja
+tokenizer config file saved in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/offline_loop/offline_train/model_cont/tokenizer_config.json
+2026-08-15 04:56:20 - INFO - __main__ - ZeRO-2 model → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/offline_loop/offline_train/model_cont
+wandb: Waiting for W&B process to finish... (success).
+wandb: - 0.009 MB of 0.009 MB uploaded (0.000 MB deduped)wandb: \ 0.009 MB of 0.028 MB uploaded (0.000 MB deduped)wandb: 
+wandb: Run history:
+wandb:        train/elbo/mean █▃▅▅▅▃▂▃▃▂▃▁▅▄▃▄
+wandb:            train/epoch ▁▁▂▂▃▃▄▄▅▅▆▆▇▇███
+wandb:      train/global_step ▁▁▂▂▃▃▄▄▅▅▆▆▇▇███
+wandb:        train/grad_norm ▂▂▁▁▁▁█▂▁▁▁▁▁▁▂▂
+wandb:    train/learning_rate ▁███▇▇▆▅▅▄▃▂▂▁▁▁
+wandb:             train/loss █▅▂▄▂▃▃▃▃▁▃▅▄▄▃▅
+wandb:     train/rewards/mean █▅▂▅▂▃▃▃▄▁▃▄▄▄▂▅
+wandb: train/rewards/positive ▆▆▆▃▂▃▃█▄▂▃▅▅▁▃▃
+wandb: 
+wandb: Run summary:
+wandb:               total_flos 0.0
+wandb:          train/elbo/mean -7.18161
+wandb:              train/epoch 0.75662
+wandb:        train/global_step 75
+wandb:          train/grad_norm 19.10987
+wandb:      train/learning_rate 0.0
+wandb:               train/loss 0.80972
+wandb:       train/rewards/mean 0.09714
+wandb:   train/rewards/positive 0.425
+wandb:               train_loss -0.02742
+wandb:            train_runtime 3787.6218
+wandb: train_samples_per_second 1.267
+wandb:   train_steps_per_second 0.02
+wandb: 
+wandb: 🚀 View run offline_baseline_resume_step50 at: https://wandb.ai/mz751-rutgers-university/huggingface/runs/o5g8wacd
+wandb: ️⚡ View job at https://wandb.ai/mz751-rutgers-university/huggingface/jobs/QXJ0aWZhY3RDb2xsZWN0aW9uOjExMjY3Mjg1MDE=/version_details/v7
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260815_035314-o5g8wacd/logs

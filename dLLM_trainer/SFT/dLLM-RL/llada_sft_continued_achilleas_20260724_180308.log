@@ -1,0 +1,317 @@
+==============================
+LLaDA SFT Continued (ckpt_6 → +5 epochs)
+GPUs: 0,1,2,3,4,5,6,7 (8 GPUs)
+Accel config: accelerate_configs/1_node_8_gpus_deepspeed_zero3.yaml
+==============================
+W0724 18:03:32.579000 3678963 site-packages/torch/distributed/run.py:792] 
+W0724 18:03:32.579000 3678963 site-packages/torch/distributed/run.py:792] *****************************************
+W0724 18:03:32.579000 3678963 site-packages/torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0724 18:03:32.579000 3678963 site-packages/torch/distributed/run.py:792] *****************************************
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:959: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:1018: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:959: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:1018: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:959: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:1018: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:959: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:1018: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:959: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:1018: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:959: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:1018: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:959: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:1018: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 `store_kv` is part of SDARModel.forward's signature, but not documented. Make sure to add it to the docstring of the function in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/models/sdar/modeling_sdar.py.
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+
+🚨 `store_kv` is part of SDARModel.forward's signature, but not documented. Make sure to add it to the docstring of the function in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/models/sdar/modeling_sdar.py.
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:959: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(
+/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/flash_attn/ops/triton/layer_norm.py:1018: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+Resuming from checkpoint: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_llada_continued/ckpt_0/optimized
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 `store_kv` is part of SDARModel.forward's signature, but not documented. Make sure to add it to the docstring of the function in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/models/sdar/modeling_sdar.py.
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+Resuming from checkpoint: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_llada_continued/ckpt_0/optimized
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+Resuming from checkpoint: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_llada_continued/ckpt_0/optimized
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 `store_kv` is part of SDARModel.forward's signature, but not documented. Make sure to add it to the docstring of the function in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/models/sdar/modeling_sdar.py.
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 `store_kv` is part of SDARModel.forward's signature, but not documented. Make sure to add it to the docstring of the function in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/models/sdar/modeling_sdar.py.
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 `store_kv` is part of SDARModel.forward's signature, but not documented. Make sure to add it to the docstring of the function in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/models/sdar/modeling_sdar.py.
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 `store_kv` is part of SDARModel.forward's signature, but not documented. Make sure to add it to the docstring of the function in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/models/sdar/modeling_sdar.py.
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+Resuming from checkpoint: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_llada_continued/ckpt_0/optimized
+Resuming from checkpoint: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_llada_continued/ckpt_0/optimized
+Resuming from checkpoint: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_llada_continued/ckpt_0/optimized
+Resuming from checkpoint: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_llada_continued/ckpt_0/optimized
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 `store_kv` is part of SDARModel.forward's signature, but not documented. Make sure to add it to the docstring of the function in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/models/sdar/modeling_sdar.py.
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+🚨 Config not found for sdar. You can manually add it to HARDCODED_CONFIG_FOR_MODELS in utils/args_doc.py
+Resuming from checkpoint: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_llada_continued/ckpt_0/optimized
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+07/24/2026 18:03:53 - INFO - __main__ - Distributed environment: DEEPSPEED  Backend: nccl
+Num processes: 8
+Process index: 0
+Local process index: 0
+Device: cuda:0
+
+Mixed precision type: bf16
+ds_config: {'train_batch_size': 'auto', 'train_micro_batch_size_per_gpu': 'auto', 'gradient_accumulation_steps': 'auto', 'zero_optimization': {'stage': 3, 'offload_optimizer': {'device': 'cpu', 'nvme_path': None}, 'offload_param': {'device': 'cpu', 'nvme_path': None}, 'stage3_gather_16bit_weights_on_model_save': True}, 'gradient_clipping': 'auto', 'steps_per_print': inf, 'bf16': {'enabled': True}, 'fp16': {'enabled': False}}
+
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /research/cbim/vast/mz751/.netrc.
+wandb: Currently logged in as: mz751 (mz751-rutgers-university) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+07/24/2026 18:03:55 - INFO - __main__ - Distributed environment: DEEPSPEED  Backend: nccl
+Num processes: 8
+Process index: 1
+Local process index: 1
+Device: cuda:1
+
+Mixed precision type: bf16
+ds_config: {'train_batch_size': 'auto', 'train_micro_batch_size_per_gpu': 'auto', 'gradient_accumulation_steps': 'auto', 'zero_optimization': {'stage': 3, 'offload_optimizer': {'device': 'cpu', 'nvme_path': None}, 'offload_param': {'device': 'cpu', 'nvme_path': None}, 'stage3_gather_16bit_weights_on_model_save': True}, 'gradient_clipping': 'auto', 'steps_per_print': inf, 'bf16': {'enabled': True}, 'fp16': {'enabled': False}}
+
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/train/sft_llada.py", line 494, in <module>
+[rank1]:     main()
+[rank1]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/train/sft_llada.py", line 117, in main
+[rank1]:     tokenizer = AutoTokenizer.from_pretrained(pretrained_model, trust_remote_code=True)
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 1029, in from_pretrained
+[rank1]:     tokenizer_class_py, tokenizer_class_fast = TOKENIZER_MAPPING[type(config)]
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 771, in __getitem__
+[rank1]:     model_type = self._reverse_config_mapping[key.__name__]
+[rank1]: KeyError: 'LLaDAConfig'
+07/24/2026 18:03:55 - INFO - __main__ - Distributed environment: DEEPSPEED  Backend: nccl
+Num processes: 8
+Process index: 4
+Local process index: 4
+Device: cuda:4
+
+Mixed precision type: bf16
+ds_config: {'train_batch_size': 'auto', 'train_micro_batch_size_per_gpu': 'auto', 'gradient_accumulation_steps': 'auto', 'zero_optimization': {'stage': 3, 'offload_optimizer': {'device': 'cpu', 'nvme_path': None}, 'offload_param': {'device': 'cpu', 'nvme_path': None}, 'stage3_gather_16bit_weights_on_model_save': True}, 'gradient_clipping': 'auto', 'steps_per_print': inf, 'bf16': {'enabled': True}, 'fp16': {'enabled': False}}
+
+07/24/2026 18:03:55 - INFO - __main__ - Distributed environment: DEEPSPEED  Backend: nccl
+Num processes: 8
+Process index: 3
+Local process index: 3
+Device: cuda:3
+
+Mixed precision type: bf16
+ds_config: {'train_batch_size': 'auto', 'train_micro_batch_size_per_gpu': 'auto', 'gradient_accumulation_steps': 'auto', 'zero_optimization': {'stage': 3, 'offload_optimizer': {'device': 'cpu', 'nvme_path': None}, 'offload_param': {'device': 'cpu', 'nvme_path': None}, 'stage3_gather_16bit_weights_on_model_save': True}, 'gradient_clipping': 'auto', 'steps_per_print': inf, 'bf16': {'enabled': True}, 'fp16': {'enabled': False}}
+
+[rank4]: Traceback (most recent call last):
+[rank4]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/train/sft_llada.py", line 494, in <module>
+[rank4]:     main()
+[rank4]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/train/sft_llada.py", line 117, in main
+[rank4]:     tokenizer = AutoTokenizer.from_pretrained(pretrained_model, trust_remote_code=True)
+[rank4]:   File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 1029, in from_pretrained
+[rank4]:     tokenizer_class_py, tokenizer_class_fast = TOKENIZER_MAPPING[type(config)]
+[rank4]:   File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 771, in __getitem__
+[rank4]:     model_type = self._reverse_config_mapping[key.__name__]
+[rank4]: KeyError: 'LLaDAConfig'
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/train/sft_llada.py", line 494, in <module>
+[rank3]:     main()
+[rank3]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/train/sft_llada.py", line 117, in main
+[rank3]:     tokenizer = AutoTokenizer.from_pretrained(pretrained_model, trust_remote_code=True)
+[rank3]:   File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 1029, in from_pretrained
+[rank3]:     tokenizer_class_py, tokenizer_class_fast = TOKENIZER_MAPPING[type(config)]
+[rank3]:   File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 771, in __getitem__
+[rank3]:     model_type = self._reverse_config_mapping[key.__name__]
+[rank3]: KeyError: 'LLaDAConfig'
+07/24/2026 18:03:55 - INFO - __main__ - Distributed environment: DEEPSPEED  Backend: nccl
+Num processes: 8
+Process index: 5
+Local process index: 5
+Device: cuda:5
+
+Mixed precision type: bf16
+ds_config: {'train_batch_size': 'auto', 'train_micro_batch_size_per_gpu': 'auto', 'gradient_accumulation_steps': 'auto', 'zero_optimization': {'stage': 3, 'offload_optimizer': {'device': 'cpu', 'nvme_path': None}, 'offload_param': {'device': 'cpu', 'nvme_path': None}, 'stage3_gather_16bit_weights_on_model_save': True}, 'gradient_clipping': 'auto', 'steps_per_print': inf, 'bf16': {'enabled': True}, 'fp16': {'enabled': False}}
+
+[rank5]: Traceback (most recent call last):
+[rank5]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/train/sft_llada.py", line 494, in <module>
+[rank5]:     main()
+[rank5]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/train/sft_llada.py", line 117, in main
+[rank5]:     tokenizer = AutoTokenizer.from_pretrained(pretrained_model, trust_remote_code=True)
+[rank5]:   File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 1029, in from_pretrained
+[rank5]:     tokenizer_class_py, tokenizer_class_fast = TOKENIZER_MAPPING[type(config)]
+[rank5]:   File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 771, in __getitem__
+[rank5]:     model_type = self._reverse_config_mapping[key.__name__]
+[rank5]: KeyError: 'LLaDAConfig'
+07/24/2026 18:03:55 - INFO - __main__ - Distributed environment: DEEPSPEED  Backend: nccl
+Num processes: 8
+Process index: 6
+Local process index: 6
+Device: cuda:6
+
+Mixed precision type: bf16
+ds_config: {'train_batch_size': 'auto', 'train_micro_batch_size_per_gpu': 'auto', 'gradient_accumulation_steps': 'auto', 'zero_optimization': {'stage': 3, 'offload_optimizer': {'device': 'cpu', 'nvme_path': None}, 'offload_param': {'device': 'cpu', 'nvme_path': None}, 'stage3_gather_16bit_weights_on_model_save': True}, 'gradient_clipping': 'auto', 'steps_per_print': inf, 'bf16': {'enabled': True}, 'fp16': {'enabled': False}}
+
+07/24/2026 18:03:55 - INFO - __main__ - Distributed environment: DEEPSPEED  Backend: nccl
+Num processes: 8
+Process index: 2
+Local process index: 2
+Device: cuda:2
+
+Mixed precision type: bf16
+ds_config: {'train_batch_size': 'auto', 'train_micro_batch_size_per_gpu': 'auto', 'gradient_accumulation_steps': 'auto', 'zero_optimization': {'stage': 3, 'offload_optimizer': {'device': 'cpu', 'nvme_path': None}, 'offload_param': {'device': 'cpu', 'nvme_path': None}, 'stage3_gather_16bit_weights_on_model_save': True}, 'gradient_clipping': 'auto', 'steps_per_print': inf, 'bf16': {'enabled': True}, 'fp16': {'enabled': False}}
+
+[rank6]: Traceback (most recent call last):
+[rank6]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/train/sft_llada.py", line 494, in <module>
+[rank6]:     main()
+[rank6]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/train/sft_llada.py", line 117, in main
+[rank6]:     tokenizer = AutoTokenizer.from_pretrained(pretrained_model, trust_remote_code=True)
+[rank6]:   File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 1029, in from_pretrained
+[rank6]:     tokenizer_class_py, tokenizer_class_fast = TOKENIZER_MAPPING[type(config)]
+[rank6]:   File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 771, in __getitem__
+[rank6]:     model_type = self._reverse_config_mapping[key.__name__]
+[rank6]: KeyError: 'LLaDAConfig'
+07/24/2026 18:03:55 - INFO - __main__ - Distributed environment: DEEPSPEED  Backend: nccl
+Num processes: 8
+Process index: 7
+Local process index: 7
+Device: cuda:7
+
+Mixed precision type: bf16
+ds_config: {'train_batch_size': 'auto', 'train_micro_batch_size_per_gpu': 'auto', 'gradient_accumulation_steps': 'auto', 'zero_optimization': {'stage': 3, 'offload_optimizer': {'device': 'cpu', 'nvme_path': None}, 'offload_param': {'device': 'cpu', 'nvme_path': None}, 'stage3_gather_16bit_weights_on_model_save': True}, 'gradient_clipping': 'auto', 'steps_per_print': inf, 'bf16': {'enabled': True}, 'fp16': {'enabled': False}}
+
+wandb: setting up run uyly2gho
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/train/sft_llada.py", line 494, in <module>
+[rank2]:     main()
+[rank2]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/train/sft_llada.py", line 117, in main
+[rank2]:     tokenizer = AutoTokenizer.from_pretrained(pretrained_model, trust_remote_code=True)
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 1029, in from_pretrained
+[rank2]:     tokenizer_class_py, tokenizer_class_fast = TOKENIZER_MAPPING[type(config)]
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 771, in __getitem__
+[rank2]:     model_type = self._reverse_config_mapping[key.__name__]
+[rank2]: KeyError: 'LLaDAConfig'
+[rank7]: Traceback (most recent call last):
+[rank7]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/train/sft_llada.py", line 494, in <module>
+[rank7]:     main()
+[rank7]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/train/sft_llada.py", line 117, in main
+[rank7]:     tokenizer = AutoTokenizer.from_pretrained(pretrained_model, trust_remote_code=True)
+[rank7]:   File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 1029, in from_pretrained
+[rank7]:     tokenizer_class_py, tokenizer_class_fast = TOKENIZER_MAPPING[type(config)]
+[rank7]:   File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 771, in __getitem__
+[rank7]:     model_type = self._reverse_config_mapping[key.__name__]
+[rank7]: KeyError: 'LLaDAConfig'
+wandb: Tracking run with wandb version 0.25.0
+wandb: Run data is saved locally in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/wandb/run-20260724_180354-uyly2gho
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run sft_llada_64
+wandb: ⭐️ View project at https://wandb.ai/mz751-rutgers-university/sft_llada_continued
+wandb: 🚀 View run at https://wandb.ai/mz751-rutgers-university/sft_llada_continued/runs/uyly2gho
+07/24/2026 18:03:56 - INFO - __main__ - Loading LLaDA model and tokenizer
+Traceback (most recent call last):
+  File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/train/sft_llada.py", line 494, in <module>
+    main()
+  File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/train/sft_llada.py", line 117, in main
+    tokenizer = AutoTokenizer.from_pretrained(pretrained_model, trust_remote_code=True)
+  File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 1029, in from_pretrained
+    tokenizer_class_py, tokenizer_class_fast = TOKENIZER_MAPPING[type(config)]
+  File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 771, in __getitem__
+    model_type = self._reverse_config_mapping[key.__name__]
+KeyError: 'LLaDAConfig'
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/train/sft_llada.py", line 494, in <module>
+[rank0]:     main()
+[rank0]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/train/sft_llada.py", line 117, in main
+[rank0]:     tokenizer = AutoTokenizer.from_pretrained(pretrained_model, trust_remote_code=True)
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 1029, in from_pretrained
+[rank0]:     tokenizer_class_py, tokenizer_class_fast = TOKENIZER_MAPPING[type(config)]
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 771, in __getitem__
+[rank0]:     model_type = self._reverse_config_mapping[key.__name__]
+[rank0]: KeyError: 'LLaDAConfig'
+W0724 18:03:58.490000 3678963 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 3679573 closing signal SIGTERM
+W0724 18:03:58.505000 3678963 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 3679574 closing signal SIGTERM
+W0724 18:03:58.532000 3678963 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 3679575 closing signal SIGTERM
+W0724 18:03:58.543000 3678963 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 3679577 closing signal SIGTERM
+W0724 18:03:58.557000 3678963 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 3679578 closing signal SIGTERM
+W0724 18:03:58.578000 3678963 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 3679579 closing signal SIGTERM
+W0724 18:03:58.579000 3678963 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 3679580 closing signal SIGTERM
+E0724 18:04:00.021000 3678963 site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 3 (pid: 3679576) of binary: /research/cbim/vast/mz751/miniforge3/envs/dllm-rl/bin/python3.10
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Traceback (most recent call last):
+  File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/bin/accelerate", line 6, in <module>
+    sys.exit(main())
+  File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/accelerate/commands/accelerate_cli.py", line 50, in main
+    args.func(args)
+  File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/accelerate/commands/launch.py", line 1266, in launch_command
+    deepspeed_launcher(args)
+  File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/accelerate/commands/launch.py", line 952, in deepspeed_launcher
+    distrib_run.run(args)
+  File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+train/sft_llada.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-07-24_18:03:58
+  host      : achilleas.cs.rutgers.edu
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 3679576)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

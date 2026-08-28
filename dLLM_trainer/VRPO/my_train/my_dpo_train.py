@@ -14,6 +14,27 @@ from transformers import set_seed, AutoTokenizer, AutoModelForCausalLM
 from transformers.trainer_utils import get_last_checkpoint
 from trl import ModelConfig, TrlParser, get_peft_config, DPOConfig
 
+# ---------------------------------------------------------------------------
+# Fix: transformers._get_tied_weight_keys calls .keys() on _tied_weights_keys
+# but HF convention is that _tied_weights_keys is a LIST of strings, not a
+# dict.  Patch the function to handle both list and dict gracefully.
+# Affects: transformers checkpoint saving (save_pretrained → _save_checkpoint)
+# ---------------------------------------------------------------------------
+import transformers.modeling_utils as _mu
+
+def _patched_get_tied_weight_keys(module):
+    tied_weight_keys = []
+    for name, submodule in module.named_modules():
+        tied = getattr(submodule, "_tied_weights_keys", None) or {}
+        if isinstance(tied, dict):
+            tied_weight_keys.extend([f"{name}.{k}" if name else k for k in tied.keys()])
+        elif isinstance(tied, (list, tuple)):
+            tied_weight_keys.extend([f"{name}.{k}" if name else k for k in tied])
+    return tied_weight_keys
+
+_mu._get_tied_weight_keys = _patched_get_tied_weight_keys
+# ---------------------------------------------------------------------------
+
 from my_dpo_trainer import SDARDPOTrainer
 
 logger = logging.getLogger(__name__)
@@ -65,12 +86,12 @@ class SDARDPOScriptArguments:
     
     # Tool response markers (for trainable mask)
     tool_resp_left: str = field(
-        default="<|im_start|>user\n<tool_response>",
-        metadata={"help": "Left marker for tool response"}
+        default="<|eot_id|><|start_header_id|>user<|end_header_id|>\n\n<tool_response>",
+        metadata={"help": "Left marker for tool response (Llama3 canonical format)"}
     )
     tool_resp_right: str = field(
-        default="</tool_response><|im_end|>\n<|im_start|>assistant\n",
-        metadata={"help": "Right marker for tool response"}
+        default="</tool_response><|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        metadata={"help": "Right marker for tool response (Llama3 canonical format)"}
     )
 
 

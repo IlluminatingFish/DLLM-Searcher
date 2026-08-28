@@ -1,0 +1,6 @@
+好！现在我跟你说一下我的计划，我打算再目前我们这个项目llada
+    sft模型中，表现最好的模型的基础上，做agentic
+    RL来进一步进化训练模型。目前已有的dpo显然无novelty也不太work。我的想法是你可以参考我下面这个doc
+    文档:/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/Agentic_RL与_Diffusio
+    n_LLM_Search_Agent_研究综述.docx，然后好好想一想该怎么实现这种DLM
+    sft之后的agentic，以获取更好的模型效果。我建议你也可以一定程度参考原先的sft和RL代码，都在这个文件夹下/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer，不过更重要的是，参考文档写全新的各种DLM agentic RL代码，特别注意是DLM agentic，然后继续优化我们训练的最好的sft模型，写的代码和保存的模型都要在/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic这个文件夹下，然后自己去做小规模测试和大规模训练来一一验证我们提出的新的idea，以及最重要的是，上述所有三个空的服务器都可以用，多去尝试，8张卡都占用去训练，每个服务器都尝试去用，去跑。尝试不同的idea训练，自己修改代码解决报错。不要因为这个ide被关了就停止训练。不要因为掉线就终止。并且记得需要生成RL数据就去生成，规模大小你来把握。测试集还是用之前的600个数据，注意训练集和测试集的匹配问题，不要造成数据泄露，去做吧！有任何问题自行解决，直到我明天回来继续干。对了，千万别误删了我看目前训练的效果最好的llm sft model文件。

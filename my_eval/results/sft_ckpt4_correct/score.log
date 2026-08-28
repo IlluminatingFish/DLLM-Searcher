@@ -1,0 +1,12 @@
+Valid data entries: 600
+LLM Judge: https://api.openai.com/v1 | model=gpt-4o | key=*brsA
+Starting evaluation...
+
+==================================================
+Total questions     : 600
+Answer rate         : 597/600 = 99.5%
+CEM-1  (short GT)   : 265/600 = 44.17%
+Token F1 mean       : 12.67%
+Token F1 > 0.5      : 31/600 = 5.2%
+Token F1 > 0.8      : 13/600 = 2.2%
+LLM Judge           : 272/600 = 45.33%

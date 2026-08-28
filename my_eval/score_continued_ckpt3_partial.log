@@ -1,0 +1,21 @@
+Loading HotpotQA train split...
+`trust_remote_code` is not supported anymore.
+Please check that the Hugging Face dataset 'hotpot_qa' isn't based on a loading script and remove `trust_remote_code`.
+If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+Loading 2WikiMultiHopQA train split...
+`trust_remote_code` is not supported anymore.
+Please check that the Hugging Face dataset 'wiki_hop' isn't based on a loading script and remove `trust_remote_code`.
+If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+`trust_remote_code` is not supported anymore.
+Please check that the Hugging Face dataset 'THUDM/2WikiMultihopQA' isn't based on a loading script and remove `trust_remote_code`.
+If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+2wiki load failed: Dataset 'THUDM/2WikiMultihopQA' doesn't exist on the Hub or 
+cannot be accessed., skipping
+总共 451 题，找不到短答案的: 451
+开始评测...
+  0%|          | 0/451 [00:00<?, ?it/s]  0%|          | 1/451 [00:02<17:38,  2.35s/it]  1%|          | 5/451 [00:02<02:45,  2.69it/s]  6%|▌         | 27/451 [00:02<00:22, 19.07it/s]  9%|▉         | 41/451 [00:02<00:13, 29.66it/s] 12%|█▏        | 52/451 [00:02<00:10, 36.36it/s] 16%|█▌        | 70/451 [00:02<00:06, 55.58it/s] 18%|█▊        | 83/451 [00:03<00:05, 63.20it/s] 21%|██        | 95/451 [00:03<00:05, 66.09it/s] 23%|██▎       | 105/451 [00:03<00:04, 69.68it/s] 27%|██▋       | 122/451 [00:03<00:03, 89.78it/s] 30%|██▉       | 134/451 [00:03<00:03, 87.10it/s] 32%|███▏      | 145/451 [00:03<00:03, 88.72it/s] 35%|███▍      | 156/451 [00:03<00:03, 90.57it/s] 37%|███▋      | 167/451 [00:04<00:03, 89.24it/s] 41%|████      | 184/451 [00:04<00:02, 108.62it/s] 43%|████▎     | 196/451 [00:04<00:02, 86.40it/s]  46%|████▌     | 207/451 [00:04<00:02, 91.14it/s] 50%|█████     | 227/451 [00:04<00:01, 114.39it/s] 53%|█████▎    | 240/451 [00:04<00:02, 98.93it/s]  56%|█████▌    | 251/451 [00:04<00:02, 91.39it/s] 59%|█████▉    | 267/451 [00:04<00:01, 105.76it/s] 62%|██████▏   | 279/451 [00:05<00:01, 100.71it/s] 64%|██████▍   | 290/451 [00:05<00:01, 98.73it/s]  67%|██████▋   | 301/451 [00:05<00:01, 101.32it/s] 70%|██████▉   | 314/451 [00:05<00:01, 106.81it/s] 72%|███████▏  | 325/451 [00:05<00:01, 105.44it/s] 75%|███████▍  | 336/451 [00:05<00:01, 100.89it/s] 77%|███████▋  | 347/451 [00:05<00:01, 101.73it/s] 80%|███████▉  | 360/451 [00:05<00:00, 106.26it/s] 83%|████████▎ | 373/451 [00:05<00:00, 107.69it/s] 85%|████████▌ | 384/451 [00:06<00:00, 94.09it/s]  88%|████████▊ | 399/451 [00:06<00:00, 100.33it/s] 91%|█████████▏| 412/451 [00:06<00:00, 104.24it/s] 94%|█████████▍| 423/451 [00:06<00:00, 94.79it/s]  96%|█████████▌| 434/451 [00:06<00:00, 96.09it/s] 98%|█████████▊| 444/451 [00:06<00:00, 94.16it/s]100%|██████████| 451/451 [00:07<00:00, 58.43it/s]
+
+==================================================
+数据集: dLLM_trainer/VRPO/output/llada_eval/continued_ckpt3_partial.jsonl
+CEM-1  (短答案覆盖): 88/451 = 19.51%
+LLM Judge           : 451/451 = 100.00%

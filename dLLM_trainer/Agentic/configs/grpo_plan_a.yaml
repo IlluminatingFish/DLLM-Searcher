@@ -1,0 +1,69 @@
+# =============================================================================
+# Agentic RL Plan A: Online GRPO, x0pred ckpt6 base, F1+format reward
+# Server: hermes (8×A40 40GB)
+# =============================================================================
+
+# Model — best SFT checkpoint (43.5% ACC on eval_600)
+model_name_or_path: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_llada_x0pred/ckpt_6/optimized
+dtype: bfloat16
+trust_remote_code: true
+attn_implementation: eager
+use_peft: false
+
+# Dataset (generated online per round by collect_agentic_rollouts.py)
+dataset_path: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/plan_a/grpo_train.jsonl
+max_samples: null
+
+# GRPO specific (same as VRPO config)
+block_length: 64  # FIX: match rollout block_size=64 (was 128, caused attn mask mismatch)
+num_mc: 1
+mask_token_id: 126336
+advantage_clip: 5.0
+tool_resp_left: "<|im_start|>user\n<tool_response>"
+tool_resp_right: "</tool_response><|im_end|>\n<|im_start|>assistant\n"
+
+# DPOConfig compat
+beta: 0.0
+loss_type: sigmoid
+
+# Sequence lengths
+max_prompt_length: 640
+max_completion_length: 640
+max_length: 4096
+
+# Training
+bf16: true
+do_eval: false
+num_train_epochs: 2
+per_device_train_batch_size: 1
+per_device_eval_batch_size: 1
+gradient_accumulation_steps: 8
+gradient_checkpointing: false
+
+# Optimizer
+learning_rate: 3.0e-7
+adam_beta1: 0.9
+adam_beta2: 0.99
+weight_decay: 0.01
+max_grad_norm: 0.5
+warmup_ratio: 0.05
+lr_scheduler_type: cosine
+
+# Logging & Saving
+output_dir: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/plan_a/models/round1
+logging_steps: 5
+logging_first_step: true
+log_level: info
+save_strategy: "no"
+eval_strategy: "no"
+
+# Wandb
+report_to:
+  - wandb
+wandb_project: dllm_agentic_rl
+run_name: plan_a_round1
+
+# Other
+seed: 42
+dataloader_num_workers: 0
+remove_unused_columns: false

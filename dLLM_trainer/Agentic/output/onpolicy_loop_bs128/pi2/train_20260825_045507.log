@@ -1,0 +1,483 @@
+W0825 08:25:41.552000 480536 site-packages/torch/distributed/run.py:792] 
+W0825 08:25:41.552000 480536 site-packages/torch/distributed/run.py:792] *****************************************
+W0825 08:25:41.552000 480536 site-packages/torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0825 08:25:41.552000 480536 site-packages/torch/distributed/run.py:792] *****************************************
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+2026-08-25 08:25:53 - INFO - __main__ - Script args: GRPOScriptArgs(dataset_path='/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi2/train_reward_a.jsonl', max_samples=None, block_length=128, num_mc=1, mask_token_id=126336, advantage_clip=5.0, normalize_elbo=True, tool_resp_left='<|im_start|>user\n<tool_response>', tool_resp_right='</tool_response><|im_end|>\n<|im_start|>assistant\n')
+2026-08-25 08:25:53 - INFO - __main__ - Training args: GRPOConfig(
+accelerator_config={'split_batches': False, 'dispatch_batches': None, 'even_batches': True, 'use_seedable_sampler': True, 'non_blocking': False, 'gradient_accumulation_kwargs': None, 'use_configured_state': False},
+adam_beta1=0.9,
+adam_beta2=0.99,
+adam_epsilon=1e-08,
+auto_find_batch_size=False,
+average_tokens_across_devices=True,
+base_model_attribute_name=model,
+batch_eval_metrics=False,
+beta=0.0,
+bf16=True,
+bf16_full_eval=False,
+data_seed=None,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_persistent_workers=False,
+dataloader_pin_memory=True,
+dataloader_prefetch_factor=None,
+dataset_num_proc=None,
+ddp_backend=None,
+ddp_broadcast_buffers=None,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_timeout=1800,
+debug=[],
+deepspeed=None,
+disable_dropout=True,
+disable_tqdm=False,
+discopop_tau=0.05,
+do_eval=False,
+do_predict=False,
+do_train=False,
+enable_jit_checkpoint=False,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_do_concat_batches=True,
+eval_on_start=False,
+eval_steps=None,
+eval_strategy=IntervalStrategy.NO,
+eval_use_gather_object=False,
+f_alpha_divergence_coef=1.0,
+f_divergence_type=reverse_kl,
+force_use_ref_model=None,
+fp16=False,
+fp16_full_eval=False,
+fsdp=[],
+fsdp_config={'min_num_params': 0, 'xla': False, 'xla_fsdp_v2': False, 'xla_fsdp_grad_ckpt': False},
+full_determinism=False,
+generate_during_eval=False,
+gradient_accumulation_steps=8,
+gradient_checkpointing=False,
+gradient_checkpointing_kwargs=None,
+greater_is_better=None,
+hub_always_push=False,
+hub_model_id=None,
+hub_private_repo=None,
+hub_revision=None,
+hub_strategy=HubStrategy.EVERY_SAVE,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+include_for_metrics=[],
+include_num_input_tokens_seen=no,
+label_names=None,
+label_pad_token_id=-100,
+label_smoothing=0.0,
+label_smoothing_factor=0.0,
+ld_alpha=None,
+learning_rate=1e-06,
+length_column_name=length,
+liger_kernel_config=None,
+load_best_model_at_end=False,
+local_rank=-1,
+log_level=info,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=None,
+logging_first_step=True,
+logging_nan_inf_filter=True,
+logging_steps=5,
+logging_strategy=IntervalStrategy.STEPS,
+loss_type=sigmoid,
+loss_weights=None,
+lr_scheduler_kwargs=None,
+lr_scheduler_type=SchedulerType.COSINE,
+max_completion_length=640,
+max_grad_norm=0.5,
+max_length=4096,
+max_prompt_length=640,
+max_steps=-1,
+metric_for_best_model=None,
+model_adapter_name=None,
+model_init_kwargs=None,
+neftune_noise_alpha=None,
+num_train_epochs=1,
+optim=OptimizerNames.ADAMW_TORCH,
+optim_args=None,
+optim_target_modules=None,
+output_dir=/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi2/model,
+pad_token=<PAD_TOKEN>,
+padding_free=False,
+parallelism_config=None,
+per_device_eval_batch_size=1,
+per_device_train_batch_size=1,
+precompute_ref_batch_size=None,
+precompute_ref_log_probs=False,
+prediction_loss_only=False,
+project=huggingface,
+push_to_hub=False,
+ref_adapter_name=None,
+ref_model_init_kwargs=None,
+ref_model_mixup_alpha=0.6,
+ref_model_sync_steps=512,
+reference_free=False,
+remove_unused_columns=False,
+report_to=['wandb'],
+restore_callback_states_from_checkpoint=False,
+resume_from_checkpoint=None,
+rpo_alpha=None,
+run_name=onpolicy_bs128_pi2_20260825_045507,
+save_on_each_node=False,
+save_only_model=False,
+save_steps=500,
+save_strategy=SaveStrategy.EPOCH,
+save_total_limit=1,
+seed=42,
+skip_memory_metrics=True,
+sync_ref_model=False,
+tf32=None,
+tools=None,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torch_empty_cache_steps=None,
+trackio_space_id=trackio,
+train_sampling_strategy=random,
+truncation_mode=keep_end,
+use_cache=False,
+use_cpu=False,
+use_liger_kernel=False,
+use_logits_to_keep=False,
+use_weighting=False,
+wandb_project=dllm_agentic_rl_bs128,
+warmup_ratio=0.05,
+warmup_steps=0.05,
+weight_decay=0.01,
+)
+2026-08-25 08:25:53 - INFO - __main__ - *** Loading GRPO dataset ***
+Using custom data configuration default-1f1616fb88a79bcf
+2026-08-25 08:25:53 - INFO - datasets.builder - Using custom data configuration default-1f1616fb88a79bcf
+Generating dataset json (/research/cbim/vast/mz751/.cache/huggingface/datasets/json/default-1f1616fb88a79bcf/0.0.0/ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18)
+2026-08-25 08:25:53 - INFO - datasets.builder - Generating dataset json (/research/cbim/vast/mz751/.cache/huggingface/datasets/json/default-1f1616fb88a79bcf/0.0.0/ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18)
+Downloading and preparing dataset json/default to /research/cbim/vast/mz751/.cache/huggingface/datasets/json/default-1f1616fb88a79bcf/0.0.0/ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18...
+2026-08-25 08:25:53 - INFO - datasets.builder - Downloading and preparing dataset json/default to /research/cbim/vast/mz751/.cache/huggingface/datasets/json/default-1f1616fb88a79bcf/0.0.0/ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18...
+Downloading took 0.0 min
+2026-08-25 08:25:53 - INFO - datasets.download.download_manager - Downloading took 0.0 min
+Checksum Computation took 0.0 min
+2026-08-25 08:25:53 - INFO - datasets.download.download_manager - Checksum Computation took 0.0 min
+Generating train split
+2026-08-25 08:25:53 - INFO - datasets.builder - Generating train split
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 1808 examples [00:00, 16775.62 examples/s]
+Unable to verify splits sizes.
+2026-08-25 08:25:53 - INFO - datasets.utils.info_utils - Unable to verify splits sizes.
+Dataset json downloaded and prepared to /research/cbim/vast/mz751/.cache/huggingface/datasets/json/default-1f1616fb88a79bcf/0.0.0/ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18. Subsequent calls will reuse this data.
+2026-08-25 08:25:53 - INFO - datasets.builder - Dataset json downloaded and prepared to /research/cbim/vast/mz751/.cache/huggingface/datasets/json/default-1f1616fb88a79bcf/0.0.0/ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18. Subsequent calls will reuse this data.
+2026-08-25 08:25:53 - INFO - __main__ - Train samples: 1808
+2026-08-25 08:25:53 - INFO - __main__ - *** Loading tokenizer ***
+loading configuration file /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi1/model/config.json
+loading configuration file /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi1/model/config.json
+Model config LLaDAConfig {
+  "activation_type": "silu",
+  "alibi": false,
+  "alibi_bias_max": 8.0,
+  "architectures": [
+    "LLaDAModelLM"
+  ],
+  "attention_dropout": 0.0,
+  "attention_layer_norm": false,
+  "attention_layer_norm_with_affine": true,
+  "auto_map": {
+    "AutoConfig": "configuration_llada.LLaDAConfig",
+    "AutoModel": "modeling_llada.LLaDAModelLM",
+    "AutoModelForCausalLM": "modeling_llada.LLaDAModelLM"
+  },
+  "bias_for_layer_norm": false,
+  "block_group_size": 1,
+  "block_type": "llama",
+  "bos_token_id": 126080,
+  "d_model": 4096,
+  "dtype": "bfloat16",
+  "embedding_dropout": 0.0,
+  "embedding_size": 126464,
+  "eos_token_id": 126081,
+  "flash_attention": false,
+  "include_bias": false,
+  "include_qkv_bias": false,
+  "init_cutoff_factor": null,
+  "init_device": "meta",
+  "init_fn": "mitchell",
+  "init_std": 0.02,
+  "input_emb_norm": false,
+  "layer_norm_type": "rms",
+  "layer_norm_with_affine": true,
+  "mask_token_id": 126336,
+  "max_sequence_length": 4096,
+  "mlp_hidden_size": 12288,
+  "mlp_ratio": 4,
+  "model_type": "llada",
+  "multi_query_attention": null,
+  "n_heads": 32,
+  "n_kv_heads": 32,
+  "n_layers": 32,
+  "pad_token_id": 126081,
+  "precision": "amp_bf16",
+  "residual_dropout": 0.0,
+  "rms_norm_eps": 1e-05,
+  "rope": true,
+  "rope_full_precision": true,
+  "rope_theta": 500000.0,
+  "scale_logits": false,
+  "transformers_version": "5.2.0",
+  "vocab_size": 126464,
+  "weight_tying": false
+}
+
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+2026-08-25 08:25:55 - INFO - __main__ - *** Loading model ***
+2026-08-25 08:25:55 - INFO - __main__ - ZeRO stage: 2 (is_zero3=False)
+loading configuration file /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi1/model/config.json
+loading configuration file /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi1/model/config.json
+`torch_dtype` is deprecated! Use `dtype` instead!
+Model config LLaDAConfig {
+  "activation_type": "silu",
+  "alibi": false,
+  "alibi_bias_max": 8.0,
+  "architectures": [
+    "LLaDAModelLM"
+  ],
+  "attention_dropout": 0.0,
+  "attention_layer_norm": false,
+  "attention_layer_norm_with_affine": true,
+  "auto_map": {
+    "AutoConfig": "configuration_llada.LLaDAConfig",
+    "AutoModel": "modeling_llada.LLaDAModelLM",
+    "AutoModelForCausalLM": "modeling_llada.LLaDAModelLM"
+  },
+  "bias_for_layer_norm": false,
+  "block_group_size": 1,
+  "block_type": "llama",
+  "bos_token_id": 126080,
+  "d_model": 4096,
+  "dtype": "bfloat16",
+  "embedding_dropout": 0.0,
+  "embedding_size": 126464,
+  "eos_token_id": 126081,
+  "flash_attention": false,
+  "include_bias": false,
+  "include_qkv_bias": false,
+  "init_cutoff_factor": null,
+  "init_device": "meta",
+  "init_fn": "mitchell",
+  "init_std": 0.02,
+  "input_emb_norm": false,
+  "layer_norm_type": "rms",
+  "layer_norm_with_affine": true,
+  "mask_token_id": 126336,
+  "max_sequence_length": 4096,
+  "mlp_hidden_size": 12288,
+  "mlp_ratio": 4,
+  "model_type": "llada",
+  "multi_query_attention": null,
+  "n_heads": 32,
+  "n_kv_heads": 32,
+  "n_layers": 32,
+  "pad_token_id": 126081,
+  "precision": "amp_bf16",
+  "residual_dropout": 0.0,
+  "rms_norm_eps": 1e-05,
+  "rope": true,
+  "rope_full_precision": true,
+  "rope_theta": 500000.0,
+  "scale_logits": false,
+  "transformers_version": "5.2.0",
+  "vocab_size": 126464,
+  "weight_tying": false
+}
+
+loading weights file /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi1/model/model.safetensors
+Detected DeepSpeed ZeRO-3: activating zero.init() for this model
+Generate config GenerationConfig {
+  "bos_token_id": 126080,
+  "eos_token_id": 126081,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 126081
+}
+
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+NCCL version 2.21.5+cuda12.4
+loading configuration file /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi1/model/generation_config.json
+Generate config GenerationConfig {
+  "bos_token_id": 126080,
+  "eos_token_id": [
+    126081
+  ],
+  "pad_token_id": 126081
+}
+
+Could not locate the custom_generate/generate.py inside /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi1/model.
+2026-08-25 08:26:11 - INFO - __main__ - Model loaded to cuda:0 (ZeRO-2)
+2026-08-25 08:26:11 - INFO - __main__ - LLaDA activation checkpointing enabled: whole_layer
+2026-08-25 08:26:11 - INFO - __main__ - *** Initializing GRPO Trainer ***
+Tokenizing GRPO train dataset:   0%|          | 0/1808 [00:00<?, ? examples/s]Caching processed dataset at /research/cbim/vast/mz751/.cache/huggingface/datasets/json/default-1f1616fb88a79bcf/0.0.0/ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18/cache-13078eac95353f29.arrow
+2026-08-25 08:26:11 - INFO - datasets.arrow_dataset - Caching processed dataset at /research/cbim/vast/mz751/.cache/huggingface/datasets/json/default-1f1616fb88a79bcf/0.0.0/ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18/cache-13078eac95353f29.arrow
+Tokenizing GRPO train dataset:   1%|          | 14/1808 [00:00<00:13, 129.49 examples/s]Tokenizing GRPO train dataset:   2%|▏         | 36/1808 [00:00<00:10, 166.45 examples/s]Tokenizing GRPO train dataset:   3%|▎         | 56/1808 [00:00<00:09, 176.48 examples/s]Tokenizing GRPO train dataset:   4%|▍         | 78/1808 [00:00<00:09, 191.15 examples/s]Tokenizing GRPO train dataset:   6%|▌         | 105/1808 [00:00<00:09, 181.56 examples/s]Tokenizing GRPO train dataset:   8%|▊         | 136/1808 [00:00<00:08, 186.75 examples/s]Tokenizing GRPO train dataset:   9%|▉         | 163/1808 [00:00<00:08, 204.75 examples/s]Tokenizing GRPO train dataset:  11%|█         | 193/1808 [00:01<00:08, 199.97 examples/s]Tokenizing GRPO train dataset:  12%|█▏        | 216/1808 [00:01<00:07, 205.95 examples/s]Tokenizing GRPO train dataset:  13%|█▎        | 242/1808 [00:01<00:08, 191.99 examples/s]Tokenizing GRPO train dataset:  15%|█▍        | 264/1808 [00:01<00:07, 195.08 examples/s]Tokenizing GRPO train dataset:  16%|█▌        | 286/1808 [00:01<00:07, 198.51 examples/s]Tokenizing GRPO train dataset:  17%|█▋        | 307/1808 [00:01<00:07, 197.06 examples/s]Tokenizing GRPO train dataset:  19%|█▊        | 336/1808 [00:01<00:07, 192.15 examples/s]Tokenizing GRPO train dataset:  20%|█▉        | 356/1808 [00:01<00:07, 187.50 examples/s]Tokenizing GRPO train dataset:  21%|██        | 377/1808 [00:01<00:07, 190.35 examples/s]Tokenizing GRPO train dataset:  22%|██▏       | 403/1808 [00:02<00:07, 182.19 examples/s]Tokenizing GRPO train dataset:  23%|██▎       | 424/1808 [00:02<00:07, 186.79 examples/s]Tokenizing GRPO train dataset:  25%|██▍       | 450/1808 [00:02<00:06, 201.24 examples/s]Tokenizing GRPO train dataset:  27%|██▋       | 481/1808 [00:02<00:06, 201.97 examples/s]Tokenizing GRPO train dataset:  28%|██▊       | 511/1808 [00:02<00:06, 193.24 examples/s]Tokenizing GRPO train dataset:  30%|██▉       | 540/1808 [00:02<00:06, 189.39 examples/s]Tokenizing GRPO train dataset:  31%|███       | 560/1808 [00:02<00:06, 188.48 examples/s]Tokenizing GRPO train dataset:  32%|███▏      | 583/1808 [00:03<00:06, 194.83 examples/s]Tokenizing GRPO train dataset:  34%|███▎      | 610/1808 [00:03<00:06, 186.27 examples/s]Tokenizing GRPO train dataset:  35%|███▍      | 629/1808 [00:03<00:06, 186.24 examples/s]Tokenizing GRPO train dataset:  36%|███▌      | 650/1808 [00:03<00:06, 189.95 examples/s]Tokenizing GRPO train dataset:  37%|███▋      | 675/1808 [00:03<00:06, 178.09 examples/s]Tokenizing GRPO train dataset:  38%|███▊      | 695/1808 [00:03<00:06, 183.09 examples/s]Tokenizing GRPO train dataset:  40%|███▉      | 717/1808 [00:03<00:05, 190.15 examples/s]Tokenizing GRPO train dataset:  41%|████▏     | 749/1808 [00:03<00:05, 194.12 examples/s]Tokenizing GRPO train dataset:  43%|████▎     | 777/1808 [00:04<00:05, 189.36 examples/s]Tokenizing GRPO train dataset:  45%|████▍     | 806/1808 [00:04<00:05, 189.27 examples/s]Tokenizing GRPO train dataset:  46%|████▌     | 828/1808 [00:04<00:05, 192.48 examples/s]Tokenizing GRPO train dataset:  48%|████▊     | 860/1808 [00:04<00:04, 193.65 examples/s]Tokenizing GRPO train dataset:  49%|████▉     | 889/1808 [00:04<00:04, 190.90 examples/s]Tokenizing GRPO train dataset:  50%|█████     | 912/1808 [00:04<00:04, 198.89 examples/s]Tokenizing GRPO train dataset:  52%|█████▏    | 933/1808 [00:04<00:04, 176.86 examples/s]Tokenizing GRPO train dataset:  53%|█████▎    | 955/1808 [00:05<00:04, 186.59 examples/s]Tokenizing GRPO train dataset:  54%|█████▍    | 979/1808 [00:05<00:04, 174.40 examples/s]Tokenizing GRPO train dataset:  56%|█████▌    | 1007/1808 [00:05<00:04, 175.02 examples/s]Tokenizing GRPO train dataset:  57%|█████▋    | 1027/1808 [00:05<00:04, 179.64 examples/s]Tokenizing GRPO train dataset:  58%|█████▊    | 1049/1808 [00:05<00:04, 186.01 examples/s]Tokenizing GRPO train dataset:  59%|█████▉    | 1075/1808 [00:05<00:04, 176.54 examples/s]Tokenizing GRPO train dataset:  61%|██████    | 1096/1808 [00:05<00:03, 183.18 examples/s]Tokenizing GRPO train dataset:  62%|██████▏   | 1118/1808 [00:05<00:03, 189.83 examples/s]Tokenizing GRPO train dataset:  63%|██████▎   | 1140/1808 [00:06<00:03, 193.23 examples/s]Tokenizing GRPO train dataset:  64%|██████▍   | 1160/1808 [00:06<00:03, 194.17 examples/s]Tokenizing GRPO train dataset:  65%|██████▌   | 1180/1808 [00:06<00:03, 191.04 examples/s]Tokenizing GRPO train dataset:  66%|██████▋   | 1201/1808 [00:06<00:03, 190.54 examples/s]Tokenizing GRPO train dataset:  68%|██████▊   | 1224/1808 [00:06<00:02, 198.43 examples/s]Tokenizing GRPO train dataset:  69%|██████▉   | 1247/1808 [00:06<00:02, 205.36 examples/s]Tokenizing GRPO train dataset:  70%|███████   | 1269/1808 [00:06<00:02, 207.24 examples/s]Tokenizing GRPO train dataset:  71%|███████▏  | 1291/1808 [00:06<00:02, 204.50 examples/s]Tokenizing GRPO train dataset:  73%|███████▎  | 1313/1808 [00:06<00:02, 207.69 examples/s]Tokenizing GRPO train dataset:  74%|███████▍  | 1334/1808 [00:06<00:02, 202.36 examples/s]Tokenizing GRPO train dataset:  75%|███████▌  | 1361/1808 [00:07<00:02, 190.63 examples/s]Tokenizing GRPO train dataset:  77%|███████▋  | 1392/1808 [00:07<00:02, 193.30 examples/s]Tokenizing GRPO train dataset:  78%|███████▊  | 1412/1808 [00:07<00:02, 193.07 examples/s]Tokenizing GRPO train dataset:  80%|███████▉  | 1438/1808 [00:07<00:02, 183.65 examples/s]Tokenizing GRPO train dataset:  81%|████████  | 1458/1808 [00:07<00:01, 185.16 examples/s]Tokenizing GRPO train dataset:  82%|████████▏ | 1478/1808 [00:07<00:01, 187.37 examples/s]Tokenizing GRPO train dataset:  83%|████████▎ | 1501/1808 [00:07<00:01, 196.21 examples/s]Tokenizing GRPO train dataset:  85%|████████▍ | 1530/1808 [00:08<00:01, 190.54 examples/s]Tokenizing GRPO train dataset:  86%|████████▌ | 1553/1808 [00:08<00:01, 192.35 examples/s]Tokenizing GRPO train dataset:  87%|████████▋ | 1580/1808 [00:08<00:01, 184.46 examples/s]Tokenizing GRPO train dataset:  88%|████████▊ | 1600/1808 [00:08<00:01, 185.35 examples/s]Tokenizing GRPO train dataset:  90%|████████▉ | 1625/1808 [00:08<00:00, 199.01 examples/s]Tokenizing GRPO train dataset:  92%|█████████▏| 1655/1808 [00:08<00:00, 196.67 examples/s]Tokenizing GRPO train dataset:  93%|█████████▎| 1677/1808 [00:08<00:00, 200.96 examples/s]Tokenizing GRPO train dataset:  94%|█████████▍| 1706/1808 [00:08<00:00, 196.26 examples/s]Tokenizing GRPO train dataset:  96%|█████████▌| 1728/1808 [00:09<00:00, 199.86 examples/s]Tokenizing GRPO train dataset:  97%|█████████▋| 1754/1808 [00:09<00:00, 182.06 examples/s]Tokenizing GRPO train dataset:  98%|█████████▊| 1774/1808 [00:09<00:00, 182.55 examples/s]Tokenizing GRPO train dataset:  99%|█████████▉| 1796/1808 [00:09<00:00, 189.94 examples/s]Tokenizing GRPO train dataset: 100%|██████████| 1808/1808 [00:09<00:00, 188.93 examples/s]
+2026-08-25 08:26:20 - INFO - __main__ - *** Starting GRPO training ***
+Stage 3 initialize beginning
+MA 1.87 GB         Max_MA 2.83 GB         CA 1.94 GB         Max_CA 4 GB 
+CPU Virtual Memory:  used = 18.52 GB, percent = 7.5%
+DeepSpeedZeRoOffload initialize [begin]
+MA 1.87 GB         Max_MA 1.87 GB         CA 1.94 GB         Max_CA 2 GB 
+CPU Virtual Memory:  used = 18.52 GB, percent = 7.5%
+Parameter Offload - Persistent parameters statistics: param_count = 65, numel = 266240
+DeepSpeedZeRoOffload initialize [end]
+MA 1.87 GB         Max_MA 1.87 GB         CA 1.94 GB         Max_CA 2 GB 
+CPU Virtual Memory:  used = 18.53 GB, percent = 7.5%
+Before creating fp16 partitions
+MA 1.87 GB         Max_MA 1.87 GB         CA 1.94 GB         Max_CA 2 GB 
+CPU Virtual Memory:  used = 18.52 GB, percent = 7.5%
+After creating fp16 partitions: 2
+MA 1.87 GB         Max_MA 1.87 GB         CA 1.88 GB         Max_CA 2 GB 
+CPU Virtual Memory:  used = 21.53 GB, percent = 8.7%
+Before creating fp32 partitions
+MA 1.87 GB         Max_MA 1.87 GB         CA 1.88 GB         Max_CA 2 GB 
+CPU Virtual Memory:  used = 21.47 GB, percent = 8.7%
+After creating fp32 partitions
+MA 5.6 GB         Max_MA 9.33 GB         CA 9.34 GB         Max_CA 9 GB 
+CPU Virtual Memory:  used = 21.48 GB, percent = 8.7%
+Before initializing optimizer states
+MA 5.6 GB         Max_MA 5.6 GB         CA 9.34 GB         Max_CA 9 GB 
+CPU Virtual Memory:  used = 21.48 GB, percent = 8.7%
+After initializing optimizer states
+MA 5.6 GB         Max_MA 9.33 GB         CA 9.34 GB         Max_CA 9 GB 
+CPU Virtual Memory:  used = 21.44 GB, percent = 8.7%
+After initializing ZeRO optimizer
+MA 8.4 GB         Max_MA 9.36 GB         CA 10.31 GB         Max_CA 10 GB 
+CPU Virtual Memory:  used = 21.58 GB, percent = 8.7%
+***** Running training *****
+  Num examples = 1,808
+  Num Epochs = 1
+  Instantaneous batch size per device = 1
+  Total train batch size (w. parallel, distributed & accumulation) = 64
+  Gradient Accumulation steps = 8
+  Total optimization steps = 29
+  Number of trainable parameters = 8,015,581,184
+wandb: Currently logged in as: mz751 (mz751-rutgers-university). Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.28.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.15.12
+wandb: Run data is saved locally in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/wandb/run-20260825_082628-1v96xaug
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run onpolicy_bs128_pi2_20260825_045507
+wandb: ⭐️ View project at https://wandb.ai/mz751-rutgers-university/huggingface
+wandb: 🚀 View run at https://wandb.ai/mz751-rutgers-university/huggingface/runs/1v96xaug
+  0%|          | 0/29 [00:00<?, ?it/s][2026-08-25 08:26:30,084] [WARNING] [torch_autocast.py:122:autocast_if_enabled] torch.autocast is enabled outside DeepSpeed but disabled within the DeepSpeed engine. If you are using DeepSpeed's built-in mixed precision, the engine will follow the settings in bf16/fp16 section. To use torch's native autocast instead, configure the `torch_autocast` section in the DeepSpeed config.
+  3%|▎         | 1/29 [00:39<18:36, 39.87s/it]                                              {'loss': '1.618', 'grad_norm': '21.05', 'learning_rate': '0', 'rewards/mean': '0.1645', 'rewards/positive': '0.5', 'elbo/mean': '-9.074', 'epoch': '0.0354'}
+  3%|▎         | 1/29 [00:39<18:36, 39.87s/it]  7%|▋         | 2/29 [01:17<17:14, 38.33s/it] 10%|█         | 3/29 [01:55<16:37, 38.37s/it] 14%|█▍        | 4/29 [02:32<15:48, 37.96s/it] 17%|█▋        | 5/29 [03:09<15:01, 37.57s/it]                                              {'loss': '-2.099', 'grad_norm': '13.35', 'learning_rate': '9.865e-07', 'rewards/mean': '-0.2229', 'rewards/positive': '0.3125', 'elbo/mean': '-9.24', 'epoch': '0.177'}
+ 17%|█▋        | 5/29 [03:09<15:01, 37.57s/it] 21%|██        | 6/29 [03:48<14:35, 38.06s/it] 24%|██▍       | 7/29 [04:25<13:50, 37.77s/it] 28%|██▊       | 8/29 [05:03<13:09, 37.61s/it] 31%|███       | 9/29 [05:42<12:44, 38.20s/it] 34%|███▍      | 10/29 [06:19<11:58, 37.84s/it]                                               {'loss': '-1.589', 'grad_norm': '13.44', 'learning_rate': '8.431e-07', 'rewards/mean': '-0.1624', 'rewards/positive': '0.425', 'elbo/mean': '-9.314', 'epoch': '0.354'}
+ 34%|███▍      | 10/29 [06:19<11:58, 37.84s/it] 38%|███▊      | 11/29 [06:57<11:18, 37.70s/it] 41%|████▏     | 12/29 [07:36<10:48, 38.14s/it] 45%|████▍     | 13/29 [08:13<10:05, 37.82s/it] 48%|████▊     | 14/29 [08:50<09:24, 37.65s/it] 52%|█████▏    | 15/29 [09:27<08:45, 37.53s/it]                                               {'loss': '-0.5838', 'grad_norm': '14.95', 'learning_rate': '5.868e-07', 'rewards/mean': '-0.06119', 'rewards/positive': '0.425', 'elbo/mean': '-9.237', 'epoch': '0.531'}
+ 52%|█████▏    | 15/29 [09:27<08:45, 37.53s/it] 55%|█████▌    | 16/29 [10:06<08:11, 37.81s/it] 59%|█████▊    | 17/29 [10:43<07:30, 37.58s/it] 62%|██████▏   | 18/29 [11:20<06:51, 37.44s/it] 66%|██████▌   | 19/29 [11:59<06:18, 37.81s/it] 69%|██████▉   | 20/29 [12:36<05:38, 37.56s/it]                                               {'loss': '-0.3273', 'grad_norm': '20.97', 'learning_rate': '3.02e-07', 'rewards/mean': '-0.03434', 'rewards/positive': '0.425', 'elbo/mean': '-9.271', 'epoch': '0.708'}
+ 69%|██████▉   | 20/29 [12:36<05:38, 37.56s/it] 72%|███████▏  | 21/29 [13:12<04:58, 37.33s/it] 76%|███████▌  | 22/29 [13:51<04:23, 37.66s/it] 79%|███████▉  | 23/29 [14:28<03:45, 37.53s/it] 83%|████████▎ | 24/29 [15:05<03:07, 37.45s/it] 86%|████████▌ | 25/29 [15:45<02:32, 38.02s/it]                                               {'loss': '0.5336', 'grad_norm': '13.4', 'learning_rate': '8.226e-08', 'rewards/mean': '0.0566', 'rewards/positive': '0.5', 'elbo/mean': '-9.349', 'epoch': '0.885'}
+ 86%|████████▌ | 25/29 [15:45<02:32, 38.02s/it] 90%|████████▉ | 26/29 [16:22<01:53, 37.76s/it] 93%|█████████▎| 27/29 [16:59<01:15, 37.56s/it] 97%|█████████▋| 28/29 [17:38<00:37, 37.97s/it]100%|██████████| 29/29 [17:48<00:00, 29.53s/it]Saving model checkpoint to /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi2/model/checkpoint-29
+Configuration saved in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi2/model/checkpoint-29/config.json
+Configuration saved in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi2/model/checkpoint-29/generation_config.json
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s][A
+Writing model shards: 100%|██████████| 1/1 [00:34<00:00, 34.64s/it][AWriting model shards: 100%|██████████| 1/1 [00:34<00:00, 34.64s/it]
+Model weights saved in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi2/model/checkpoint-29/model.safetensors
+chat template saved in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi2/model/checkpoint-29/chat_template.jinja
+tokenizer config file saved in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi2/model/checkpoint-29/tokenizer_config.json
+
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+                                               {'train_runtime': '1218', 'train_samples_per_second': '1.485', 'train_steps_per_second': '0.024', 'train_loss': '0.1674', 'epoch': '1'}
+100%|██████████| 29/29 [20:15<00:00, 29.53s/it]100%|██████████| 29/29 [20:15<00:00, 41.91s/it]
+***** train metrics *****
+  epoch                    =        1.0
+  total_flos               =        0GF
+  train_loss               =     0.1674
+  train_runtime            = 0:20:17.62
+  train_samples            =       1808
+  train_samples_per_second =      1.485
+  train_steps_per_second   =      0.024
+2026-08-25 08:46:45 - INFO - __main__ - *** Saving model ***
+Configuration saved in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi2/model/config.json
+Configuration saved in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi2/model/generation_config.json
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00, 69.77it/s]
+Model weights saved in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi2/model/model.safetensors
+chat template saved in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi2/model/chat_template.jinja
+tokenizer config file saved in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi2/model/tokenizer_config.json
+2026-08-25 08:46:45 - INFO - __main__ - ZeRO-2 model → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi2/model
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb:        train/elbo/mean █▄▂▄▃▁
+wandb:            train/epoch ▁▂▃▅▆▇█
+wandb:      train/global_step ▁▂▃▅▆▇█
+wandb:        train/grad_norm █▁▁▂█▁
+wandb:    train/learning_rate ▁█▇▅▃▂
+wandb:             train/loss █▁▂▄▄▆
+wandb:     train/rewards/mean █▁▂▄▄▆
+wandb: train/rewards/positive █▁▅▅▅█
+wandb: 
+wandb: Run summary:
+wandb:               total_flos 0.0
+wandb:          train/elbo/mean -9.34928
+wandb:              train/epoch 1.0
+wandb:        train/global_step 29
+wandb:          train/grad_norm 13.39792
+wandb:      train/learning_rate 0.0
+wandb:               train/loss 0.53363
+wandb:       train/rewards/mean 0.0566
+wandb:   train/rewards/positive 0.5
+wandb:               train_loss 0.16741
+wandb:            train_runtime 1217.6249
+wandb: train_samples_per_second 1.485
+wandb:   train_steps_per_second 0.024
+wandb: 
+wandb: 🚀 View run onpolicy_bs128_pi2_20260825_045507 at: https://wandb.ai/mz751-rutgers-university/huggingface/runs/1v96xaug
+wandb: ️⚡ View job at https://wandb.ai/mz751-rutgers-university/huggingface/jobs/QXJ0aWZhY3RDb2xsZWN0aW9uOjExMjY3Mjg1MDE=/version_details/v7
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260825_082628-1v96xaug/logs

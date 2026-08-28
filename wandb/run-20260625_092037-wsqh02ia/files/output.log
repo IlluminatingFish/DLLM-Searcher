@@ -1,0 +1,80 @@
+
+  0%|          | 0/36 [00:00<?, ?it/s]
+
+  3%|▎         | 1/36 [02:08<1:14:48, 128.24s/it]
+[2026-06-25 09:22:48,693] [WARNING] [stage3.py:2274:step] 7 pytorch allocator cache flushes since last step. this happens when there is high memory pressure and is detrimental to performance. if this is happening frequently consider adjusting settings to reduce memory consumption. If you are unable to make the cache flushes go away consider adding get_accelerator().empty_cache() calls in your training loop to ensure that all ranks flush their caches at the same time
+
+
+
+
+ 14%|█▍        | 5/36 [08:07<48:04, 93.04s/it]
+
+
+
+
+ 25%|██▌       | 9/36 [14:56<44:50, 99.63s/it]
+
+ 28%|██▊       | 10/36 [16:57<46:03, 106.30s/it]
+[2026-06-25 09:37:38,014] [WARNING] [stage3.py:2274:step] 6 pytorch allocator cache flushes since last step. this happens when there is high memory pressure and is detrimental to performance. if this is happening frequently consider adjusting settings to reduce memory consumption. If you are unable to make the cache flushes go away consider adding get_accelerator().empty_cache() calls in your training loop to ensure that all ranks flush their caches at the same time
+
+
+
+
+
+ 42%|████▏     | 15/36 [25:57<35:56, 102.70s/it]
+
+
+
+
+ 53%|█████▎    | 19/36 [32:53<29:56, 105.66s/it]
+[2026-06-25 09:53:33,892] [WARNING] [stage3.py:2274:step] 7 pytorch allocator cache flushes since last step. this happens when there is high memory pressure and is detrimental to performance. if this is happening frequently consider adjusting settings to reduce memory consumption. If you are unable to make the cache flushes go away consider adding get_accelerator().empty_cache() calls in your training loop to ensure that all ranks flush their caches at the same time
+
+
+ 58%|█████▊    | 21/36 [36:26<26:23, 105.60s/it]
+
+
+
+
+ 69%|██████▉   | 25/36 [43:51<20:00, 109.15s/it]
+
+ 72%|███████▏  | 26/36 [45:43<18:20, 110.08s/it]
+
+
+
+
+ 83%|████████▎ | 30/36 [52:37<10:32, 105.48s/it]
+
+
+
+
+
+ 97%|█████████▋| 35/36 [1:01:28<01:47, 107.05s/it]
+
+100%|██████████| 36/36 [1:01:52<00:00, 82.11s/it] Saving model checkpoint to /common/users/mz751/Projects/dLLM_trainer/checkpoints/RL/grpo/round2/model/checkpoint-36
+Configuration saved in /common/users/mz751/Projects/dLLM_trainer/checkpoints/RL/grpo/round2/model/checkpoint-36/config.json
+Configuration saved in /common/users/mz751/Projects/dLLM_trainer/checkpoints/RL/grpo/round2/model/checkpoint-36/generation_config.json
+Model weights saved in /common/users/mz751/Projects/dLLM_trainer/checkpoints/RL/grpo/round2/model/checkpoint-36/model.safetensors
+chat template saved in /common/users/mz751/Projects/dLLM_trainer/checkpoints/RL/grpo/round2/model/checkpoint-36/chat_template.jinja
+tokenizer config file saved in /common/users/mz751/Projects/dLLM_trainer/checkpoints/RL/grpo/round2/model/checkpoint-36/tokenizer_config.json
+Training completed. Do not forget to share your model on huggingface.co/models =)
+100%|██████████| 36/36 [1:04:10<00:00, 106.96s/it]
+{'train_runtime': '3855', 'train_samples_per_second': '0.584', 'train_steps_per_second': '0.009', 'train_loss': '-140.5', 'epoch': '1'}
+***** train metrics *****
+  epoch                    =        1.0
+  total_flos               =        0GF
+  train_loss               =  -140.4535
+  train_runtime            = 1:04:14.69
+  train_samples            =       2251
+  train_samples_per_second =      0.584
+  train_steps_per_second   =      0.009
+2026-06-25 10:24:50 - INFO - __main__ - *** Saving model ***
+Saving model checkpoint to /common/users/mz751/Projects/dLLM_trainer/checkpoints/RL/grpo/round2/model
+Configuration saved in /common/users/mz751/Projects/dLLM_trainer/checkpoints/RL/grpo/round2/model/config.json
+Configuration saved in /common/users/mz751/Projects/dLLM_trainer/checkpoints/RL/grpo/round2/model/generation_config.json
+Writing model shards: 100%|██████████| 1/1 [00:43<00:00, 43.00s/it]
+Model weights saved in /common/users/mz751/Projects/dLLM_trainer/checkpoints/RL/grpo/round2/model/model.safetensors
+chat template saved in /common/users/mz751/Projects/dLLM_trainer/checkpoints/RL/grpo/round2/model/chat_template.jinja
+tokenizer config file saved in /common/users/mz751/Projects/dLLM_trainer/checkpoints/RL/grpo/round2/model/tokenizer_config.json
+2026-06-25 10:25:51 - INFO - __main__ - Model → /common/users/mz751/Projects/dLLM_trainer/checkpoints/RL/grpo/round2/model
+chat template saved in /common/users/mz751/Projects/dLLM_trainer/checkpoints/RL/grpo/round2/model/chat_template.jinja
+tokenizer config file saved in /common/users/mz751/Projects/dLLM_trainer/checkpoints/RL/grpo/round2/model/tokenizer_config.json

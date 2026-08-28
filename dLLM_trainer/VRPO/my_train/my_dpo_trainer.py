@@ -25,8 +25,8 @@ logger = logging.get_logger(__name__)
 def get_trainable_mask(
     completion_text: str,
     tokenizer: PreTrainedTokenizerBase,
-    tool_resp_left: str = "<|im_start|>user\n<tool_response>",
-    tool_resp_right: str = "</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    tool_resp_left: str = "<|eot_id|><|start_header_id|>user<|end_header_id|>\n\n<tool_response>",
+    tool_resp_right: str = "</tool_response><|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
 ) -> List[bool]:
     """
     Build trainable mask aligned 1:1 with tokenizer(completion_text).
@@ -226,8 +226,8 @@ class SDARDPOTrainer(DPOTrainer):
         block_length: int = 128,
         num_mc: int = 2,
         mask_token_id: Optional[int] = None,
-        tool_resp_left: str = "<|im_start|>user\n<tool_response>",
-        tool_resp_right: str = "</tool_response><|im_end|>\n<|im_start|>assistant\n",
+        tool_resp_left: str = "<|eot_id|><|start_header_id|>user<|end_header_id|>\n\n<tool_response>",
+        tool_resp_right: str = "</tool_response><|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
         **kwargs
     ):
 
@@ -372,9 +372,11 @@ class SDARDPOTrainer(DPOTrainer):
         # Debug: 若需排查 NaN，可设 DEBUG_DPO_FP32=1 禁用 bf16
         use_bf16 = (os.environ.get("DEBUG_DPO_FP32", "0") != "1")
 
-        # Forward
+        # Forward（层级 activation checkpointing 在 llada_grpo_train.py 中已启用，
+        # 通过 model.model.set_activation_checkpointing("whole_layer")，
+        # 因此这里直接调用即可，内存消耗为 O(1 层 × N²) 而非 O(32 层 × N²)）
         with torch.amp.autocast('cuda', dtype=torch.bfloat16, enabled=use_bf16):
-            logits = model(input_ids=batch_concat, attention_mask=attn_mask).logits
+            logits = model(input_ids=batch_concat, attention_bias=attn_mask).logits
 
         if torch.isnan(logits).any() or torch.isinf(logits).any():
             m = attn_mask[0, 0] if attn_mask.dim() == 4 else attn_mask

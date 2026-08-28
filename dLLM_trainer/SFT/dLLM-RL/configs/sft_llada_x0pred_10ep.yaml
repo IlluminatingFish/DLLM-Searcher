@@ -1,0 +1,54 @@
+wandb:
+  entity: 'mz751-rutgers-university'
+  resume: 'auto'
+  run_id: 'llada_sft_x0pred_10ep'
+
+experiment:
+    project: "sft_llada_x0pred_10ep"
+    num_node: 1
+    resume_from_checkpoint: null
+
+model:
+    pretrained_model: "/common/users/mz751/Projects/dLLM_trainer/checkpoints/base/llada_model"
+    optimized_name: "optimized"
+
+dataset:
+    optimization_data: "sft_train_final"
+
+training:
+    resume_epoch: null
+    gradient_checkpointing_enable: False
+    gradient_accumulation_steps: 4
+    batch_size_lm: 1
+    mixed_precision: "bf16"
+    enable_tf32: True
+    seed: 10086
+    num_train_epochs: 10
+    max_grad_norm: 1.0
+    method: "semi-ar"
+    lower_p: 0.1
+    upper_p: 0.9
+    block_size: 64
+    post_num: 0
+    max_gen_length: 4096
+    max_prompt_len: 4096
+    lambda_c: 0.1
+    sigma_min: 0.1
+    sigma_max: 1.0
+
+optimizer:
+    name: adamw
+    params:
+        learning_rate: 1e-5
+        scale_lr: False
+        beta1: 0.9
+        beta2: 0.999
+        weight_decay: 0.0
+        epsilon: 1e-8
+
+lr_scheduler:
+    scheduler: "cosine"
+    params:
+        learning_rate: ${optimizer.params.learning_rate}
+        warmup_steps: 100
+        min_lr_scale: 0.1

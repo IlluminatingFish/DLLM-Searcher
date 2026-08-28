@@ -1,0 +1,40 @@
+读取 records: 2048
+问题数: 256
+完整8条的问题: 256/256
+group 大小分布: min=8, max=8, mean=8.0
+
+=== Phase 3 Reward 计算完成 ===
+  总 records         : 2048
+  总 questions        : 256
+  完整8条 groups      : 256
+  跳过（group<8）  : 0
+  Reward A zero-var  : 57
+  Reward B zero-var  : 40
+  train_reward_a     : 1592 records → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/round0_rollouts/train_reward_a.jsonl
+  train_reward_b     : 1728 records → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/round0_rollouts/train_reward_b.jsonl
+
+--- Reward A 分布 (1592 records) ---
+  mean F1       : 0.161
+  F1>0 / >0.5 / >0.8 : 59.2% / 8.4% / 8.0%
+  answer rate   : 1532/1592 = 96.2%
+  no-answer     : 60/1592 = 3.8%
+  by type:
+    date                : n= 168  mean=0.183
+    entity              : n=1096  mean=0.110
+    list                : n=  40  mean=0.119
+    number              : n=  80  mean=0.038
+    yes_no              : n= 208  mean=0.462
+
+--- Reward B 分布 (1728 records) ---
+  mean F1       : 0.134
+  F1>0 / >0.5 / >0.8 : 54.5% / 7.7% / 7.4%
+  answer rate   : 1646/1728 = 95.3%
+  no-answer     : 82/1728 = 4.7%
+  by type:
+    date                : n= 192  mean=0.149
+    entity              : n=1152  mean=0.091
+    list                : n=  40  mean=0.096
+    number              : n= 104  mean=0.000
+    yes_no              : n= 240  mean=0.389
+
+完成！

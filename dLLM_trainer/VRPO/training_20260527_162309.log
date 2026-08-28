@@ -1,0 +1,402 @@
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/accelerate/utils/launch.py:464: UserWarning: Port `29500` is already in use. Accelerate will attempt to launch in a standalone-like mode by finding an open port automatically for this session. If this current attempt fails, or for more control in future runs, please specify a different port (e.g., `--main_process_port <your_chosen_port>`) or use `--main_process_port 0` for automatic selection in your launch command or Accelerate config file.
+  warnings.warn(
+W0527 16:23:17.805000 2639511 site-packages/torch/distributed/run.py:792] 
+W0527 16:23:17.805000 2639511 site-packages/torch/distributed/run.py:792] *****************************************
+W0527 16:23:17.805000 2639511 site-packages/torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0527 16:23:17.805000 2639511 site-packages/torch/distributed/run.py:792] *****************************************
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+2026-05-27 16:23:31 - WARNING - __main__ - Process rank: -1, device: cuda:0, n_gpu: 1, distributed training: False, bf16: False
+2026-05-27 16:23:31 - INFO - __main__ - Model parameters: ModelConfig(model_name_or_path='/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/output/dpo_dpo_20260308_112756/checkpoints/checkpoint-130', model_revision='main', dtype='float32', trust_remote_code=True, attn_implementation='flash_attention_2', use_peft=False, lora_r=128, lora_alpha=64, lora_dropout=0.05, lora_target_modules=['q_proj', 'k_proj', 'v_proj', 'o_proj', 'up_proj', 'down_proj', 'gate_proj'], lora_target_parameters=None, lora_modules_to_save=None, lora_task_type='CAUSAL_LM', use_rslora=False, use_dora=False, load_in_8bit=False, load_in_4bit=False, bnb_4bit_quant_type='nf4', use_bnb_nested_quant=False, bnb_4bit_quant_storage=None)
+2026-05-27 16:23:31 - INFO - __main__ - Script parameters: SDARDPOScriptArguments(dataset_name='dpo', dataset_path='/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/data/train.jsonl', dataset_train_split='train', dataset_eval_split=None, max_samples=None, block_length=128, num_mc=1, mask_token_id=None, tool_resp_left='<|im_start|>user\n<tool_response>', tool_resp_right='</tool_response><|im_end|>\n<|im_start|>assistant\n')
+2026-05-27 16:23:31 - INFO - __main__ - Training parameters: SDARDPOConfig(
+accelerator_config={'split_batches': False, 'dispatch_batches': None, 'even_batches': True, 'use_seedable_sampler': True, 'non_blocking': False, 'gradient_accumulation_kwargs': None, 'use_configured_state': False},
+adam_beta1=0.9,
+adam_beta2=0.99,
+adam_epsilon=1e-08,
+auto_find_batch_size=False,
+average_tokens_across_devices=True,
+base_model_attribute_name=model,
+batch_eval_metrics=False,
+beta=0.1,
+bf16=False,
+bf16_full_eval=False,
+data_seed=None,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_persistent_workers=False,
+dataloader_pin_memory=True,
+dataloader_prefetch_factor=None,
+dataset_num_proc=None,
+ddp_backend=None,
+ddp_broadcast_buffers=None,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_timeout=1800,
+debug=[],
+deepspeed=None,
+disable_dropout=True,
+disable_tqdm=False,
+discopop_tau=0.05,
+do_eval=False,
+do_predict=False,
+do_train=False,
+enable_jit_checkpoint=False,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_do_concat_batches=True,
+eval_on_start=False,
+eval_steps=None,
+eval_strategy=IntervalStrategy.NO,
+eval_use_gather_object=False,
+f_alpha_divergence_coef=1.0,
+f_divergence_type=reverse_kl,
+force_use_ref_model=None,
+fp16=False,
+fp16_full_eval=False,
+fsdp=[],
+fsdp_config={'min_num_params': 0, 'xla': False, 'xla_fsdp_v2': False, 'xla_fsdp_grad_ckpt': False},
+full_determinism=False,
+generate_during_eval=False,
+gradient_accumulation_steps=8,
+gradient_checkpointing=True,
+gradient_checkpointing_kwargs={'use_reentrant': False},
+greater_is_better=None,
+hub_always_push=False,
+hub_model_id=None,
+hub_private_repo=None,
+hub_revision=None,
+hub_strategy=HubStrategy.EVERY_SAVE,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+include_for_metrics=[],
+include_num_input_tokens_seen=no,
+label_names=None,
+label_pad_token_id=-100,
+label_smoothing=0.0,
+label_smoothing_factor=0.0,
+ld_alpha=None,
+learning_rate=5e-07,
+length_column_name=length,
+liger_kernel_config=None,
+load_best_model_at_end=False,
+local_rank=-1,
+log_level=info,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=None,
+logging_first_step=True,
+logging_nan_inf_filter=True,
+logging_steps=1.0,
+logging_strategy=IntervalStrategy.STEPS,
+loss_type=sigmoid,
+loss_weights=None,
+lr_scheduler_kwargs=None,
+lr_scheduler_type=SchedulerType.COSINE,
+max_completion_length=4096,
+max_grad_norm=0.5,
+max_length=8192,
+max_prompt_length=1024,
+max_steps=-1,
+metric_for_best_model=None,
+model_adapter_name=None,
+model_init_kwargs=None,
+neftune_noise_alpha=None,
+num_train_epochs=5,
+optim=OptimizerNames.ADAMW_TORCH,
+optim_args=None,
+optim_target_modules=None,
+output_dir=output/dpo_dpo_20260527_162309/checkpoints,
+pad_token=<PAD_TOKEN>,
+padding_free=False,
+parallelism_config=None,
+per_device_eval_batch_size=1,
+per_device_train_batch_size=1,
+precompute_ref_batch_size=None,
+precompute_ref_log_probs=False,
+prediction_loss_only=False,
+project=huggingface,
+push_to_hub=False,
+ref_adapter_name=None,
+ref_model_init_kwargs=None,
+ref_model_mixup_alpha=0.6,
+ref_model_sync_steps=512,
+reference_free=False,
+remove_unused_columns=False,
+report_to=['wandb'],
+restore_callback_states_from_checkpoint=False,
+resume_from_checkpoint=None,
+rpo_alpha=None,
+run_name=dpo_dpo_20260527_162309,
+save_on_each_node=False,
+save_only_model=False,
+save_steps=100,
+save_strategy=SaveStrategy.NO,
+save_total_limit=5,
+seed=42,
+skip_memory_metrics=True,
+sync_ref_model=False,
+tf32=None,
+tools=None,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torch_empty_cache_steps=None,
+trackio_space_id=trackio,
+train_sampling_strategy=random,
+truncation_mode=keep_end,
+use_cache=False,
+use_cpu=False,
+use_liger_kernel=False,
+use_logits_to_keep=False,
+use_weighting=False,
+wandb_project=sdar_dpo,
+warmup_ratio=0.1,
+warmup_steps=0.1,
+weight_decay=0.01,
+)
+2026-05-27 16:23:31 - INFO - __main__ - *** Loading dataset ***
+Using custom data configuration default-7134ebc009ec22f3
+2026-05-27 16:23:31 - INFO - datasets.builder - Using custom data configuration default-7134ebc009ec22f3
+Found cached dataset json (/research/cbim/vast/mz751/.cache/huggingface/datasets/json/default-7134ebc009ec22f3/0.0.0/ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18)
+2026-05-27 16:23:31 - INFO - datasets.builder - Found cached dataset json (/research/cbim/vast/mz751/.cache/huggingface/datasets/json/default-7134ebc009ec22f3/0.0.0/ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18)
+2026-05-27 16:23:31 - INFO - __main__ - Dataset validated. Columns: ['prompt', 'chosen', 'rejected']
+2026-05-27 16:23:31 - INFO - __main__ - Train dataset size: 2236
+2026-05-27 16:23:31 - INFO - __main__ - *** Loading tokenizer ***
+[INFO|configuration_utils.py:668] 2026-05-27 16:23:31,625 >> loading configuration file /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/output/dpo_dpo_20260308_112756/checkpoints/checkpoint-130/config.json
+[INFO|configuration_utils.py:668] 2026-05-27 16:23:31,631 >> loading configuration file /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/output/dpo_dpo_20260308_112756/checkpoints/checkpoint-130/config.json
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/modeling_rope_utils.py:936: FutureWarning: `rope_config_validation` is deprecated and has been removed. Its functionality has been moved to RotaryEmbeddingConfigMixin.validate_rope method. PreTrainedConfig inherits this class, so please call self.validate_rope() instead. Also, make sure to use the new rope_parameters syntax. You can call self.standardize_rope_params() in the meantime.
+  warnings.warn(
+[INFO|configuration_utils.py:742] 2026-05-27 16:23:31,632 >> Model config SDARConfig {
+  "architectures": [
+    "SDARForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "configuration_sdar.SDARConfig",
+    "AutoModel": "modeling_sdar.SDARModel",
+    "AutoModelForCausalLM": "modeling_sdar.SDARForCausalLM"
+  },
+  "bos_token_id": null,
+  "dtype": "float32",
+  "eos_token_id": 151643,
+  "fuse_cross_entropy": false,
+  "head_dim": 128,
+  "hidden_act": "silu",
+  "hidden_size": 2048,
+  "initializer_range": 0.02,
+  "intermediate_size": 6144,
+  "max_position_embeddings": 32768,
+  "max_window_layers": 28,
+  "model_type": "sdar",
+  "num_attention_heads": 16,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 8,
+  "pad_token_id": 151643,
+  "rms_norm_eps": 1e-06,
+  "rope_parameters": {
+    "rope_theta": 1000000,
+    "rope_type": "default"
+  },
+  "rope_theta": 1000000,
+  "sliding_window": null,
+  "tie_word_embeddings": false,
+  "transformers_version": "5.2.0",
+  "use_cache": false,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+2026-05-27 16:23:31 - INFO - __main__ - *** Loading model ***
+[INFO|configuration_utils.py:668] 2026-05-27 16:23:31,911 >> loading configuration file /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/output/dpo_dpo_20260308_112756/checkpoints/checkpoint-130/config.json
+[INFO|configuration_utils.py:668] 2026-05-27 16:23:31,919 >> loading configuration file /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/output/dpo_dpo_20260308_112756/checkpoints/checkpoint-130/config.json
+[WARNING|logging.py:327] 2026-05-27 16:23:31,919 >> `torch_dtype` is deprecated! Use `dtype` instead!
+[INFO|configuration_utils.py:742] 2026-05-27 16:23:31,920 >> Model config SDARConfig {
+  "architectures": [
+    "SDARForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "configuration_sdar.SDARConfig",
+    "AutoModel": "modeling_sdar.SDARModel",
+    "AutoModelForCausalLM": "modeling_sdar.SDARForCausalLM"
+  },
+  "bos_token_id": null,
+  "dtype": "float32",
+  "eos_token_id": 151643,
+  "fuse_cross_entropy": false,
+  "head_dim": 128,
+  "hidden_act": "silu",
+  "hidden_size": 2048,
+  "initializer_range": 0.02,
+  "intermediate_size": 6144,
+  "max_position_embeddings": 32768,
+  "max_window_layers": 28,
+  "model_type": "sdar",
+  "num_attention_heads": 16,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 8,
+  "pad_token_id": 151643,
+  "rms_norm_eps": 1e-06,
+  "rope_parameters": {
+    "rope_theta": 1000000,
+    "rope_type": "default"
+  },
+  "rope_theta": 1000000,
+  "sliding_window": null,
+  "tie_word_embeddings": false,
+  "transformers_version": "5.2.0",
+  "use_cache": false,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+2026-05-27 16:23:32 - WARNING - __main__ - Process rank: -1, device: cuda:1, n_gpu: 1, distributed training: False, bf16: False
+[ERROR] `store_kv` is part of SDARModel.forward's signature, but not documented. Make sure to add it to the docstring of the function in /research/cbim/vast/mz751/.cache/huggingface/modules/transformers_modules/checkpoint_hyphen_130/modeling_sdar.py.
+[INFO|modeling_utils.py:707] 2026-05-27 16:23:32,350 >> loading weights file /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/output/dpo_dpo_20260308_112756/checkpoints/checkpoint-130/model.safetensors
+[INFO|modeling_utils.py:3560] 2026-05-27 16:23:32,350 >> Detected DeepSpeed ZeRO-3: activating zero.init() for this model
+[WARNING|logging.py:327] 2026-05-27 16:23:32,355 >> Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in SDARForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", dtype=torch.float16)`
+[INFO|configuration_utils.py:1014] 2026-05-27 16:23:32,356 >> Generate config GenerationConfig {
+  "eos_token_id": 151643,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 151643,
+  "use_cache": false
+}
+
+[WARNING|logging.py:327] 2026-05-27 16:23:32,357 >> Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in SDARModel is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", dtype=torch.float16)`
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/modeling_rope_utils.py:936: FutureWarning: `rope_config_validation` is deprecated and has been removed. Its functionality has been moved to RotaryEmbeddingConfigMixin.validate_rope method. PreTrainedConfig inherits this class, so please call self.validate_rope() instead. Also, make sure to use the new rope_parameters syntax. You can call self.standardize_rope_params() in the meantime.
+  warnings.warn(
+[WARNING|logging.py:327] 2026-05-27 16:23:32,697 >> `torch_dtype` is deprecated! Use `dtype` instead!
+2026-05-27 16:23:32 - WARNING - __main__ - Process rank: -1, device: cuda:2, n_gpu: 1, distributed training: False, bf16: False
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/modeling_rope_utils.py:936: FutureWarning: `rope_config_validation` is deprecated and has been removed. Its functionality has been moved to RotaryEmbeddingConfigMixin.validate_rope method. PreTrainedConfig inherits this class, so please call self.validate_rope() instead. Also, make sure to use the new rope_parameters syntax. You can call self.standardize_rope_params() in the meantime.
+  warnings.warn(
+2026-05-27 16:23:32 - WARNING - __main__ - Process rank: -1, device: cuda:6, n_gpu: 1, distributed training: False, bf16: False
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/modeling_rope_utils.py:936: FutureWarning: `rope_config_validation` is deprecated and has been removed. Its functionality has been moved to RotaryEmbeddingConfigMixin.validate_rope method. PreTrainedConfig inherits this class, so please call self.validate_rope() instead. Also, make sure to use the new rope_parameters syntax. You can call self.standardize_rope_params() in the meantime.
+  warnings.warn(
+[ERROR] `store_kv` is part of SDARModel.forward's signature, but not documented. Make sure to add it to the docstring of the function in /research/cbim/vast/mz751/.cache/huggingface/modules/transformers_modules/checkpoint_hyphen_130/modeling_sdar.py.
+[WARNING|logging.py:327] 2026-05-27 16:23:33,137 >> Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in SDARForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", dtype=torch.float16)`
+[WARNING|logging.py:327] 2026-05-27 16:23:33,139 >> Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in SDARModel is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", dtype=torch.float16)`
+[WARNING|logging.py:327] 2026-05-27 16:23:33,186 >> `torch_dtype` is deprecated! Use `dtype` instead!
+2026-05-27 16:23:33 - WARNING - __main__ - Process rank: -1, device: cuda:7, n_gpu: 1, distributed training: False, bf16: False
+[WARNING|logging.py:327] 2026-05-27 16:23:33,392 >> `torch_dtype` is deprecated! Use `dtype` instead!
+2026-05-27 16:23:33 - WARNING - __main__ - Process rank: -1, device: cuda:4, n_gpu: 1, distributed training: False, bf16: False
+2026-05-27 16:23:33 - WARNING - __main__ - Process rank: -1, device: cuda:5, n_gpu: 1, distributed training: False, bf16: False
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/modeling_rope_utils.py:936: FutureWarning: `rope_config_validation` is deprecated and has been removed. Its functionality has been moved to RotaryEmbeddingConfigMixin.validate_rope method. PreTrainedConfig inherits this class, so please call self.validate_rope() instead. Also, make sure to use the new rope_parameters syntax. You can call self.standardize_rope_params() in the meantime.
+  warnings.warn(
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/modeling_rope_utils.py:936: FutureWarning: `rope_config_validation` is deprecated and has been removed. Its functionality has been moved to RotaryEmbeddingConfigMixin.validate_rope method. PreTrainedConfig inherits this class, so please call self.validate_rope() instead. Also, make sure to use the new rope_parameters syntax. You can call self.standardize_rope_params() in the meantime.
+  warnings.warn(
+2026-05-27 16:23:33 - WARNING - __main__ - Process rank: -1, device: cuda:3, n_gpu: 1, distributed training: False, bf16: False
+[ERROR] `store_kv` is part of SDARModel.forward's signature, but not documented. Make sure to add it to the docstring of the function in /research/cbim/vast/mz751/.cache/huggingface/modules/transformers_modules/checkpoint_hyphen_130/modeling_sdar.py.
+[WARNING|logging.py:327] 2026-05-27 16:23:33,626 >> Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in SDARForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", dtype=torch.float16)`
+[WARNING|logging.py:327] 2026-05-27 16:23:33,628 >> Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in SDARModel is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", dtype=torch.float16)`
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/modeling_rope_utils.py:936: FutureWarning: `rope_config_validation` is deprecated and has been removed. Its functionality has been moved to RotaryEmbeddingConfigMixin.validate_rope method. PreTrainedConfig inherits this class, so please call self.validate_rope() instead. Also, make sure to use the new rope_parameters syntax. You can call self.standardize_rope_params() in the meantime.
+  warnings.warn(
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/modeling_rope_utils.py:936: FutureWarning: `rope_config_validation` is deprecated and has been removed. Its functionality has been moved to RotaryEmbeddingConfigMixin.validate_rope method. PreTrainedConfig inherits this class, so please call self.validate_rope() instead. Also, make sure to use the new rope_parameters syntax. You can call self.standardize_rope_params() in the meantime.
+  warnings.warn(
+[WARNING|logging.py:327] 2026-05-27 16:23:33,810 >> `torch_dtype` is deprecated! Use `dtype` instead!
+[WARNING|logging.py:327] 2026-05-27 16:23:33,859 >> `torch_dtype` is deprecated! Use `dtype` instead!
+[ERROR] `store_kv` is part of SDARModel.forward's signature, but not documented. Make sure to add it to the docstring of the function in /research/cbim/vast/mz751/.cache/huggingface/modules/transformers_modules/checkpoint_hyphen_130/modeling_sdar.py.
+[WARNING|logging.py:327] 2026-05-27 16:23:33,870 >> Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in SDARForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", dtype=torch.float16)`
+[WARNING|logging.py:327] 2026-05-27 16:23:33,872 >> Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in SDARModel is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", dtype=torch.float16)`
+[WARNING|logging.py:327] 2026-05-27 16:23:33,921 >> `torch_dtype` is deprecated! Use `dtype` instead!
+[WARNING|logging.py:327] 2026-05-27 16:23:33,993 >> `torch_dtype` is deprecated! Use `dtype` instead!
+[ERROR] `store_kv` is part of SDARModel.forward's signature, but not documented. Make sure to add it to the docstring of the function in /research/cbim/vast/mz751/.cache/huggingface/modules/transformers_modules/checkpoint_hyphen_130/modeling_sdar.py.
+[WARNING|logging.py:327] 2026-05-27 16:23:34,254 >> Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in SDARForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", dtype=torch.float16)`
+[WARNING|logging.py:327] 2026-05-27 16:23:34,256 >> Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in SDARModel is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", dtype=torch.float16)`
+[ERROR] `store_kv` is part of SDARModel.forward's signature, but not documented. Make sure to add it to the docstring of the function in /research/cbim/vast/mz751/.cache/huggingface/modules/transformers_modules/checkpoint_hyphen_130/modeling_sdar.py.
+[WARNING|logging.py:327] 2026-05-27 16:23:34,330 >> Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in SDARForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", dtype=torch.float16)`
+[WARNING|logging.py:327] 2026-05-27 16:23:34,332 >> Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in SDARModel is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", dtype=torch.float16)`
+[ERROR] `store_kv` is part of SDARModel.forward's signature, but not documented. Make sure to add it to the docstring of the function in /research/cbim/vast/mz751/.cache/huggingface/modules/transformers_modules/checkpoint_hyphen_130/modeling_sdar.py.
+[WARNING|logging.py:327] 2026-05-27 16:23:34,407 >> Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in SDARForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", dtype=torch.float16)`
+[WARNING|logging.py:327] 2026-05-27 16:23:34,408 >> Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in SDARModel is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", dtype=torch.float16)`
+[ERROR] `store_kv` is part of SDARModel.forward's signature, but not documented. Make sure to add it to the docstring of the function in /research/cbim/vast/mz751/.cache/huggingface/modules/transformers_modules/checkpoint_hyphen_130/modeling_sdar.py.
+[WARNING|logging.py:327] 2026-05-27 16:23:34,444 >> Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in SDARForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", dtype=torch.float16)`
+[WARNING|logging.py:327] 2026-05-27 16:23:34,446 >> Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in SDARModel is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", dtype=torch.float16)`
+W0527 16:23:50.359000 2639511 site-packages/torch/distributed/elastic/agent/server/api.py:719] Received 15 death signal, shutting down workers
+W0527 16:23:50.360000 2639511 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 2640390 closing signal SIGTERM
+W0527 16:23:50.362000 2639511 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 2640391 closing signal SIGTERM
+W0527 16:23:50.365000 2639511 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 2640392 closing signal SIGTERM
+W0527 16:23:50.419000 2639511 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 2640393 closing signal SIGTERM
+W0527 16:23:50.422000 2639511 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 2640394 closing signal SIGTERM
+W0527 16:23:50.423000 2639511 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 2640395 closing signal SIGTERM
+W0527 16:23:50.460000 2639511 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 2640396 closing signal SIGTERM
+W0527 16:23:50.461000 2639511 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 2640397 closing signal SIGTERM
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Traceback (most recent call last):
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/bin/accelerate", line 6, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/accelerate/commands/accelerate_cli.py", line 50, in main
+    args.func(args)
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/accelerate/commands/launch.py", line 1266, in launch_command
+    deepspeed_launcher(args)
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/accelerate/commands/launch.py", line 952, in deepspeed_launcher
+    distrib_run.run(args)
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 260, in launch_agent
+    result = agent.run()
+             ^^^^^^^^^^^
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/distributed/elastic/metrics/api.py", line 137, in wrapper
+    result = f(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/distributed/elastic/agent/server/api.py", line 711, in run
+    result = self._invoke_run(role)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/distributed/elastic/agent/server/api.py", line 870, in _invoke_run
+    time.sleep(monitor_interval)
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py", line 84, in _terminate_process_handler
+    raise SignalException(f"Process {os.getpid()} got signal: {sigval}", sigval=sigval)
+torch.distributed.elastic.multiprocessing.api.SignalException: Process 2639511 got signal: 15

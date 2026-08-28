@@ -1,0 +1,39 @@
+{
+  "label": "CRN_pi5\u2192pi6",
+  "before": "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi5/model",
+  "after": "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi6/model",
+  "n_mc_max": 32,
+  "n_samples": 128,
+  "summary": [
+    {
+      "n_mc": 4,
+      "rho": -0.0038732842841200906,
+      "pval": 0.9653894592050901,
+      "sign_pct": 50.0,
+      "delta_pos": -3.7851803026971726e-06,
+      "delta_neg": -8.339453068985001e-06,
+      "mean_delta": -6.631600781627066e-06,
+      "std_delta": 2.440624846546926e-05
+    },
+    {
+      "n_mc": 16,
+      "rho": 0.055064284479587666,
+      "pval": 0.5370114184712433,
+      "sign_pct": 53.125,
+      "delta_pos": -6.660336616505815e-07,
+      "delta_neg": -3.483947771390382e-06,
+      "mean_delta": -2.427229980237957e-06,
+      "std_delta": 1.204787197765638e-05
+    },
+    {
+      "n_mc": 32,
+      "rho": 0.11028034798338057,
+      "pval": 0.2152625901829357,
+      "sign_pct": 51.5625,
+      "delta_pos": -7.291148076864678e-07,
+      "delta_neg": -3.944903140342893e-06,
+      "mean_delta": -2.7389825155967336e-06,
+      "std_delta": 1.056024524150439e-05
+    }
+  ]
+}

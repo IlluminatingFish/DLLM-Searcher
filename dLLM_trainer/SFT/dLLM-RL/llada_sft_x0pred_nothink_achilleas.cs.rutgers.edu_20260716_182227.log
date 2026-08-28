@@ -1,0 +1,38 @@
+W0716 18:22:49.911000 456213 site-packages/torch/distributed/run.py:792] 
+W0716 18:22:49.911000 456213 site-packages/torch/distributed/run.py:792] *****************************************
+W0716 18:22:49.911000 456213 site-packages/torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0716 18:22:49.911000 456213 site-packages/torch/distributed/run.py:792] *****************************************
+W0716 18:22:50.930000 456213 site-packages/torch/distributed/elastic/agent/server/api.py:719] Received Signals.SIGTERM death signal, shutting down workers
+W0716 18:22:50.931000 456213 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 456834 closing signal SIGTERM
+W0716 18:22:50.931000 456213 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 456835 closing signal SIGTERM
+W0716 18:22:50.932000 456213 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 456836 closing signal SIGTERM
+W0716 18:22:50.932000 456213 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 456837 closing signal SIGTERM
+W0716 18:22:50.933000 456213 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 456838 closing signal SIGTERM
+W0716 18:22:50.933000 456213 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 456839 closing signal SIGTERM
+W0716 18:22:50.934000 456213 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 456840 closing signal SIGTERM
+W0716 18:22:50.935000 456213 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 456842 closing signal SIGTERM
+Warning: The cache directory for DeepSpeed Triton autotune, /research/cbim/vast/mz751/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Traceback (most recent call last):
+  File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/bin/accelerate", line 6, in <module>
+    sys.exit(main())
+  File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/accelerate/commands/accelerate_cli.py", line 50, in main
+    args.func(args)
+  File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/accelerate/commands/launch.py", line 1266, in launch_command
+    deepspeed_launcher(args)
+  File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/accelerate/commands/launch.py", line 952, in deepspeed_launcher
+    distrib_run.run(args)
+  File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 260, in launch_agent
+    result = agent.run()
+  File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 137, in wrapper
+    result = f(*args, **kwargs)
+  File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 711, in run
+    result = self._invoke_run(role)
+  File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 870, in _invoke_run
+    time.sleep(monitor_interval)
+  File "/research/cbim/vast/mz751/miniforge3/envs/dllm-rl/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/api.py", line 84, in _terminate_process_handler
+    raise SignalException(f"Process {os.getpid()} got signal: {sigval}", sigval=sigval)
+torch.distributed.elastic.multiprocessing.api.SignalException: Process 456213 got signal: 15

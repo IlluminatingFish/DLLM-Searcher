@@ -1,0 +1,14 @@
+=====================================
+  x0pred 10ep ckpt_5 非强制答案版
+  8 GPU，各 75 题
+=====================================
+  GPU 0: 题 0 ~ 74  PID=1800941
+  GPU 1: 题 75 ~ 149  PID=1800942
+  GPU 2: 题 150 ~ 224  PID=1800943
+  GPU 3: 题 225 ~ 299  PID=1800944
+  GPU 4: 题 300 ~ 374  PID=1800945
+  GPU 5: 题 375 ~ 449  PID=1800946
+  GPU 6: 题 450 ~ 524  PID=1800947
+  GPU 7: 题 525 ~ 599  PID=1800948
+等待完成...
+完成: 600 题 → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/output/llada_eval/x0pred_10ep_ckpt_5_noforceanswer.jsonl

@@ -1,0 +1,8 @@
+eval 数据: 32 题  来自 /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/data/eval_600.jsonl
+
+加载模型: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_llada_x0pred_bs128_v2/ckpt_5/optimized
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:04,  1.54s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.31s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.22s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.21it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.01s/it]
+模型加载完成，mask_token_id=126336
+待评测: 32 题
+
+LLaDA agentic eval:   0%|          | 0/32 [00:00<?, ?it/s]LLaDA agentic eval:   3%|▎         | 1/32 [00:51<26:36, 51.50s/it]

@@ -1,0 +1,120 @@
+[03:51:53] ========================================================
+[03:51:53] Offline Resume Training 启动（step-51 → step-125）
+[03:51:53]   Base model: checkpoint-50
+[03:51:53]   续训: 75 步（save every 25 steps）
+[03:51:53] ========================================================
+[03:51:53] 启动 cleaner（防磁盘满）...
+[03:51:53]   cleaner PID=3457498
+[03:51:53] 
+[03:51:53] Step 1: 训练 75 步 (base=checkpoint-50, save every 25 steps)...
+[CLEANER 04:11:53] 删除 /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/offline_loop/offline_train/model_cont/checkpoint-25//global_step25/
+[CLEANER 04:19:16] 删除 /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/offline_loop/offline_train/model_cont/checkpoint-25//global_step25/
+[CLEANER 04:39:16] 删除 /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/offline_loop/offline_train/model_cont/checkpoint-50//global_step50/
+[04:56:29]   训练完成！
+[04:56:29] 最终清理 model_cont 中的 optimizer states...
+[04:56:45]   完成，当前磁盘：
+[04:56:45] 
+[04:56:45] Step 2: 整合 model_cont → model（重命名 checkpoint 编号）...
+[04:56:45]   checkpoint-25 → checkpoint-75 ✓
+[04:56:45]   checkpoint-50 → checkpoint-100 ✓
+[04:56:45]   checkpoint-75 → checkpoint-125 ✓
+[04:56:45] 
+[04:56:45] Step 3: eval 5 个 checkpoint（25, 50, 75, 100, 125）...
+[04:56:45]   eval step-25 启动（8 GPU × 75 题）...
+[04:57:25]   等待 step-25 eval 完成...
+[04:57:25]     step-25: 0/600
+[04:59:25]     step-25: 23/600
+[05:01:25]     step-25: 90/600
+[05:03:25]     step-25: 157/600
+[05:05:25]     step-25: 223/600
+[05:07:25]     step-25: 288/600
+[05:09:25]     step-25: 353/600
+[05:11:25]     step-25: 420/600
+[05:13:25]     step-25: 473/600
+[05:15:25]     step-25: 530/600
+[05:17:25]     step-25: 579/600
+[05:19:32]   step-25 eval 完成
+[05:19:32]   [存储] 删除 step-25 model.safetensors...
+[05:19:34]   eval step-50 启动（8 GPU × 75 题）...
+[05:20:14]   等待 step-50 eval 完成...
+[05:20:14]     step-50: 0/600
+[05:22:14]     step-50: 20/600
+[05:24:14]     step-50: 88/600
+[05:26:14]     step-50: 153/600
+[05:28:14]     step-50: 211/600
+[05:30:14]     step-50: 267/600
+[05:32:14]     step-50: 322/600
+[05:34:14]     step-50: 380/600
+[05:36:14]     step-50: 439/600
+[05:38:15]     step-50: 495/600
+[05:40:15]     step-50: 544/600
+[05:42:15]     step-50: 553/600
+[05:44:15]     step-50: 567/600
+[05:46:15]     step-50: 584/600
+[05:48:22]   step-50 eval 完成
+[05:48:22]   [存储] 删除 step-50 model.safetensors...
+[05:48:24]   eval step-75 启动（8 GPU × 75 题）...
+[05:49:04]   等待 step-75 eval 完成...
+[05:49:04]     step-75: 0/600
+[05:51:04]     step-75: 23/600
+[05:53:04]     step-75: 85/600
+[05:55:04]     step-75: 143/600
+[05:57:04]     step-75: 202/600
+[05:59:04]     step-75: 255/600
+[06:01:04]     step-75: 312/600
+[06:03:04]     step-75: 371/600
+[06:05:04]     step-75: 422/600
+[06:07:04]     step-75: 480/600
+[06:09:04]     step-75: 531/600
+[06:11:04]     step-75: 544/600
+[06:13:04]     step-75: 552/600
+[06:15:04]     step-75: 561/600
+[06:17:04]     step-75: 569/600
+[06:19:05]     step-75: 577/600
+[06:21:05]     step-75: 585/600
+[06:23:11]   step-75 eval 完成
+[06:23:11]   [存储] 删除 step-75 model.safetensors...
+[06:23:14]   eval step-100 启动（8 GPU × 75 题）...
+[06:23:54]   等待 step-100 eval 完成...
+[06:23:54]     step-100: 0/600
+[06:25:54]     step-100: 23/600
+[06:27:54]     step-100: 89/600
+[06:29:54]     step-100: 154/600
+[06:31:54]     step-100: 215/600
+[06:33:54]     step-100: 279/600
+[06:35:54]     step-100: 337/600
+[06:37:54]     step-100: 401/600
+[06:39:54]     step-100: 462/600
+[06:41:54]     step-100: 531/600
+[06:43:54]     step-100: 585/600
+[06:46:00]   step-100 eval 完成
+[06:46:00]   [存储] 删除 step-100 model.safetensors...
+[06:46:03]   eval step-125 启动（8 GPU × 75 题）...
+[06:46:43]   等待 step-125 eval 完成...
+[06:46:43]     step-125: 0/600
+[06:48:43]     step-125: 21/600
+[06:50:43]     step-125: 88/600
+[06:52:43]     step-125: 154/600
+[06:54:43]     step-125: 219/600
+[06:56:43]     step-125: 284/600
+[06:58:43]     step-125: 345/600
+[07:00:43]     step-125: 410/600
+[07:02:43]     step-125: 465/600
+[07:04:43]     step-125: 522/600
+[07:06:43]     step-125: 568/600
+[07:08:43]     step-125: 579/600
+[07:10:43]     step-125: 587/600
+[07:12:50]   step-125 eval 完成
+[07:12:50] 
+[07:12:50] ========================================================
+[07:12:50] Offline Baseline 学习曲线（5 checkpoints）
+[07:12:50] ========================================================
+Checkpoint     CEM-1     
+π₀ SFT      43.33%    
+step-25        100.0%    
+step-50        100.0%    
+step-75        100.0%    
+step-100       100.0%    
+step-125       100.0%    
+[07:12:50] ========================================================
+[07:12:50] 全部完成！最终模型: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/offline_loop/offline_train/model/checkpoint-125

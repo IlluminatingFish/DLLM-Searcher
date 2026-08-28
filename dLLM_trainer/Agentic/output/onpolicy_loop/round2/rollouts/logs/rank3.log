@@ -1,0 +1,3 @@
+[rank 3/8] 处理 32 题 × 8 rolls = 256 trajectories
+加载模型: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/phase4_elbopg/reward_a/model
+`torch_dtype` is deprecated! Use `dtype` instead!

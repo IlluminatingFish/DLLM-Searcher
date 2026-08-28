@@ -7,7 +7,30 @@ from jetengine.config import Config
 from jetengine.engine.sequence import Sequence, SequenceStatus, RunType
 from jetengine.engine.block_manager import BlockManager
 from jetengine.layers.sampler import sample_with_temperature_topk_topp
-from flashinfer.logits_processor import LogitsPipe, Temperature, Softmax, TopP, TopK, Sample
+
+class _TorchSamplePipe:
+    """Pure-PyTorch sampling pipeline (temperature → top_k → softmax → top_p)."""
+    def __init__(self, use_topk: bool = True):
+        self._use_topk = use_topk
+
+    def __call__(self, logits: torch.Tensor, temperature: float = 1.0,
+                 top_k: int = 0, top_p: float = 1.0) -> torch.Tensor:
+        logits = logits.float()
+        if temperature > 0:
+            logits = logits / temperature
+        if self._use_topk and top_k > 0:
+            top_k = min(top_k, logits.size(-1))
+            kth = torch.topk(logits, top_k, dim=-1).values[..., -1, None]
+            logits = logits.masked_fill(logits < kth, float('-inf'))
+        probs = F.softmax(logits, dim=-1)
+        if top_p < 1.0:
+            sorted_probs, sorted_idx = torch.sort(probs, dim=-1, descending=True)
+            cumsum = torch.cumsum(sorted_probs, dim=-1)
+            remove = cumsum - sorted_probs > top_p
+            sorted_probs[remove] = 0.0
+            probs = torch.zeros_like(probs).scatter_(-1, sorted_idx, sorted_probs)
+            probs = probs / probs.sum(dim=-1, keepdim=True).clamp(min=1e-12)
+        return probs
 
 class Scheduler:
 
@@ -18,17 +41,8 @@ class Scheduler:
         self.mask_token_id = config.mask_token_id
         self.block_manager = BlockManager(config.num_kvcache_blocks, config.kvcache_block_size)
         self.running: list[Sequence] = []
-        self.sample_pipe = LogitsPipe([
-                                Temperature(),      # Scale logits by temperature
-                                TopK(),             # Apply top-k filtering
-                                Softmax(),          # Convert logits to probabilities
-                                TopP(),             # Apply top-p filtering
-                            ])
-        self.sample_pipe_topk0 = LogitsPipe([
-                        Temperature(),      # Scale logits by temperature
-                        Softmax(),          # Convert logits to probabilities
-                        TopP(),             # Apply top-p filtering
-                        ])
+        self.sample_pipe = _TorchSamplePipe(use_topk=True)
+        self.sample_pipe_topk0 = _TorchSamplePipe(use_topk=False)
         self.ONE = False
         self.TYPE = "toolcall"
 

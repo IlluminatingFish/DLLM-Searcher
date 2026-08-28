@@ -1,0 +1,1149 @@
+[14:11:29] ========================================================
+[14:11:29] On-Policy Loop 启动：Round 2 → 5  (目标: π₆)
+[14:11:29]   命名: Round N = π_N → D_N → π_{N+1}
+[14:11:29] ========================================================
+[14:11:29] 
+[14:11:29] ========================================================
+[14:11:29] Round 2:  π_2 → D_2 → π_3
+[14:11:29]   Base model : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/phase4_elbopg_round2/reward_a/model
+[14:11:29]   Output     : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi3/model
+[14:11:29] ========================================================
+[14:11:29]   [OK] 基础模型验证通过
+[14:11:29] Step 1/4: Pool  [512, 768)...
+[14:11:29] Step 2/4: Rollout  π_2 × 256题 × 8rolls...
+[14:11:29]   rank0 已启动 (GPU=0)
+[14:11:49]   rank1 已启动 (GPU=1)
+[14:12:09]   rank2 已启动 (GPU=2)
+[14:12:29]   rank3 已启动 (GPU=3)
+[14:12:49]   rank4 已启动 (GPU=4)
+[14:13:09]   rank5 已启动 (GPU=5)
+[14:13:29]   rank6 已启动 (GPU=6)
+[14:13:49]   rank7 已启动 (GPU=7)
+[14:13:49]   等待 rollout 完成（每 2 分钟汇报一次）...
+[14:13:49]   rollout 0/8 rank 已完成
+[14:15:50]   rollout 0/8 rank 已完成
+[14:17:50]   rollout 0/8 rank 已完成
+[14:19:50]   rollout 0/8 rank 已完成
+[14:21:50]   rollout 0/8 rank 已完成
+[14:23:50]   rollout 0/8 rank 已完成
+[14:25:50]   rollout 0/8 rank 已完成
+[14:27:50]   rollout 0/8 rank 已完成
+[14:29:50]   rollout 0/8 rank 已完成
+[14:31:50]   rollout 0/8 rank 已完成
+[14:33:50]   rollout 0/8 rank 已完成
+[14:35:50]   rollout 0/8 rank 已完成
+[14:37:50]   rollout 0/8 rank 已完成
+[14:39:50]   rollout 0/8 rank 已完成
+[14:41:50]   rollout 0/8 rank 已完成
+[14:43:50]   rollout 0/8 rank 已完成
+[14:45:50]   rollout 0/8 rank 已完成
+[14:47:50]   rollout 0/8 rank 已完成
+[14:49:50]   rollout 0/8 rank 已完成
+[14:51:50]   rollout 0/8 rank 已完成
+[14:53:50]   rollout 0/8 rank 已完成
+[14:55:50]   rollout 0/8 rank 已完成
+[14:57:50]   rollout 0/8 rank 已完成
+[14:59:50]   rollout 0/8 rank 已完成
+[15:01:50]   rollout 0/8 rank 已完成
+[15:03:50]   rollout 0/8 rank 已完成
+[15:05:50]   rollout 0/8 rank 已完成
+[15:07:51]   rollout 0/8 rank 已完成
+[15:09:51]   rollout 0/8 rank 已完成
+[15:11:51]   rollout 0/8 rank 已完成
+[15:13:51]   rollout 0/8 rank 已完成
+[15:15:51]   rollout 0/8 rank 已完成
+[15:17:51]   rollout 0/8 rank 已完成
+[15:19:51]   rollout 2/8 rank 已完成
+[15:21:51]   rollout 3/8 rank 已完成
+[15:23:51]   rollout 5/8 rank 已完成
+[15:25:51]   rollout 7/8 rank 已完成
+[15:27:51]   rollout 8/8 rank 已完成
+[15:27:51]   Rollout 完成！
+[15:27:51]   合并 rollout 文件...
+[15:27:51]   merged.jsonl: 2048 条
+[15:27:51] Step 3/4: Reward 计算...
+[15:27:52]   训练数据: 1608 条
+[15:27:52] Step 3/4: ELBO-PG 训练  π_2 → π_3...
+[15:50:19]   训练完成！π_3 → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi3/model
+[15:50:19] Step 4/4: eval_600  π_3...
+[15:50:19]   eval GPU0 已启动 (offset=0)
+[15:50:49]   eval GPU1 已启动 (offset=75)
+[15:51:19]   eval GPU2 已启动 (offset=150)
+[15:51:49]   eval GPU3 已启动 (offset=225)
+[15:52:19]   eval GPU4 已启动 (offset=300)
+[15:52:49]   eval GPU5 已启动 (offset=375)
+[15:53:19]   eval GPU6 已启动 (offset=450)
+[15:53:49]   eval GPU7 已启动 (offset=525)
+[15:53:49]   等待 eval 完成（每 1 分钟汇报）...
+[15:53:49]   eval 5/8 shard 完成
+[15:54:49]   eval 7/8 shard 完成
+[15:55:49]   eval 8/8 shard 完成
+[15:55:51]   eval 完成！
+[15:55:51] 
+[15:55:51] ========== Learning Curve (截至 π_3) ==========
+Policy CEM-1      LLM-Judge 
+π₀ SFT 43.33%     44.33%    
+π₁  45.67%     44.67%    
+π₂  44.17%     43.67%    
+π_3   %          %         
+[15:55:51] ==================================================
+[15:55:51] 
+[15:55:51] 
+[15:55:51] ========================================================
+[15:55:51] Round 3:  π_3 → D_3 → π_4
+[15:55:51]   Base model : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi3/model
+[15:55:51]   Output     : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi4/model
+[15:55:51] ========================================================
+[15:55:51]   [OK] 基础模型验证通过
+[15:55:51] Step 1/4: Pool  [768, 1024)...
+[15:55:51] Step 2/4: Rollout  π_3 × 256题 × 8rolls...
+[15:55:51]   rank0 已启动 (GPU=0)
+[15:56:11]   rank1 已启动 (GPU=1)
+[15:56:31]   rank2 已启动 (GPU=2)
+[15:56:51]   rank3 已启动 (GPU=3)
+[15:57:11]   rank4 已启动 (GPU=4)
+[15:57:31]   rank5 已启动 (GPU=5)
+[15:57:51]   rank6 已启动 (GPU=6)
+[15:58:11]   rank7 已启动 (GPU=7)
+[15:58:11]   等待 rollout 完成（每 2 分钟汇报一次）...
+[15:58:11]   rollout 3/8 rank 已完成
+[16:00:11]   rollout 8/8 rank 已完成
+[16:00:11]   Rollout 完成！
+[16:00:11]   合并 rollout 文件...
+[16:00:11]   merged.jsonl: 0 条
+[16:00:11] Step 3/4: Reward 计算...
+[16:00:11]   训练数据:  条
+[16:00:11] Step 3/4: ELBO-PG 训练  π_3 → π_4...
+[16:00:35] [ERROR] Round 3 训练失败 (exit=1)，退出
+[16:55:54] [RESTART] ZeRO-3 checkpoint fix applied. Re-launching from Round 2 (pi3 eval + Round 3+)...
+[16:55:57] ========================================================
+[16:55:57] On-Policy Loop 启动：Round 2 → 5  (目标: π₆)
+[16:55:57]   命名: Round N = π_N → D_N → π_{N+1}
+[16:55:57] ========================================================
+[16:55:57] 
+[16:55:57] ========================================================
+[16:55:57] Round 2:  π_2 → D_2 → π_3
+[16:55:57]   Base model : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/phase4_elbopg_round2/reward_a/model
+[16:55:57]   Output     : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi3/model
+[16:55:57] ========================================================
+[16:55:57]   [OK] 基础模型验证通过
+[16:55:57] Step 1/4: Pool  [512, 768)...
+[16:55:57]   Pool 已存在 (256 题)，跳过
+[16:55:57] Step 2/4: Rollout  π_2 × 256题 × 8rolls...
+[16:55:57]   Rollout 已完成，跳过
+[16:55:57]   merged.jsonl 已存在 (2048 条)
+[16:55:57] Step 3/4: Reward 计算...
+[16:55:57]   train_reward_a.jsonl 已存在 (1608 条)
+[16:55:57]   训练数据: 1608 条
+[16:55:57] Step 3/4: ELBO-PG 训练  π_2 → π_3...
+[16:55:57]   模型已存在 (15G)，跳过训练
+[16:55:57] Step 4/4: eval_600  π_3...
+[16:55:57]   eval GPU0 已启动 (offset=0)
+[16:56:27]   eval GPU1 已启动 (offset=75)
+[16:56:57]   eval GPU2 已启动 (offset=150)
+[16:57:27]   eval GPU3 已启动 (offset=225)
+[16:57:57]   eval GPU4 已启动 (offset=300)
+[16:58:27]   eval GPU5 已启动 (offset=375)
+[16:58:57]   eval GPU6 已启动 (offset=450)
+[16:59:27]   eval GPU7 已启动 (offset=525)
+[16:59:27]   等待 eval 完成（每 1 分钟汇报）...
+[16:59:27]   eval 0/8 shard 完成
+[17:00:27]   eval 0/8 shard 完成
+[17:01:27]   eval 0/8 shard 完成
+[17:02:27]   eval 0/8 shard 完成
+[17:03:27]   eval 0/8 shard 完成
+[17:04:28]   eval 0/8 shard 完成
+[17:05:28]   eval 0/8 shard 完成
+[17:06:28]   eval 0/8 shard 完成
+[17:07:28]   eval 0/8 shard 完成
+[17:08:28]   eval 0/8 shard 完成
+[17:09:28]   eval 0/8 shard 完成
+[17:10:28]   eval 0/8 shard 完成
+[17:11:28]   eval 0/8 shard 完成
+[17:12:28]   eval 0/8 shard 完成
+[17:13:28]   eval 0/8 shard 完成
+[17:14:28]   eval 0/8 shard 完成
+[17:15:28]   eval 0/8 shard 完成
+[17:16:28]   eval 1/8 shard 完成
+[17:17:28]   eval 3/8 shard 完成
+[17:18:28]   eval 4/8 shard 完成
+[17:19:28]   eval 5/8 shard 完成
+[17:20:28]   eval 7/8 shard 完成
+[17:21:28]   eval 7/8 shard 完成
+[17:22:28]   eval 7/8 shard 完成
+[17:23:28]   eval 7/8 shard 完成
+[17:24:28]   eval 7/8 shard 完成
+[17:25:28]   eval 7/8 shard 完成
+[17:26:29]   eval 7/8 shard 完成
+[17:27:29]   eval 7/8 shard 完成
+[17:28:29]   eval 8/8 shard 完成
+[17:28:51]   eval 完成！
+[17:28:51] 
+[17:28:51] ========== Learning Curve (截至 π_3) ==========
+Policy CEM-1      LLM-Judge 
+π₀ SFT 43.33%     44.33%    
+π₁  45.67%     44.67%    
+π₂  44.17%     43.67%    
+π_3   100.0%     44.33%    
+[17:28:51] ==================================================
+[17:28:51] 
+[17:28:51] 
+[17:28:51] ========================================================
+[17:28:51] Round 3:  π_3 → D_3 → π_4
+[17:28:51]   Base model : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi3/model
+[17:28:51]   Output     : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi4/model
+[17:28:51] ========================================================
+[17:28:51]   [OK] 基础模型验证通过
+[17:28:51] Step 1/4: Pool  [768, 1024)...
+[17:28:51] Step 2/4: Rollout  π_3 × 256题 × 8rolls...
+[17:28:51]   rank0 已启动 (GPU=0)
+[17:29:11]   rank1 已启动 (GPU=1)
+[17:29:31]   rank2 已启动 (GPU=2)
+[17:29:51]   rank3 已启动 (GPU=3)
+[17:30:11]   rank4 已启动 (GPU=4)
+[17:30:31]   rank5 已启动 (GPU=5)
+[17:30:51]   rank6 已启动 (GPU=6)
+[17:31:11]   rank7 已启动 (GPU=7)
+[17:31:11]   等待 rollout 完成（每 2 分钟汇报一次）...
+[17:31:11]   rollout 0/8 rank 已完成
+[17:33:11]   rollout 0/8 rank 已完成
+[17:35:11]   rollout 0/8 rank 已完成
+[17:37:11]   rollout 0/8 rank 已完成
+[17:39:11]   rollout 0/8 rank 已完成
+[17:41:11]   rollout 0/8 rank 已完成
+[17:43:11]   rollout 0/8 rank 已完成
+[17:45:12]   rollout 0/8 rank 已完成
+[17:47:12]   rollout 0/8 rank 已完成
+[17:49:12]   rollout 0/8 rank 已完成
+[17:51:12]   rollout 0/8 rank 已完成
+[17:53:12]   rollout 0/8 rank 已完成
+[17:55:12]   rollout 0/8 rank 已完成
+[17:57:12]   rollout 0/8 rank 已完成
+[17:59:12]   rollout 0/8 rank 已完成
+[18:01:12]   rollout 0/8 rank 已完成
+[18:03:12]   rollout 0/8 rank 已完成
+[18:05:12]   rollout 0/8 rank 已完成
+[18:07:12]   rollout 0/8 rank 已完成
+[18:09:12]   rollout 0/8 rank 已完成
+[18:11:12]   rollout 0/8 rank 已完成
+[18:13:12]   rollout 0/8 rank 已完成
+[18:15:12]   rollout 0/8 rank 已完成
+[18:17:12]   rollout 0/8 rank 已完成
+[18:19:12]   rollout 0/8 rank 已完成
+[18:21:12]   rollout 0/8 rank 已完成
+[18:23:12]   rollout 0/8 rank 已完成
+[18:25:12]   rollout 0/8 rank 已完成
+[18:27:12]   rollout 0/8 rank 已完成
+[18:29:12]   rollout 0/8 rank 已完成
+[18:31:12]   rollout 0/8 rank 已完成
+[18:33:12]   rollout 1/8 rank 已完成
+[18:35:12]   rollout 1/8 rank 已完成
+[18:37:13]   rollout 1/8 rank 已完成
+[18:39:13]   rollout 2/8 rank 已完成
+[18:41:13]   rollout 4/8 rank 已完成
+[18:43:13]   rollout 6/8 rank 已完成
+[18:45:13]   rollout 6/8 rank 已完成
+[18:47:13]   rollout 6/8 rank 已完成
+[18:49:13]   rollout 7/8 rank 已完成
+[18:51:13]   rollout 7/8 rank 已完成
+[18:53:13]   rollout 8/8 rank 已完成
+[18:53:13]   Rollout 完成！
+[18:53:13]   合并 rollout 文件...
+[18:53:14]   merged.jsonl: 2048 条
+[18:53:14] Step 3/4: Reward 计算...
+[18:53:15]   训练数据: 1616 条
+[18:53:15] Step 3/4: ELBO-PG 训练  π_3 → π_4...
+[19:12:53]   [ZeRO-3 fix] 从 checkpoint 复制完整权重 (16031197344 bytes)...
+[19:17:08]   [OK] 完整模型权重已复制到 /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi4/model/model.safetensors
+[19:17:08]   训练完成！π_4 → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi4/model
+[19:17:08] Step 4/4: eval_600  π_4...
+[19:17:08]   eval GPU0 已启动 (offset=0)
+[19:17:38]   eval GPU1 已启动 (offset=75)
+[19:18:08]   eval GPU2 已启动 (offset=150)
+[19:18:38]   eval GPU3 已启动 (offset=225)
+[19:19:08]   eval GPU4 已启动 (offset=300)
+[19:19:38]   eval GPU5 已启动 (offset=375)
+[19:20:08]   eval GPU6 已启动 (offset=450)
+[19:20:38]   eval GPU7 已启动 (offset=525)
+[19:20:38]   等待 eval 完成（每 1 分钟汇报）...
+[19:20:38]   eval 0/8 shard 完成
+[19:21:38]   eval 0/8 shard 完成
+[19:22:38]   eval 0/8 shard 完成
+[19:23:38]   eval 0/8 shard 完成
+[19:24:38]   eval 0/8 shard 完成
+[19:25:38]   eval 0/8 shard 完成
+[19:26:38]   eval 0/8 shard 完成
+[19:27:38]   eval 0/8 shard 完成
+[19:28:38]   eval 0/8 shard 完成
+[19:29:38]   eval 0/8 shard 完成
+[19:30:38]   eval 0/8 shard 完成
+[19:31:38]   eval 0/8 shard 完成
+[19:32:38]   eval 0/8 shard 完成
+[19:33:38]   eval 0/8 shard 完成
+[19:34:39]   eval 0/8 shard 完成
+[19:35:39]   eval 0/8 shard 完成
+[19:36:39]   eval 0/8 shard 完成
+[19:37:39]   eval 0/8 shard 完成
+[19:38:39]   eval 2/8 shard 完成
+[19:39:39]   eval 4/8 shard 完成
+[19:40:39]   eval 6/8 shard 完成
+[19:41:39]   eval 6/8 shard 完成
+[19:42:39]   eval 6/8 shard 完成
+[19:43:39]   eval 6/8 shard 完成
+[19:44:39]   eval 6/8 shard 完成
+[19:45:39]   eval 6/8 shard 完成
+[19:46:39]   eval 6/8 shard 完成
+[19:47:39]   eval 6/8 shard 完成
+[19:48:39]   eval 6/8 shard 完成
+[19:49:39]   eval 7/8 shard 完成
+[19:50:39]   eval 7/8 shard 完成
+[19:51:39]   eval 7/8 shard 完成
+[19:52:39]   eval 7/8 shard 完成
+[19:53:39]   eval 7/8 shard 完成
+[19:54:39]   eval 7/8 shard 完成
+[19:55:39]   eval 7/8 shard 完成
+[19:56:39]   eval 7/8 shard 完成
+[19:57:39]   eval 8/8 shard 完成
+[19:57:47]   eval 完成！
+[19:57:47] 
+[19:57:47] ========== Learning Curve (截至 π_4) ==========
+Policy CEM-1      LLM-Judge 
+π₀ SFT 43.33%     44.33%    
+π₁  45.67%     44.67%    
+π₂  44.17%     43.67%    
+π_3   100.0%     44.33%    
+π_4   100.0%     43.33%    
+[19:57:47] ==================================================
+[19:57:47] 
+[19:57:47] 
+[19:57:47] ========================================================
+[19:57:47] Round 4:  π_4 → D_4 → π_5
+[19:57:47]   Base model : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi4/model
+[19:57:47]   Output     : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi5/model
+[19:57:47] ========================================================
+[19:57:47]   [OK] 基础模型验证通过
+[19:57:47] Step 1/4: Pool  [1024, 1280)...
+[19:57:47] Step 2/4: Rollout  π_4 × 256题 × 8rolls...
+[19:57:47]   rank0 已启动 (GPU=0)
+[19:58:07]   rank1 已启动 (GPU=1)
+[19:58:27]   rank2 已启动 (GPU=2)
+[19:58:47]   rank3 已启动 (GPU=3)
+[19:59:07]   rank4 已启动 (GPU=4)
+[19:59:27]   rank5 已启动 (GPU=5)
+[19:59:47]   rank6 已启动 (GPU=6)
+[20:00:07]   rank7 已启动 (GPU=7)
+[20:00:07]   等待 rollout 完成（每 2 分钟汇报一次）...
+[20:00:07]   rollout 0/8 rank 已完成
+[20:02:07]   rollout 0/8 rank 已完成
+[20:04:07]   rollout 0/8 rank 已完成
+[20:06:07]   rollout 0/8 rank 已完成
+[20:08:07]   rollout 0/8 rank 已完成
+[20:10:07]   rollout 0/8 rank 已完成
+[20:12:07]   rollout 0/8 rank 已完成
+[20:14:07]   rollout 0/8 rank 已完成
+[20:16:07]   rollout 0/8 rank 已完成
+[20:18:07]   rollout 0/8 rank 已完成
+[20:20:07]   rollout 0/8 rank 已完成
+[20:22:07]   rollout 0/8 rank 已完成
+[20:24:07]   rollout 0/8 rank 已完成
+[20:26:07]   rollout 0/8 rank 已完成
+[20:28:07]   rollout 0/8 rank 已完成
+[20:30:07]   rollout 0/8 rank 已完成
+[20:32:07]   rollout 0/8 rank 已完成
+[20:34:07]   rollout 0/8 rank 已完成
+[20:36:08]   rollout 0/8 rank 已完成
+[20:38:08]   rollout 0/8 rank 已完成
+[20:40:08]   rollout 0/8 rank 已完成
+[20:42:08]   rollout 0/8 rank 已完成
+[20:44:08]   rollout 0/8 rank 已完成
+[20:46:08]   rollout 0/8 rank 已完成
+[20:48:08]   rollout 0/8 rank 已完成
+[20:50:08]   rollout 0/8 rank 已完成
+[20:52:08]   rollout 0/8 rank 已完成
+[20:54:08]   rollout 0/8 rank 已完成
+[20:56:08]   rollout 0/8 rank 已完成
+[20:58:08]   rollout 0/8 rank 已完成
+[21:00:08]   rollout 0/8 rank 已完成
+[21:02:08]   rollout 1/8 rank 已完成
+[21:04:08]   rollout 2/8 rank 已完成
+[21:06:08]   rollout 2/8 rank 已完成
+[21:08:08]   rollout 3/8 rank 已完成
+[21:10:08]   rollout 5/8 rank 已完成
+[21:12:08]   rollout 5/8 rank 已完成
+[21:14:08]   rollout 6/8 rank 已完成
+[21:16:08]   rollout 7/8 rank 已完成
+[21:18:08]   rollout 7/8 rank 已完成
+[21:20:08]   rollout 8/8 rank 已完成
+[21:20:08]   Rollout 完成！
+[21:20:08]   合并 rollout 文件...
+[21:20:09]   merged.jsonl: 2048 条
+[21:20:09] Step 3/4: Reward 计算...
+[21:20:09]   训练数据: 1592 条
+[21:20:09] Step 3/4: ELBO-PG 训练  π_4 → π_5...
+[21:39:57]   [ZeRO-3 fix] 从 checkpoint 复制完整权重 (16031197344 bytes)...
+[21:40:42]   [OK] 完整模型权重已复制到 /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi5/model/model.safetensors
+[21:40:42]   训练完成！π_5 → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi5/model
+[21:40:42] Step 4/4: eval_600  π_5...
+[21:40:42]   eval GPU0 已启动 (offset=0)
+[21:41:12]   eval GPU1 已启动 (offset=75)
+[21:41:42]   eval GPU2 已启动 (offset=150)
+[21:42:12]   eval GPU3 已启动 (offset=225)
+[21:42:42]   eval GPU4 已启动 (offset=300)
+[21:43:12]   eval GPU5 已启动 (offset=375)
+[21:43:42]   eval GPU6 已启动 (offset=450)
+[21:44:12]   eval GPU7 已启动 (offset=525)
+[21:44:12]   等待 eval 完成（每 1 分钟汇报）...
+[21:44:12]   eval 0/8 shard 完成
+[21:45:12]   eval 0/8 shard 完成
+[21:46:13]   eval 0/8 shard 完成
+[21:47:13]   eval 0/8 shard 完成
+[21:48:13]   eval 0/8 shard 完成
+[21:49:13]   eval 0/8 shard 完成
+[21:50:13]   eval 0/8 shard 完成
+[21:51:13]   eval 0/8 shard 完成
+[21:52:13]   eval 0/8 shard 完成
+[21:53:13]   eval 0/8 shard 完成
+[21:54:13]   eval 0/8 shard 完成
+[21:55:13]   eval 0/8 shard 完成
+[21:56:13]   eval 0/8 shard 完成
+[21:57:13]   eval 0/8 shard 完成
+[21:58:13]   eval 0/8 shard 完成
+[21:59:13]   eval 0/8 shard 完成
+[22:00:13]   eval 0/8 shard 完成
+[22:01:13]   eval 2/8 shard 完成
+[22:02:13]   eval 3/8 shard 完成
+[22:03:13]   eval 4/8 shard 完成
+[22:04:13]   eval 6/8 shard 完成
+[22:05:13]   eval 8/8 shard 完成
+[22:05:20]   eval 完成！
+[22:05:20] 
+[22:05:20] ========== Learning Curve (截至 π_5) ==========
+Policy CEM-1      LLM-Judge 
+π₀ SFT 43.33%     44.33%    
+π₁  45.67%     44.67%    
+π₂  44.17%     43.67%    
+π_3   100.0%     44.33%    
+π_4   100.0%     43.33%    
+π_5   100.0%     44.67%    
+[22:05:20] ==================================================
+[22:05:20] 
+[22:05:20] 
+[22:05:20] ========================================================
+[22:05:20] Round 5:  π_5 → D_5 → π_6
+[22:05:20]   Base model : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi5/model
+[22:05:20]   Output     : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi6/model
+[22:05:20] ========================================================
+[22:05:20]   [OK] 基础模型验证通过
+[22:05:20] Step 1/4: Pool  [1280, 1536)...
+[22:05:20] Step 2/4: Rollout  π_5 × 256题 × 8rolls...
+[22:05:20]   rank0 已启动 (GPU=0)
+[22:05:40]   rank1 已启动 (GPU=1)
+[22:06:00]   rank2 已启动 (GPU=2)
+[22:06:20]   rank3 已启动 (GPU=3)
+[22:06:40]   rank4 已启动 (GPU=4)
+[22:07:00]   rank5 已启动 (GPU=5)
+[22:07:20]   rank6 已启动 (GPU=6)
+[22:07:40]   rank7 已启动 (GPU=7)
+[22:07:40]   等待 rollout 完成（每 2 分钟汇报一次）...
+[22:07:40]   rollout 0/8 rank 已完成
+[22:09:40]   rollout 0/8 rank 已完成
+[22:11:40]   rollout 0/8 rank 已完成
+[22:13:40]   rollout 0/8 rank 已完成
+[22:15:40]   rollout 0/8 rank 已完成
+[22:17:40]   rollout 0/8 rank 已完成
+[22:19:40]   rollout 0/8 rank 已完成
+[22:21:41]   rollout 0/8 rank 已完成
+[22:23:41]   rollout 0/8 rank 已完成
+[22:25:41]   rollout 0/8 rank 已完成
+[22:27:41]   rollout 0/8 rank 已完成
+[22:29:41]   rollout 0/8 rank 已完成
+[22:31:41]   rollout 0/8 rank 已完成
+[22:33:41]   rollout 0/8 rank 已完成
+[22:35:41]   rollout 0/8 rank 已完成
+[22:37:41]   rollout 0/8 rank 已完成
+[22:39:41]   rollout 0/8 rank 已完成
+[22:41:41]   rollout 0/8 rank 已完成
+[22:43:41]   rollout 0/8 rank 已完成
+[22:45:41]   rollout 0/8 rank 已完成
+[22:47:41]   rollout 0/8 rank 已完成
+[22:49:41]   rollout 0/8 rank 已完成
+[22:51:41]   rollout 0/8 rank 已完成
+[22:53:41]   rollout 0/8 rank 已完成
+[22:55:41]   rollout 0/8 rank 已完成
+[22:57:41]   rollout 0/8 rank 已完成
+[22:59:41]   rollout 0/8 rank 已完成
+[23:01:41]   rollout 0/8 rank 已完成
+[23:03:41]   rollout 0/8 rank 已完成
+[23:05:41]   rollout 0/8 rank 已完成
+[23:07:41]   rollout 0/8 rank 已完成
+[23:09:42]   rollout 0/8 rank 已完成
+[23:11:42]   rollout 0/8 rank 已完成
+[23:13:42]   rollout 1/8 rank 已完成
+[23:15:42]   rollout 2/8 rank 已完成
+[23:17:42]   rollout 3/8 rank 已完成
+[23:19:42]   rollout 5/8 rank 已完成
+[23:21:42]   rollout 7/8 rank 已完成
+[23:23:42]   rollout 7/8 rank 已完成
+[23:25:42]   rollout 7/8 rank 已完成
+[23:27:42]   rollout 8/8 rank 已完成
+[23:27:42]   Rollout 完成！
+[23:27:42]   合并 rollout 文件...
+[23:27:42]   merged.jsonl: 2048 条
+[23:27:42] Step 3/4: Reward 计算...
+[23:27:43]   训练数据: 1560 条
+[23:27:43] Step 3/4: ELBO-PG 训练  π_5 → π_6...
+========================================================
+[LR SWEEP] lr=1e-6 重跑开始: Wed Aug 12 09:54:13 PM EDT 2026
+========================================================
+[21:54:14] ========================================================
+[21:54:14] On-Policy Loop 启动：Round 2 → 5  (目标: π₆)
+[21:54:14]   命名: Round N = π_N → D_N → π_{N+1}
+[21:54:14] ========================================================
+[21:54:14] 
+[21:54:14] ========================================================
+[21:54:14] Round 2:  π_2 → D_2 → π_3
+[21:54:14]   Base model : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/phase4_elbopg_round2/reward_a/model
+[21:54:14]   Output     : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi3/model
+[21:54:14] ========================================================
+[21:54:14] [ERROR] 基础模型不存在: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/phase4_elbopg_round2/reward_a/model
+[LR=1e-6 重跑 START_ROUND=0 Wed Aug 12 10:01:37 PM EDT 2026]
+[22:01:38] ========================================================
+[22:01:38] On-Policy Loop 启动：Round 0 → 5  (目标: π₆)
+[22:01:38]   命名: Round N = π_N → D_N → π_{N+1}
+[22:01:38] ========================================================
+[22:01:38] 
+[22:01:38] ========================================================
+[22:01:38] Round 0:  π_0 → D_0 → π_1
+[22:01:38]   Base model : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_llada_x0pred/ckpt_6/optimized
+[22:01:38]   Output     : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi1/model
+[22:01:38] ========================================================
+[22:01:38]   [OK] 基础模型验证通过
+[22:01:38] Step 1/4: Pool  [0, 256)...
+[22:01:38] Step 2/4: Rollout  π_0 × 256题 × 8rolls...
+[22:01:38]   rank0 已启动 (GPU=0)
+[22:01:58]   rank1 已启动 (GPU=1)
+[22:02:18]   rank2 已启动 (GPU=2)
+[22:02:38]   rank3 已启动 (GPU=3)
+[22:02:58]   rank4 已启动 (GPU=4)
+[22:03:18]   rank5 已启动 (GPU=5)
+[22:03:38]   rank6 已启动 (GPU=6)
+[22:03:58]   rank7 已启动 (GPU=7)
+[22:03:58]   等待 rollout 完成（每 2 分钟汇报一次）...
+[22:03:58]   rollout 0/8 rank 已完成
+[22:05:58]   rollout 0/8 rank 已完成
+[22:07:58]   rollout 0/8 rank 已完成
+[22:09:58]   rollout 0/8 rank 已完成
+[22:11:58]   rollout 0/8 rank 已完成
+[22:13:58]   rollout 0/8 rank 已完成
+[22:15:58]   rollout 0/8 rank 已完成
+[22:17:58]   rollout 0/8 rank 已完成
+[22:19:58]   rollout 0/8 rank 已完成
+[22:21:58]   rollout 0/8 rank 已完成
+[22:23:59]   rollout 0/8 rank 已完成
+[22:25:59]   rollout 0/8 rank 已完成
+[22:27:59]   rollout 0/8 rank 已完成
+[22:29:59]   rollout 0/8 rank 已完成
+[22:31:59]   rollout 0/8 rank 已完成
+[22:33:59]   rollout 0/8 rank 已完成
+[22:35:59]   rollout 0/8 rank 已完成
+[22:37:59]   rollout 0/8 rank 已完成
+[22:39:59]   rollout 0/8 rank 已完成
+[22:41:59]   rollout 0/8 rank 已完成
+[22:43:59]   rollout 0/8 rank 已完成
+[22:45:59]   rollout 0/8 rank 已完成
+[22:47:59]   rollout 0/8 rank 已完成
+[22:49:59]   rollout 0/8 rank 已完成
+[22:51:59]   rollout 0/8 rank 已完成
+[22:53:59]   rollout 0/8 rank 已完成
+[22:55:59]   rollout 0/8 rank 已完成
+[22:57:59]   rollout 0/8 rank 已完成
+[22:59:59]   rollout 0/8 rank 已完成
+[23:01:59]   rollout 0/8 rank 已完成
+[23:03:59]   rollout 0/8 rank 已完成
+[23:05:59]   rollout 0/8 rank 已完成
+[23:07:59]   rollout 0/8 rank 已完成
+[23:09:59]   rollout 2/8 rank 已完成
+[23:11:59]   rollout 4/8 rank 已完成
+[23:13:59]   rollout 5/8 rank 已完成
+[23:16:00]   rollout 8/8 rank 已完成
+[23:16:00]   Rollout 完成！
+[23:16:00]   合并 rollout 文件...
+[23:16:00]   merged.jsonl: 2048 条
+[23:16:00] Step 3/4: Reward 计算...
+[23:16:00]   训练数据: 1600 条
+[23:16:00] Step 3/4: ELBO-PG 训练  π_0 → π_1...
+[23:35:15]   [ZeRO-3 fix] 从 checkpoint 复制完整权重 (16031197344 bytes)...
+[23:35:45]   [OK] 完整模型权重已复制到 /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi1/model/model.safetensors
+[23:35:45]   训练完成！π_1 → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi1/model
+[23:35:45] Step 4/4: eval_600  π_1...
+[23:35:45]   eval GPU0 已启动 (offset=0)
+[23:36:15]   eval GPU1 已启动 (offset=75)
+[23:36:45]   eval GPU2 已启动 (offset=150)
+[23:37:15]   eval GPU3 已启动 (offset=225)
+[23:37:45]   eval GPU4 已启动 (offset=300)
+[23:38:15]   eval GPU5 已启动 (offset=375)
+[23:38:45]   eval GPU6 已启动 (offset=450)
+[23:39:15]   eval GPU7 已启动 (offset=525)
+[23:39:15]   等待 eval 完成（每 1 分钟汇报）...
+[23:39:15]   eval 0/8 shard 完成
+[23:40:15]   eval 0/8 shard 完成
+[23:41:15]   eval 0/8 shard 完成
+[23:42:15]   eval 0/8 shard 完成
+[23:43:15]   eval 0/8 shard 完成
+[23:44:15]   eval 0/8 shard 完成
+[23:45:15]   eval 0/8 shard 完成
+[23:46:15]   eval 0/8 shard 完成
+[23:47:15]   eval 0/8 shard 完成
+[23:48:15]   eval 0/8 shard 完成
+[23:49:15]   eval 0/8 shard 完成
+[23:50:15]   eval 0/8 shard 完成
+[23:51:15]   eval 0/8 shard 完成
+[23:52:15]   eval 0/8 shard 完成
+[23:53:15]   eval 0/8 shard 完成
+[23:54:15]   eval 0/8 shard 完成
+[23:55:15]   eval 0/8 shard 完成
+[23:56:16]   eval 2/8 shard 完成
+[23:57:16]   eval 3/8 shard 完成
+[23:58:16]   eval 5/8 shard 完成
+[23:59:16]   eval 6/8 shard 完成
+[00:00:16]   eval 6/8 shard 完成
+[00:01:16]   eval 6/8 shard 完成
+[00:02:16]   eval 6/8 shard 完成
+[00:03:16]   eval 6/8 shard 完成
+[00:04:16]   eval 6/8 shard 完成
+[00:05:16]   eval 6/8 shard 完成
+[00:06:16]   eval 6/8 shard 完成
+[00:07:16]   eval 8/8 shard 完成
+[00:07:23]   eval 完成！
+[00:07:23] 
+[00:07:23] ========== Learning Curve (截至 π_1) ==========
+Policy CEM-1      LLM-Judge 
+π₀ SFT 43.33%     44.33%    
+π_1   100.0%     43.67%    
+[00:07:23] ==================================================
+[00:07:23] 
+[00:07:23] 
+[00:07:23] ========================================================
+[00:07:23] Round 1:  π_1 → D_1 → π_2
+[00:07:23]   Base model : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi1/model
+[00:07:23]   Output     : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi2/model
+[00:07:23] ========================================================
+[00:07:24]   [OK] 基础模型验证通过
+[00:07:24] Step 1/4: Pool  [256, 512)...
+[00:07:24] Step 2/4: Rollout  π_1 × 256题 × 8rolls...
+[00:07:24]   rank0 已启动 (GPU=0)
+[00:07:44]   rank1 已启动 (GPU=1)
+[00:08:04]   rank2 已启动 (GPU=2)
+[00:08:24]   rank3 已启动 (GPU=3)
+[00:08:44]   rank4 已启动 (GPU=4)
+[00:09:04]   rank5 已启动 (GPU=5)
+[00:09:24]   rank6 已启动 (GPU=6)
+[00:09:44]   rank7 已启动 (GPU=7)
+[00:09:44]   等待 rollout 完成（每 2 分钟汇报一次）...
+[00:09:44]   rollout 0/8 rank 已完成
+[00:11:44]   rollout 0/8 rank 已完成
+[00:13:44]   rollout 0/8 rank 已完成
+[00:15:44]   rollout 0/8 rank 已完成
+[00:17:44]   rollout 0/8 rank 已完成
+[00:19:44]   rollout 0/8 rank 已完成
+[00:21:44]   rollout 0/8 rank 已完成
+[00:23:44]   rollout 0/8 rank 已完成
+[00:25:44]   rollout 0/8 rank 已完成
+[00:27:44]   rollout 0/8 rank 已完成
+[00:29:44]   rollout 0/8 rank 已完成
+[00:31:44]   rollout 0/8 rank 已完成
+[00:33:44]   rollout 0/8 rank 已完成
+[00:35:44]   rollout 0/8 rank 已完成
+[00:37:44]   rollout 0/8 rank 已完成
+[00:39:44]   rollout 0/8 rank 已完成
+[00:41:44]   rollout 0/8 rank 已完成
+[00:43:44]   rollout 0/8 rank 已完成
+[00:45:44]   rollout 0/8 rank 已完成
+[00:47:44]   rollout 0/8 rank 已完成
+[00:49:44]   rollout 0/8 rank 已完成
+[00:51:45]   rollout 0/8 rank 已完成
+[00:53:45]   rollout 0/8 rank 已完成
+[00:55:45]   rollout 0/8 rank 已完成
+[00:57:45]   rollout 0/8 rank 已完成
+[00:59:45]   rollout 0/8 rank 已完成
+[01:01:45]   rollout 0/8 rank 已完成
+[01:03:45]   rollout 0/8 rank 已完成
+[01:05:45]   rollout 0/8 rank 已完成
+[01:07:45]   rollout 0/8 rank 已完成
+[01:09:45]   rollout 0/8 rank 已完成
+[01:11:45]   rollout 0/8 rank 已完成
+[01:13:45]   rollout 1/8 rank 已完成
+[01:15:45]   rollout 1/8 rank 已完成
+[01:17:45]   rollout 2/8 rank 已完成
+[01:19:45]   rollout 5/8 rank 已完成
+[01:21:45]   rollout 6/8 rank 已完成
+[01:23:45]   rollout 6/8 rank 已完成
+[01:25:45]   rollout 8/8 rank 已完成
+[01:25:45]   Rollout 完成！
+[01:25:45]   合并 rollout 文件...
+[01:25:45]   merged.jsonl: 2048 条
+[01:25:45] Step 3/4: Reward 计算...
+[01:25:46]   训练数据: 1624 条
+[01:25:46] Step 3/4: ELBO-PG 训练  π_1 → π_2...
+[01:45:39]   [ZeRO-3 fix] 从 checkpoint 复制完整权重 (16031197344 bytes)...
+[01:46:14]   [OK] 完整模型权重已复制到 /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi2/model/model.safetensors
+[01:46:14]   训练完成！π_2 → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi2/model
+[01:46:14] Step 4/4: eval_600  π_2...
+[01:46:14]   eval GPU0 已启动 (offset=0)
+[01:46:44]   eval GPU1 已启动 (offset=75)
+[01:47:14]   eval GPU2 已启动 (offset=150)
+[01:47:44]   eval GPU3 已启动 (offset=225)
+[01:48:14]   eval GPU4 已启动 (offset=300)
+[01:48:44]   eval GPU5 已启动 (offset=375)
+[01:49:14]   eval GPU6 已启动 (offset=450)
+[01:49:44]   eval GPU7 已启动 (offset=525)
+[01:49:44]   等待 eval 完成（每 1 分钟汇报）...
+[01:49:44]   eval 0/8 shard 完成
+[01:50:44]   eval 0/8 shard 完成
+[01:51:44]   eval 0/8 shard 完成
+[01:52:44]   eval 0/8 shard 完成
+[01:53:44]   eval 0/8 shard 完成
+[01:54:44]   eval 0/8 shard 完成
+[01:55:44]   eval 0/8 shard 完成
+[01:56:44]   eval 0/8 shard 完成
+[01:57:44]   eval 0/8 shard 完成
+[01:58:44]   eval 0/8 shard 完成
+[01:59:44]   eval 0/8 shard 完成
+[02:00:44]   eval 0/8 shard 完成
+[02:01:44]   eval 0/8 shard 完成
+[02:02:44]   eval 0/8 shard 完成
+[02:03:44]   eval 0/8 shard 完成
+[02:04:44]   eval 0/8 shard 完成
+[02:05:44]   eval 0/8 shard 完成
+[02:06:44]   eval 1/8 shard 完成
+[02:07:44]   eval 2/8 shard 完成
+[02:08:44]   eval 3/8 shard 完成
+[02:09:44]   eval 6/8 shard 完成
+[02:10:44]   eval 7/8 shard 完成
+[02:11:45]   eval 8/8 shard 完成
+[02:11:53]   eval 完成！
+[02:11:53] 
+[02:11:53] ========== Learning Curve (截至 π_2) ==========
+Policy CEM-1      LLM-Judge 
+π₀ SFT 43.33%     44.33%    
+π_1   100.0%     43.67%    
+π_2   100.0%     45.00%    
+[02:11:53] ==================================================
+[02:11:53] 
+[02:11:53] 
+[02:11:53] ========================================================
+[02:11:53] Round 2:  π_2 → D_2 → π_3
+[02:11:53]   Base model : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi2/model
+[02:11:53]   Output     : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi3/model
+[02:11:53] ========================================================
+[02:11:53]   [OK] 基础模型验证通过
+[02:11:53] Step 1/4: Pool  [512, 768)...
+[02:11:53] Step 2/4: Rollout  π_2 × 256题 × 8rolls...
+[02:11:53]   rank0 已启动 (GPU=0)
+[02:12:13]   rank1 已启动 (GPU=1)
+[02:12:33]   rank2 已启动 (GPU=2)
+[02:12:53]   rank3 已启动 (GPU=3)
+[02:13:13]   rank4 已启动 (GPU=4)
+[02:13:33]   rank5 已启动 (GPU=5)
+[02:13:53]   rank6 已启动 (GPU=6)
+[02:14:13]   rank7 已启动 (GPU=7)
+[02:14:13]   等待 rollout 完成（每 2 分钟汇报一次）...
+[02:14:13]   rollout 0/8 rank 已完成
+[02:16:13]   rollout 0/8 rank 已完成
+[02:18:13]   rollout 0/8 rank 已完成
+[02:20:13]   rollout 0/8 rank 已完成
+[02:22:13]   rollout 0/8 rank 已完成
+[02:24:13]   rollout 0/8 rank 已完成
+[02:26:13]   rollout 0/8 rank 已完成
+[02:28:13]   rollout 0/8 rank 已完成
+[02:30:14]   rollout 0/8 rank 已完成
+[02:32:14]   rollout 0/8 rank 已完成
+[02:34:14]   rollout 0/8 rank 已完成
+[02:36:14]   rollout 0/8 rank 已完成
+[02:38:14]   rollout 0/8 rank 已完成
+[02:40:14]   rollout 0/8 rank 已完成
+[02:42:14]   rollout 0/8 rank 已完成
+[02:44:14]   rollout 0/8 rank 已完成
+[02:46:14]   rollout 0/8 rank 已完成
+[02:48:14]   rollout 0/8 rank 已完成
+[02:50:14]   rollout 0/8 rank 已完成
+[02:52:14]   rollout 0/8 rank 已完成
+[02:54:14]   rollout 0/8 rank 已完成
+[02:56:14]   rollout 0/8 rank 已完成
+[02:58:14]   rollout 0/8 rank 已完成
+[03:00:14]   rollout 0/8 rank 已完成
+[03:02:14]   rollout 0/8 rank 已完成
+[03:04:14]   rollout 0/8 rank 已完成
+[03:06:14]   rollout 0/8 rank 已完成
+[03:08:14]   rollout 0/8 rank 已完成
+[03:10:14]   rollout 0/8 rank 已完成
+[03:12:14]   rollout 0/8 rank 已完成
+[03:14:14]   rollout 0/8 rank 已完成
+[03:16:14]   rollout 0/8 rank 已完成
+[03:18:14]   rollout 0/8 rank 已完成
+[03:20:14]   rollout 2/8 rank 已完成
+[03:22:15]   rollout 4/8 rank 已完成
+[03:24:15]   rollout 7/8 rank 已完成
+[03:26:15]   rollout 8/8 rank 已完成
+[03:26:15]   Rollout 完成！
+[03:26:15]   合并 rollout 文件...
+[03:26:15]   merged.jsonl: 2048 条
+[03:26:15] Step 3/4: Reward 计算...
+[03:26:15]   训练数据: 1576 条
+[03:26:15] Step 3/4: ELBO-PG 训练  π_2 → π_3...
+[03:45:25]   [ZeRO-3 fix] 从 checkpoint 复制完整权重 (16031197344 bytes)...
+[03:46:01]   [OK] 完整模型权重已复制到 /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi3/model/model.safetensors
+[03:46:01]   训练完成！π_3 → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi3/model
+[03:46:01] Step 4/4: eval_600  π_3...
+[03:46:01]   eval GPU0 已启动 (offset=0)
+[03:46:31]   eval GPU1 已启动 (offset=75)
+[03:47:01]   eval GPU2 已启动 (offset=150)
+[03:47:31]   eval GPU3 已启动 (offset=225)
+[03:48:01]   eval GPU4 已启动 (offset=300)
+[03:48:31]   eval GPU5 已启动 (offset=375)
+[03:49:01]   eval GPU6 已启动 (offset=450)
+[03:49:31]   eval GPU7 已启动 (offset=525)
+[03:49:31]   等待 eval 完成（每 1 分钟汇报）...
+[03:49:31]   eval 0/8 shard 完成
+[03:50:31]   eval 0/8 shard 完成
+[03:51:31]   eval 0/8 shard 完成
+[03:52:31]   eval 0/8 shard 完成
+[03:53:31]   eval 0/8 shard 完成
+[03:54:31]   eval 0/8 shard 完成
+[03:55:31]   eval 0/8 shard 完成
+[03:56:31]   eval 0/8 shard 完成
+[03:57:31]   eval 0/8 shard 完成
+[03:58:31]   eval 0/8 shard 完成
+[03:59:31]   eval 0/8 shard 完成
+[04:00:31]   eval 0/8 shard 完成
+[04:01:31]   eval 0/8 shard 完成
+[04:02:31]   eval 0/8 shard 完成
+[04:03:31]   eval 0/8 shard 完成
+[04:04:31]   eval 0/8 shard 完成
+[04:05:31]   eval 0/8 shard 完成
+[04:06:31]   eval 0/8 shard 完成
+[04:07:31]   eval 3/8 shard 完成
+[04:08:32]   eval 5/8 shard 完成
+[04:09:32]   eval 6/8 shard 完成
+[04:10:32]   eval 8/8 shard 完成
+[04:10:43]   eval 完成！
+[04:10:43] 
+[04:10:43] ========== Learning Curve (截至 π_3) ==========
+Policy CEM-1      LLM-Judge 
+π₀ SFT 43.33%     44.33%    
+π_1   100.0%     43.67%    
+π_2   100.0%     45.00%    
+π_3   100.0%     46.83%    
+[04:10:43] ==================================================
+[04:10:43] 
+[04:10:43] 
+[04:10:43] ========================================================
+[04:10:43] Round 3:  π_3 → D_3 → π_4
+[04:10:43]   Base model : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi3/model
+[04:10:43]   Output     : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi4/model
+[04:10:43] ========================================================
+[04:10:43]   [OK] 基础模型验证通过
+[04:10:43] Step 1/4: Pool  [768, 1024)...
+[04:10:43] Step 2/4: Rollout  π_3 × 256题 × 8rolls...
+[04:10:43]   rank0 已启动 (GPU=0)
+[04:11:03]   rank1 已启动 (GPU=1)
+[04:11:23]   rank2 已启动 (GPU=2)
+[04:11:43]   rank3 已启动 (GPU=3)
+[04:12:03]   rank4 已启动 (GPU=4)
+[04:12:23]   rank5 已启动 (GPU=5)
+[04:12:43]   rank6 已启动 (GPU=6)
+[04:13:03]   rank7 已启动 (GPU=7)
+[04:13:03]   等待 rollout 完成（每 2 分钟汇报一次）...
+[04:13:03]   rollout 0/8 rank 已完成
+[04:15:03]   rollout 0/8 rank 已完成
+[04:17:03]   rollout 0/8 rank 已完成
+[04:19:03]   rollout 0/8 rank 已完成
+[04:21:04]   rollout 0/8 rank 已完成
+[04:23:04]   rollout 0/8 rank 已完成
+[04:25:04]   rollout 0/8 rank 已完成
+[04:27:04]   rollout 0/8 rank 已完成
+[04:29:04]   rollout 0/8 rank 已完成
+[04:31:04]   rollout 0/8 rank 已完成
+[04:33:04]   rollout 0/8 rank 已完成
+[04:35:04]   rollout 0/8 rank 已完成
+[04:37:04]   rollout 0/8 rank 已完成
+[04:39:04]   rollout 0/8 rank 已完成
+[04:41:04]   rollout 0/8 rank 已完成
+[04:43:04]   rollout 0/8 rank 已完成
+[04:45:04]   rollout 0/8 rank 已完成
+[04:47:04]   rollout 0/8 rank 已完成
+[04:49:04]   rollout 0/8 rank 已完成
+[04:51:04]   rollout 0/8 rank 已完成
+[04:53:04]   rollout 0/8 rank 已完成
+[04:55:04]   rollout 0/8 rank 已完成
+[04:57:04]   rollout 0/8 rank 已完成
+[04:59:04]   rollout 0/8 rank 已完成
+[05:01:04]   rollout 0/8 rank 已完成
+[05:03:04]   rollout 0/8 rank 已完成
+[05:05:04]   rollout 0/8 rank 已完成
+[05:07:04]   rollout 0/8 rank 已完成
+[05:09:04]   rollout 0/8 rank 已完成
+[05:11:04]   rollout 0/8 rank 已完成
+[05:13:05]   rollout 0/8 rank 已完成
+[05:15:05]   rollout 0/8 rank 已完成
+[05:17:05]   rollout 1/8 rank 已完成
+[05:19:05]   rollout 3/8 rank 已完成
+[05:21:05]   rollout 4/8 rank 已完成
+[05:23:05]   rollout 6/8 rank 已完成
+[05:25:05]   rollout 7/8 rank 已完成
+[05:27:05]   rollout 7/8 rank 已完成
+[05:29:05]   rollout 7/8 rank 已完成
+[05:31:05]   rollout 7/8 rank 已完成
+[05:33:05]   rollout 7/8 rank 已完成
+[05:35:05]   rollout 8/8 rank 已完成
+[05:35:05]   Rollout 完成！
+[05:35:05]   合并 rollout 文件...
+[05:35:05]   merged.jsonl: 2048 条
+[05:35:05] Step 3/4: Reward 计算...
+[05:35:06]   训练数据: 1632 条
+[05:35:06] Step 3/4: ELBO-PG 训练  π_3 → π_4...
+[05:55:24]   [ZeRO-3 fix] 从 checkpoint 复制完整权重 (16031197344 bytes)...
+[05:55:59]   [OK] 完整模型权重已复制到 /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi4/model/model.safetensors
+[05:55:59]   训练完成！π_4 → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi4/model
+[05:55:59] Step 4/4: eval_600  π_4...
+[05:55:59]   eval GPU0 已启动 (offset=0)
+[05:56:29]   eval GPU1 已启动 (offset=75)
+[05:56:59]   eval GPU2 已启动 (offset=150)
+[05:57:29]   eval GPU3 已启动 (offset=225)
+[05:57:59]   eval GPU4 已启动 (offset=300)
+[05:58:29]   eval GPU5 已启动 (offset=375)
+[05:58:59]   eval GPU6 已启动 (offset=450)
+[05:59:29]   eval GPU7 已启动 (offset=525)
+[05:59:29]   等待 eval 完成（每 1 分钟汇报）...
+[05:59:29]   eval 0/8 shard 完成
+[06:00:29]   eval 0/8 shard 完成
+[06:01:29]   eval 0/8 shard 完成
+[06:02:29]   eval 0/8 shard 完成
+[06:03:29]   eval 0/8 shard 完成
+[06:04:29]   eval 0/8 shard 完成
+[06:05:29]   eval 0/8 shard 完成
+[06:06:30]   eval 0/8 shard 完成
+[06:07:30]   eval 0/8 shard 完成
+[06:08:30]   eval 0/8 shard 完成
+[06:09:30]   eval 0/8 shard 完成
+[06:10:30]   eval 0/8 shard 完成
+[06:11:30]   eval 0/8 shard 完成
+[06:12:30]   eval 0/8 shard 完成
+[06:13:30]   eval 0/8 shard 完成
+[06:14:30]   eval 0/8 shard 完成
+[06:15:30]   eval 0/8 shard 完成
+[06:16:30]   eval 2/8 shard 完成
+[06:17:30]   eval 2/8 shard 完成
+[06:18:30]   eval 3/8 shard 完成
+[06:19:30]   eval 5/8 shard 完成
+[06:20:30]   eval 7/8 shard 完成
+[06:21:30]   eval 7/8 shard 完成
+[06:22:30]   eval 7/8 shard 完成
+[06:23:30]   eval 7/8 shard 完成
+[06:24:30]   eval 7/8 shard 完成
+[06:25:30]   eval 7/8 shard 完成
+[06:26:30]   eval 8/8 shard 完成
+[06:26:37]   eval 完成！
+[06:26:37] 
+[06:26:37] ========== Learning Curve (截至 π_4) ==========
+Policy CEM-1      LLM-Judge 
+π₀ SFT 43.33%     44.33%    
+π_1   100.0%     43.67%    
+π_2   100.0%     45.00%    
+π_3   100.0%     46.83%    
+π_4   100.0%     46.50%    
+[06:26:37] ==================================================
+[06:26:37] 
+[06:26:37] 
+[06:26:37] ========================================================
+[06:26:37] Round 4:  π_4 → D_4 → π_5
+[06:26:37]   Base model : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi4/model
+[06:26:37]   Output     : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi5/model
+[06:26:37] ========================================================
+[06:26:37]   [OK] 基础模型验证通过
+[06:26:37] Step 1/4: Pool  [1024, 1280)...
+[06:26:38] Step 2/4: Rollout  π_4 × 256题 × 8rolls...
+[06:26:38]   rank0 已启动 (GPU=0)
+[06:26:58]   rank1 已启动 (GPU=1)
+[06:27:18]   rank2 已启动 (GPU=2)
+[06:27:38]   rank3 已启动 (GPU=3)
+[06:27:58]   rank4 已启动 (GPU=4)
+[06:28:18]   rank5 已启动 (GPU=5)
+[06:28:38]   rank6 已启动 (GPU=6)
+[06:28:58]   rank7 已启动 (GPU=7)
+[06:28:58]   等待 rollout 完成（每 2 分钟汇报一次）...
+[06:28:58]   rollout 0/8 rank 已完成
+[06:30:58]   rollout 0/8 rank 已完成
+[06:32:58]   rollout 0/8 rank 已完成
+[06:34:58]   rollout 0/8 rank 已完成
+[06:36:58]   rollout 0/8 rank 已完成
+[06:38:58]   rollout 0/8 rank 已完成
+[06:40:58]   rollout 0/8 rank 已完成
+[06:42:58]   rollout 0/8 rank 已完成
+[06:44:58]   rollout 0/8 rank 已完成
+[06:46:58]   rollout 0/8 rank 已完成
+[06:48:58]   rollout 0/8 rank 已完成
+[06:50:58]   rollout 0/8 rank 已完成
+[06:52:58]   rollout 0/8 rank 已完成
+[06:54:58]   rollout 0/8 rank 已完成
+[06:56:58]   rollout 0/8 rank 已完成
+[06:58:58]   rollout 0/8 rank 已完成
+[07:00:58]   rollout 0/8 rank 已完成
+[07:02:58]   rollout 0/8 rank 已完成
+[07:04:58]   rollout 0/8 rank 已完成
+[07:06:58]   rollout 0/8 rank 已完成
+[07:08:59]   rollout 0/8 rank 已完成
+[07:10:59]   rollout 0/8 rank 已完成
+[07:12:59]   rollout 0/8 rank 已完成
+[07:14:59]   rollout 0/8 rank 已完成
+[07:16:59]   rollout 0/8 rank 已完成
+[07:18:59]   rollout 0/8 rank 已完成
+[07:20:59]   rollout 0/8 rank 已完成
+[07:22:59]   rollout 0/8 rank 已完成
+[07:24:59]   rollout 0/8 rank 已完成
+[07:26:59]   rollout 0/8 rank 已完成
+[07:28:59]   rollout 0/8 rank 已完成
+[07:30:59]   rollout 1/8 rank 已完成
+[07:32:59]   rollout 1/8 rank 已完成
+[07:34:59]   rollout 2/8 rank 已完成
+[07:36:59]   rollout 3/8 rank 已完成
+[07:38:59]   rollout 3/8 rank 已完成
+[07:40:59]   rollout 4/8 rank 已完成
+[07:42:59]   rollout 4/8 rank 已完成
+[07:44:59]   rollout 4/8 rank 已完成
+[07:46:59]   rollout 5/8 rank 已完成
+[07:48:59]   rollout 7/8 rank 已完成
+[07:50:59]   rollout 7/8 rank 已完成
+[07:52:59]   rollout 7/8 rank 已完成
+[07:54:59]   rollout 8/8 rank 已完成
+[07:54:59]   Rollout 完成！
+[07:54:59]   合并 rollout 文件...
+[07:55:00]   merged.jsonl: 2048 条
+[07:55:00] Step 3/4: Reward 计算...
+[07:55:00]   训练数据: 1584 条
+[07:55:00] Step 3/4: ELBO-PG 训练  π_4 → π_5...
+[08:15:33]   [ZeRO-3 fix] 从 checkpoint 复制完整权重 (16031197344 bytes)...
+[08:16:10]   [OK] 完整模型权重已复制到 /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi5/model/model.safetensors
+[08:16:10]   训练完成！π_5 → /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi5/model
+[08:16:10] Step 4/4: eval_600  π_5...
+[08:16:10]   eval GPU0 已启动 (offset=0)
+[08:16:40]   eval GPU1 已启动 (offset=75)
+[08:17:10]   eval GPU2 已启动 (offset=150)
+[08:17:40]   eval GPU3 已启动 (offset=225)
+[08:18:10]   eval GPU4 已启动 (offset=300)
+[08:18:40]   eval GPU5 已启动 (offset=375)
+[08:19:10]   eval GPU6 已启动 (offset=450)
+[08:19:40]   eval GPU7 已启动 (offset=525)
+[08:19:40]   等待 eval 完成（每 1 分钟汇报）...
+[08:19:40]   eval 0/8 shard 完成
+[08:20:40]   eval 0/8 shard 完成
+[08:21:41]   eval 0/8 shard 完成
+[08:22:41]   eval 0/8 shard 完成
+[08:23:41]   eval 0/8 shard 完成
+[08:24:41]   eval 0/8 shard 完成
+[08:25:41]   eval 0/8 shard 完成
+[08:26:41]   eval 0/8 shard 完成
+[08:27:41]   eval 0/8 shard 完成
+[08:28:41]   eval 0/8 shard 完成
+[08:29:41]   eval 0/8 shard 完成
+[08:30:41]   eval 0/8 shard 完成
+[08:31:41]   eval 0/8 shard 完成
+[08:32:41]   eval 0/8 shard 完成
+[08:33:41]   eval 0/8 shard 完成
+[08:34:41]   eval 0/8 shard 完成
+[08:35:41]   eval 0/8 shard 完成
+[08:36:41]   eval 1/8 shard 完成
+[08:37:41]   eval 3/8 shard 完成
+[08:38:41]   eval 3/8 shard 完成
+[08:39:41]   eval 5/8 shard 完成
+[08:40:41]   eval 6/8 shard 完成
+[08:41:41]   eval 6/8 shard 完成
+[08:42:41]   eval 7/8 shard 完成
+[08:43:41]   eval 7/8 shard 完成
+[08:44:41]   eval 7/8 shard 完成
+[08:45:41]   eval 7/8 shard 完成
+[08:46:42]   eval 7/8 shard 完成
+[08:47:42]   eval 7/8 shard 完成
+[08:48:42]   eval 7/8 shard 完成
+[08:49:42]   eval 7/8 shard 完成
+[08:50:42]   eval 8/8 shard 完成
+[08:50:51]   eval 完成！
+[08:50:51] 
+[08:50:51] ========== Learning Curve (截至 π_5) ==========
+Policy CEM-1      LLM-Judge 
+π₀ SFT 43.33%     44.33%    
+π_1   100.0%     43.67%    
+π_2   100.0%     45.00%    
+π_3   100.0%     46.83%    
+π_4   100.0%     46.50%    
+π_5   100.0%     44.50%    
+[08:50:51] ==================================================
+[08:50:51] 
+[08:50:51] 
+[08:50:51] ========================================================
+[08:50:51] Round 5:  π_5 → D_5 → π_6
+[08:50:51]   Base model : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi5/model
+[08:50:51]   Output     : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop/pi6/model
+[08:50:51] ========================================================
+[08:50:51]   [OK] 基础模型验证通过
+[08:50:51] Step 1/4: Pool  [1280, 1536)...
+[08:50:51] Step 2/4: Rollout  π_5 × 256题 × 8rolls...
+[08:50:51]   rank0 已启动 (GPU=0)
+[08:51:11]   rank1 已启动 (GPU=1)
+[08:51:31]   rank2 已启动 (GPU=2)
+[08:51:51]   rank3 已启动 (GPU=3)
+[08:52:11]   rank4 已启动 (GPU=4)
+[08:52:31]   rank5 已启动 (GPU=5)
+[08:52:51]   rank6 已启动 (GPU=6)
+[08:53:11]   rank7 已启动 (GPU=7)
+[08:53:11]   等待 rollout 完成（每 2 分钟汇报一次）...
+[08:53:11]   rollout 0/8 rank 已完成
+[08:55:11]   rollout 0/8 rank 已完成
+[08:57:11]   rollout 0/8 rank 已完成
+[08:59:11]   rollout 0/8 rank 已完成
+[09:01:11]   rollout 0/8 rank 已完成
+[09:03:11]   rollout 0/8 rank 已完成
+[09:05:12]   rollout 0/8 rank 已完成
+[09:07:12]   rollout 0/8 rank 已完成
+[09:09:12]   rollout 0/8 rank 已完成
+[09:11:12]   rollout 0/8 rank 已完成
+[09:13:12]   rollout 0/8 rank 已完成
+[09:15:12]   rollout 0/8 rank 已完成
+[09:17:12]   rollout 0/8 rank 已完成
+[09:19:12]   rollout 0/8 rank 已完成
+[09:21:12]   rollout 0/8 rank 已完成
+[09:23:12]   rollout 0/8 rank 已完成
+[09:25:12]   rollout 0/8 rank 已完成
+[09:27:12]   rollout 0/8 rank 已完成
+[09:29:12]   rollout 0/8 rank 已完成
+[09:31:12]   rollout 0/8 rank 已完成
+[09:33:12]   rollout 0/8 rank 已完成
+[09:35:12]   rollout 0/8 rank 已完成
+[09:37:12]   rollout 0/8 rank 已完成
+[09:39:12]   rollout 0/8 rank 已完成
+[09:41:12]   rollout 0/8 rank 已完成
+[09:43:12]   rollout 0/8 rank 已完成
+[09:45:12]   rollout 0/8 rank 已完成
+[09:47:12]   rollout 0/8 rank 已完成
+[09:49:12]   rollout 0/8 rank 已完成
+[09:51:12]   rollout 0/8 rank 已完成
+[09:53:12]   rollout 0/8 rank 已完成
+[09:55:12]   rollout 0/8 rank 已完成
+[09:57:13]   rollout 0/8 rank 已完成
+[09:59:13]   rollout 1/8 rank 已完成
+[10:01:13]   rollout 3/8 rank 已完成
+[10:03:13]   rollout 5/8 rank 已完成
+[10:05:13]   rollout 5/8 rank 已完成
+[10:07:13]   rollout 5/8 rank 已完成
+[10:09:13]   rollout 5/8 rank 已完成
+[10:11:13]   rollout 6/8 rank 已完成
+[10:13:13]   rollout 7/8 rank 已完成
+[10:15:13]   rollout 7/8 rank 已完成
+[10:17:13]   rollout 7/8 rank 已完成
+[10:19:13]   rollout 8/8 rank 已完成
+[10:19:13]   Rollout 完成！
+[10:19:13]   合并 rollout 文件...
+[10:19:13]   merged.jsonl: 2048 条
+[10:19:13] Step 3/4: Reward 计算...
+[10:19:14]   训练数据: 1592 条
+[10:19:14] Step 3/4: ELBO-PG 训练  π_5 → π_6...

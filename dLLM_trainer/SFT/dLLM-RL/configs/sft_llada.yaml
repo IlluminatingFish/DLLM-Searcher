@@ -1,0 +1,51 @@
+wandb:
+  entity: 'mz751-rutgers-university'
+  resume: 'auto'
+  run_id: 'llada_sft_clean_v6'
+
+experiment:
+    project: "sft_llada"
+    num_node: 1
+    resume_from_checkpoint: "/common/users/mz751/Projects/dLLM_trainer/checkpoints/SFT/dLLM-RL/sft_llada/ckpt_5/optimized"
+
+model:
+    pretrained_model: "/common/users/mz751/Projects/dLLM_trainer/checkpoints/base/llada_model"
+    optimized_name: "optimized"
+
+dataset:
+    optimization_data: "sft_train_final"  # loads ../data/sft_train_final.json
+
+training:
+    resume_epoch: null
+    gradient_checkpointing_enable: False  # LLaDA does not support gradient checkpointing
+    gradient_accumulation_steps: 4    # 16 GPU × 1 × 4 = 64 effective batch (quick test)
+    batch_size_lm: 1
+    mixed_precision: "bf16"
+    enable_tf32: True
+    seed: 10086
+    num_train_epochs: 7               # ~5h on hermes 8 GPUs
+    max_grad_norm: 1.0
+    method: "semi-ar"
+    lower_p: 0.1
+    upper_p: 0.9
+    block_size: 64                    # paper uses block_size=64 for SFT
+    post_num: 0
+    max_gen_length: 4096
+    max_prompt_len: 4096
+
+optimizer:
+    name: adamw
+    params:
+        learning_rate: 1e-5           # paper uses 1e-5 for SFT
+        scale_lr: False
+        beta1: 0.9
+        beta2: 0.999
+        weight_decay: 0.0
+        epsilon: 1e-8
+
+lr_scheduler:
+    scheduler: "cosine"
+    params:
+        learning_rate: ${optimizer.params.learning_rate}
+        warmup_steps: 100
+        min_lr_scale: 0.1

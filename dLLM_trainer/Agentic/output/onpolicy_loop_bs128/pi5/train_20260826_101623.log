@@ -1,0 +1,609 @@
+W0826 10:16:33.117000 1667586 site-packages/torch/distributed/run.py:792] 
+W0826 10:16:33.117000 1667586 site-packages/torch/distributed/run.py:792] *****************************************
+W0826 10:16:33.117000 1667586 site-packages/torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0826 10:16:33.117000 1667586 site-packages/torch/distributed/run.py:792] *****************************************
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_completion_length` is deprecated and will be removed in version 0.29.0. We recommend using `max_length` instead to control the maximum length of samples.
+  obj = dtype(**inputs)
+/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/hf_argparser.py:345: FutureWarning: `max_prompt_length` is deprecated and will be removed in version 0.29.0. We recommend filtering out overlong prompts from your dataset before passing it to the trainer instead of using this parameter.
+  obj = dtype(**inputs)
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+2026-08-26 10:16:42 - INFO - __main__ - Script args: GRPOScriptArgs(dataset_path='/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi5/train_reward_a.jsonl', max_samples=None, block_length=128, num_mc=1, mask_token_id=126336, advantage_clip=5.0, normalize_elbo=True, tool_resp_left='<|im_start|>user\n<tool_response>', tool_resp_right='</tool_response><|im_end|>\n<|im_start|>assistant\n')
+2026-08-26 10:16:42 - INFO - __main__ - Training args: GRPOConfig(
+accelerator_config={'split_batches': False, 'dispatch_batches': None, 'even_batches': True, 'use_seedable_sampler': True, 'non_blocking': False, 'gradient_accumulation_kwargs': None, 'use_configured_state': False},
+adam_beta1=0.9,
+adam_beta2=0.99,
+adam_epsilon=1e-08,
+auto_find_batch_size=False,
+average_tokens_across_devices=True,
+base_model_attribute_name=model,
+batch_eval_metrics=False,
+beta=0.0,
+bf16=True,
+bf16_full_eval=False,
+data_seed=None,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_persistent_workers=False,
+dataloader_pin_memory=True,
+dataloader_prefetch_factor=None,
+dataset_num_proc=None,
+ddp_backend=None,
+ddp_broadcast_buffers=None,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_timeout=1800,
+debug=[],
+deepspeed=None,
+disable_dropout=True,
+disable_tqdm=False,
+discopop_tau=0.05,
+do_eval=False,
+do_predict=False,
+do_train=False,
+enable_jit_checkpoint=False,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_do_concat_batches=True,
+eval_on_start=False,
+eval_steps=None,
+eval_strategy=IntervalStrategy.NO,
+eval_use_gather_object=False,
+f_alpha_divergence_coef=1.0,
+f_divergence_type=reverse_kl,
+force_use_ref_model=None,
+fp16=False,
+fp16_full_eval=False,
+fsdp=[],
+fsdp_config={'min_num_params': 0, 'xla': False, 'xla_fsdp_v2': False, 'xla_fsdp_grad_ckpt': False},
+full_determinism=False,
+generate_during_eval=False,
+gradient_accumulation_steps=8,
+gradient_checkpointing=False,
+gradient_checkpointing_kwargs=None,
+greater_is_better=None,
+hub_always_push=False,
+hub_model_id=None,
+hub_private_repo=None,
+hub_revision=None,
+hub_strategy=HubStrategy.EVERY_SAVE,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+include_for_metrics=[],
+include_num_input_tokens_seen=no,
+label_names=None,
+label_pad_token_id=-100,
+label_smoothing=0.0,
+label_smoothing_factor=0.0,
+ld_alpha=None,
+learning_rate=1e-06,
+length_column_name=length,
+liger_kernel_config=None,
+load_best_model_at_end=False,
+local_rank=-1,
+log_level=info,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=None,
+logging_first_step=True,
+logging_nan_inf_filter=True,
+logging_steps=5,
+logging_strategy=IntervalStrategy.STEPS,
+loss_type=sigmoid,
+loss_weights=None,
+lr_scheduler_kwargs=None,
+lr_scheduler_type=SchedulerType.COSINE,
+max_completion_length=640,
+max_grad_norm=0.5,
+max_length=4096,
+max_prompt_length=640,
+max_steps=-1,
+metric_for_best_model=None,
+model_adapter_name=None,
+model_init_kwargs=None,
+neftune_noise_alpha=None,
+num_train_epochs=1,
+optim=OptimizerNames.ADAMW_TORCH,
+optim_args=None,
+optim_target_modules=None,
+output_dir=/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi5/model,
+pad_token=<PAD_TOKEN>,
+padding_free=False,
+parallelism_config=None,
+per_device_eval_batch_size=1,
+per_device_train_batch_size=1,
+precompute_ref_batch_size=None,
+precompute_ref_log_probs=False,
+prediction_loss_only=False,
+project=huggingface,
+push_to_hub=False,
+ref_adapter_name=None,
+ref_model_init_kwargs=None,
+ref_model_mixup_alpha=0.6,
+ref_model_sync_steps=512,
+reference_free=False,
+remove_unused_columns=False,
+report_to=['wandb'],
+restore_callback_states_from_checkpoint=False,
+resume_from_checkpoint=None,
+rpo_alpha=None,
+run_name=onpolicy_bs128_pi5_20260826_101623,
+save_on_each_node=False,
+save_only_model=False,
+save_steps=500,
+save_strategy=SaveStrategy.EPOCH,
+save_total_limit=1,
+seed=42,
+skip_memory_metrics=True,
+sync_ref_model=False,
+tf32=None,
+tools=None,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torch_empty_cache_steps=None,
+trackio_space_id=trackio,
+train_sampling_strategy=random,
+truncation_mode=keep_end,
+use_cache=False,
+use_cpu=False,
+use_liger_kernel=False,
+use_logits_to_keep=False,
+use_weighting=False,
+wandb_project=dllm_agentic_rl_bs128,
+warmup_ratio=0.05,
+warmup_steps=0.05,
+weight_decay=0.01,
+)
+2026-08-26 10:16:42 - INFO - __main__ - *** Loading GRPO dataset ***
+Using custom data configuration default-a25b906fafe56fb6
+2026-08-26 10:16:42 - INFO - datasets.builder - Using custom data configuration default-a25b906fafe56fb6
+Generating dataset json (/research/cbim/vast/mz751/.cache/huggingface/datasets/json/default-a25b906fafe56fb6/0.0.0/ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18)
+2026-08-26 10:16:42 - INFO - datasets.builder - Generating dataset json (/research/cbim/vast/mz751/.cache/huggingface/datasets/json/default-a25b906fafe56fb6/0.0.0/ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18)
+Downloading and preparing dataset json/default to /research/cbim/vast/mz751/.cache/huggingface/datasets/json/default-a25b906fafe56fb6/0.0.0/ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18...
+2026-08-26 10:16:42 - INFO - datasets.builder - Downloading and preparing dataset json/default to /research/cbim/vast/mz751/.cache/huggingface/datasets/json/default-a25b906fafe56fb6/0.0.0/ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18...
+Downloading took 0.0 min
+2026-08-26 10:16:42 - INFO - datasets.download.download_manager - Downloading took 0.0 min
+Checksum Computation took 0.0 min
+2026-08-26 10:16:42 - INFO - datasets.download.download_manager - Checksum Computation took 0.0 min
+Generating train split
+2026-08-26 10:16:42 - INFO - datasets.builder - Generating train split
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 1731 examples [00:00, 18959.03 examples/s]
+Unable to verify splits sizes.
+2026-08-26 10:16:42 - INFO - datasets.utils.info_utils - Unable to verify splits sizes.
+Dataset json downloaded and prepared to /research/cbim/vast/mz751/.cache/huggingface/datasets/json/default-a25b906fafe56fb6/0.0.0/ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18. Subsequent calls will reuse this data.
+2026-08-26 10:16:42 - INFO - datasets.builder - Dataset json downloaded and prepared to /research/cbim/vast/mz751/.cache/huggingface/datasets/json/default-a25b906fafe56fb6/0.0.0/ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18. Subsequent calls will reuse this data.
+2026-08-26 10:16:42 - INFO - __main__ - Train samples: 1731
+2026-08-26 10:16:42 - INFO - __main__ - *** Loading tokenizer ***
+loading configuration file /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi4/model/config.json
+loading configuration file /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi4/model/config.json
+Model config LLaDAConfig {
+  "activation_type": "silu",
+  "alibi": false,
+  "alibi_bias_max": 8.0,
+  "architectures": [
+    "LLaDAModelLM"
+  ],
+  "attention_dropout": 0.0,
+  "attention_layer_norm": false,
+  "attention_layer_norm_with_affine": true,
+  "auto_map": {
+    "AutoConfig": "configuration_llada.LLaDAConfig",
+    "AutoModel": "modeling_llada.LLaDAModelLM",
+    "AutoModelForCausalLM": "modeling_llada.LLaDAModelLM"
+  },
+  "bias_for_layer_norm": false,
+  "block_group_size": 1,
+  "block_type": "llama",
+  "bos_token_id": 126080,
+  "d_model": 4096,
+  "dtype": "bfloat16",
+  "embedding_dropout": 0.0,
+  "embedding_size": 126464,
+  "eos_token_id": 126081,
+  "flash_attention": false,
+  "include_bias": false,
+  "include_qkv_bias": false,
+  "init_cutoff_factor": null,
+  "init_device": "meta",
+  "init_fn": "mitchell",
+  "init_std": 0.02,
+  "input_emb_norm": false,
+  "layer_norm_type": "rms",
+  "layer_norm_with_affine": true,
+  "mask_token_id": 126336,
+  "max_sequence_length": 4096,
+  "mlp_hidden_size": 12288,
+  "mlp_ratio": 4,
+  "model_type": "llada",
+  "multi_query_attention": null,
+  "n_heads": 32,
+  "n_kv_heads": 32,
+  "n_layers": 32,
+  "pad_token_id": 126081,
+  "precision": "amp_bf16",
+  "residual_dropout": 0.0,
+  "rms_norm_eps": 1e-05,
+  "rope": true,
+  "rope_full_precision": true,
+  "rope_theta": 500000.0,
+  "scale_logits": false,
+  "transformers_version": "5.2.0",
+  "vocab_size": 126464,
+  "weight_tying": false
+}
+
+2026-08-26 10:16:43 - INFO - __main__ - *** Loading model ***
+2026-08-26 10:16:43 - INFO - __main__ - ZeRO stage: 2 (is_zero3=False)
+loading configuration file /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi4/model/config.json
+loading configuration file /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi4/model/config.json
+`torch_dtype` is deprecated! Use `dtype` instead!
+Model config LLaDAConfig {
+  "activation_type": "silu",
+  "alibi": false,
+  "alibi_bias_max": 8.0,
+  "architectures": [
+    "LLaDAModelLM"
+  ],
+  "attention_dropout": 0.0,
+  "attention_layer_norm": false,
+  "attention_layer_norm_with_affine": true,
+  "auto_map": {
+    "AutoConfig": "configuration_llada.LLaDAConfig",
+    "AutoModel": "modeling_llada.LLaDAModelLM",
+    "AutoModelForCausalLM": "modeling_llada.LLaDAModelLM"
+  },
+  "bias_for_layer_norm": false,
+  "block_group_size": 1,
+  "block_type": "llama",
+  "bos_token_id": 126080,
+  "d_model": 4096,
+  "dtype": "bfloat16",
+  "embedding_dropout": 0.0,
+  "embedding_size": 126464,
+  "eos_token_id": 126081,
+  "flash_attention": false,
+  "include_bias": false,
+  "include_qkv_bias": false,
+  "init_cutoff_factor": null,
+  "init_device": "meta",
+  "init_fn": "mitchell",
+  "init_std": 0.02,
+  "input_emb_norm": false,
+  "layer_norm_type": "rms",
+  "layer_norm_with_affine": true,
+  "mask_token_id": 126336,
+  "max_sequence_length": 4096,
+  "mlp_hidden_size": 12288,
+  "mlp_ratio": 4,
+  "model_type": "llada",
+  "multi_query_attention": null,
+  "n_heads": 32,
+  "n_kv_heads": 32,
+  "n_layers": 32,
+  "pad_token_id": 126081,
+  "precision": "amp_bf16",
+  "residual_dropout": 0.0,
+  "rms_norm_eps": 1e-05,
+  "rope": true,
+  "rope_full_precision": true,
+  "rope_theta": 500000.0,
+  "scale_logits": false,
+  "transformers_version": "5.2.0",
+  "vocab_size": 126464,
+  "weight_tying": false
+}
+
+loading weights file /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi4/model/model.safetensors
+Detected DeepSpeed ZeRO-3: activating zero.init() for this model
+Generate config GenerationConfig {
+  "bos_token_id": 126080,
+  "eos_token_id": 126081,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 126081
+}
+
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+NCCL version 2.21.5+cuda12.4
+loading configuration file /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi4/model/generation_config.json
+Generate config GenerationConfig {
+  "bos_token_id": 126080,
+  "eos_token_id": [
+    126081
+  ],
+  "pad_token_id": 126081
+}
+
+Could not locate the custom_generate/generate.py inside /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128/pi4/model.
+2026-08-26 10:16:56 - INFO - __main__ - Model loaded to cuda:0 (ZeRO-2)
+2026-08-26 10:16:56 - INFO - __main__ - LLaDA activation checkpointing enabled: whole_layer
+2026-08-26 10:16:56 - INFO - __main__ - *** Initializing GRPO Trainer ***
+Tokenizing GRPO train dataset:   0%|          | 0/1731 [00:00<?, ? examples/s]Caching processed dataset at /research/cbim/vast/mz751/.cache/huggingface/datasets/json/default-a25b906fafe56fb6/0.0.0/ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18/cache-66d152a8d3a632b3.arrow
+2026-08-26 10:16:56 - INFO - datasets.arrow_dataset - Caching processed dataset at /research/cbim/vast/mz751/.cache/huggingface/datasets/json/default-a25b906fafe56fb6/0.0.0/ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18/cache-66d152a8d3a632b3.arrow
+Tokenizing GRPO train dataset:   1%|          | 19/1731 [00:00<00:10, 162.47 examples/s]Tokenizing GRPO train dataset:   2%|▏         | 40/1731 [00:00<00:09, 182.77 examples/s]Tokenizing GRPO train dataset:   4%|▎         | 61/1731 [00:00<00:08, 188.08 examples/s]Tokenizing GRPO train dataset:   5%|▌         | 87/1731 [00:00<00:09, 175.60 examples/s]Tokenizing GRPO train dataset:   6%|▌         | 106/1731 [00:00<00:09, 173.99 examples/s]Tokenizing GRPO train dataset:   7%|▋         | 125/1731 [00:00<00:09, 177.15 examples/s]Tokenizing GRPO train dataset:   8%|▊         | 145/1731 [00:00<00:08, 180.60 examples/s]Tokenizing GRPO train dataset:  10%|▉         | 165/1731 [00:00<00:08, 181.30 examples/s]Tokenizing GRPO train dataset:  11%|█         | 186/1731 [00:01<00:08, 184.83 examples/s]Tokenizing GRPO train dataset:  12%|█▏        | 214/1731 [00:01<00:08, 182.37 examples/s]Tokenizing GRPO train dataset:  14%|█▎        | 235/1731 [00:01<00:07, 188.38 examples/s]Tokenizing GRPO train dataset:  15%|█▍        | 255/1731 [00:01<00:07, 188.72 examples/s]Tokenizing GRPO train dataset:  16%|█▋        | 282/1731 [00:01<00:07, 183.45 examples/s]Tokenizing GRPO train dataset:  17%|█▋        | 302/1731 [00:01<00:07, 185.08 examples/s]Tokenizing GRPO train dataset:  19%|█▉        | 332/1731 [00:01<00:07, 182.37 examples/s]Tokenizing GRPO train dataset:  20%|██        | 351/1731 [00:01<00:07, 179.85 examples/s]Tokenizing GRPO train dataset:  21%|██▏       | 372/1731 [00:02<00:07, 185.26 examples/s]Tokenizing GRPO train dataset:  23%|██▎       | 396/1731 [00:02<00:06, 195.16 examples/s]Tokenizing GRPO train dataset:  24%|██▍       | 418/1731 [00:02<00:06, 197.94 examples/s]Tokenizing GRPO train dataset:  26%|██▌       | 448/1731 [00:02<00:06, 192.63 examples/s]Tokenizing GRPO train dataset:  27%|██▋       | 476/1731 [00:02<00:06, 188.22 examples/s]Tokenizing GRPO train dataset:  29%|██▉       | 501/1731 [00:02<00:06, 176.05 examples/s]Tokenizing GRPO train dataset:  31%|███       | 528/1731 [00:02<00:06, 195.20 examples/s]Tokenizing GRPO train dataset:  32%|███▏      | 550/1731 [00:02<00:05, 199.87 examples/s]Tokenizing GRPO train dataset:  33%|███▎      | 572/1731 [00:03<00:06, 178.18 examples/s]Tokenizing GRPO train dataset:  35%|███▍      | 598/1731 [00:03<00:06, 171.69 examples/s]Tokenizing GRPO train dataset:  36%|███▌      | 620/1731 [00:03<00:06, 181.17 examples/s]Tokenizing GRPO train dataset:  37%|███▋      | 647/1731 [00:03<00:06, 180.09 examples/s]Tokenizing GRPO train dataset:  39%|███▉      | 674/1731 [00:03<00:05, 177.36 examples/s]Tokenizing GRPO train dataset:  40%|████      | 699/1731 [00:03<00:05, 191.33 examples/s]Tokenizing GRPO train dataset:  42%|████▏     | 721/1731 [00:03<00:05, 193.01 examples/s]Tokenizing GRPO train dataset:  43%|████▎     | 743/1731 [00:04<00:05, 194.75 examples/s]Tokenizing GRPO train dataset:  44%|████▍     | 770/1731 [00:04<00:05, 185.59 examples/s]Tokenizing GRPO train dataset:  46%|████▌     | 789/1731 [00:04<00:05, 180.13 examples/s]Tokenizing GRPO train dataset:  47%|████▋     | 810/1731 [00:04<00:04, 186.91 examples/s]Tokenizing GRPO train dataset:  48%|████▊     | 833/1731 [00:04<00:04, 194.76 examples/s]Tokenizing GRPO train dataset:  50%|████▉     | 860/1731 [00:04<00:04, 209.02 examples/s]Tokenizing GRPO train dataset:  51%|█████     | 884/1731 [00:04<00:03, 214.11 examples/s]Tokenizing GRPO train dataset:  52%|█████▏    | 906/1731 [00:04<00:03, 214.63 examples/s]Tokenizing GRPO train dataset:  54%|█████▍    | 937/1731 [00:04<00:03, 205.56 examples/s]Tokenizing GRPO train dataset:  55%|█████▌    | 959/1731 [00:05<00:03, 202.49 examples/s]Tokenizing GRPO train dataset:  57%|█████▋    | 990/1731 [00:05<00:03, 200.39 examples/s]Tokenizing GRPO train dataset:  59%|█████▊    | 1013/1731 [00:05<00:03, 205.29 examples/s]Tokenizing GRPO train dataset:  60%|██████    | 1040/1731 [00:05<00:03, 218.35 examples/s]Tokenizing GRPO train dataset:  61%|██████▏   | 1063/1731 [00:05<00:03, 212.64 examples/s]Tokenizing GRPO train dataset:  63%|██████▎   | 1086/1731 [00:05<00:03, 213.25 examples/s]Tokenizing GRPO train dataset:  64%|██████▍   | 1109/1731 [00:05<00:02, 214.21 examples/s]Tokenizing GRPO train dataset:  66%|██████▌   | 1136/1731 [00:05<00:03, 195.07 examples/s]Tokenizing GRPO train dataset:  67%|██████▋   | 1167/1731 [00:06<00:02, 195.77 examples/s]Tokenizing GRPO train dataset:  69%|██████▉   | 1194/1731 [00:06<00:02, 189.96 examples/s]Tokenizing GRPO train dataset:  71%|███████   | 1225/1731 [00:06<00:02, 189.48 examples/s]Tokenizing GRPO train dataset:  72%|███████▏  | 1246/1731 [00:06<00:02, 192.96 examples/s]Tokenizing GRPO train dataset:  73%|███████▎  | 1271/1731 [00:06<00:02, 197.94 examples/s]Tokenizing GRPO train dataset:  75%|███████▍  | 1296/1731 [00:06<00:02, 206.90 examples/s]Tokenizing GRPO train dataset:  76%|███████▌  | 1319/1731 [00:06<00:01, 209.37 examples/s]Tokenizing GRPO train dataset:  78%|███████▊  | 1347/1731 [00:07<00:01, 198.97 examples/s]Tokenizing GRPO train dataset:  79%|███████▉  | 1372/1731 [00:07<00:01, 184.99 examples/s]Tokenizing GRPO train dataset:  81%|████████  | 1394/1731 [00:07<00:01, 190.88 examples/s]Tokenizing GRPO train dataset:  82%|████████▏ | 1423/1731 [00:07<00:01, 188.37 examples/s]Tokenizing GRPO train dataset:  84%|████████▍ | 1450/1731 [00:07<00:01, 182.13 examples/s]Tokenizing GRPO train dataset:  85%|████████▍ | 1469/1731 [00:07<00:01, 180.58 examples/s]Tokenizing GRPO train dataset:  86%|████████▋ | 1495/1731 [00:07<00:01, 176.26 examples/s]Tokenizing GRPO train dataset:  88%|████████▊ | 1516/1731 [00:07<00:01, 183.15 examples/s]Tokenizing GRPO train dataset:  89%|████████▊ | 1536/1731 [00:08<00:01, 184.46 examples/s]Tokenizing GRPO train dataset:  90%|████████▉ | 1557/1731 [00:08<00:00, 186.44 examples/s]Tokenizing GRPO train dataset:  92%|█████████▏| 1588/1731 [00:08<00:00, 189.54 examples/s]Tokenizing GRPO train dataset:  93%|█████████▎| 1608/1731 [00:08<00:00, 189.74 examples/s]Tokenizing GRPO train dataset:  95%|█████████▍| 1637/1731 [00:08<00:00, 187.23 examples/s]Tokenizing GRPO train dataset:  96%|█████████▌| 1657/1731 [00:08<00:00, 177.32 examples/s]Tokenizing GRPO train dataset:  97%|█████████▋| 1677/1731 [00:08<00:00, 181.21 examples/s]Tokenizing GRPO train dataset:  98%|█████████▊| 1703/1731 [00:08<00:00, 176.29 examples/s]Tokenizing GRPO train dataset: 100%|█████████▉| 1723/1731 [00:09<00:00, 173.12 examples/s]Tokenizing GRPO train dataset: 100%|██████████| 1731/1731 [00:09<00:00, 187.86 examples/s]
+2026-08-26 10:17:05 - INFO - __main__ - *** Starting GRPO training ***
+Stage 3 initialize beginning
+MA 4.98 GB         Max_MA 5.94 GB         CA 5.35 GB         Max_CA 7 GB 
+CPU Virtual Memory:  used = 11.59 GB, percent = 4.7%
+DeepSpeedZeRoOffload initialize [begin]
+MA 4.98 GB         Max_MA 4.98 GB         CA 5.35 GB         Max_CA 5 GB 
+CPU Virtual Memory:  used = 11.6 GB, percent = 4.7%
+Parameter Offload - Persistent parameters statistics: param_count = 65, numel = 266240
+DeepSpeedZeRoOffload initialize [end]
+MA 4.98 GB         Max_MA 4.98 GB         CA 5.35 GB         Max_CA 5 GB 
+CPU Virtual Memory:  used = 11.6 GB, percent = 4.7%
+Before creating fp16 partitions
+MA 4.98 GB         Max_MA 4.98 GB         CA 5.35 GB         Max_CA 5 GB 
+CPU Virtual Memory:  used = 11.61 GB, percent = 4.7%
+After creating fp16 partitions: 4
+MA 4.98 GB         Max_MA 4.98 GB         CA 4.98 GB         Max_CA 5 GB 
+CPU Virtual Memory:  used = 21.49 GB, percent = 8.7%
+Before creating fp32 partitions
+MA 4.98 GB         Max_MA 4.98 GB         CA 4.98 GB         Max_CA 5 GB 
+CPU Virtual Memory:  used = 19.98 GB, percent = 8.1%
+After creating fp32 partitions
+MA 14.93 GB         Max_MA 18.7 GB         CA 19.98 GB         Max_CA 20 GB 
+CPU Virtual Memory:  used = 13.81 GB, percent = 5.6%
+Before initializing optimizer states
+MA 14.93 GB         Max_MA 14.93 GB         CA 19.98 GB         Max_CA 20 GB 
+CPU Virtual Memory:  used = 12.21 GB, percent = 4.9%
+After initializing optimizer states
+MA 14.93 GB         Max_MA 18.7 GB         CA 23.75 GB         Max_CA 24 GB 
+CPU Virtual Memory:  used = 12.21 GB, percent = 4.9%
+After initializing ZeRO optimizer
+MA 20.84 GB         Max_MA 21.8 GB         CA 24.96 GB         Max_CA 25 GB 
+CPU Virtual Memory:  used = 12.28 GB, percent = 5.0%
+***** Running training *****
+  Num examples = 1,731
+  Num Epochs = 1
+  Instantaneous batch size per device = 1
+  Total train batch size (w. parallel, distributed & accumulation) = 24
+  Gradient Accumulation steps = 8
+  Total optimization steps = 73
+  Number of trainable parameters = 8,015,581,184
+wandb: Currently logged in as: mz751 (mz751-rutgers-university). Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.28.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.15.12
+wandb: Run data is saved locally in /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/wandb/run-20260826_101717-tc5p618b
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run onpolicy_bs128_pi5_20260826_101623
+wandb: ⭐️ View project at https://wandb.ai/mz751-rutgers-university/huggingface
+wandb: 🚀 View run at https://wandb.ai/mz751-rutgers-university/huggingface/runs/tc5p618b
+  0%|          | 0/73 [00:00<?, ?it/s][2026-08-26 10:17:19,041] [WARNING] [torch_autocast.py:122:autocast_if_enabled] torch.autocast is enabled outside DeepSpeed but disabled within the DeepSpeed engine. If you are using DeepSpeed's built-in mixed precision, the engine will follow the settings in bf16/fp16 section. To use torch's native autocast instead, configure the `torch_autocast` section in the DeepSpeed config.
+Traceback (most recent call last):
+  File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/llada_grpo_train.py", line 293, in <module>
+    main(script_args, training_args, model_args)
+  File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/llada_grpo_train.py", line 250, in main
+    train_result = trainer.train(resume_from_checkpoint=checkpoint)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/trainer.py", line 1412, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/trainer.py", line 1742, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/trainer.py", line 1979, in training_step
+    self.accelerator.backward(loss, **kwargs)
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/accelerate/accelerator.py", line 2844, in backward
+    self.deepspeed_engine_wrapped.backward(loss, sync_gradients=self.sync_gradients, **kwargs)
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/accelerate/utils/deepspeed.py", line 281, in backward
+    self.engine.step()
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/engine.py", line 2771, in step
+    self._take_model_step(lr_kwargs)
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/engine.py", line 2666, in _take_model_step
+    self.optimizer.step()
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/utils/nvtx.py", line 20, in wrapped_fn
+    ret_val = func(*args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/zero/stage3.py", line 2255, in step
+    self._optimizer_step(sub_group_id)
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/zero/stage3.py", line 1083, in _optimizer_step
+    step_with_gradscaler(self.optimizer)
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/zero/stage3.py", line 1067, in step_with_gradscaler
+    optimizer.step()
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/optim/optimizer.py", line 493, in wrapper
+    out = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/optim/optimizer.py", line 91, in _use_grad
+    ret = func(self, *args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/optim/adamw.py", line 232, in step
+    has_complex = self._init_group(
+                  ^^^^^^^^^^^^^^^^^
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py", line 745, in _fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/optim/adamw.py", line 175, in _init_group
+    state["exp_avg_sq"] = torch.zeros_like(
+                          ^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 3.77 GiB. GPU 0 has a total capacity of 39.50 GiB of which 2.69 GiB is free. Including non-PyTorch memory, this process has 36.79 GiB memory in use. Of the allocated memory 35.85 GiB is allocated by PyTorch, and 72.63 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/llada_grpo_train.py", line 293, in <module>
+[rank0]:     main(script_args, training_args, model_args)
+[rank0]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/llada_grpo_train.py", line 250, in main
+[rank0]:     train_result = trainer.train(resume_from_checkpoint=checkpoint)
+[rank0]:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/trainer.py", line 1412, in train
+[rank0]:     return inner_training_loop(
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/trainer.py", line 1742, in _inner_training_loop
+[rank0]:     tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+[rank0]:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/trainer.py", line 1979, in training_step
+[rank0]:     self.accelerator.backward(loss, **kwargs)
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/accelerate/accelerator.py", line 2844, in backward
+[rank0]:     self.deepspeed_engine_wrapped.backward(loss, sync_gradients=self.sync_gradients, **kwargs)
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/accelerate/utils/deepspeed.py", line 281, in backward
+[rank0]:     self.engine.step()
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/engine.py", line 2771, in step
+[rank0]:     self._take_model_step(lr_kwargs)
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/engine.py", line 2666, in _take_model_step
+[rank0]:     self.optimizer.step()
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/utils/nvtx.py", line 20, in wrapped_fn
+[rank0]:     ret_val = func(*args, **kwargs)
+[rank0]:               ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/zero/stage3.py", line 2255, in step
+[rank0]:     self._optimizer_step(sub_group_id)
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/zero/stage3.py", line 1083, in _optimizer_step
+[rank0]:     step_with_gradscaler(self.optimizer)
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/zero/stage3.py", line 1067, in step_with_gradscaler
+[rank0]:     optimizer.step()
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/optim/optimizer.py", line 493, in wrapper
+[rank0]:     out = func(*args, **kwargs)
+[rank0]:           ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/optim/optimizer.py", line 91, in _use_grad
+[rank0]:     ret = func(self, *args, **kwargs)
+[rank0]:           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/optim/adamw.py", line 232, in step
+[rank0]:     has_complex = self._init_group(
+[rank0]:                   ^^^^^^^^^^^^^^^^^
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py", line 745, in _fn
+[rank0]:     return fn(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/optim/adamw.py", line 175, in _init_group
+[rank0]:     state["exp_avg_sq"] = torch.zeros_like(
+[rank0]:                           ^^^^^^^^^^^^^^^^^
+[rank0]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 3.77 GiB. GPU 0 has a total capacity of 39.50 GiB of which 2.69 GiB is free. Including non-PyTorch memory, this process has 36.79 GiB memory in use. Of the allocated memory 35.85 GiB is allocated by PyTorch, and 72.63 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/llada_grpo_train.py", line 293, in <module>
+[rank2]:     main(script_args, training_args, model_args)
+[rank2]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/llada_grpo_train.py", line 250, in main
+[rank2]:     train_result = trainer.train(resume_from_checkpoint=checkpoint)
+[rank2]:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/trainer.py", line 1412, in train
+[rank2]:     return inner_training_loop(
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/trainer.py", line 1742, in _inner_training_loop
+[rank2]:     tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+[rank2]:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/trainer.py", line 1979, in training_step
+[rank2]:     self.accelerator.backward(loss, **kwargs)
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/accelerate/accelerator.py", line 2844, in backward
+[rank2]:     self.deepspeed_engine_wrapped.backward(loss, sync_gradients=self.sync_gradients, **kwargs)
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/accelerate/utils/deepspeed.py", line 281, in backward
+[rank2]:     self.engine.step()
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/engine.py", line 2771, in step
+[rank2]:     self._take_model_step(lr_kwargs)
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/engine.py", line 2666, in _take_model_step
+[rank2]:     self.optimizer.step()
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/utils/nvtx.py", line 20, in wrapped_fn
+[rank2]:     ret_val = func(*args, **kwargs)
+[rank2]:               ^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/zero/stage3.py", line 2255, in step
+[rank2]:     self._optimizer_step(sub_group_id)
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/zero/stage3.py", line 1083, in _optimizer_step
+[rank2]:     step_with_gradscaler(self.optimizer)
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/zero/stage3.py", line 1067, in step_with_gradscaler
+[rank2]:     optimizer.step()
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/optim/optimizer.py", line 493, in wrapper
+[rank2]:     out = func(*args, **kwargs)
+[rank2]:           ^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/optim/optimizer.py", line 91, in _use_grad
+[rank2]:     ret = func(self, *args, **kwargs)
+[rank2]:           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/optim/adamw.py", line 232, in step
+[rank2]:     has_complex = self._init_group(
+[rank2]:                   ^^^^^^^^^^^^^^^^^
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py", line 745, in _fn
+[rank2]:     return fn(*args, **kwargs)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/optim/adamw.py", line 175, in _init_group
+[rank2]:     state["exp_avg_sq"] = torch.zeros_like(
+[rank2]:                           ^^^^^^^^^^^^^^^^^
+[rank2]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 3.77 GiB. GPU 2 has a total capacity of 39.50 GiB of which 2.76 GiB is free. Including non-PyTorch memory, this process has 36.73 GiB memory in use. Of the allocated memory 35.85 GiB is allocated by PyTorch, and 72.63 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/llada_grpo_train.py", line 293, in <module>
+[rank1]:     main(script_args, training_args, model_args)
+[rank1]:   File "/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/VRPO/my_train/llada_grpo_train.py", line 250, in main
+[rank1]:     train_result = trainer.train(resume_from_checkpoint=checkpoint)
+[rank1]:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/trainer.py", line 1412, in train
+[rank1]:     return inner_training_loop(
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/trainer.py", line 1742, in _inner_training_loop
+[rank1]:     tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+[rank1]:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/transformers/trainer.py", line 1979, in training_step
+[rank1]:     self.accelerator.backward(loss, **kwargs)
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/accelerate/accelerator.py", line 2844, in backward
+[rank1]:     self.deepspeed_engine_wrapped.backward(loss, sync_gradients=self.sync_gradients, **kwargs)
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/accelerate/utils/deepspeed.py", line 281, in backward
+[rank1]:     self.engine.step()
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/engine.py", line 2771, in step
+[rank1]:     self._take_model_step(lr_kwargs)
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/engine.py", line 2666, in _take_model_step
+[rank1]:     self.optimizer.step()
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/utils/nvtx.py", line 20, in wrapped_fn
+[rank1]:     ret_val = func(*args, **kwargs)
+[rank1]:               ^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/zero/stage3.py", line 2255, in step
+[rank1]:     self._optimizer_step(sub_group_id)
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/zero/stage3.py", line 1083, in _optimizer_step
+[rank1]:     step_with_gradscaler(self.optimizer)
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/deepspeed/runtime/zero/stage3.py", line 1067, in step_with_gradscaler
+[rank1]:     optimizer.step()
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/optim/optimizer.py", line 493, in wrapper
+[rank1]:     out = func(*args, **kwargs)
+[rank1]:           ^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/optim/optimizer.py", line 91, in _use_grad
+[rank1]:     ret = func(self, *args, **kwargs)
+[rank1]:           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/optim/adamw.py", line 232, in step
+[rank1]:     has_complex = self._init_group(
+[rank1]:                   ^^^^^^^^^^^^^^^^^
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py", line 745, in _fn
+[rank1]:     return fn(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/optim/adamw.py", line 175, in _init_group
+[rank1]:     state["exp_avg_sq"] = torch.zeros_like(
+[rank1]:                           ^^^^^^^^^^^^^^^^^
+[rank1]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 3.77 GiB. GPU 1 has a total capacity of 39.50 GiB of which 2.68 GiB is free. Including non-PyTorch memory, this process has 36.81 GiB memory in use. Of the allocated memory 35.85 GiB is allocated by PyTorch, and 72.63 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+W0826 10:17:55.001000 1667586 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 1667941 closing signal SIGTERM
+W0826 10:17:55.002000 1667586 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 1667942 closing signal SIGTERM
+E0826 10:17:55.820000 1667586 site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 2 (pid: 1667943) of binary: /research/cbim/vast/mz751/miniforge3/envs/espo/bin/python3.11
+Traceback (most recent call last):
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/bin/accelerate", line 6, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/accelerate/commands/accelerate_cli.py", line 50, in main
+    args.func(args)
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/accelerate/commands/launch.py", line 1266, in launch_command
+    deepspeed_launcher(args)
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/accelerate/commands/launch.py", line 952, in deepspeed_launcher
+    distrib_run.run(args)
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/research/cbim/vast/mz751/miniforge3/envs/espo/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+my_train/llada_grpo_train.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-08-26_10:17:55
+  host      : hermes.cs.rutgers.edu
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 1667943)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
