@@ -206,7 +206,7 @@ PYEOF
         log "  merged.jsonl 已存在 ($NMERGED 条)"
     fi
 
-    # ── Step 3: Reward + 训练 ─────────────────────────────────────────────────
+    # ── Step 3: Reward + 训练（50 steps，每 25 steps 保存一次）────────────────
     log "Step 3/4: Reward 计算..."
     if [ ! -f "$TRAIN_FILE" ]; then
         $PYTHON $AGENTIC/compute_rewards.py \
@@ -219,9 +219,12 @@ PYEOF
     NTRAIN=$(wc -l < "$TRAIN_FILE")
     log "  训练数据: $NTRAIN 条"
 
-    log "Step 3/4: ELBO-PG 训练  π_${ROUND} → π_${NEXT_ROUND} (block_length=${BLOCK_SIZE})..."
+    log "Step 3/4: ELBO-PG 训练  π_${ROUND} → π_${NEXT_ROUND}（50 steps，每 25 steps 保存）..."
     TRAIN_LOG=$ROUND_DIR/train_${TIMESTAMP}.log
     ROUND_CONFIG=$AGENTIC/configs/grpo_pi_bs128v2_${NEXT_ROUND}_${TIMESTAMP}.yaml
+    # step-25 和 step-50 的模型目录
+    OUT_STEP25=$ROUND_DIR/model_step25
+    # OUT_STEP50 就是 OUT_MODEL（step-50 / 最终权重）
 
     MODEL_READY=false
     MODEL_SIZE=$(stat -c%s "$OUT_MODEL/model.safetensors" 2>/dev/null || echo 0)
@@ -234,7 +237,7 @@ PYEOF
              s|output_dir:.*|output_dir: ${OUT_MODEL}|;
              s|run_name:.*|run_name: onpolicy_bs128v2_pi${NEXT_ROUND}_${TIMESTAMP}|;
              s|dataset_path:.*|dataset_path: ${TRAIN_FILE}|" \
-            $AGENTIC/configs/grpo_phase4_reward_a_bs128.yaml > $ROUND_CONFIG
+            $AGENTIC/configs/grpo_bs128_v2_50steps.yaml > $ROUND_CONFIG
 
         cd $VRPO
         accelerate launch \
@@ -250,46 +253,77 @@ PYEOF
             exit 1
         fi
 
-        # ZeRO-3 fix：从 checkpoint 复制完整权重
-        LATEST_CKPT=$(ls -dt $OUT_MODEL/checkpoint-*/model.safetensors 2>/dev/null | head -1)
+        # ── 提取两个 checkpoint 权重 ──────────────────────────────────────────
+        # ZeRO-3 每个 checkpoint 目录里都有完整的 model.safetensors
+
+        # 1. step-25：复制配置文件 + step-25 权重 → model_step25/
+        CKPT25=$OUT_MODEL/checkpoint-25
+        if [ -f "$CKPT25/model.safetensors" ]; then
+            log "  [step-25] 建立 model_step25/..."
+            mkdir -p $OUT_STEP25
+            # 复制所有非 checkpoint 子目录的文件（config/tokenizer 等）
+            find "$OUT_MODEL" -maxdepth 1 -not -type d -exec cp {} "$OUT_STEP25/" \; 2>/dev/null || true
+            # 用 step-25 的权重覆盖
+            cp "$CKPT25/model.safetensors" "$OUT_STEP25/model.safetensors"
+            log "  [step-25] 完整模型: $OUT_STEP25"
+        else
+            log "  [WARN] checkpoint-25 未找到，跳过 step-25 提取"
+        fi
+
+        # 2. step-50：从最新 checkpoint 复制权重 → OUT_MODEL/model.safetensors
+        LATEST_CKPT=$(ls -dt $OUT_MODEL/checkpoint-*/model.safetensors 2>/dev/null | tail -1)  # 最大步数的
         if [ -n "$LATEST_CKPT" ]; then
             CKPT_SIZE=$(stat -c%s "$LATEST_CKPT" 2>/dev/null || echo 0)
             if [ "$CKPT_SIZE" -gt 1000000000 ]; then
-                log "  [ZeRO-3 fix] 从 checkpoint 复制完整权重 (${CKPT_SIZE} bytes)..."
+                log "  [step-50] 从 $(dirname $LATEST_CKPT | xargs basename) 复制完整权重..."
                 cp "$LATEST_CKPT" "$OUT_MODEL/model.safetensors"
-                log "  [OK] 完整模型权重已复制到 $OUT_MODEL/model.safetensors"
+                log "  [step-50] 完整模型: $OUT_MODEL/model.safetensors"
             fi
         fi
-        # 删除 checkpoint 子目录（optimizer states 等）以释放磁盘
-        if ls -dt $OUT_MODEL/checkpoint-* 2>/dev/null | grep -q .; then
-            log "  [存储] 删除 checkpoint 子目录..."
+
+        # 3. 清理所有 checkpoint 子目录（释放 optimizer states 占用的磁盘）
+        if ls -d $OUT_MODEL/checkpoint-* 2>/dev/null | grep -q .; then
+            log "  [存储] 删除 checkpoint 子目录（optimizer states）..."
             rm -rf $OUT_MODEL/checkpoint-*
             log "  [存储] 已清理"
         fi
-        log "  训练完成！π_${NEXT_ROUND} → $OUT_MODEL"
+        log "  训练完成！step-25 → $OUT_STEP25  step-50 → $OUT_MODEL"
     else
-        log "  模型已存在 ($(du -sh $OUT_MODEL/model.safetensors | cut -f1))，跳过训练"
+        log "  模型已存在，跳过训练"
+        # 如果是重启，检查 model_step25 是否已建
+        [ -f "$OUT_STEP25/model.safetensors" ] && log "  step-25 模型已存在" || log "  [WARN] step-25 模型缺失，本次 eval 只跑 step-50"
     fi
 
-    # ── Step 4: eval_600（block_size=128）────────────────────────────────────
-    log "Step 4/4: eval_600  π_${NEXT_ROUND} (block_size=${BLOCK_SIZE})..."
-    SCORE_LOG=$EVAL_DIR/score.log
+    # ── Step 4: eval_600 × 2（step-25 和 step-50 分别评估）─────────────────────
+    # eval_one MODEL_DIR STEP_TAG SESSION_PREFIX SCORE_LOG
+    eval_one() {
+        local MDL=$1 TAG=$2 SFX=$3 SLOG=$4
+        local EDIR=$EVAL_DIR/$TAG
+        mkdir -p $EDIR
 
-    if [ ! -f "$SCORE_LOG" ]; then
-        # 固定8个 shard（每75题），分批在 WORLD 个 GPU 上并行
+        if [ -f "$SLOG" ]; then
+            log "  [$TAG] eval 已存在，跳过"
+            return 0
+        fi
+        if [ ! -f "$MDL/model.safetensors" ] && [ ! -f "$MDL/model.safetensors.index.json" ]; then
+            log "  [$TAG] 模型不存在，跳过 eval"
+            return 1
+        fi
+
+        log "Step 4/4: eval_600 [$TAG]  model=$MDL"
         IFS=',' read -ra PHYS_GPUS <<< "$CUDA_VISIBLE_DEVICES"
         N_EVAL_SHARDS=8
-        SHARD=0
+        local SHARD=0
         while [ $SHARD -lt $N_EVAL_SHARDS ]; do
-            BATCH_END=$((SHARD + WORLD - 1))
+            local BATCH_END=$((SHARD + WORLD - 1))
             [ $BATCH_END -ge $N_EVAL_SHARDS ] && BATCH_END=$((N_EVAL_SHARDS - 1))
-            log "  eval batch shard ${SHARD}..${BATCH_END}（每批 $WORLD 个 GPU 并行）"
+            log "  [$TAG] eval batch shard ${SHARD}..${BATCH_END}"
             for IDX in $(seq $SHARD $BATCH_END); do
-                SLOT=$(( (IDX - SHARD) % WORLD ))
-                PHYS_GPU=${PHYS_GPUS[$SLOT]}
-                OFFSET=$((IDX * 75))
-                SESSION="v2_r${ROUND}_eval${IDX}"
-                INNER_SCRIPT=$OUTBASE/tmp_${SESSION}.sh
+                local SLOT=$(( (IDX - SHARD) % WORLD ))
+                local PHYS_GPU=${PHYS_GPUS[$SLOT]}
+                local OFFSET=$((IDX * 75))
+                local SESSION="${SFX}_eval${IDX}"
+                local INNER_SCRIPT=$OUTBASE/tmp_${SESSION}.sh
                 cat > $INNER_SCRIPT << INNER
 #!/bin/bash
 export PATH=/research/cbim/vast/mz751/miniforge3/envs/espo/bin:\$PATH
@@ -298,57 +332,56 @@ export TRITON_CACHE_DIR=/tmp/triton_cache_mz751_v2
 export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 mkdir -p /tmp/triton_cache_mz751_v2
 ${PYTHON} -u ${ROOT}/my_eval/run_llada_eval.py \
-    --model    "${OUT_MODEL}" \
+    --model    "${MDL}" \
     --input    "${EVAL_INPUT}" \
-    --output   "${EVAL_DIR}/shard${IDX}.jsonl" \
+    --output   "${EDIR}/shard${IDX}.jsonl" \
     --offset   ${OFFSET} \
     --max_samples 75 \
     --block_size ${BLOCK_SIZE} \
     --num_steps  ${NUM_STEPS} \
-    2>&1 | tee "${EVAL_DIR}/shard${IDX}.log"
+    2>&1 | tee "${EDIR}/shard${IDX}.log"
 INNER
                 chmod +x $INNER_SCRIPT
                 screen -dmS "$SESSION" bash $INNER_SCRIPT
-                log "  eval shard${IDX} 已启动 (CUDA=${PHYS_GPU}, offset=${OFFSET})"
+                log "  [$TAG] shard${IDX} 启动 (GPU=${PHYS_GPU}, offset=${OFFSET})"
                 sleep 15
             done
 
-            # 等待本批 shard 完成
-            log "  等待本批 eval 完成（每 1 分钟汇报）..."
+            # 等待本批完成
             while true; do
-                DONE=0
+                local DONE=0
                 for IDX2 in $(seq $SHARD $BATCH_END); do
-                    screen -list 2>/dev/null | grep -q "v2_r${ROUND}_eval${IDX2}" || DONE=$((DONE+1))
+                    screen -list 2>/dev/null | grep -q "${SFX}_eval${IDX2}" || DONE=$((DONE+1))
                 done
-                BATCH_SIZE=$((BATCH_END - SHARD + 1))
-                log "  eval $DONE/$BATCH_SIZE shard 完成（本批）"
+                local BATCH_SIZE=$((BATCH_END - SHARD + 1))
+                log "  [$TAG] $DONE/$BATCH_SIZE shard 完成"
                 [ $DONE -eq $BATCH_SIZE ] && break
                 sleep 60
             done
-
             SHARD=$((BATCH_END + 1))
         done
 
-        cat $EVAL_DIR/shard*.jsonl > $EVAL_DIR/merged.jsonl 2>/dev/null
-        $PYTHON $ROOT/my_eval/cal_acc.py \
-            --data $EVAL_DIR/merged.jsonl \
-            2>&1 | tee $SCORE_LOG
-        log "  eval 完成！"
-    else
-        log "  eval 已存在，跳过"
-    fi
+        cat $EDIR/shard*.jsonl > $EDIR/merged.jsonl 2>/dev/null
+        $PYTHON $ROOT/my_eval/cal_acc.py --data $EDIR/merged.jsonl 2>&1 | tee $SLOG
+        log "  [$TAG] eval 完成！"
+    }
 
-    # ── 打印学习曲线 ──────────────────────────────────────────────────────────
+    # 先评估 step-25，再评估 step-50（串行，避免同时占满 GPU）
+    eval_one "$OUT_STEP25" "step25" "v2_r${ROUND}_s25" "$EVAL_DIR/score_step25.log"
+    eval_one "$OUT_MODEL"  "step50" "v2_r${ROUND}_s50" "$EVAL_DIR/score_step50.log"
+
+    # ── 打印学习曲线（每 round 列出 step-25 / step-50）──────────────────────
     log ""
     log "========== Learning Curve [bs128-v2] (截至 π_${NEXT_ROUND}) =========="
-    printf "%-8s %-10s\n" "Policy" "CEM-1" | tee -a $LOOP_LOG
-    printf "%-8s %-10s\n" "π₀ SFT" "49.83%" | tee -a $LOOP_LOG
+    printf "%-12s %-12s %-12s\n" "Policy" "step-25" "step-50" | tee -a $LOOP_LOG
+    printf "%-12s %-12s %-12s\n" "π₀ SFT" "—" "49.83%" | tee -a $LOOP_LOG
     for N in $(seq 1 $NEXT_ROUND); do
-        SC=$OUTBASE/pi${N}/eval/score.log
-        if [ -f "$SC" ]; then
-            CEM=$(grep -oP "(?<=CEM-1[: ]+)\d+\.\d+" $SC 2>/dev/null || grep -oP "\d+\.\d+(?=%)" $SC | head -1)
-            printf "%-8s %-10s\n" "π_${N}" "${CEM}%" | tee -a $LOOP_LOG
-        fi
+        SC25=$OUTBASE/pi${N}/eval/score_step25.log
+        SC50=$OUTBASE/pi${N}/eval/score_step50.log
+        C25="—"; C50="—"
+        [ -f "$SC25" ] && C25=$(grep -oP "\d+\.\d+(?=%)" $SC25 | head -1)%
+        [ -f "$SC50" ] && C50=$(grep -oP "\d+\.\d+(?=%)" $SC50 | head -1)%
+        printf "%-12s %-12s %-12s\n" "π_${N}" "$C25" "$C50" | tee -a $LOOP_LOG
     done
     log "=================================================="
     log ""

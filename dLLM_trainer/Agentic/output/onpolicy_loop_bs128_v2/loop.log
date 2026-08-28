@@ -1,0 +1,38 @@
+[16:17:12] ========================================================
+[16:17:12] On-Policy Loop [bs128-v2, dionysos] 启动：Round 0 → 5
+[16:17:12]   π₀ = sft_llada_x0pred_bs128_v2/ckpt_3 (49.83% CEM-1)
+[16:17:12]   block_size=128  num_steps=128  WORLD=6
+[16:17:12]   CUDA_VISIBLE_DEVICES=0,1,3,5,6,7
+[16:17:12]   ACCEL_CFG=/research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/configs/accel_zero3_6gpu.yaml
+[16:17:12]   输出: /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128_v2
+[16:17:12] ========================================================
+[16:17:12] 
+[16:17:12] ========================================================
+[16:17:12] Round 0:  π_0 → D_0 → π_1
+[16:17:12]   Base model : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/SFT/dLLM-RL/sft_llada_x0pred_bs128_v2/ckpt_3/optimized
+[16:17:12]   Output     : /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLLM_trainer/Agentic/output/onpolicy_loop_bs128_v2/pi1/model
+[16:17:12] ========================================================
+[16:17:12]   [OK] 基础模型验证通过
+[16:17:12] Step 1/4: Pool  [0, 256)...
+[16:17:12] Step 2/4: Rollout  π_0 × 256题 × 8rolls (block_size=128)...
+[16:17:12]   rank0 已启动 (GPU=0)
+[16:17:32]   rank1 已启动 (GPU=1)
+[16:17:52]   rank2 已启动 (GPU=3)
+[16:18:12]   rank3 已启动 (GPU=5)
+[16:18:32]   rank4 已启动 (GPU=6)
+[16:18:52]   rank5 已启动 (GPU=7)
+[16:18:52]   等待 rollout 完成（每 2 分钟汇报一次）...
+[16:18:52]   rollout 0/6 rank 已完成
+[16:20:52]   rollout 0/6 rank 已完成
+[16:22:52]   rollout 0/6 rank 已完成
+[16:24:52]   rollout 0/6 rank 已完成
+[16:26:52]   rollout 0/6 rank 已完成
+[16:28:52]   rollout 0/6 rank 已完成
+[16:30:52]   rollout 0/6 rank 已完成
+[16:32:52]   rollout 0/6 rank 已完成
+[16:34:52]   rollout 0/6 rank 已完成
+[16:36:52]   rollout 0/6 rank 已完成
+[16:38:52]   rollout 0/6 rank 已完成
+[16:40:52]   rollout 0/6 rank 已完成
+[16:42:53]   rollout 0/6 rank 已完成
+[16:44:53]   rollout 0/6 rank 已完成
