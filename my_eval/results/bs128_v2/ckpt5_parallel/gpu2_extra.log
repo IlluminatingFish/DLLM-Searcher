@@ -5,4 +5,4 @@ eval 数据: 32 题  来自 /research/cbim/vast/mz751/Projects/DLLM-Searcher/dLL
 模型加载完成，mask_token_id=126336
 待评测: 32 题
 
-LLaDA agentic eval:   0%|          | 0/32 [00:00<?, ?it/s]LLaDA agentic eval:   3%|▎         | 1/32 [00:51<26:36, 51.50s/it]
+LLaDA agentic eval:   0%|          | 0/32 [00:00<?, ?it/s]LLaDA agentic eval:   3%|▎         | 1/32 [00:51<26:36, 51.50s/it]LLaDA agentic eval:   6%|▋         | 2/32 [48:19<14:08:19, 1696.65s/it]LLaDA agentic eval:   9%|▉         | 3/32 [49:00<7:34:34, 940.51s/it]  

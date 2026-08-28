@@ -40,11 +40,7 @@ if git show-ref --verify --quiet "refs/heads/$BRANCH"; then
         echo "已取消。请换一个新的 branch 名字再试。"
         exit 1
     fi
-    echo "暂存本地改动（stash）..."
-    git stash
     git checkout "$BRANCH"
-    echo "恢复本地改动（stash pop）..."
-    git stash pop || true
 else
     echo ""
     echo "创建新 branch: $BRANCH"
