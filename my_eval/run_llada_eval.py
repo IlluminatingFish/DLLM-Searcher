@@ -29,7 +29,13 @@ import requests
 import torch
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
+import signal
 from tqdm import tqdm
+
+QUESTION_TIMEOUT = 300  # 每题最多 5 分钟
+
+def _timeout_handler(signum, frame):
+    raise TimeoutError("推理超时")
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import transformers.modeling_utils as _mu
 from transformers import PreTrainedModel
@@ -444,8 +450,18 @@ def main():
             gt_answer = sample["answer"]
             short_answer = sample.get("short_answer", "")  # 保留短答案字段（CEM-1 专用）
 
+            signal.signal(signal.SIGALRM, _timeout_handler)
+            signal.alarm(QUESTION_TIMEOUT)
             try:
                 result = run_one(model, tokenizer, mask_id, question)
+            except TimeoutError:
+                tqdm.write(f"[TIMEOUT] {question[:60]}（>{QUESTION_TIMEOUT}s，跳过）")
+                result = {
+                    "prediction":         "",
+                    "num_turns":          0,
+                    "termination_reason": "timeout",
+                    "messages":           [],
+                }
             except Exception as e:
                 tqdm.write(f"[ERROR] {question[:60]}: {e}")
                 result = {
@@ -454,6 +470,8 @@ def main():
                     "termination_reason": "error",
                     "messages":           [],
                 }
+            finally:
+                signal.alarm(0)
 
             record = {
                 "question":           question,
